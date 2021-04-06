@@ -7,6 +7,9 @@ using Amazon.CognitoIdentityProvider;
 using Amazon.CognitoIdentityProvider.Model;
 using Amazon.Extensions.CognitoAuthentication;
 
+//edit test chris -----
+
+
 public class Cognito : MonoBehaviour
 {
     // UI Buttons & Input Fields
