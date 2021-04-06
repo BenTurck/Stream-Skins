@@ -1,0 +1,26 @@
+fileFormatVersion: 2
+guid: c5631c391a46fb547aa29a1f9e462405
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Druk Text Wide
+  fontNames:
+  - Druk Text Wide
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: e09fbd1402bb83240b2ef73aaa746727, type: 3}
+  - {fileID: 12800000, guid: 648efbc8f2eecaf438f933cd1b2623d5, type: 3}
+  - {fileID: 12800000, guid: 310b0e2e533667f428cbaf4249dcc4b4, type: 3}
+  - {fileID: 12800000, guid: d065ac6f87664ca4e9e3484009dbf386, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
