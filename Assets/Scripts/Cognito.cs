@@ -1,3 +1,4 @@
+/*DELETE
 using System;
 using UnityEngine;
 using UnityEngine.UI;
@@ -6,7 +7,7 @@ using System.Threading.Tasks;
 using Amazon.CognitoIdentityProvider;
 using Amazon.CognitoIdentityProvider.Model;
 using Amazon.Extensions.CognitoAuthentication;
-
+DELETE*/
 /*
 Notes:
  * 
@@ -20,7 +21,7 @@ Notes:
  * 
 */
 
-
+/*DELETE
 public class Cognito : MonoBehaviour
 {
     // UI Buttons & Input Fields
@@ -184,3 +185,4 @@ public class Cognito : MonoBehaviour
         return subId;
     }
 }
+DELETE*/
