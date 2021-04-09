@@ -1,0 +1,2434 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>AWSSDK.AppIntegrationsService</name>
+    </assembly>
+    <members>
+        <member name="T:Amazon.AppIntegrationsService.AmazonAppIntegrationsServiceConfig">
+            <summary>
+            Configuration for accessing Amazon AppIntegrationsService service
+            </summary>
+        </member>
+        <member name="M:Amazon.AppIntegrationsService.AmazonAppIntegrationsServiceConfig.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="P:Amazon.AppIntegrationsService.AmazonAppIntegrationsServiceConfig.RegionEndpointServiceName">
+            <summary>
+            The constant used to lookup in the region hash the endpoint.
+            </summary>
+        </member>
+        <member name="P:Amazon.AppIntegrationsService.AmazonAppIntegrationsServiceConfig.ServiceVersion">
+            <summary>
+            Gets the ServiceVersion property.
+            </summary>
+        </member>
+        <member name="P:Amazon.AppIntegrationsService.AmazonAppIntegrationsServiceConfig.UserAgent">
+            <summary>
+            Gets the value of UserAgent property.
+            </summary>
+        </member>
+        <member name="T:Amazon.AppIntegrationsService.AmazonAppIntegrationsServiceException">
+            <summary>
+             Common exception for the AppIntegrationsService service.
+             </summary>
+        </member>
+        <member name="M:Amazon.AppIntegrationsService.AmazonAppIntegrationsServiceException.#ctor(System.String)">
+            <summary>
+            Construct instance of AmazonAppIntegrationsServiceException
+            </summary>
+            <param name="message"></param>
+        </member>
+        <member name="M:Amazon.AppIntegrationsService.AmazonAppIntegrationsServiceException.#ctor(System.String,System.Exception)">
+            <summary>
+            Construct instance of AmazonAppIntegrationsServiceException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.AppIntegrationsService.AmazonAppIntegrationsServiceException.#ctor(System.Exception)">
+            <summary>
+            Construct instance of AmazonAppIntegrationsServiceException
+            </summary>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.AppIntegrationsService.AmazonAppIntegrationsServiceException.#ctor(System.String,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of AmazonAppIntegrationsServiceException
+            </summary>
+            <param name="message"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.AppIntegrationsService.AmazonAppIntegrationsServiceException.#ctor(System.String,System.Exception,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of AmazonAppIntegrationsServiceException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="T:Amazon.AppIntegrationsService.Internal.AmazonAppIntegrationsServiceMetadata">
+            <summary>
+            Service metadata for  Amazon AppIntegrationsService service
+            </summary>
+        </member>
+        <member name="P:Amazon.AppIntegrationsService.Internal.AmazonAppIntegrationsServiceMetadata.ServiceId">
+            <summary>
+            Gets the value of the Service Id.
+            </summary>
+        </member>
+        <member name="P:Amazon.AppIntegrationsService.Internal.AmazonAppIntegrationsServiceMetadata.OperationNameMapping">
+            <summary>
+            Gets the dictionary that gives mapping of renamed operations
+            </summary>
+        </member>
+        <member name="T:Amazon.AppIntegrationsService.Model.AccessDeniedException">
+            <summary>
+            You do not have sufficient access to perform this action.
+            </summary>
+        </member>
+        <member name="M:Amazon.AppIntegrationsService.Model.AccessDeniedException.#ctor(System.String)">
+            <summary>
+            Constructs a new AccessDeniedException with the specified error
+            message.
+            </summary>
+            <param name="message">
+            Describes the error encountered.
+            </param>
+        </member>
+        <member name="M:Amazon.AppIntegrationsService.Model.AccessDeniedException.#ctor(System.String,System.Exception)">
+            <summary>
+            Construct instance of AccessDeniedException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.AppIntegrationsService.Model.AccessDeniedException.#ctor(System.Exception)">
+            <summary>
+            Construct instance of AccessDeniedException
+            </summary>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.AppIntegrationsService.Model.AccessDeniedException.#ctor(System.String,System.Exception,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of AccessDeniedException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.AppIntegrationsService.Model.AccessDeniedException.#ctor(System.String,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of AccessDeniedException
+            </summary>
+            <param name="message"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="T:Amazon.AppIntegrationsService.Model.CreateEventIntegrationRequest">
+            <summary>
+            Container for the parameters to the CreateEventIntegration operation.
+            The Amazon AppIntegrations APIs are in preview release and are subject to change.
+            
+             
+            <para>
+            Creates an EventIntegration, given a specified name, description, and a reference
+            to an Amazon Eventbridge bus in your account and a partner event source that will
+            push events to that bus. No objects are created in the your account, only metadata
+            that is persisted on the EventIntegration control plane.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.AppIntegrationsService.Model.CreateEventIntegrationRequest.ClientToken">
+            <summary>
+            Gets and sets the property ClientToken. 
+            <para>
+            A unique, case-sensitive identifier that you provide to ensure the idempotency of
+            the request.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.AppIntegrationsService.Model.CreateEventIntegrationRequest.Description">
+            <summary>
+            Gets and sets the property Description. 
+            <para>
+            The description of the event integration.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.AppIntegrationsService.Model.CreateEventIntegrationRequest.EventBridgeBus">
+            <summary>
+            Gets and sets the property EventBridgeBus. 
+            <para>
+            The Eventbridge bus.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.AppIntegrationsService.Model.CreateEventIntegrationRequest.EventFilter">
+            <summary>
+            Gets and sets the property EventFilter. 
+            <para>
+            The event filter.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.AppIntegrationsService.Model.CreateEventIntegrationRequest.Name">
+            <summary>
+            Gets and sets the property Name. 
+            <para>
+            The name of the event integration.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.AppIntegrationsService.Model.CreateEventIntegrationRequest.Tags">
+            <summary>
+            Gets and sets the property Tags. 
+            <para>
+            One or more tags.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.AppIntegrationsService.Model.CreateEventIntegrationResponse">
+            <summary>
+            This is the response object from the CreateEventIntegration operation.
+            </summary>
+        </member>
+        <member name="P:Amazon.AppIntegrationsService.Model.CreateEventIntegrationResponse.EventIntegrationArn">
+            <summary>
+            Gets and sets the property EventIntegrationArn. 
+            <para>
+            The Amazon Resource Name (ARN) of the event integration. 
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.AppIntegrationsService.Model.DeleteEventIntegrationRequest">
+            <summary>
+            Container for the parameters to the DeleteEventIntegration operation.
+            The Amazon AppIntegrations APIs are in preview release and are subject to change.
+            
+             
+            <para>
+            Deletes the specified existing event integration. If the event integration is associated
+            with clients, the request is rejected.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.AppIntegrationsService.Model.DeleteEventIntegrationRequest.Name">
+            <summary>
+            Gets and sets the property Name. 
+            <para>
+            The name of the event integration.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.AppIntegrationsService.Model.DeleteEventIntegrationResponse">
+            <summary>
+            This is the response object from the DeleteEventIntegration operation.
+            </summary>
+        </member>
+        <member name="T:Amazon.AppIntegrationsService.Model.DuplicateResourceException">
+            <summary>
+            A resource with the specified name already exists.
+            </summary>
+        </member>
+        <member name="M:Amazon.AppIntegrationsService.Model.DuplicateResourceException.#ctor(System.String)">
+            <summary>
+            Constructs a new DuplicateResourceException with the specified error
+            message.
+            </summary>
+            <param name="message">
+            Describes the error encountered.
+            </param>
+        </member>
+        <member name="M:Amazon.AppIntegrationsService.Model.DuplicateResourceException.#ctor(System.String,System.Exception)">
+            <summary>
+            Construct instance of DuplicateResourceException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.AppIntegrationsService.Model.DuplicateResourceException.#ctor(System.Exception)">
+            <summary>
+            Construct instance of DuplicateResourceException
+            </summary>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.AppIntegrationsService.Model.DuplicateResourceException.#ctor(System.String,System.Exception,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of DuplicateResourceException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.AppIntegrationsService.Model.DuplicateResourceException.#ctor(System.String,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of DuplicateResourceException
+            </summary>
+            <param name="message"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="T:Amazon.AppIntegrationsService.Model.EventFilter">
+            <summary>
+            The Amazon AppIntegrations APIs are in preview release and are subject to change.
+            
+             
+            <para>
+            The event filter.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.AppIntegrationsService.Model.EventFilter.Source">
+            <summary>
+            Gets and sets the property Source. 
+            <para>
+            The source of the events.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.AppIntegrationsService.Model.EventIntegration">
+            <summary>
+            The Amazon AppIntegrations APIs are in preview release and are subject to change.
+            
+             
+            <para>
+            The event integration.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.AppIntegrationsService.Model.EventIntegration.Description">
+            <summary>
+            Gets and sets the property Description. 
+            <para>
+            The event integration description.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.AppIntegrationsService.Model.EventIntegration.EventBridgeBus">
+            <summary>
+            Gets and sets the property EventBridgeBus. 
+            <para>
+            The Amazon Eventbridge bus for the event integration.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.AppIntegrationsService.Model.EventIntegration.EventFilter">
+            <summary>
+            Gets and sets the property EventFilter. 
+            <para>
+            The event integration filter.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.AppIntegrationsService.Model.EventIntegration.EventIntegrationArn">
+            <summary>
+            Gets and sets the property EventIntegrationArn. 
+            <para>
+            The Amazon Resource Name (ARN) of the event integration.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.AppIntegrationsService.Model.EventIntegration.Name">
+            <summary>
+            Gets and sets the property Name. 
+            <para>
+            The name of the event integration.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.AppIntegrationsService.Model.EventIntegration.Tags">
+            <summary>
+            Gets and sets the property Tags. 
+            <para>
+            The tags.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.AppIntegrationsService.Model.EventIntegrationAssociation">
+            <summary>
+            The Amazon AppIntegrations APIs are in preview release and are subject to change.
+            
+             
+            <para>
+            The event integration association.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.AppIntegrationsService.Model.EventIntegrationAssociation.ClientAssociationMetadata">
+            <summary>
+            Gets and sets the property ClientAssociationMetadata. 
+            <para>
+            The metadata associated with the client.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.AppIntegrationsService.Model.EventIntegrationAssociation.ClientId">
+            <summary>
+            Gets and sets the property ClientId. 
+            <para>
+            The identifier for the client that is associated with the event integration.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.AppIntegrationsService.Model.EventIntegrationAssociation.EventBridgeRuleName">
+            <summary>
+            Gets and sets the property EventBridgeRuleName. 
+            <para>
+            The name of the Eventbridge rule.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.AppIntegrationsService.Model.EventIntegrationAssociation.EventIntegrationAssociationArn">
+            <summary>
+            Gets and sets the property EventIntegrationAssociationArn. 
+            <para>
+            The Amazon Resource Name (ARN) for the event integration association.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.AppIntegrationsService.Model.EventIntegrationAssociation.EventIntegrationAssociationId">
+            <summary>
+            Gets and sets the property EventIntegrationAssociationId. 
+            <para>
+            The identifier for the event integration association.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.AppIntegrationsService.Model.EventIntegrationAssociation.EventIntegrationName">
+            <summary>
+            Gets and sets the property EventIntegrationName. 
+            <para>
+            The name of the event integration.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.AppIntegrationsService.Model.GetEventIntegrationRequest">
+            <summary>
+            Container for the parameters to the GetEventIntegration operation.
+            The Amazon AppIntegrations APIs are in preview release and are subject to change.
+            
+             
+            <para>
+            Return information about the event integration.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.AppIntegrationsService.Model.GetEventIntegrationRequest.Name">
+            <summary>
+            Gets and sets the property Name. 
+            <para>
+            The name of the event integration. 
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.AppIntegrationsService.Model.GetEventIntegrationResponse">
+            <summary>
+            This is the response object from the GetEventIntegration operation.
+            </summary>
+        </member>
+        <member name="P:Amazon.AppIntegrationsService.Model.GetEventIntegrationResponse.Description">
+            <summary>
+            Gets and sets the property Description. 
+            <para>
+            The description of the event integration.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.AppIntegrationsService.Model.GetEventIntegrationResponse.EventBridgeBus">
+            <summary>
+            Gets and sets the property EventBridgeBus. 
+            <para>
+            The Eventbridge bus.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.AppIntegrationsService.Model.GetEventIntegrationResponse.EventFilter">
+            <summary>
+            Gets and sets the property EventFilter. 
+            <para>
+            The event filter.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.AppIntegrationsService.Model.GetEventIntegrationResponse.EventIntegrationArn">
+            <summary>
+            Gets and sets the property EventIntegrationArn. 
+            <para>
+            The Amazon Resource Name (ARN) for the event integration.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.AppIntegrationsService.Model.GetEventIntegrationResponse.Name">
+            <summary>
+            Gets and sets the property Name. 
+            <para>
+            The name of the event integration. 
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.AppIntegrationsService.Model.GetEventIntegrationResponse.Tags">
+            <summary>
+            Gets and sets the property Tags. 
+            <para>
+            One or more tags.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.AppIntegrationsService.Model.InternalServiceErrorException">
+            <summary>
+            Request processing failed due to an error or failure with the service.
+            </summary>
+        </member>
+        <member name="M:Amazon.AppIntegrationsService.Model.InternalServiceErrorException.#ctor(System.String)">
+            <summary>
+            Constructs a new InternalServiceErrorException with the specified error
+            message.
+            </summary>
+            <param name="message">
+            Describes the error encountered.
+            </param>
+        </member>
+        <member name="M:Amazon.AppIntegrationsService.Model.InternalServiceErrorException.#ctor(System.String,System.Exception)">
+            <summary>
+            Construct instance of InternalServiceErrorException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.AppIntegrationsService.Model.InternalServiceErrorException.#ctor(System.Exception)">
+            <summary>
+            Construct instance of InternalServiceErrorException
+            </summary>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.AppIntegrationsService.Model.InternalServiceErrorException.#ctor(System.String,System.Exception,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of InternalServiceErrorException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.AppIntegrationsService.Model.InternalServiceErrorException.#ctor(System.String,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of InternalServiceErrorException
+            </summary>
+            <param name="message"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="T:Amazon.AppIntegrationsService.Model.Internal.MarshallTransformations.AccessDeniedExceptionUnmarshaller">
+            <summary>
+            Response Unmarshaller for AccessDeniedException Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.AppIntegrationsService.Model.Internal.MarshallTransformations.AccessDeniedExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.AppIntegrationsService.Model.Internal.MarshallTransformations.AccessDeniedExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,Amazon.Runtime.Internal.ErrorResponse)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <param name="errorResponse"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.AppIntegrationsService.Model.Internal.MarshallTransformations.AccessDeniedExceptionUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.AppIntegrationsService.Model.Internal.MarshallTransformations.CreateEventIntegrationRequestMarshaller">
+            <summary>
+            CreateEventIntegration Request Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.AppIntegrationsService.Model.Internal.MarshallTransformations.CreateEventIntegrationRequestMarshaller.Marshall(Amazon.Runtime.AmazonWebServiceRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.AppIntegrationsService.Model.Internal.MarshallTransformations.CreateEventIntegrationRequestMarshaller.Marshall(Amazon.AppIntegrationsService.Model.CreateEventIntegrationRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="publicRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.AppIntegrationsService.Model.Internal.MarshallTransformations.CreateEventIntegrationRequestMarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.AppIntegrationsService.Model.Internal.MarshallTransformations.CreateEventIntegrationResponseUnmarshaller">
+            <summary>
+            Response Unmarshaller for CreateEventIntegration operation
+            </summary>  
+        </member>
+        <member name="M:Amazon.AppIntegrationsService.Model.Internal.MarshallTransformations.CreateEventIntegrationResponseUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.AppIntegrationsService.Model.Internal.MarshallTransformations.CreateEventIntegrationResponseUnmarshaller.UnmarshallException(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,System.Exception,System.Net.HttpStatusCode)">
+            <summary>
+            Unmarshaller error response to exception.
+            </summary>  
+            <param name="context"></param>
+            <param name="innerException"></param>
+            <param name="statusCode"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.AppIntegrationsService.Model.Internal.MarshallTransformations.CreateEventIntegrationResponseUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.AppIntegrationsService.Model.Internal.MarshallTransformations.DeleteEventIntegrationRequestMarshaller">
+            <summary>
+            DeleteEventIntegration Request Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.AppIntegrationsService.Model.Internal.MarshallTransformations.DeleteEventIntegrationRequestMarshaller.Marshall(Amazon.Runtime.AmazonWebServiceRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.AppIntegrationsService.Model.Internal.MarshallTransformations.DeleteEventIntegrationRequestMarshaller.Marshall(Amazon.AppIntegrationsService.Model.DeleteEventIntegrationRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="publicRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.AppIntegrationsService.Model.Internal.MarshallTransformations.DeleteEventIntegrationRequestMarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.AppIntegrationsService.Model.Internal.MarshallTransformations.DeleteEventIntegrationResponseUnmarshaller">
+            <summary>
+            Response Unmarshaller for DeleteEventIntegration operation
+            </summary>  
+        </member>
+        <member name="M:Amazon.AppIntegrationsService.Model.Internal.MarshallTransformations.DeleteEventIntegrationResponseUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.AppIntegrationsService.Model.Internal.MarshallTransformations.DeleteEventIntegrationResponseUnmarshaller.UnmarshallException(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,System.Exception,System.Net.HttpStatusCode)">
+            <summary>
+            Unmarshaller error response to exception.
+            </summary>  
+            <param name="context"></param>
+            <param name="innerException"></param>
+            <param name="statusCode"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.AppIntegrationsService.Model.Internal.MarshallTransformations.DeleteEventIntegrationResponseUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.AppIntegrationsService.Model.Internal.MarshallTransformations.DuplicateResourceExceptionUnmarshaller">
+            <summary>
+            Response Unmarshaller for DuplicateResourceException Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.AppIntegrationsService.Model.Internal.MarshallTransformations.DuplicateResourceExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.AppIntegrationsService.Model.Internal.MarshallTransformations.DuplicateResourceExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,Amazon.Runtime.Internal.ErrorResponse)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <param name="errorResponse"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.AppIntegrationsService.Model.Internal.MarshallTransformations.DuplicateResourceExceptionUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.AppIntegrationsService.Model.Internal.MarshallTransformations.EventFilterMarshaller">
+            <summary>
+            EventFilter Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.AppIntegrationsService.Model.Internal.MarshallTransformations.EventFilterMarshaller.Marshall(Amazon.AppIntegrationsService.Model.EventFilter,Amazon.Runtime.Internal.Transform.JsonMarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="requestObject"></param>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="F:Amazon.AppIntegrationsService.Model.Internal.MarshallTransformations.EventFilterMarshaller.Instance">
+            <summary>
+            Singleton Marshaller.
+            </summary>  
+        </member>
+        <member name="T:Amazon.AppIntegrationsService.Model.Internal.MarshallTransformations.EventFilterUnmarshaller">
+            <summary>
+            Response Unmarshaller for EventFilter Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.AppIntegrationsService.Model.Internal.MarshallTransformations.EventFilterUnmarshaller.Amazon#Runtime#Internal#Transform#IUnmarshaller{Amazon#AppIntegrationsService#Model#EventFilter,Amazon#Runtime#Internal#Transform#XmlUnmarshallerContext}#Unmarshall(Amazon.Runtime.Internal.Transform.XmlUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.AppIntegrationsService.Model.Internal.MarshallTransformations.EventFilterUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.AppIntegrationsService.Model.Internal.MarshallTransformations.EventFilterUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.AppIntegrationsService.Model.Internal.MarshallTransformations.EventIntegrationAssociationUnmarshaller">
+            <summary>
+            Response Unmarshaller for EventIntegrationAssociation Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.AppIntegrationsService.Model.Internal.MarshallTransformations.EventIntegrationAssociationUnmarshaller.Amazon#Runtime#Internal#Transform#IUnmarshaller{Amazon#AppIntegrationsService#Model#EventIntegrationAssociation,Amazon#Runtime#Internal#Transform#XmlUnmarshallerContext}#Unmarshall(Amazon.Runtime.Internal.Transform.XmlUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.AppIntegrationsService.Model.Internal.MarshallTransformations.EventIntegrationAssociationUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.AppIntegrationsService.Model.Internal.MarshallTransformations.EventIntegrationAssociationUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.AppIntegrationsService.Model.Internal.MarshallTransformations.EventIntegrationUnmarshaller">
+            <summary>
+            Response Unmarshaller for EventIntegration Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.AppIntegrationsService.Model.Internal.MarshallTransformations.EventIntegrationUnmarshaller.Amazon#Runtime#Internal#Transform#IUnmarshaller{Amazon#AppIntegrationsService#Model#EventIntegration,Amazon#Runtime#Internal#Transform#XmlUnmarshallerContext}#Unmarshall(Amazon.Runtime.Internal.Transform.XmlUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.AppIntegrationsService.Model.Internal.MarshallTransformations.EventIntegrationUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.AppIntegrationsService.Model.Internal.MarshallTransformations.EventIntegrationUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.AppIntegrationsService.Model.Internal.MarshallTransformations.GetEventIntegrationRequestMarshaller">
+            <summary>
+            GetEventIntegration Request Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.AppIntegrationsService.Model.Internal.MarshallTransformations.GetEventIntegrationRequestMarshaller.Marshall(Amazon.Runtime.AmazonWebServiceRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.AppIntegrationsService.Model.Internal.MarshallTransformations.GetEventIntegrationRequestMarshaller.Marshall(Amazon.AppIntegrationsService.Model.GetEventIntegrationRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="publicRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.AppIntegrationsService.Model.Internal.MarshallTransformations.GetEventIntegrationRequestMarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.AppIntegrationsService.Model.Internal.MarshallTransformations.GetEventIntegrationResponseUnmarshaller">
+            <summary>
+            Response Unmarshaller for GetEventIntegration operation
+            </summary>  
+        </member>
+        <member name="M:Amazon.AppIntegrationsService.Model.Internal.MarshallTransformations.GetEventIntegrationResponseUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.AppIntegrationsService.Model.Internal.MarshallTransformations.GetEventIntegrationResponseUnmarshaller.UnmarshallException(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,System.Exception,System.Net.HttpStatusCode)">
+            <summary>
+            Unmarshaller error response to exception.
+            </summary>  
+            <param name="context"></param>
+            <param name="innerException"></param>
+            <param name="statusCode"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.AppIntegrationsService.Model.Internal.MarshallTransformations.GetEventIntegrationResponseUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.AppIntegrationsService.Model.Internal.MarshallTransformations.InternalServiceErrorExceptionUnmarshaller">
+            <summary>
+            Response Unmarshaller for InternalServiceErrorException Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.AppIntegrationsService.Model.Internal.MarshallTransformations.InternalServiceErrorExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.AppIntegrationsService.Model.Internal.MarshallTransformations.InternalServiceErrorExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,Amazon.Runtime.Internal.ErrorResponse)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <param name="errorResponse"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.AppIntegrationsService.Model.Internal.MarshallTransformations.InternalServiceErrorExceptionUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.AppIntegrationsService.Model.Internal.MarshallTransformations.InvalidRequestExceptionUnmarshaller">
+            <summary>
+            Response Unmarshaller for InvalidRequestException Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.AppIntegrationsService.Model.Internal.MarshallTransformations.InvalidRequestExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.AppIntegrationsService.Model.Internal.MarshallTransformations.InvalidRequestExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,Amazon.Runtime.Internal.ErrorResponse)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <param name="errorResponse"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.AppIntegrationsService.Model.Internal.MarshallTransformations.InvalidRequestExceptionUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.AppIntegrationsService.Model.Internal.MarshallTransformations.ListEventIntegrationAssociationsRequestMarshaller">
+            <summary>
+            ListEventIntegrationAssociations Request Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.AppIntegrationsService.Model.Internal.MarshallTransformations.ListEventIntegrationAssociationsRequestMarshaller.Marshall(Amazon.Runtime.AmazonWebServiceRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.AppIntegrationsService.Model.Internal.MarshallTransformations.ListEventIntegrationAssociationsRequestMarshaller.Marshall(Amazon.AppIntegrationsService.Model.ListEventIntegrationAssociationsRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="publicRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.AppIntegrationsService.Model.Internal.MarshallTransformations.ListEventIntegrationAssociationsRequestMarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.AppIntegrationsService.Model.Internal.MarshallTransformations.ListEventIntegrationAssociationsResponseUnmarshaller">
+            <summary>
+            Response Unmarshaller for ListEventIntegrationAssociations operation
+            </summary>  
+        </member>
+        <member name="M:Amazon.AppIntegrationsService.Model.Internal.MarshallTransformations.ListEventIntegrationAssociationsResponseUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.AppIntegrationsService.Model.Internal.MarshallTransformations.ListEventIntegrationAssociationsResponseUnmarshaller.UnmarshallException(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,System.Exception,System.Net.HttpStatusCode)">
+            <summary>
+            Unmarshaller error response to exception.
+            </summary>  
+            <param name="context"></param>
+            <param name="innerException"></param>
+            <param name="statusCode"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.AppIntegrationsService.Model.Internal.MarshallTransformations.ListEventIntegrationAssociationsResponseUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.AppIntegrationsService.Model.Internal.MarshallTransformations.ListEventIntegrationsRequestMarshaller">
+            <summary>
+            ListEventIntegrations Request Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.AppIntegrationsService.Model.Internal.MarshallTransformations.ListEventIntegrationsRequestMarshaller.Marshall(Amazon.Runtime.AmazonWebServiceRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.AppIntegrationsService.Model.Internal.MarshallTransformations.ListEventIntegrationsRequestMarshaller.Marshall(Amazon.AppIntegrationsService.Model.ListEventIntegrationsRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="publicRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.AppIntegrationsService.Model.Internal.MarshallTransformations.ListEventIntegrationsRequestMarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.AppIntegrationsService.Model.Internal.MarshallTransformations.ListEventIntegrationsResponseUnmarshaller">
+            <summary>
+            Response Unmarshaller for ListEventIntegrations operation
+            </summary>  
+        </member>
+        <member name="M:Amazon.AppIntegrationsService.Model.Internal.MarshallTransformations.ListEventIntegrationsResponseUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.AppIntegrationsService.Model.Internal.MarshallTransformations.ListEventIntegrationsResponseUnmarshaller.UnmarshallException(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,System.Exception,System.Net.HttpStatusCode)">
+            <summary>
+            Unmarshaller error response to exception.
+            </summary>  
+            <param name="context"></param>
+            <param name="innerException"></param>
+            <param name="statusCode"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.AppIntegrationsService.Model.Internal.MarshallTransformations.ListEventIntegrationsResponseUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.AppIntegrationsService.Model.Internal.MarshallTransformations.ListTagsForResourceRequestMarshaller">
+            <summary>
+            ListTagsForResource Request Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.AppIntegrationsService.Model.Internal.MarshallTransformations.ListTagsForResourceRequestMarshaller.Marshall(Amazon.Runtime.AmazonWebServiceRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.AppIntegrationsService.Model.Internal.MarshallTransformations.ListTagsForResourceRequestMarshaller.Marshall(Amazon.AppIntegrationsService.Model.ListTagsForResourceRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="publicRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.AppIntegrationsService.Model.Internal.MarshallTransformations.ListTagsForResourceRequestMarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.AppIntegrationsService.Model.Internal.MarshallTransformations.ListTagsForResourceResponseUnmarshaller">
+            <summary>
+            Response Unmarshaller for ListTagsForResource operation
+            </summary>  
+        </member>
+        <member name="M:Amazon.AppIntegrationsService.Model.Internal.MarshallTransformations.ListTagsForResourceResponseUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.AppIntegrationsService.Model.Internal.MarshallTransformations.ListTagsForResourceResponseUnmarshaller.UnmarshallException(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,System.Exception,System.Net.HttpStatusCode)">
+            <summary>
+            Unmarshaller error response to exception.
+            </summary>  
+            <param name="context"></param>
+            <param name="innerException"></param>
+            <param name="statusCode"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.AppIntegrationsService.Model.Internal.MarshallTransformations.ListTagsForResourceResponseUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.AppIntegrationsService.Model.Internal.MarshallTransformations.ResourceNotFoundExceptionUnmarshaller">
+            <summary>
+            Response Unmarshaller for ResourceNotFoundException Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.AppIntegrationsService.Model.Internal.MarshallTransformations.ResourceNotFoundExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.AppIntegrationsService.Model.Internal.MarshallTransformations.ResourceNotFoundExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,Amazon.Runtime.Internal.ErrorResponse)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <param name="errorResponse"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.AppIntegrationsService.Model.Internal.MarshallTransformations.ResourceNotFoundExceptionUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.AppIntegrationsService.Model.Internal.MarshallTransformations.ResourceQuotaExceededExceptionUnmarshaller">
+            <summary>
+            Response Unmarshaller for ResourceQuotaExceededException Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.AppIntegrationsService.Model.Internal.MarshallTransformations.ResourceQuotaExceededExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.AppIntegrationsService.Model.Internal.MarshallTransformations.ResourceQuotaExceededExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,Amazon.Runtime.Internal.ErrorResponse)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <param name="errorResponse"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.AppIntegrationsService.Model.Internal.MarshallTransformations.ResourceQuotaExceededExceptionUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.AppIntegrationsService.Model.Internal.MarshallTransformations.TagResourceRequestMarshaller">
+            <summary>
+            TagResource Request Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.AppIntegrationsService.Model.Internal.MarshallTransformations.TagResourceRequestMarshaller.Marshall(Amazon.Runtime.AmazonWebServiceRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.AppIntegrationsService.Model.Internal.MarshallTransformations.TagResourceRequestMarshaller.Marshall(Amazon.AppIntegrationsService.Model.TagResourceRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="publicRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.AppIntegrationsService.Model.Internal.MarshallTransformations.TagResourceRequestMarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.AppIntegrationsService.Model.Internal.MarshallTransformations.TagResourceResponseUnmarshaller">
+            <summary>
+            Response Unmarshaller for TagResource operation
+            </summary>  
+        </member>
+        <member name="M:Amazon.AppIntegrationsService.Model.Internal.MarshallTransformations.TagResourceResponseUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.AppIntegrationsService.Model.Internal.MarshallTransformations.TagResourceResponseUnmarshaller.UnmarshallException(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,System.Exception,System.Net.HttpStatusCode)">
+            <summary>
+            Unmarshaller error response to exception.
+            </summary>  
+            <param name="context"></param>
+            <param name="innerException"></param>
+            <param name="statusCode"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.AppIntegrationsService.Model.Internal.MarshallTransformations.TagResourceResponseUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.AppIntegrationsService.Model.Internal.MarshallTransformations.ThrottlingExceptionUnmarshaller">
+            <summary>
+            Response Unmarshaller for ThrottlingException Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.AppIntegrationsService.Model.Internal.MarshallTransformations.ThrottlingExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.AppIntegrationsService.Model.Internal.MarshallTransformations.ThrottlingExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,Amazon.Runtime.Internal.ErrorResponse)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <param name="errorResponse"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.AppIntegrationsService.Model.Internal.MarshallTransformations.ThrottlingExceptionUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.AppIntegrationsService.Model.Internal.MarshallTransformations.UntagResourceRequestMarshaller">
+            <summary>
+            UntagResource Request Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.AppIntegrationsService.Model.Internal.MarshallTransformations.UntagResourceRequestMarshaller.Marshall(Amazon.Runtime.AmazonWebServiceRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.AppIntegrationsService.Model.Internal.MarshallTransformations.UntagResourceRequestMarshaller.Marshall(Amazon.AppIntegrationsService.Model.UntagResourceRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="publicRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.AppIntegrationsService.Model.Internal.MarshallTransformations.UntagResourceRequestMarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.AppIntegrationsService.Model.Internal.MarshallTransformations.UntagResourceResponseUnmarshaller">
+            <summary>
+            Response Unmarshaller for UntagResource operation
+            </summary>  
+        </member>
+        <member name="M:Amazon.AppIntegrationsService.Model.Internal.MarshallTransformations.UntagResourceResponseUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.AppIntegrationsService.Model.Internal.MarshallTransformations.UntagResourceResponseUnmarshaller.UnmarshallException(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,System.Exception,System.Net.HttpStatusCode)">
+            <summary>
+            Unmarshaller error response to exception.
+            </summary>  
+            <param name="context"></param>
+            <param name="innerException"></param>
+            <param name="statusCode"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.AppIntegrationsService.Model.Internal.MarshallTransformations.UntagResourceResponseUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.AppIntegrationsService.Model.Internal.MarshallTransformations.UpdateEventIntegrationRequestMarshaller">
+            <summary>
+            UpdateEventIntegration Request Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.AppIntegrationsService.Model.Internal.MarshallTransformations.UpdateEventIntegrationRequestMarshaller.Marshall(Amazon.Runtime.AmazonWebServiceRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.AppIntegrationsService.Model.Internal.MarshallTransformations.UpdateEventIntegrationRequestMarshaller.Marshall(Amazon.AppIntegrationsService.Model.UpdateEventIntegrationRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="publicRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.AppIntegrationsService.Model.Internal.MarshallTransformations.UpdateEventIntegrationRequestMarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.AppIntegrationsService.Model.Internal.MarshallTransformations.UpdateEventIntegrationResponseUnmarshaller">
+            <summary>
+            Response Unmarshaller for UpdateEventIntegration operation
+            </summary>  
+        </member>
+        <member name="M:Amazon.AppIntegrationsService.Model.Internal.MarshallTransformations.UpdateEventIntegrationResponseUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.AppIntegrationsService.Model.Internal.MarshallTransformations.UpdateEventIntegrationResponseUnmarshaller.UnmarshallException(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,System.Exception,System.Net.HttpStatusCode)">
+            <summary>
+            Unmarshaller error response to exception.
+            </summary>  
+            <param name="context"></param>
+            <param name="innerException"></param>
+            <param name="statusCode"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.AppIntegrationsService.Model.Internal.MarshallTransformations.UpdateEventIntegrationResponseUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.AppIntegrationsService.Model.InvalidRequestException">
+            <summary>
+            The request is not valid.
+            </summary>
+        </member>
+        <member name="M:Amazon.AppIntegrationsService.Model.InvalidRequestException.#ctor(System.String)">
+            <summary>
+            Constructs a new InvalidRequestException with the specified error
+            message.
+            </summary>
+            <param name="message">
+            Describes the error encountered.
+            </param>
+        </member>
+        <member name="M:Amazon.AppIntegrationsService.Model.InvalidRequestException.#ctor(System.String,System.Exception)">
+            <summary>
+            Construct instance of InvalidRequestException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.AppIntegrationsService.Model.InvalidRequestException.#ctor(System.Exception)">
+            <summary>
+            Construct instance of InvalidRequestException
+            </summary>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.AppIntegrationsService.Model.InvalidRequestException.#ctor(System.String,System.Exception,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of InvalidRequestException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.AppIntegrationsService.Model.InvalidRequestException.#ctor(System.String,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of InvalidRequestException
+            </summary>
+            <param name="message"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="T:Amazon.AppIntegrationsService.Model.ListEventIntegrationAssociationsRequest">
+            <summary>
+            Container for the parameters to the ListEventIntegrationAssociations operation.
+            The Amazon AppIntegrations APIs are in preview release and are subject to change.
+            
+             
+            <para>
+            Returns a paginated list of event integration associations in the account. 
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.AppIntegrationsService.Model.ListEventIntegrationAssociationsRequest.EventIntegrationName">
+            <summary>
+            Gets and sets the property EventIntegrationName. 
+            <para>
+            The name of the event integration. 
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.AppIntegrationsService.Model.ListEventIntegrationAssociationsRequest.MaxResults">
+            <summary>
+            Gets and sets the property MaxResults. 
+            <para>
+            The maximum number of results to return per page.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.AppIntegrationsService.Model.ListEventIntegrationAssociationsRequest.NextToken">
+            <summary>
+            Gets and sets the property NextToken. 
+            <para>
+            The token for the next set of results. Use the value returned in the previous response
+            in the next request to retrieve the next set of results.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.AppIntegrationsService.Model.ListEventIntegrationAssociationsResponse">
+            <summary>
+            This is the response object from the ListEventIntegrationAssociations operation.
+            </summary>
+        </member>
+        <member name="P:Amazon.AppIntegrationsService.Model.ListEventIntegrationAssociationsResponse.EventIntegrationAssociations">
+            <summary>
+            Gets and sets the property EventIntegrationAssociations. 
+            <para>
+            The event integration associations.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.AppIntegrationsService.Model.ListEventIntegrationAssociationsResponse.NextToken">
+            <summary>
+            Gets and sets the property NextToken. 
+            <para>
+            If there are additional results, this is the token for the next set of results.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.AppIntegrationsService.Model.ListEventIntegrationsRequest">
+            <summary>
+            Container for the parameters to the ListEventIntegrations operation.
+            The Amazon AppIntegrations APIs are in preview release and are subject to change.
+            
+             
+            <para>
+            Returns a paginated list of event integrations in the account.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.AppIntegrationsService.Model.ListEventIntegrationsRequest.MaxResults">
+            <summary>
+            Gets and sets the property MaxResults. 
+            <para>
+            The maximum number of results to return per page.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.AppIntegrationsService.Model.ListEventIntegrationsRequest.NextToken">
+            <summary>
+            Gets and sets the property NextToken. 
+            <para>
+            The token for the next set of results. Use the value returned in the previous response
+            in the next request to retrieve the next set of results.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.AppIntegrationsService.Model.ListEventIntegrationsResponse">
+            <summary>
+            This is the response object from the ListEventIntegrations operation.
+            </summary>
+        </member>
+        <member name="P:Amazon.AppIntegrationsService.Model.ListEventIntegrationsResponse.EventIntegrations">
+            <summary>
+            Gets and sets the property EventIntegrations. 
+            <para>
+            The event integrations.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.AppIntegrationsService.Model.ListEventIntegrationsResponse.NextToken">
+            <summary>
+            Gets and sets the property NextToken. 
+            <para>
+            If there are additional results, this is the token for the next set of results.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.AppIntegrationsService.Model.ListTagsForResourceRequest">
+            <summary>
+            Container for the parameters to the ListTagsForResource operation.
+            The Amazon AppIntegrations APIs are in preview release and are subject to change.
+            
+             
+            <para>
+            Lists the tags for the specified resource.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.AppIntegrationsService.Model.ListTagsForResourceRequest.ResourceArn">
+            <summary>
+            Gets and sets the property ResourceArn. 
+            <para>
+            The Amazon Resource Name (ARN) of the resource. 
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.AppIntegrationsService.Model.ListTagsForResourceResponse">
+            <summary>
+            This is the response object from the ListTagsForResource operation.
+            </summary>
+        </member>
+        <member name="P:Amazon.AppIntegrationsService.Model.ListTagsForResourceResponse.Tags">
+            <summary>
+            Gets and sets the property Tags. 
+            <para>
+            Information about the tags.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.AppIntegrationsService.Model.ResourceNotFoundException">
+            <summary>
+            The specified resource was not found.
+            </summary>
+        </member>
+        <member name="M:Amazon.AppIntegrationsService.Model.ResourceNotFoundException.#ctor(System.String)">
+            <summary>
+            Constructs a new ResourceNotFoundException with the specified error
+            message.
+            </summary>
+            <param name="message">
+            Describes the error encountered.
+            </param>
+        </member>
+        <member name="M:Amazon.AppIntegrationsService.Model.ResourceNotFoundException.#ctor(System.String,System.Exception)">
+            <summary>
+            Construct instance of ResourceNotFoundException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.AppIntegrationsService.Model.ResourceNotFoundException.#ctor(System.Exception)">
+            <summary>
+            Construct instance of ResourceNotFoundException
+            </summary>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.AppIntegrationsService.Model.ResourceNotFoundException.#ctor(System.String,System.Exception,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of ResourceNotFoundException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.AppIntegrationsService.Model.ResourceNotFoundException.#ctor(System.String,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of ResourceNotFoundException
+            </summary>
+            <param name="message"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="T:Amazon.AppIntegrationsService.Model.ResourceQuotaExceededException">
+            <summary>
+            The allowed quota for the resource has been exceeded.
+            </summary>
+        </member>
+        <member name="M:Amazon.AppIntegrationsService.Model.ResourceQuotaExceededException.#ctor(System.String)">
+            <summary>
+            Constructs a new ResourceQuotaExceededException with the specified error
+            message.
+            </summary>
+            <param name="message">
+            Describes the error encountered.
+            </param>
+        </member>
+        <member name="M:Amazon.AppIntegrationsService.Model.ResourceQuotaExceededException.#ctor(System.String,System.Exception)">
+            <summary>
+            Construct instance of ResourceQuotaExceededException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.AppIntegrationsService.Model.ResourceQuotaExceededException.#ctor(System.Exception)">
+            <summary>
+            Construct instance of ResourceQuotaExceededException
+            </summary>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.AppIntegrationsService.Model.ResourceQuotaExceededException.#ctor(System.String,System.Exception,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of ResourceQuotaExceededException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.AppIntegrationsService.Model.ResourceQuotaExceededException.#ctor(System.String,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of ResourceQuotaExceededException
+            </summary>
+            <param name="message"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="T:Amazon.AppIntegrationsService.Model.TagResourceRequest">
+            <summary>
+            Container for the parameters to the TagResource operation.
+            The Amazon AppIntegrations APIs are in preview release and are subject to change.
+            
+             
+            <para>
+            Adds the specified tags to the specified resource.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.AppIntegrationsService.Model.TagResourceRequest.ResourceArn">
+            <summary>
+            Gets and sets the property ResourceArn. 
+            <para>
+            The Amazon Resource Name (ARN) of the resource.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.AppIntegrationsService.Model.TagResourceRequest.Tags">
+            <summary>
+            Gets and sets the property Tags. 
+            <para>
+            One or more tags. 
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.AppIntegrationsService.Model.TagResourceResponse">
+            <summary>
+            This is the response object from the TagResource operation.
+            </summary>
+        </member>
+        <member name="T:Amazon.AppIntegrationsService.Model.ThrottlingException">
+            <summary>
+            The throttling limit has been exceeded.
+            </summary>
+        </member>
+        <member name="M:Amazon.AppIntegrationsService.Model.ThrottlingException.#ctor(System.String)">
+            <summary>
+            Constructs a new ThrottlingException with the specified error
+            message.
+            </summary>
+            <param name="message">
+            Describes the error encountered.
+            </param>
+        </member>
+        <member name="M:Amazon.AppIntegrationsService.Model.ThrottlingException.#ctor(System.String,System.Exception)">
+            <summary>
+            Construct instance of ThrottlingException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.AppIntegrationsService.Model.ThrottlingException.#ctor(System.Exception)">
+            <summary>
+            Construct instance of ThrottlingException
+            </summary>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.AppIntegrationsService.Model.ThrottlingException.#ctor(System.String,System.Exception,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of ThrottlingException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.AppIntegrationsService.Model.ThrottlingException.#ctor(System.String,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of ThrottlingException
+            </summary>
+            <param name="message"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="T:Amazon.AppIntegrationsService.Model.UntagResourceRequest">
+            <summary>
+            Container for the parameters to the UntagResource operation.
+            The Amazon AppIntegrations APIs are in preview release and are subject to change.
+            
+             
+            <para>
+            Removes the specified tags from the specified resource.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.AppIntegrationsService.Model.UntagResourceRequest.ResourceArn">
+            <summary>
+            Gets and sets the property ResourceArn. 
+            <para>
+            The Amazon Resource Name (ARN) of the resource.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.AppIntegrationsService.Model.UntagResourceRequest.TagKeys">
+            <summary>
+            Gets and sets the property TagKeys. 
+            <para>
+            The tag keys.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.AppIntegrationsService.Model.UntagResourceResponse">
+            <summary>
+            This is the response object from the UntagResource operation.
+            </summary>
+        </member>
+        <member name="T:Amazon.AppIntegrationsService.Model.UpdateEventIntegrationRequest">
+            <summary>
+            Container for the parameters to the UpdateEventIntegration operation.
+            The Amazon AppIntegrations APIs are in preview release and are subject to change.
+            
+             
+            <para>
+            Updates the description of an event integration.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.AppIntegrationsService.Model.UpdateEventIntegrationRequest.Description">
+            <summary>
+            Gets and sets the property Description. 
+            <para>
+            The description of the event inegration.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.AppIntegrationsService.Model.UpdateEventIntegrationRequest.Name">
+            <summary>
+            Gets and sets the property Name. 
+            <para>
+            The name of the event integration.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.AppIntegrationsService.Model.UpdateEventIntegrationResponse">
+            <summary>
+            This is the response object from the UpdateEventIntegration operation.
+            </summary>
+        </member>
+        <member name="T:Amazon.AppIntegrationsService.AmazonAppIntegrationsServiceRequest">
+            <summary>
+            Base class for AppIntegrationsService operation requests.
+            </summary>
+        </member>
+        <member name="T:Amazon.AppIntegrationsService.AmazonAppIntegrationsServiceClient">
+             <summary>
+             Implementation for accessing AppIntegrationsService
+            
+             The Amazon AppIntegrations APIs are in preview release and are subject to change.
+             
+              
+             <para>
+             The Amazon AppIntegrations service enables you to configure and reuse connections
+             to external applications.
+             </para>
+              
+             <para>
+             For information about how you can use external applications with Amazon Connect, see
+             <a href="https://docs.aws.amazon.com/connect/latest/adminguide/crm.html">Set up pre-built
+             integrations</a> in the <i>Amazon Connect Administrator Guide</i>.
+             </para>
+             </summary>
+        </member>
+        <member name="M:Amazon.AppIntegrationsService.AmazonAppIntegrationsServiceClient.#ctor">
+             <summary>
+             Constructs AmazonAppIntegrationsServiceClient with the credentials loaded from the application's
+             default configuration, and if unsuccessful from the Instance Profile service on an EC2 instance.
+             
+             Example App.config with credentials set. 
+             <code>
+             &lt;?xml version="1.0" encoding="utf-8" ?&gt;
+             &lt;configuration&gt;
+                 &lt;appSettings&gt;
+                     &lt;add key="AWSProfileName" value="AWS Default"/&gt;
+                 &lt;/appSettings&gt;
+             &lt;/configuration&gt;
+             </code>
+            
+             </summary>
+        </member>
+        <member name="M:Amazon.AppIntegrationsService.AmazonAppIntegrationsServiceClient.#ctor(Amazon.RegionEndpoint)">
+             <summary>
+             Constructs AmazonAppIntegrationsServiceClient with the credentials loaded from the application's
+             default configuration, and if unsuccessful from the Instance Profile service on an EC2 instance.
+             
+             Example App.config with credentials set. 
+             <code>
+             &lt;?xml version="1.0" encoding="utf-8" ?&gt;
+             &lt;configuration&gt;
+                 &lt;appSettings&gt;
+                     &lt;add key="AWSProfileName" value="AWS Default"/&gt;
+                 &lt;/appSettings&gt;
+             &lt;/configuration&gt;
+             </code>
+            
+             </summary>
+             <param name="region">The region to connect.</param>
+        </member>
+        <member name="M:Amazon.AppIntegrationsService.AmazonAppIntegrationsServiceClient.#ctor(Amazon.AppIntegrationsService.AmazonAppIntegrationsServiceConfig)">
+             <summary>
+             Constructs AmazonAppIntegrationsServiceClient with the credentials loaded from the application's
+             default configuration, and if unsuccessful from the Instance Profile service on an EC2 instance.
+             
+             Example App.config with credentials set. 
+             <code>
+             &lt;?xml version="1.0" encoding="utf-8" ?&gt;
+             &lt;configuration&gt;
+                 &lt;appSettings&gt;
+                     &lt;add key="AWSProfileName" value="AWS Default"/&gt;
+                 &lt;/appSettings&gt;
+             &lt;/configuration&gt;
+             </code>
+            
+             </summary>
+             <param name="config">The AmazonAppIntegrationsServiceClient Configuration Object</param>
+        </member>
+        <member name="M:Amazon.AppIntegrationsService.AmazonAppIntegrationsServiceClient.#ctor(Amazon.Runtime.AWSCredentials)">
+            <summary>
+            Constructs AmazonAppIntegrationsServiceClient with AWS Credentials
+            </summary>
+            <param name="credentials">AWS Credentials</param>
+        </member>
+        <member name="M:Amazon.AppIntegrationsService.AmazonAppIntegrationsServiceClient.#ctor(Amazon.Runtime.AWSCredentials,Amazon.RegionEndpoint)">
+            <summary>
+            Constructs AmazonAppIntegrationsServiceClient with AWS Credentials
+            </summary>
+            <param name="credentials">AWS Credentials</param>
+            <param name="region">The region to connect.</param>
+        </member>
+        <member name="M:Amazon.AppIntegrationsService.AmazonAppIntegrationsServiceClient.#ctor(Amazon.Runtime.AWSCredentials,Amazon.AppIntegrationsService.AmazonAppIntegrationsServiceConfig)">
+            <summary>
+            Constructs AmazonAppIntegrationsServiceClient with AWS Credentials and an
+            AmazonAppIntegrationsServiceClient Configuration object.
+            </summary>
+            <param name="credentials">AWS Credentials</param>
+            <param name="clientConfig">The AmazonAppIntegrationsServiceClient Configuration Object</param>
+        </member>
+        <member name="M:Amazon.AppIntegrationsService.AmazonAppIntegrationsServiceClient.#ctor(System.String,System.String)">
+            <summary>
+            Constructs AmazonAppIntegrationsServiceClient with AWS Access Key ID and AWS Secret Key
+            </summary>
+            <param name="awsAccessKeyId">AWS Access Key ID</param>
+            <param name="awsSecretAccessKey">AWS Secret Access Key</param>
+        </member>
+        <member name="M:Amazon.AppIntegrationsService.AmazonAppIntegrationsServiceClient.#ctor(System.String,System.String,Amazon.RegionEndpoint)">
+            <summary>
+            Constructs AmazonAppIntegrationsServiceClient with AWS Access Key ID and AWS Secret Key
+            </summary>
+            <param name="awsAccessKeyId">AWS Access Key ID</param>
+            <param name="awsSecretAccessKey">AWS Secret Access Key</param>
+            <param name="region">The region to connect.</param>
+        </member>
+        <member name="M:Amazon.AppIntegrationsService.AmazonAppIntegrationsServiceClient.#ctor(System.String,System.String,Amazon.AppIntegrationsService.AmazonAppIntegrationsServiceConfig)">
+            <summary>
+            Constructs AmazonAppIntegrationsServiceClient with AWS Access Key ID, AWS Secret Key and an
+            AmazonAppIntegrationsServiceClient Configuration object. 
+            </summary>
+            <param name="awsAccessKeyId">AWS Access Key ID</param>
+            <param name="awsSecretAccessKey">AWS Secret Access Key</param>
+            <param name="clientConfig">The AmazonAppIntegrationsServiceClient Configuration Object</param>
+        </member>
+        <member name="M:Amazon.AppIntegrationsService.AmazonAppIntegrationsServiceClient.#ctor(System.String,System.String,System.String)">
+            <summary>
+            Constructs AmazonAppIntegrationsServiceClient with AWS Access Key ID and AWS Secret Key
+            </summary>
+            <param name="awsAccessKeyId">AWS Access Key ID</param>
+            <param name="awsSecretAccessKey">AWS Secret Access Key</param>
+            <param name="awsSessionToken">AWS Session Token</param>
+        </member>
+        <member name="M:Amazon.AppIntegrationsService.AmazonAppIntegrationsServiceClient.#ctor(System.String,System.String,System.String,Amazon.RegionEndpoint)">
+            <summary>
+            Constructs AmazonAppIntegrationsServiceClient with AWS Access Key ID and AWS Secret Key
+            </summary>
+            <param name="awsAccessKeyId">AWS Access Key ID</param>
+            <param name="awsSecretAccessKey">AWS Secret Access Key</param>
+            <param name="awsSessionToken">AWS Session Token</param>
+            <param name="region">The region to connect.</param>
+        </member>
+        <member name="M:Amazon.AppIntegrationsService.AmazonAppIntegrationsServiceClient.#ctor(System.String,System.String,System.String,Amazon.AppIntegrationsService.AmazonAppIntegrationsServiceConfig)">
+            <summary>
+            Constructs AmazonAppIntegrationsServiceClient with AWS Access Key ID, AWS Secret Key and an
+            AmazonAppIntegrationsServiceClient Configuration object. 
+            </summary>
+            <param name="awsAccessKeyId">AWS Access Key ID</param>
+            <param name="awsSecretAccessKey">AWS Secret Access Key</param>
+            <param name="awsSessionToken">AWS Session Token</param>
+            <param name="clientConfig">The AmazonAppIntegrationsServiceClient Configuration Object</param>
+        </member>
+        <member name="M:Amazon.AppIntegrationsService.AmazonAppIntegrationsServiceClient.CreateSigner">
+            <summary>
+            Creates the signer for the service.
+            </summary>
+        </member>
+        <member name="P:Amazon.AppIntegrationsService.AmazonAppIntegrationsServiceClient.ServiceMetadata">
+            <summary>
+            Capture metadata for the service.
+            </summary>
+        </member>
+        <member name="M:Amazon.AppIntegrationsService.AmazonAppIntegrationsServiceClient.Dispose(System.Boolean)">
+            <summary>
+            Disposes the service client.
+            </summary>
+        </member>
+        <member name="M:Amazon.AppIntegrationsService.AmazonAppIntegrationsServiceClient.CreateEventIntegrationAsync(Amazon.AppIntegrationsService.Model.CreateEventIntegrationRequest,System.Threading.CancellationToken)">
+            <summary>
+            The Amazon AppIntegrations APIs are in preview release and are subject to change.
+            
+             
+            <para>
+            Creates an EventIntegration, given a specified name, description, and a reference
+            to an Amazon Eventbridge bus in your account and a partner event source that will
+            push events to that bus. No objects are created in the your account, only metadata
+            that is persisted on the EventIntegration control plane.
+            </para>
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the CreateEventIntegration service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the CreateEventIntegration service method, as returned by AppIntegrationsService.</returns>
+            <exception cref="T:Amazon.AppIntegrationsService.Model.AccessDeniedException">
+            You do not have sufficient access to perform this action.
+            </exception>
+            <exception cref="T:Amazon.AppIntegrationsService.Model.DuplicateResourceException">
+            A resource with the specified name already exists.
+            </exception>
+            <exception cref="T:Amazon.AppIntegrationsService.Model.InternalServiceErrorException">
+            Request processing failed due to an error or failure with the service.
+            </exception>
+            <exception cref="T:Amazon.AppIntegrationsService.Model.InvalidRequestException">
+            The request is not valid.
+            </exception>
+            <exception cref="T:Amazon.AppIntegrationsService.Model.ResourceQuotaExceededException">
+            The allowed quota for the resource has been exceeded.
+            </exception>
+            <exception cref="T:Amazon.AppIntegrationsService.Model.ThrottlingException">
+            The throttling limit has been exceeded.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/appintegrations-2020-07-29/CreateEventIntegration">REST API Reference for CreateEventIntegration Operation</seealso>
+        </member>
+        <member name="M:Amazon.AppIntegrationsService.AmazonAppIntegrationsServiceClient.DeleteEventIntegrationAsync(Amazon.AppIntegrationsService.Model.DeleteEventIntegrationRequest,System.Threading.CancellationToken)">
+            <summary>
+            The Amazon AppIntegrations APIs are in preview release and are subject to change.
+            
+             
+            <para>
+            Deletes the specified existing event integration. If the event integration is associated
+            with clients, the request is rejected.
+            </para>
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the DeleteEventIntegration service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the DeleteEventIntegration service method, as returned by AppIntegrationsService.</returns>
+            <exception cref="T:Amazon.AppIntegrationsService.Model.AccessDeniedException">
+            You do not have sufficient access to perform this action.
+            </exception>
+            <exception cref="T:Amazon.AppIntegrationsService.Model.InternalServiceErrorException">
+            Request processing failed due to an error or failure with the service.
+            </exception>
+            <exception cref="T:Amazon.AppIntegrationsService.Model.InvalidRequestException">
+            The request is not valid.
+            </exception>
+            <exception cref="T:Amazon.AppIntegrationsService.Model.ResourceNotFoundException">
+            The specified resource was not found.
+            </exception>
+            <exception cref="T:Amazon.AppIntegrationsService.Model.ThrottlingException">
+            The throttling limit has been exceeded.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/appintegrations-2020-07-29/DeleteEventIntegration">REST API Reference for DeleteEventIntegration Operation</seealso>
+        </member>
+        <member name="M:Amazon.AppIntegrationsService.AmazonAppIntegrationsServiceClient.GetEventIntegrationAsync(Amazon.AppIntegrationsService.Model.GetEventIntegrationRequest,System.Threading.CancellationToken)">
+            <summary>
+            The Amazon AppIntegrations APIs are in preview release and are subject to change.
+            
+             
+            <para>
+            Return information about the event integration.
+            </para>
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the GetEventIntegration service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the GetEventIntegration service method, as returned by AppIntegrationsService.</returns>
+            <exception cref="T:Amazon.AppIntegrationsService.Model.AccessDeniedException">
+            You do not have sufficient access to perform this action.
+            </exception>
+            <exception cref="T:Amazon.AppIntegrationsService.Model.InternalServiceErrorException">
+            Request processing failed due to an error or failure with the service.
+            </exception>
+            <exception cref="T:Amazon.AppIntegrationsService.Model.InvalidRequestException">
+            The request is not valid.
+            </exception>
+            <exception cref="T:Amazon.AppIntegrationsService.Model.ResourceNotFoundException">
+            The specified resource was not found.
+            </exception>
+            <exception cref="T:Amazon.AppIntegrationsService.Model.ThrottlingException">
+            The throttling limit has been exceeded.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/appintegrations-2020-07-29/GetEventIntegration">REST API Reference for GetEventIntegration Operation</seealso>
+        </member>
+        <member name="M:Amazon.AppIntegrationsService.AmazonAppIntegrationsServiceClient.ListEventIntegrationAssociationsAsync(Amazon.AppIntegrationsService.Model.ListEventIntegrationAssociationsRequest,System.Threading.CancellationToken)">
+            <summary>
+            The Amazon AppIntegrations APIs are in preview release and are subject to change.
+            
+             
+            <para>
+            Returns a paginated list of event integration associations in the account. 
+            </para>
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the ListEventIntegrationAssociations service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the ListEventIntegrationAssociations service method, as returned by AppIntegrationsService.</returns>
+            <exception cref="T:Amazon.AppIntegrationsService.Model.AccessDeniedException">
+            You do not have sufficient access to perform this action.
+            </exception>
+            <exception cref="T:Amazon.AppIntegrationsService.Model.InternalServiceErrorException">
+            Request processing failed due to an error or failure with the service.
+            </exception>
+            <exception cref="T:Amazon.AppIntegrationsService.Model.InvalidRequestException">
+            The request is not valid.
+            </exception>
+            <exception cref="T:Amazon.AppIntegrationsService.Model.ResourceNotFoundException">
+            The specified resource was not found.
+            </exception>
+            <exception cref="T:Amazon.AppIntegrationsService.Model.ThrottlingException">
+            The throttling limit has been exceeded.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/appintegrations-2020-07-29/ListEventIntegrationAssociations">REST API Reference for ListEventIntegrationAssociations Operation</seealso>
+        </member>
+        <member name="M:Amazon.AppIntegrationsService.AmazonAppIntegrationsServiceClient.ListEventIntegrationsAsync(Amazon.AppIntegrationsService.Model.ListEventIntegrationsRequest,System.Threading.CancellationToken)">
+            <summary>
+            The Amazon AppIntegrations APIs are in preview release and are subject to change.
+            
+             
+            <para>
+            Returns a paginated list of event integrations in the account.
+            </para>
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the ListEventIntegrations service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the ListEventIntegrations service method, as returned by AppIntegrationsService.</returns>
+            <exception cref="T:Amazon.AppIntegrationsService.Model.AccessDeniedException">
+            You do not have sufficient access to perform this action.
+            </exception>
+            <exception cref="T:Amazon.AppIntegrationsService.Model.InternalServiceErrorException">
+            Request processing failed due to an error or failure with the service.
+            </exception>
+            <exception cref="T:Amazon.AppIntegrationsService.Model.InvalidRequestException">
+            The request is not valid.
+            </exception>
+            <exception cref="T:Amazon.AppIntegrationsService.Model.ThrottlingException">
+            The throttling limit has been exceeded.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/appintegrations-2020-07-29/ListEventIntegrations">REST API Reference for ListEventIntegrations Operation</seealso>
+        </member>
+        <member name="M:Amazon.AppIntegrationsService.AmazonAppIntegrationsServiceClient.ListTagsForResourceAsync(Amazon.AppIntegrationsService.Model.ListTagsForResourceRequest,System.Threading.CancellationToken)">
+            <summary>
+            The Amazon AppIntegrations APIs are in preview release and are subject to change.
+            
+             
+            <para>
+            Lists the tags for the specified resource.
+            </para>
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the ListTagsForResource service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the ListTagsForResource service method, as returned by AppIntegrationsService.</returns>
+            <exception cref="T:Amazon.AppIntegrationsService.Model.InternalServiceErrorException">
+            Request processing failed due to an error or failure with the service.
+            </exception>
+            <exception cref="T:Amazon.AppIntegrationsService.Model.InvalidRequestException">
+            The request is not valid.
+            </exception>
+            <exception cref="T:Amazon.AppIntegrationsService.Model.ResourceNotFoundException">
+            The specified resource was not found.
+            </exception>
+            <exception cref="T:Amazon.AppIntegrationsService.Model.ThrottlingException">
+            The throttling limit has been exceeded.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/appintegrations-2020-07-29/ListTagsForResource">REST API Reference for ListTagsForResource Operation</seealso>
+        </member>
+        <member name="M:Amazon.AppIntegrationsService.AmazonAppIntegrationsServiceClient.TagResourceAsync(Amazon.AppIntegrationsService.Model.TagResourceRequest,System.Threading.CancellationToken)">
+            <summary>
+            The Amazon AppIntegrations APIs are in preview release and are subject to change.
+            
+             
+            <para>
+            Adds the specified tags to the specified resource.
+            </para>
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the TagResource service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the TagResource service method, as returned by AppIntegrationsService.</returns>
+            <exception cref="T:Amazon.AppIntegrationsService.Model.InternalServiceErrorException">
+            Request processing failed due to an error or failure with the service.
+            </exception>
+            <exception cref="T:Amazon.AppIntegrationsService.Model.InvalidRequestException">
+            The request is not valid.
+            </exception>
+            <exception cref="T:Amazon.AppIntegrationsService.Model.ResourceNotFoundException">
+            The specified resource was not found.
+            </exception>
+            <exception cref="T:Amazon.AppIntegrationsService.Model.ThrottlingException">
+            The throttling limit has been exceeded.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/appintegrations-2020-07-29/TagResource">REST API Reference for TagResource Operation</seealso>
+        </member>
+        <member name="M:Amazon.AppIntegrationsService.AmazonAppIntegrationsServiceClient.UntagResourceAsync(Amazon.AppIntegrationsService.Model.UntagResourceRequest,System.Threading.CancellationToken)">
+            <summary>
+            The Amazon AppIntegrations APIs are in preview release and are subject to change.
+            
+             
+            <para>
+            Removes the specified tags from the specified resource.
+            </para>
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the UntagResource service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the UntagResource service method, as returned by AppIntegrationsService.</returns>
+            <exception cref="T:Amazon.AppIntegrationsService.Model.InternalServiceErrorException">
+            Request processing failed due to an error or failure with the service.
+            </exception>
+            <exception cref="T:Amazon.AppIntegrationsService.Model.InvalidRequestException">
+            The request is not valid.
+            </exception>
+            <exception cref="T:Amazon.AppIntegrationsService.Model.ResourceNotFoundException">
+            The specified resource was not found.
+            </exception>
+            <exception cref="T:Amazon.AppIntegrationsService.Model.ThrottlingException">
+            The throttling limit has been exceeded.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/appintegrations-2020-07-29/UntagResource">REST API Reference for UntagResource Operation</seealso>
+        </member>
+        <member name="M:Amazon.AppIntegrationsService.AmazonAppIntegrationsServiceClient.UpdateEventIntegrationAsync(Amazon.AppIntegrationsService.Model.UpdateEventIntegrationRequest,System.Threading.CancellationToken)">
+            <summary>
+            The Amazon AppIntegrations APIs are in preview release and are subject to change.
+            
+             
+            <para>
+            Updates the description of an event integration.
+            </para>
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the UpdateEventIntegration service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the UpdateEventIntegration service method, as returned by AppIntegrationsService.</returns>
+            <exception cref="T:Amazon.AppIntegrationsService.Model.AccessDeniedException">
+            You do not have sufficient access to perform this action.
+            </exception>
+            <exception cref="T:Amazon.AppIntegrationsService.Model.InternalServiceErrorException">
+            Request processing failed due to an error or failure with the service.
+            </exception>
+            <exception cref="T:Amazon.AppIntegrationsService.Model.InvalidRequestException">
+            The request is not valid.
+            </exception>
+            <exception cref="T:Amazon.AppIntegrationsService.Model.ResourceNotFoundException">
+            The specified resource was not found.
+            </exception>
+            <exception cref="T:Amazon.AppIntegrationsService.Model.ThrottlingException">
+            The throttling limit has been exceeded.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/appintegrations-2020-07-29/UpdateEventIntegration">REST API Reference for UpdateEventIntegration Operation</seealso>
+        </member>
+        <member name="T:Amazon.AppIntegrationsService.IAmazonAppIntegrationsService">
+             <summary>
+             Interface for accessing AppIntegrationsService
+            
+             The Amazon AppIntegrations APIs are in preview release and are subject to change.
+             
+              
+             <para>
+             The Amazon AppIntegrations service enables you to configure and reuse connections
+             to external applications.
+             </para>
+              
+             <para>
+             For information about how you can use external applications with Amazon Connect, see
+             <a href="https://docs.aws.amazon.com/connect/latest/adminguide/crm.html">Set up pre-built
+             integrations</a> in the <i>Amazon Connect Administrator Guide</i>.
+             </para>
+             </summary>
+        </member>
+        <member name="M:Amazon.AppIntegrationsService.IAmazonAppIntegrationsService.CreateEventIntegrationAsync(Amazon.AppIntegrationsService.Model.CreateEventIntegrationRequest,System.Threading.CancellationToken)">
+            <summary>
+            The Amazon AppIntegrations APIs are in preview release and are subject to change.
+            
+             
+            <para>
+            Creates an EventIntegration, given a specified name, description, and a reference
+            to an Amazon Eventbridge bus in your account and a partner event source that will
+            push events to that bus. No objects are created in the your account, only metadata
+            that is persisted on the EventIntegration control plane.
+            </para>
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the CreateEventIntegration service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the CreateEventIntegration service method, as returned by AppIntegrationsService.</returns>
+            <exception cref="T:Amazon.AppIntegrationsService.Model.AccessDeniedException">
+            You do not have sufficient access to perform this action.
+            </exception>
+            <exception cref="T:Amazon.AppIntegrationsService.Model.DuplicateResourceException">
+            A resource with the specified name already exists.
+            </exception>
+            <exception cref="T:Amazon.AppIntegrationsService.Model.InternalServiceErrorException">
+            Request processing failed due to an error or failure with the service.
+            </exception>
+            <exception cref="T:Amazon.AppIntegrationsService.Model.InvalidRequestException">
+            The request is not valid.
+            </exception>
+            <exception cref="T:Amazon.AppIntegrationsService.Model.ResourceQuotaExceededException">
+            The allowed quota for the resource has been exceeded.
+            </exception>
+            <exception cref="T:Amazon.AppIntegrationsService.Model.ThrottlingException">
+            The throttling limit has been exceeded.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/appintegrations-2020-07-29/CreateEventIntegration">REST API Reference for CreateEventIntegration Operation</seealso>
+        </member>
+        <member name="M:Amazon.AppIntegrationsService.IAmazonAppIntegrationsService.DeleteEventIntegrationAsync(Amazon.AppIntegrationsService.Model.DeleteEventIntegrationRequest,System.Threading.CancellationToken)">
+            <summary>
+            The Amazon AppIntegrations APIs are in preview release and are subject to change.
+            
+             
+            <para>
+            Deletes the specified existing event integration. If the event integration is associated
+            with clients, the request is rejected.
+            </para>
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the DeleteEventIntegration service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the DeleteEventIntegration service method, as returned by AppIntegrationsService.</returns>
+            <exception cref="T:Amazon.AppIntegrationsService.Model.AccessDeniedException">
+            You do not have sufficient access to perform this action.
+            </exception>
+            <exception cref="T:Amazon.AppIntegrationsService.Model.InternalServiceErrorException">
+            Request processing failed due to an error or failure with the service.
+            </exception>
+            <exception cref="T:Amazon.AppIntegrationsService.Model.InvalidRequestException">
+            The request is not valid.
+            </exception>
+            <exception cref="T:Amazon.AppIntegrationsService.Model.ResourceNotFoundException">
+            The specified resource was not found.
+            </exception>
+            <exception cref="T:Amazon.AppIntegrationsService.Model.ThrottlingException">
+            The throttling limit has been exceeded.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/appintegrations-2020-07-29/DeleteEventIntegration">REST API Reference for DeleteEventIntegration Operation</seealso>
+        </member>
+        <member name="M:Amazon.AppIntegrationsService.IAmazonAppIntegrationsService.GetEventIntegrationAsync(Amazon.AppIntegrationsService.Model.GetEventIntegrationRequest,System.Threading.CancellationToken)">
+            <summary>
+            The Amazon AppIntegrations APIs are in preview release and are subject to change.
+            
+             
+            <para>
+            Return information about the event integration.
+            </para>
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the GetEventIntegration service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the GetEventIntegration service method, as returned by AppIntegrationsService.</returns>
+            <exception cref="T:Amazon.AppIntegrationsService.Model.AccessDeniedException">
+            You do not have sufficient access to perform this action.
+            </exception>
+            <exception cref="T:Amazon.AppIntegrationsService.Model.InternalServiceErrorException">
+            Request processing failed due to an error or failure with the service.
+            </exception>
+            <exception cref="T:Amazon.AppIntegrationsService.Model.InvalidRequestException">
+            The request is not valid.
+            </exception>
+            <exception cref="T:Amazon.AppIntegrationsService.Model.ResourceNotFoundException">
+            The specified resource was not found.
+            </exception>
+            <exception cref="T:Amazon.AppIntegrationsService.Model.ThrottlingException">
+            The throttling limit has been exceeded.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/appintegrations-2020-07-29/GetEventIntegration">REST API Reference for GetEventIntegration Operation</seealso>
+        </member>
+        <member name="M:Amazon.AppIntegrationsService.IAmazonAppIntegrationsService.ListEventIntegrationAssociationsAsync(Amazon.AppIntegrationsService.Model.ListEventIntegrationAssociationsRequest,System.Threading.CancellationToken)">
+            <summary>
+            The Amazon AppIntegrations APIs are in preview release and are subject to change.
+            
+             
+            <para>
+            Returns a paginated list of event integration associations in the account. 
+            </para>
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the ListEventIntegrationAssociations service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the ListEventIntegrationAssociations service method, as returned by AppIntegrationsService.</returns>
+            <exception cref="T:Amazon.AppIntegrationsService.Model.AccessDeniedException">
+            You do not have sufficient access to perform this action.
+            </exception>
+            <exception cref="T:Amazon.AppIntegrationsService.Model.InternalServiceErrorException">
+            Request processing failed due to an error or failure with the service.
+            </exception>
+            <exception cref="T:Amazon.AppIntegrationsService.Model.InvalidRequestException">
+            The request is not valid.
+            </exception>
+            <exception cref="T:Amazon.AppIntegrationsService.Model.ResourceNotFoundException">
+            The specified resource was not found.
+            </exception>
+            <exception cref="T:Amazon.AppIntegrationsService.Model.ThrottlingException">
+            The throttling limit has been exceeded.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/appintegrations-2020-07-29/ListEventIntegrationAssociations">REST API Reference for ListEventIntegrationAssociations Operation</seealso>
+        </member>
+        <member name="M:Amazon.AppIntegrationsService.IAmazonAppIntegrationsService.ListEventIntegrationsAsync(Amazon.AppIntegrationsService.Model.ListEventIntegrationsRequest,System.Threading.CancellationToken)">
+            <summary>
+            The Amazon AppIntegrations APIs are in preview release and are subject to change.
+            
+             
+            <para>
+            Returns a paginated list of event integrations in the account.
+            </para>
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the ListEventIntegrations service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the ListEventIntegrations service method, as returned by AppIntegrationsService.</returns>
+            <exception cref="T:Amazon.AppIntegrationsService.Model.AccessDeniedException">
+            You do not have sufficient access to perform this action.
+            </exception>
+            <exception cref="T:Amazon.AppIntegrationsService.Model.InternalServiceErrorException">
+            Request processing failed due to an error or failure with the service.
+            </exception>
+            <exception cref="T:Amazon.AppIntegrationsService.Model.InvalidRequestException">
+            The request is not valid.
+            </exception>
+            <exception cref="T:Amazon.AppIntegrationsService.Model.ThrottlingException">
+            The throttling limit has been exceeded.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/appintegrations-2020-07-29/ListEventIntegrations">REST API Reference for ListEventIntegrations Operation</seealso>
+        </member>
+        <member name="M:Amazon.AppIntegrationsService.IAmazonAppIntegrationsService.ListTagsForResourceAsync(Amazon.AppIntegrationsService.Model.ListTagsForResourceRequest,System.Threading.CancellationToken)">
+            <summary>
+            The Amazon AppIntegrations APIs are in preview release and are subject to change.
+            
+             
+            <para>
+            Lists the tags for the specified resource.
+            </para>
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the ListTagsForResource service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the ListTagsForResource service method, as returned by AppIntegrationsService.</returns>
+            <exception cref="T:Amazon.AppIntegrationsService.Model.InternalServiceErrorException">
+            Request processing failed due to an error or failure with the service.
+            </exception>
+            <exception cref="T:Amazon.AppIntegrationsService.Model.InvalidRequestException">
+            The request is not valid.
+            </exception>
+            <exception cref="T:Amazon.AppIntegrationsService.Model.ResourceNotFoundException">
+            The specified resource was not found.
+            </exception>
+            <exception cref="T:Amazon.AppIntegrationsService.Model.ThrottlingException">
+            The throttling limit has been exceeded.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/appintegrations-2020-07-29/ListTagsForResource">REST API Reference for ListTagsForResource Operation</seealso>
+        </member>
+        <member name="M:Amazon.AppIntegrationsService.IAmazonAppIntegrationsService.TagResourceAsync(Amazon.AppIntegrationsService.Model.TagResourceRequest,System.Threading.CancellationToken)">
+            <summary>
+            The Amazon AppIntegrations APIs are in preview release and are subject to change.
+            
+             
+            <para>
+            Adds the specified tags to the specified resource.
+            </para>
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the TagResource service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the TagResource service method, as returned by AppIntegrationsService.</returns>
+            <exception cref="T:Amazon.AppIntegrationsService.Model.InternalServiceErrorException">
+            Request processing failed due to an error or failure with the service.
+            </exception>
+            <exception cref="T:Amazon.AppIntegrationsService.Model.InvalidRequestException">
+            The request is not valid.
+            </exception>
+            <exception cref="T:Amazon.AppIntegrationsService.Model.ResourceNotFoundException">
+            The specified resource was not found.
+            </exception>
+            <exception cref="T:Amazon.AppIntegrationsService.Model.ThrottlingException">
+            The throttling limit has been exceeded.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/appintegrations-2020-07-29/TagResource">REST API Reference for TagResource Operation</seealso>
+        </member>
+        <member name="M:Amazon.AppIntegrationsService.IAmazonAppIntegrationsService.UntagResourceAsync(Amazon.AppIntegrationsService.Model.UntagResourceRequest,System.Threading.CancellationToken)">
+            <summary>
+            The Amazon AppIntegrations APIs are in preview release and are subject to change.
+            
+             
+            <para>
+            Removes the specified tags from the specified resource.
+            </para>
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the UntagResource service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the UntagResource service method, as returned by AppIntegrationsService.</returns>
+            <exception cref="T:Amazon.AppIntegrationsService.Model.InternalServiceErrorException">
+            Request processing failed due to an error or failure with the service.
+            </exception>
+            <exception cref="T:Amazon.AppIntegrationsService.Model.InvalidRequestException">
+            The request is not valid.
+            </exception>
+            <exception cref="T:Amazon.AppIntegrationsService.Model.ResourceNotFoundException">
+            The specified resource was not found.
+            </exception>
+            <exception cref="T:Amazon.AppIntegrationsService.Model.ThrottlingException">
+            The throttling limit has been exceeded.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/appintegrations-2020-07-29/UntagResource">REST API Reference for UntagResource Operation</seealso>
+        </member>
+        <member name="M:Amazon.AppIntegrationsService.IAmazonAppIntegrationsService.UpdateEventIntegrationAsync(Amazon.AppIntegrationsService.Model.UpdateEventIntegrationRequest,System.Threading.CancellationToken)">
+            <summary>
+            The Amazon AppIntegrations APIs are in preview release and are subject to change.
+            
+             
+            <para>
+            Updates the description of an event integration.
+            </para>
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the UpdateEventIntegration service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the UpdateEventIntegration service method, as returned by AppIntegrationsService.</returns>
+            <exception cref="T:Amazon.AppIntegrationsService.Model.AccessDeniedException">
+            You do not have sufficient access to perform this action.
+            </exception>
+            <exception cref="T:Amazon.AppIntegrationsService.Model.InternalServiceErrorException">
+            Request processing failed due to an error or failure with the service.
+            </exception>
+            <exception cref="T:Amazon.AppIntegrationsService.Model.InvalidRequestException">
+            The request is not valid.
+            </exception>
+            <exception cref="T:Amazon.AppIntegrationsService.Model.ResourceNotFoundException">
+            The specified resource was not found.
+            </exception>
+            <exception cref="T:Amazon.AppIntegrationsService.Model.ThrottlingException">
+            The throttling limit has been exceeded.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/appintegrations-2020-07-29/UpdateEventIntegration">REST API Reference for UpdateEventIntegration Operation</seealso>
+        </member>
+    </members>
+</doc>
