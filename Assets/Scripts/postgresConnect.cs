@@ -25,10 +25,10 @@ namespace postgresConnect
         {
 
             WWWForm form = new WWWForm();
-            form.AddField("name", nameField.txt);
-            form.AddField("password", passwordField.txt);
+            form.AddField("name", "nameField.txt");
+            form.AddField("password", "passwordField.txt");
 
-            WWW www = new WWW(http://localhost/sqlconnect/register.php);
+            WWW www = new WWW("http://localhost/sqlconnect/register.php");
             yield return www;
 
             if (www.text == "0")
@@ -38,13 +38,13 @@ namespace postgresConnect
             }
             else
             {
-                Debug.Log("Failed to create user" + www.txt);
+                Debug.Log("Failed to create user" + "www.txt");
             }
         }
 
         public void VerifyInput()
         {
-            submitButton.interactable = (nameField.txt.length >= 8 && passwordField.text.Length >= 8);
+            submitButton.interactable = ("nameField.txt".Length >= 8 && "passwordField.txt".Length >= 8);
         }
     }
 }
