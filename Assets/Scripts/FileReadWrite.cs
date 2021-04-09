@@ -1,7 +1,5 @@
-<<<<<<< HEAD
+
 using System;
-=======
->>>>>>> df626e7 (awsTest)
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
