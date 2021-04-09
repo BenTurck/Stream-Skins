@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 /*DELETE
+=======
+>>>>>>> df626e7 (awsTest)
 using System;
 using UnityEngine;
 using UnityEngine.UI;
@@ -7,7 +10,11 @@ using System.Threading.Tasks;
 using Amazon.CognitoIdentityProvider;
 using Amazon.CognitoIdentityProvider.Model;
 using Amazon.Extensions.CognitoAuthentication;
+<<<<<<< HEAD
 DELETE*/
+=======
+
+>>>>>>> df626e7 (awsTest)
 /*
 Notes:
  * 
@@ -21,9 +28,16 @@ Notes:
  * 
 */
 
+<<<<<<< HEAD
 /*DELETE
 public class Cognito : MonoBehaviour
 {
+=======
+
+public class Cognito : MonoBehaviour
+{
+    /*
+>>>>>>> df626e7 (awsTest)
     // UI Buttons & Input Fields
     public Button LoginButton;
     public Button SignupButton;
@@ -183,6 +197,11 @@ public class Cognito : MonoBehaviour
         }
 
         return subId;
+<<<<<<< HEAD
     }
 }
 DELETE*/
+=======
+    }*/
+}//End of class
+>>>>>>> df626e7 (awsTest)
