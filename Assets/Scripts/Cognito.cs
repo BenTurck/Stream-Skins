@@ -21,9 +21,6 @@ Notes:
 */
 public class Cognito : MonoBehaviour
 {
-
-
-  
         /*
         // UI Buttons & Input Fields
         public Button LoginButton;
@@ -189,5 +186,4 @@ public class Cognito : MonoBehaviour
     }
 
         */
-    
 }//End of class

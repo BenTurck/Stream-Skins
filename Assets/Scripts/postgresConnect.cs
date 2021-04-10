@@ -44,7 +44,7 @@ namespace postgresConnect
 
         public void VerifyInput()
         {
-            submitButton.interactable = ("nameField.txt".Length >= 8 && "passwordField.txt".Length >= 8);
+            submitButton.interactable = ("nameField.txt".Length >= 8 && "passwordField.text".Length >= 8);
         }
     }
 }
