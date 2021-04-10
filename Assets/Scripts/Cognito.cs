@@ -183,7 +183,7 @@ public class Cognito : MonoBehaviour
             return subId;
 
         }
-    }
+    
 
         */
 }//End of class
