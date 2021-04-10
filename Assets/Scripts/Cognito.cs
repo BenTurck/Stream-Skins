@@ -21,7 +21,7 @@ Notes:
 */
 public class Cognito : MonoBehaviour
 {
-        /*
+      /*  
         // UI Buttons & Input Fields
         public Button LoginButton;
         public Button SignupButton;
@@ -183,7 +183,7 @@ public class Cognito : MonoBehaviour
             return subId;
 
         }
-    
+    */
 
-        */
+        
 }//End of class
