@@ -396,7 +396,6 @@ GameObject:
   - component: {fileID: 218956885}
   - component: {fileID: 218956884}
   - component: {fileID: 218956883}
-  - component: {fileID: 218956886}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -469,18 +468,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &218956886
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 218956882}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fd8d196c1c5493d49bf14a9cb6a280fb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &401782097
 GameObject:
   m_ObjectHideFlags: 0
@@ -762,7 +749,6 @@ GameObject:
   - component: {fileID: 647426169}
   - component: {fileID: 647426168}
   - component: {fileID: 647426167}
-  - component: {fileID: 647426166}
   m_Layer: 5
   m_Name: Sign Up Button
   m_TagString: Untagged
@@ -790,18 +776,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: -160}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &647426166
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 647426164}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fd8d196c1c5493d49bf14a9cb6a280fb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &647426167
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -872,7 +846,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 647426166}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: AWS, Assembly-CSharp
         m_MethodName: SignupButton
         m_Mode: 1
@@ -2033,7 +2007,7 @@ MonoBehaviour:
   m_OnEndEdit:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 218956886}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: AWS, Assembly-CSharp
         m_MethodName: GetSignupPassword
         m_Mode: 0
@@ -2405,7 +2379,7 @@ MonoBehaviour:
   m_OnEndEdit:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 218956886}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: AWS, Assembly-CSharp
         m_MethodName: GetSignupEmail
         m_Mode: 0
