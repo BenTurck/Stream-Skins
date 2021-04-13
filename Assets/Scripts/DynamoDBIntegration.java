@@ -15,7 +15,6 @@
 }
 
 var credentials = new CognitoAWSCredentials(IDENTITY_POOL_ID, RegionEndpoint.USEast1);  //IDENTITY_POOL_ID
-
 AmazonDynamoDBClient client = new AmazonDynamoDBClient(credentials);
 DynamoDBContext Context = new DynamoDBContext(client);
 
@@ -23,25 +22,19 @@ DynamoDBContext Context = new DynamoDBContext(client);
 Return Information from table
 */
 
-resultText.text +=("\n*** Retrieving table information ***\n");
+resultText.text +=(" Retrieving table information:   ");
 
-       var request = new DescribeTableRequest
-       {
-           TableName = @"ProductCatalog"
-       };
-       Client.DescribeTableAsync(request, (result) =>
-       {
-               if (result.Exception != null)
-               {
+       var request = new DescribeTableRequest { TableName = @"ProductCatalog" };
+       Client.DescribeTableAsync(request, (result) => {
+               if (result.Exception != null) {
                        resultText.text += result.Exception.Message;
                        Debug.Log(result.Exception);
                        return;
                }
-               var response = result.Response;
-               TableDescription description = response.Table;
-               resultText.text += ("TableName: " + description.TableName + "\n");
-               resultText.text += ("Items Within Database: " + description.ItemCount + "\n");
-
+              var response = result.Response;
+              TableDescription description = response.Table;
+              resultText.text += ("TableName: " + description.TableName + "\n");
+              resultText.text += ("Items Within Database: " + description.ItemCount + "\n");
        }, null);
    }
    
@@ -50,9 +43,8 @@ resultText.text +=("\n*** Retrieving table information ***\n");
 */
 
 [DynamoDBTable("ProductCatalog")]
-    public class newUSER
-    {
-        [DynamoDBHashKey]   // Hash key.
+    public class newUSER {
+        [DynamoDBHashKey]   //ID Hash Key to recieve the rest of the data.
         public int ID { 
             get;
             set; 
@@ -78,8 +70,7 @@ resultText.text +=("\n*** Retrieving table information ***\n");
     }
     
 //CREATE NEW USER
-
-private void PerformCreateOperation() {
+private void createNewUser() {
     User myUser = new User {
         ID = UserID,
         Email = "Bob12345@yahoo.com",
@@ -88,8 +79,9 @@ private void PerformCreateOperation() {
     };
     // Save the user.
     Context.SaveAsync(myUser,(result)=> {
-        if(result.Exception == null)
+        if(result.Exception == (null) ) {
             resultText.text += @"User Saved";
+        }
     });
 }
 
