@@ -14,8 +14,8 @@ public class CredentialsManager
 
     // Cognito Credentials Variables
     public const string identityPool = "us-east-2:a4ab9b92-c2b6-4862-9659-72afb73baa68";
-    public static string userPoolId = "us-east-2_g3AZifJpC";
-    public static string appClientId = "ak0s648o4vf8mc7hcakvlcnsi";
+    public static string userPoolId = "us-east-2_G2w84b9Xj";
+    public static string appClientId = "5kbiqo10jp6nhkba78ikd2ddvk";
 
     // Initialize the Amazon Cognito credentials provider
     public static CognitoAWSCredentials credentials = new CognitoAWSCredentials(

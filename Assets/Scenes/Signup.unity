@@ -2323,7 +2323,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25966c1352ae84941ad89638cae5262e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LoginButton: {fileID: 0}
+  LoginButton: {fileID: 1147096383}
   SignupButton: {fileID: 610964934}
   EmailField: {fileID: 0}
   SignupPasswordField: {fileID: 1658891007}

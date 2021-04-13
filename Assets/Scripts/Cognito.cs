@@ -35,7 +35,7 @@ public class Cognito : MonoBehaviour
     public static string jwt;
 
     bool loginSuccessful;
-
+    int index;
         
 
 
@@ -46,11 +46,17 @@ public class Cognito : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
         LoginButton.onClick.AddListener(Login);
         SignupButton.onClick.AddListener(Signup);
 
 
         loginSuccessful = false;
+    }
+
+    public void twolistener()
+    {
+
     }
 
     public void ttest(String tdata)
@@ -63,6 +69,8 @@ public class Cognito : MonoBehaviour
     {
         _ = Login_User();
 
+        Debug.Log("You have entered the login function");
+
         // Load Panels
         MenuManager.Instance.Close_Login_Panel();
         MenuManager.Instance.Load_Recommendations_Panel();
@@ -71,14 +79,19 @@ public class Cognito : MonoBehaviour
     public void Signup()
     {
         _ = Signup_Method_Async();
+
+        Debug.Log("You have entered the signup function");
     }
 
     //Method that creates a new Cognito user
     private async Task Signup_Method_Async()
     {
-        string userName = SignupUsernameField.text;
-        string passWord = SignupPasswordField.text;
-        string email = EmailField.text;
+
+        Debug.Log("You have entered the Signup_Method_Async function");
+
+        string userName = "TestUserKillMe";//SignupUsernameField.text;
+        string passWord = "Wichtig090!";//SignupPasswordField.text;
+        string email = "gamerguy622@yahoo.com";//EmailField.text;
 
         SignUpRequest signUpRequest = new SignUpRequest()
         {
