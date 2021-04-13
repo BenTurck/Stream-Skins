@@ -1574,7 +1574,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LoginButton: {fileID: 579714698}
-  SignupButton: {fileID: 0}
+  SignupButton: {fileID: 1328061719}
   EmailField: {fileID: 0}
   SignupPasswordField: {fileID: 0}
   SignupUsernameField: {fileID: 0}
