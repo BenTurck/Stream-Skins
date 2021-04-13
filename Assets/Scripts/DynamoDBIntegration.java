@@ -91,21 +91,6 @@ private void PerformCreateOperation()
 
 
 
-//retrieve method
-//Update method
-//delete user method
-
-
-
-
-
-
-
-
-
-
-
-   
-   
-   
-   
+//retrieve method needed
+//Update method needed
+//delete user method needed
