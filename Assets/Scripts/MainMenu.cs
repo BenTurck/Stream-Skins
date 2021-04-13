@@ -58,35 +58,3 @@ public class MainMenu : MonoBehaviour
 }
 
 
-public class Uploader : MonoBehaviour // We will be switching from WinSCP to AWS
-{
-	public string FTPHost = "66.195.8.98";
-	//PLEASE KEEP IN MIND: due to campus servers own settings, if you use this program on campus, the IP needs to be 10.19.50.7
-	public string FTPUserName = "winters828";
-	public string FTPPassword = "712194828";
-	public string FTPPort = "22"; 
-	public string FilePath;
-
-	public void UploadFile()
-	{
-
-
-
-	}
-
-	void OnFileUploadProgressChanged(object sender, UploadProgressChangedEventArgs e)
-	{
-		Debug.Log("Uploading Progreess: " + e.ProgressPercentage);
-	}
-
-	void OnFileUploadCompleted(object sender, UploadFileCompletedEventArgs e)
-	{
-		Debug.Log("File Uploaded");
-	}
-
-	void Start()
-	{
-		UploadFile();
-	}
-}
-

@@ -89,9 +89,9 @@ public class Cognito : MonoBehaviour
 
         Debug.Log("You have entered the Signup_Method_Async function");
 
-        string userName = "TestUserKillMe";//SignupUsernameField.text;
+        string userName = "SuperCoolGuy!";//SignupUsernameField.text;
         string passWord = "Wichtig090!";//SignupPasswordField.text;
-        string email = "gamerguy622@yahoo.com";//EmailField.text;
+        string email = "throwawaylater090@yahoo.com";//EmailField.text;
 
         SignUpRequest signUpRequest = new SignUpRequest()
         {
