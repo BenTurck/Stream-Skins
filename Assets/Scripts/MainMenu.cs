@@ -43,10 +43,13 @@ public class MainMenu : MonoBehaviour
 	{
 		SceneManager.LoadScene(7); // Loads specified scene
 	}
-	
-	public void Assets ()
+	public void Stats()
 	{
 		SceneManager.LoadScene(8); // Loads specified scene
+	}
+	public void Assets ()
+	{
+		SceneManager.LoadScene(9); // Loads specified scene
 	}
 
 	public void Quit ()
