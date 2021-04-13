@@ -13,8 +13,8 @@
     "Resource": "arn:aws:dynamodb:us-east-2:330789948177:table/User"
   }]
 }
-
-var credentials = new CognitoAWSCredentials(IDENTITY_POOL_ID, RegionEndpoint.USEast1);  //IDENTITY_POOL_ID
+//creating client
+var credentials = new CognitoAWSCredentials(ID, RegionEndpoint.USEast1);  //IDENTITY_POOL_ID
 AmazonDynamoDBClient client = new AmazonDynamoDBClient(credentials);
 DynamoDBContext Context = new DynamoDBContext(client);
 
@@ -42,8 +42,8 @@ resultText.text +=(" Retrieving table information:   ");
   METHOD TO SAVE AN OBJECT
 */
 
-[DynamoDBTable("ProductCatalog")]
-    public class newUSER {
+[DynamoDBTable("UserRecords")]
+    public class User {
         [DynamoDBHashKey]   //ID Hash Key to recieve the rest of the data.
         public int ID { 
             get;
