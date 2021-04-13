@@ -69,10 +69,12 @@ resultText.text +=("\n*** Retrieving table information ***\n");
         public string EncryptedPassword { get; set; }
         
     }
+    
+//CREATE NEW USER
 
 private void PerformCreateOperation()
 {
-    Book myBook = new Book
+    User myUser = new User
     {
         ID = UserID,
         EMAIL = "Bob12345@yahoo.com",
@@ -81,11 +83,20 @@ private void PerformCreateOperation()
     };
 
     // Save the user.
-    Context.SaveAsync(User,(result)=>{
+    Context.SaveAsync(myUser,(result)=>{
         if(result.Exception == null)
             resultText.text += @"User Saved";
     });
 }
+
+
+
+//retrieve method
+//Update method
+//delete user method
+
+
+
 
 
 
