@@ -5,31 +5,31 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Menu.unity
     guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Valorant.unity
     guid: 24c0003e9516c89439dc52bf98458c1d
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Overwatch.unity
     guid: 79c14f82ce4af2b49b15e23b81f2fced
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SmashBros.unity
     guid: 3f87141abc91e0548bdec756844fa506
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/LeagueofLegends.unity
     guid: 147eb7ad2cf2baf439356f744ad856ef
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Custom.unity
     guid: 626b95b426e9cd942a2d8fd80d3ab5fb
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Login.unity
     guid: 546a0fe8b3ee0504fb8d236938c7c0cf
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Signup.unity
     guid: 2f053ea2c7e60ea459d8ef9dc32442ff
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Stats.unity
     guid: e3660dc84fa91214dbe51f16cd71e8a4
   - enabled: 1
