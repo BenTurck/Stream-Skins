@@ -8,16 +8,20 @@ using System.IO;
 
 public class Incremental : MonoBehaviour
 {
+
+
+
     public int Value = 9;
-    public Text TextObject = null;
+    public InputField TextObject = null;
     public string maxValue = "9";
     public string minValue = "0";
-
+    public string input;
     public void Increment()
     {
         if (TextObject != null && TextObject.text != maxValue)
         {
             ++Value;
+            input = Value.ToString();
             TextObject.text = Value.ToString();
         }
 
@@ -28,8 +32,17 @@ public class Incremental : MonoBehaviour
         if (TextObject != null && TextObject.text != minValue)
         {
             --Value;
+            input = Value.ToString();
             TextObject.text = Value.ToString();
         }
 
+    }
+    public void Test(String t)
+    {
+        input = t;
+        input = Value.ToString();
+        Value = Convert.ToInt32(TextObject.text);
+        //TextObject.text = Value.ToString();
+        Debug.Log(Value);
     }
 }

@@ -11,7 +11,9 @@ public class FileReadWrite : MonoBehaviour
 	public Dropdown ddInput;
 	private string homeinput;
 	public int Value = 9;
-	public Text TextObject = null;
+	public InputField TextObject = null;
+	public string input;
+
 
 	void Start()
 	{
@@ -160,8 +162,9 @@ public class FileReadWrite : MonoBehaviour
 		if (TextObject != null && TextObject.text != maxValue)
 		{
 			++Value;
+			input = Value.ToString();
 			TextObject.text = Value.ToString();
-			Debug.Log(TextObject.text);
+			Debug.Log("Increment: " + TextObject.text);
 			File.WriteAllText(path, TextObject.text);
 		}
 
@@ -173,10 +176,20 @@ public class FileReadWrite : MonoBehaviour
 		if (TextObject != null && TextObject.text != minValue)
 		{
 			--Value;
+			input = Value.ToString();
 			TextObject.text = Value.ToString();
-			Debug.Log(TextObject.text);
+			Debug.Log("Decrement: " + TextObject.text);
 			File.WriteAllText(path, TextObject.text);
 		}
 
+	}
+	public void Test(String t)
+	{
+		string path = "Assets/Games/Smash Bros/Home Team Stocks.txt";
+		input = t;
+		input = Value.ToString();
+		Value = Convert.ToInt32(TextObject.text);
+		Debug.Log("String: " + Value);
+		File.WriteAllText(path, TextObject.text);
 	}
 }
