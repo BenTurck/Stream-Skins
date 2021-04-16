@@ -19,6 +19,7 @@ public class DialogueTrigger : MonoBehaviour
 
     public void TriggerDialogue()
     {
+        //The trigger calls on the dialong script onclick 
         FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
     }
 }
