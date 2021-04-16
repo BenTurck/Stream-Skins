@@ -8,6 +8,7 @@ public class DialogueManager : MonoBehaviour
     public Text headertext;
     public Text bodytext;
     public Vector3 pos;
+    public bool down = true;
 
     public void StartDialogue(Dialogue dialogue)
     {
@@ -16,10 +17,12 @@ public class DialogueManager : MonoBehaviour
 
         //This will control the movement of the dialogue box
         //You need to take pos out, change it and put it back in.
-        pos = transform.position;
-        Debug.Log("Position: " + pos);
-        pos.y += 850;
-        transform.position = pos;
+        if(down)
+            popup();
+        
+      
+
+
 
         signupsucc();
 
@@ -29,8 +32,22 @@ public class DialogueManager : MonoBehaviour
 
     }// End of StartDialogue 
 
+    public void popup()
+    {
+        down = false;
+
+        pos = transform.position;
+        Debug.Log("Position: " + pos);
+        pos.y += 850;
+        transform.position = pos;
+    }
+
+
+    //aka going down
     public void contbutton()
     {
+        down = true;
+
         pos = transform.position;
         Debug.Log("Position: " + pos);
         pos.y += -850;
