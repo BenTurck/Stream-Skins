@@ -1308,7 +1308,7 @@ GameObject:
   - component: {fileID: 997768465}
   - component: {fileID: 997768464}
   m_Layer: 0
-  m_Name: Button
+  m_Name: Continue Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1377,7 +1377,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 997768465}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1163876783}
+        m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
+        m_MethodName: contbutton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &997768465
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1882,7 +1894,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1163876780}
-  - component: {fileID: 1163876779}
   - component: {fileID: 1163876782}
   - component: {fileID: 1163876781}
   - component: {fileID: 1163876783}
@@ -1893,20 +1904,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1163876779
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1163876778}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d9814312a858a0c44a43c9d242198724, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  headertext: {fileID: 0}
-  bodytext: {fileID: 0}
 --- !u!224 &1163876780
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1926,7 +1923,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -410, y: -743}
+  m_AnchoredPosition: {x: 0.0000036359, y: -715}
   m_SizeDelta: {x: 1100, y: 350}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1163876781
@@ -1981,6 +1978,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   headertext: {fileID: 2131761526}
   bodytext: {fileID: 1410157411}
+  pos: {x: 0, y: 0, z: 0}
 --- !u!1 &1201175064
 GameObject:
   m_ObjectHideFlags: 0
