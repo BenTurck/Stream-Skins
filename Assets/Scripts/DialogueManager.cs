@@ -10,38 +10,48 @@ public class DialogueManager : MonoBehaviour
     public Vector3 pos;
     public bool down = true;
 
+    //To be used to reference status in Cognito 
+    int DBN = 0; //used to set Dialogue Box Number
+
+    //What happens when the trigger is triggered (login or sign up button)
     public void StartDialogue(Dialogue dialogue)
     {
-        //Here we need to decide what message we want to send
+      
+
+        Cognito obj = new Cognito();
+        //obj.ttest("joggers");
+
 
 
         //This will control the movement of the dialogue box
-        //You need to take pos out, change it and put it back in.
-        if(down)
+        if(down) //If it's down it needs to pop up with a message 
             popup();
         
-      
-
-
-
-        signupsucc();
-
-
 
         
 
     }// End of StartDialogue 
 
+    public void ttest(string tdata)
+    {
+        Debug.Log(tdata);
+
+    }
+
     public void popup()
     {
         down = false;
 
+        //Pop up will need a place to update and set the proper message that pops up
+        //right here...
+
+
+        //You need to take pos out, change it and put it back in.
         pos = transform.position;
-        Debug.Log("Position: " + pos);
+        //Debug.Log("Position: " + pos);
         pos.y += 850;
         transform.position = pos;
     }
-
 
     //aka going down
     public void contbutton()
@@ -49,19 +59,15 @@ public class DialogueManager : MonoBehaviour
         down = true;
 
         pos = transform.position;
-        Debug.Log("Position: " + pos);
+        //Debug.Log("Position: " + pos);
         pos.y += -850;
         transform.position = pos;
 
     }
 
-    public void changePos()
-    {
-       
-    }
 
-
-    // Functions that call each change in dialogue to be used as you want.
+    //---------------- Change Dialogue box text ------------------------------------
+    
     public void signupsucc()
     {
         //If SIGN UP was SUCCESSFUL 
@@ -90,6 +96,21 @@ public class DialogueManager : MonoBehaviour
         headertext.text = "Login failed";
         bodytext.text = "Please check to make sure your password is right and try again.";
     }
+
+    //---------------- Setters and Getters ------------------------------------
+
+    //Mutator
+    public void setDBN(int DBN)
+    {
+        this.DBN = DBN; 
+    }
+
+    //Accessor
+    public int getDBN()
+    {
+        return DBN;
+    }
+
 
 }// End of class
 

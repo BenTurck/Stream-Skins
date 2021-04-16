@@ -11,13 +11,15 @@ using Amazon.Extensions.CognitoAuthentication;
 /*
 Notes:
  * 
- * - Read the rest of the SDK guide https://serverless-game-analytics.workshop.aws/en/cognito/code.html
- * -a. Try to get information from AWS to Cognito
- * -b. If you can't do 'a', Try to move all of these variables 
- * over to AWS.cs
+ * Where I left off. 
+ * I need to create objects of the other class and change the dialogueManager int value
+ * to reflect the message being given about the status of the sign in/ login
  * 
- * This part will be considered complete when our sign up/log in 
- * work with our AWS userpools and identity pools
+ * Trace through what parts tell if if the sign in was a success or not
+ * 
+ * What I'm working on now.
+ * Stop hard coding the values in, print them out as logs and test them for each button.
+ * Then connect them to the place where they were orginally hard coded
  * 
 */
 public class Cognito : MonoBehaviour
@@ -35,7 +37,7 @@ public class Cognito : MonoBehaviour
     public static string jwt;
 
     bool loginSuccessful;
-    int index;
+    //int index; shouldn't need this but if anything breaks put it back
         
 
 
@@ -46,6 +48,8 @@ public class Cognito : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //DialogueManager obj = new DialogueManager();
+        //obj.ttest("JOGGERS");
 
         LoginButton.onClick.AddListener(Login);
         SignupButton.onClick.AddListener(Signup);
@@ -54,17 +58,9 @@ public class Cognito : MonoBehaviour
         loginSuccessful = false;
     }
 
-    public void twolistener()
-    {
 
-    }
 
-    public void ttest(String tdata)
-    {
-        Debug.Log(tdata);
-
-    }
-
+    //The starting AWS process of pressing login
     public void Login()
     {
         _ = Login_User();
@@ -76,6 +72,7 @@ public class Cognito : MonoBehaviour
         MenuManager.Instance.Load_Recommendations_Panel();
     }
 
+    //The starting AWS process of pressing Signup
     public void Signup()
     {
         _ = Signup_Method_Async();
@@ -89,9 +86,12 @@ public class Cognito : MonoBehaviour
 
         Debug.Log("You have entered the Signup_Method_Async function");
 
-        string userName = "SuperCoolGuy!";//SignupUsernameField.text;
-        string passWord = "Wichtig090!";//SignupPasswordField.text;
-        string email = "throwawaylater090@yahoo.com";//EmailField.text;
+        Debug.Log("USERNAME FIELD = " + SignupUsernameField.text + "\nPASSWORD = " + SignupPasswordField.text + "\nEMAIL = " + EmailField.text );
+
+
+        string userName = SignupUsernameField.text;
+        string passWord = SignupPasswordField.text; //I know it sucks but at least 8 chars, spec symbol, cap and lowercase and numbers
+        string email = EmailField.text;
 
         SignUpRequest signUpRequest = new SignUpRequest()
         {

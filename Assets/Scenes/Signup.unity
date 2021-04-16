@@ -874,6 +874,7 @@ GameObject:
   - component: {fileID: 610964935}
   - component: {fileID: 610964934}
   - component: {fileID: 610964933}
+  - component: {fileID: 610964937}
   m_Layer: 5
   m_Name: Signup button
   m_TagString: Untagged
@@ -970,7 +971,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 610964935}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 610964937}
+        m_TargetAssemblyTypeName: DialogueTrigger, Assembly-CSharp
+        m_MethodName: TriggerDialogue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &610964935
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1009,6 +1022,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 610964931}
   m_CullTransparentMesh: 1
+--- !u!114 &610964937
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 610964931}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db67811a0a6baad42ba385fb022d2693, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: 
+    sentences: []
 --- !u!1 &676519555
 GameObject:
   m_ObjectHideFlags: 0
@@ -1804,8 +1832,6 @@ MonoBehaviour:
     name: jiggy wiggy
     sentences:
     - "hey, did you know this was element 0?\t"
-    - So then this one must be 1
-    - Leaving this one to be the last as element 2
 --- !u!1 &1162339447
 GameObject:
   m_ObjectHideFlags: 0
@@ -1979,6 +2005,7 @@ MonoBehaviour:
   headertext: {fileID: 2131761526}
   bodytext: {fileID: 1410157411}
   pos: {x: 0, y: 0, z: 0}
+  down: 1
 --- !u!1 &1201175064
 GameObject:
   m_ObjectHideFlags: 0
