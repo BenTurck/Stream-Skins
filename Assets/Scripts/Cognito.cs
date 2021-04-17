@@ -114,8 +114,7 @@ public class Cognito : MonoBehaviour
 
             SignUpResponse request = await provider.SignUpAsync(signUpRequest);
             Debug.Log("Sign up worked");
-            changediag.setDBN(1); //Sets the message for dialogue
-            TriggerDialogue(); //Triggers the dialogue box
+            TriggerDialogue(1);
 
             // Send signup Event 
             Events.Call_Signup();
@@ -123,8 +122,7 @@ public class Cognito : MonoBehaviour
         catch (Exception e) //Failure
         {
             Debug.Log("Exception: " + e);
-            changediag.DBN = 2;
-            TriggerDialogue();
+            TriggerDialogue(2);
             return;
         }
     }
@@ -143,8 +141,12 @@ public class Cognito : MonoBehaviour
             Password = passWord
         };
 
-        try
+        try //login success
         {
+
+
+            TriggerDialogue(3);
+            
             AuthFlowResponse authResponse = await user.StartWithSrpAuthAsync(authRequest).ConfigureAwait(false);
 
             GetUserRequest getUserRequest = new GetUserRequest();
@@ -153,10 +155,11 @@ public class Cognito : MonoBehaviour
             Debug.Log("User Access Token: " + getUserRequest.AccessToken);
             jwt = getUserRequest.AccessToken;
 
+
             // User is logged in
             loginSuccessful = true;
         }
-        catch (Exception e)
+        catch (Exception e) //Login failure
         {
             Debug.Log("Exception: " + e);
             return;
@@ -164,6 +167,7 @@ public class Cognito : MonoBehaviour
 
         if (loginSuccessful == true)
         {
+
 
             string subId = await Get_User_Id();
             CredentialsManager.userid = subId;
@@ -174,6 +178,24 @@ public class Cognito : MonoBehaviour
             // Print UserID
             Debug.Log("Response - User's Sub ID from Cognito: " + CredentialsManager.userid);
 
+            //streamskins added
+            //loginSuccessful = false;
+        }
+        else
+        {  
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            //I left off here. The only thing I can't get is this to come up on a failed login
+            TriggerDialogue(4);
         }
     }
 
@@ -205,13 +227,14 @@ public class Cognito : MonoBehaviour
         return subId;
 
     }
-
+    //Part of direction 1
     //Triggers Dialogue box after information is handled in Cognito
-    public void TriggerDialogue()
+    public void TriggerDialogue(int mesIndex)
     {
+        Debug.Log("Inside TriggerDialogue");
         //The trigger calls on the dialong script onclick 
-        FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
+        FindObjectOfType<DialogueManager>().StartDialogue(dialogue,mesIndex);
     }
-
+    //
 
 }//End of class

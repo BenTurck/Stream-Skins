@@ -14,48 +14,57 @@ public class DialogueManager : MonoBehaviour
 
     //To be used to reference status in Cognito 
     // 1 = sign up success | 2 = sign up exception | 3 = login success | 4 = login failure 
+    
+    
+    //DELETE IF NOT USED
     public int DBN = 0; //used to set Dialogue Box Number
     string passedE;
 
     //SHOULD HAVE BEEN OBVIOUS START DIALOGUE STARTS RIGHT AWAY.
-    //PUT IT IN ITS OWN METHOD AND CALL IT INSTEAD OF STARTDIALOGUE
 
     //What happens when the trigger is triggered (login or sign up button)
-    public void StartDialogue(Dialogue dialogue)
+    public void StartDialogue(Dialogue dialogue,int mesIndex)
     {
+        //Ok so it calls only one or the other
+        //obj.setText or triggerdialogue
+        //Find a way to combine these two.
 
-        Debug.Log("Start of StartDialogue class");
+        //Hey! test can be passed down properly, so now mix the two functions.
 
-        //Change to proper text depending on what Cognito Class sets
-        if(DBN == 1)
-        {signupsucc();
-        } else if(DBN == 2)
-        {signupfail(); //Try to be more speicifc with these ones
-        } else if (DBN == 3)
-        {loginsucc();
-        } else if (DBN == 4)
-        {//loginfail(); //Try to be more speicifc with these ones
-        }
-        else if (DBN == 0)
-        {
-            Debug.Log("ERROR: DBN=0 COGNITO SCRIPT WAS UNABLE TO REACH DIALOGUEMANAGER IN TIME TO CHANGE THE TEXT");
-        }
-        
+
+        Debug.Log("START DIALOGUE WAS CALLED, test = " + mesIndex);
 
         //This will control the movement of the dialogue box
         if (down) //If it's down it needs to pop up with a message 
             popup();
-        
 
+
+        Debug.Log("WE MADE IT PAST THE IF DOWN STATEMENT");
         
+        //Change to proper text depending on what Cognito Class sets
+        if (mesIndex == 1)
+        {
+            signupsucc();
+        }
+        else if (mesIndex == 2)
+        {
+            signupfail(); //Try to be more speicifc with these ones
+        }
+        else if (mesIndex == 3)
+        {
+            loginsucc();
+        }
+        else if (mesIndex == 4)
+        {   loginfail(); //Try to be more speicifc with these ones
+        }
+        else
+        {
+            Debug.Log("ERROR: DBN=0 COGNITO SCRIPT WAS UNABLE TO REACH DIALOGUEMANAGER IN TIME TO CHANGE THE TEXT");
+        }
+
+
 
     }// End of StartDialogue 
-
-    public void ttest(string tdata)
-    {
-        Debug.Log(tdata);
-
-    }
 
     public void popup()
     {
@@ -63,7 +72,6 @@ public class DialogueManager : MonoBehaviour
 
         //Pop up will need a place to update and set the proper message that pops up
         //right here...
-
 
         //You need to take pos out, change it and put it back in.
         pos = transform.position;
@@ -92,15 +100,18 @@ public class DialogueManager : MonoBehaviour
         //If SIGN UP was SUCCESSFUL 
         headertext.text = "Sign up successful!";
         bodytext.text = "Your sign up has gone through! \nPlease check your email's inbox";
+        return;
     }
 
     public void signupfail()
     {
 
+        Debug.Log("we hit the sign up fail function");
         //If SIGN UP has FAILED
         //Please note, there may be different reasons for sign up failure.
         headertext.text = "Sign up failed";
-        bodytext.text = "";//e.ToString(); //This may branch out into different messages. 
+        bodytext.text = "TEMPORARY GENERIC FAILURE MESSAGE";//e.ToString(); //This may branch out into different messages. 
+        return;
     }
 
     public void loginsucc()
@@ -108,6 +119,7 @@ public class DialogueManager : MonoBehaviour
         //If LOGIN has SUCCEEDED
         headertext.text = "Login succeeded!";
         bodytext.text = "You've successfully logged in.\nYou may now access statistics editor."; //This may branch out into different messages. 
+        return;
     }
 
     public void loginfail()
@@ -115,6 +127,7 @@ public class DialogueManager : MonoBehaviour
         //If LOGIN has FAILED 
         headertext.text = "Login failed";
         bodytext.text = "Please check to make sure your password is right and try again.";
+        return;
     }
 
     //---------------- Setters and Getters ------------------------------------
