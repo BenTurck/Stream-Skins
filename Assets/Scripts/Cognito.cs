@@ -17,10 +17,6 @@ Notes:
  * 
  * Trace through what parts tell if if the sign in was a success or not
  * 
- * What I'm working on now.
- * Stop hard coding the values in, print them out as logs and test them for each button.
- * Then connect them to the place where they were orginally hard coded
- * 
 */
 public class Cognito : MonoBehaviour
 {
@@ -38,7 +34,7 @@ public class Cognito : MonoBehaviour
 
     bool loginSuccessful;
     //int index; shouldn't need this but if anything breaks put it back
-        
+    public Dialogue dialogue; //This will allow you to access Dialogue class
 
 
     // Create an Identity Provider
@@ -48,8 +44,7 @@ public class Cognito : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //DialogueManager obj = new DialogueManager();
-        //obj.ttest("JOGGERS");
+        
 
         LoginButton.onClick.AddListener(Login);
         SignupButton.onClick.AddListener(Signup);
@@ -86,7 +81,7 @@ public class Cognito : MonoBehaviour
 
         Debug.Log("You have entered the Signup_Method_Async function");
 
-        Debug.Log("USERNAME FIELD = " + SignupUsernameField.text + "\nPASSWORD = " + SignupPasswordField.text + "\nEMAIL = " + EmailField.text );
+        Debug.Log("USERNAME FIELD = " + SignupUsernameField.text + "   PASSWORD = " + SignupPasswordField.text + "    EMAIL = " + EmailField.text );
 
 
         string userName = SignupUsernameField.text;
@@ -110,19 +105,26 @@ public class Cognito : MonoBehaviour
 
         signUpRequest.UserAttributes = attributes;
 
-        try
+        //Changing our dialogue message
+        DialogueManager changediag = new DialogueManager();
+
+        try //Success
         {
             //We're going to try to make a pop up message here.
 
             SignUpResponse request = await provider.SignUpAsync(signUpRequest);
             Debug.Log("Sign up worked");
+            changediag.setDBN(1); //Sets the message for dialogue
+            TriggerDialogue(); //Triggers the dialogue box
 
-            // Send Login Event
+            // Send signup Event 
             Events.Call_Signup();
         }
-        catch (Exception e)
+        catch (Exception e) //Failure
         {
             Debug.Log("Exception: " + e);
+            changediag.DBN = 2;
+            TriggerDialogue();
             return;
         }
     }
@@ -203,7 +205,13 @@ public class Cognito : MonoBehaviour
         return subId;
 
     }
-    
 
-        
+    //Triggers Dialogue box after information is handled in Cognito
+    public void TriggerDialogue()
+    {
+        //The trigger calls on the dialong script onclick 
+        FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
+    }
+
+
 }//End of class

@@ -11,7 +11,7 @@ using UnityEngine;
  * a sign up/sign in failure message. 
  * obviously based on that true or false boolean.
  * 
- */
+ 
 
 public class DialogueTrigger : MonoBehaviour
 {
@@ -23,3 +23,8 @@ public class DialogueTrigger : MonoBehaviour
         FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
     }
 }
+
+THIS ENTIRE FUNCTIONALLITY IS BEING MOVED TO COGNITO 
+IF NOT USED IN FUTURE PLEASE DELETE, THIS SHOULD MEAN NOTHING SOON
+
+*/

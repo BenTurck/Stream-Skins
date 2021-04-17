@@ -1,4 +1,6 @@
 using System.Collections;
+using System;
+using System.Threading.Tasks;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -11,20 +13,37 @@ public class DialogueManager : MonoBehaviour
     public bool down = true;
 
     //To be used to reference status in Cognito 
-    int DBN = 0; //used to set Dialogue Box Number
+    // 1 = sign up success | 2 = sign up exception | 3 = login success | 4 = login failure 
+    public int DBN = 0; //used to set Dialogue Box Number
+    string passedE;
+
+    //SHOULD HAVE BEEN OBVIOUS START DIALOGUE STARTS RIGHT AWAY.
+    //PUT IT IN ITS OWN METHOD AND CALL IT INSTEAD OF STARTDIALOGUE
 
     //What happens when the trigger is triggered (login or sign up button)
     public void StartDialogue(Dialogue dialogue)
     {
-      
 
-        Cognito obj = new Cognito();
-        //obj.ttest("joggers");
+        Debug.Log("Start of StartDialogue class");
 
-
+        //Change to proper text depending on what Cognito Class sets
+        if(DBN == 1)
+        {signupsucc();
+        } else if(DBN == 2)
+        {signupfail(); //Try to be more speicifc with these ones
+        } else if (DBN == 3)
+        {loginsucc();
+        } else if (DBN == 4)
+        {//loginfail(); //Try to be more speicifc with these ones
+        }
+        else if (DBN == 0)
+        {
+            Debug.Log("ERROR: DBN=0 COGNITO SCRIPT WAS UNABLE TO REACH DIALOGUEMANAGER IN TIME TO CHANGE THE TEXT");
+        }
+        
 
         //This will control the movement of the dialogue box
-        if(down) //If it's down it needs to pop up with a message 
+        if (down) //If it's down it needs to pop up with a message 
             popup();
         
 
@@ -77,10 +96,11 @@ public class DialogueManager : MonoBehaviour
 
     public void signupfail()
     {
+
         //If SIGN UP has FAILED
         //Please note, there may be different reasons for sign up failure.
         headertext.text = "Sign up failed";
-        bodytext.text = ""; //This may branch out into different messages. 
+        bodytext.text = "";//e.ToString(); //This may branch out into different messages. 
     }
 
     public void loginsucc()
@@ -99,10 +119,17 @@ public class DialogueManager : MonoBehaviour
 
     //---------------- Setters and Getters ------------------------------------
 
-    //Mutator
+    //MAY NOT NEED THESE
+    //Mutators
     public void setDBN(int DBN)
     {
         this.DBN = DBN; 
+    }
+
+    public void setException(int DBN, Exception e)
+    {
+        this.DBN = DBN;
+        passedE = e.ToString();
     }
 
     //Accessor
@@ -110,7 +137,7 @@ public class DialogueManager : MonoBehaviour
     {
         return DBN;
     }
-
+    
 
 }// End of class
 
