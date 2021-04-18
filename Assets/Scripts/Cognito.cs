@@ -140,13 +140,13 @@ public class Cognito : MonoBehaviour
         {
             Password = passWord
         };
-
-        try //login success
+        Debug.Log("TEST TEST TEST TEST");
+        try //Something in the input fields
         {
 
+            Debug.Log("LOGINSUCCESS = " + loginSuccessful);
 
             TriggerDialogue(3);
-            
             AuthFlowResponse authResponse = await user.StartWithSrpAuthAsync(authRequest).ConfigureAwait(false);
 
             GetUserRequest getUserRequest = new GetUserRequest();
@@ -158,17 +158,19 @@ public class Cognito : MonoBehaviour
 
             // User is logged in
             loginSuccessful = true;
+        Debug.Log("LOGINSUCCESS = " + loginSuccessful);
         }
-        catch (Exception e) //Login failure
+        catch (Exception e) //Nothing in the fields
         {
+            TriggerDialogue(4);
             Debug.Log("Exception: " + e);
             return;
         }
 
+
         if (loginSuccessful == true)
         {
-
-
+            Debug.Log("LOGINSUCCESS IN IF STATEMENT = " + loginSuccessful);
             string subId = await Get_User_Id();
             CredentialsManager.userid = subId;
 
@@ -181,22 +183,7 @@ public class Cognito : MonoBehaviour
             //streamskins added
             //loginSuccessful = false;
         }
-        else
-        {  
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            //I left off here. The only thing I can't get is this to come up on a failed login
-            TriggerDialogue(4);
-        }
+        
     }
 
     // Gets a User's sub UUID from Cognito

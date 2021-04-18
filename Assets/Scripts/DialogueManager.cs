@@ -32,7 +32,7 @@ public class DialogueManager : MonoBehaviour
         //Hey! test can be passed down properly, so now mix the two functions.
 
 
-        Debug.Log("START DIALOGUE WAS CALLED, test = " + mesIndex);
+        Debug.Log("START DIALOGUE WAS CALLED, mesIndex = " + mesIndex);
 
         //This will control the movement of the dialogue box
         if (down) //If it's down it needs to pop up with a message 
