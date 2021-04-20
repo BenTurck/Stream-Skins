@@ -13,6 +13,11 @@ public class FileReadWrite : MonoBehaviour
 	public int Value = 9;
 	public InputField TextObject = null;
 	public string input;
+	private string activeplayer;
+	private string homeplayer1;
+	private string homeplayer2;
+	private string homeplayer3;
+	private Toggle hp1;
 
 
 	void Start()
@@ -170,7 +175,7 @@ public class FileReadWrite : MonoBehaviour
 
 	}
 	public void Decrement()
-	{;
+	{
 		string minValue = "0";
 		string path = "Assets/Games/Smash Bros/Home Team Stocks.txt";
 		if (TextObject != null && TextObject.text != minValue)
@@ -192,4 +197,74 @@ public class FileReadWrite : MonoBehaviour
 		Debug.Log("String: " + Value);
 		File.WriteAllText(path, TextObject.text);
 	}
+
+	public void HomePlayer1(string s)
+	{
+		homeplayer1 = s; // sets string input to string s
+		Debug.Log("Home Team Player1: " + homeplayer1); // shows input in debug
+
+		Directory.CreateDirectory("Assets/Games/Smash Bros/"); // creates directory in this path
+															   // Application.streamingAssetsPath sets the directory to be in the data folder and creates folders called                                                 // streamingAssetsPath, LIVE_DATA, and Smash Bros
+		
+
+		string path = "Assets/Games/Smash Bros/Home Team Player1.txt"; // This is the directory for the text file.
+
+		if (!File.Exists(path)) // checks if the file exists at the path
+		{
+			File.WriteAllText(path, homeplayer1); // sets the location to path and the contents to input inside if statement
+		}
+		File.WriteAllText(path, homeplayer1); // sets the location to path and the contents to input
+	}
+	
+	public void HomePlayer2(string s)
+	{
+		homeplayer2 = s; // sets string input to string s
+		Debug.Log("Home Team Player2: " + homeplayer2); // shows input in debug
+
+		Directory.CreateDirectory("Assets/Games/Smash Bros/"); // creates directory in this path
+															   // Application.streamingAssetsPath sets the directory to be in the data folder and creates folders called
+															   // streamingAssetsPath, LIVE_DATA, and Smash Bros
+
+		string path = "Assets/Games/Smash Bros/Home Team Player2.txt"; // This is the directory for the text file.
+		if (!File.Exists(path)) // checks if the file exists at the path
+		{
+			File.WriteAllText(path, homeplayer2); // sets the location to path and the contents to input inside if statement
+		}
+
+		File.WriteAllText(path, homeplayer2); // sets the location to path and the contents to input
+	}
+
+	public void HomePlayer3(string s)
+	{
+		homeplayer3 = s; // sets string input to string s
+		Debug.Log("Home Team Player3: " + homeplayer3); // shows input in debug
+
+		Directory.CreateDirectory("Assets/Games/Smash Bros/"); // creates directory in this path
+															   // Application.streamingAssetsPath sets the directory to be in the data folder and creates folders called
+															   // streamingAssetsPath, LIVE_DATA, and Smash Bros
+
+		string path = "Assets/Games/Smash Bros/Home Team Player3.txt"; // This is the directory for the text file.
+		if (!File.Exists(path)) // checks if the file exists at the path
+		{
+			File.WriteAllText(path, homeplayer3); // sets the location to path and the contents to input inside if statement
+		}
+
+		File.WriteAllText(path, homeplayer3); // sets the location to path and the contents to input
+	}
+
+	public void HomeActivePlayer1(bool tog)
+	{
+		string path = "Assets/Games/Smash Bros/Home Team Active Player.txt";
+		if (tog == true)
+        {
+			Debug.Log("Home Team Active Player: " + homeplayer1);
+			File.WriteAllText(path, homeplayer1);
+		}
+		else
+        {
+			Debug.Log("Home Team Active Player: ");
+			File.WriteAllText(path, "");
+		}
+	}
+
 }

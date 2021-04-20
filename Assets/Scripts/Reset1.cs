@@ -8,13 +8,16 @@ using System.IO;
 public class Reset1 : MonoBehaviour
 {
 	public InputField clearIt;
+	public InputField value;
 	public Dropdown ddInput;
 	public Text TextObject;
 
-	public void submittingClear()
+	public void SubmittingClear()
 	{
 		clearIt.text = "";
 		ddInput.value = 0;
 		TextObject.text = "9";
+		value.text = "9";
+
 	}
 }

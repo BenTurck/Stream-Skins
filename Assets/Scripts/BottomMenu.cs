@@ -7,14 +7,8 @@ public class BottomMenu : MonoBehaviour
 {
 	public void Back ()
 	{
-		SceneManager.LoadScene(0); // Loads menu scene
+		SceneManager.LoadScene("Menu"); // Loads menu scene
 	}
-	
-	public void BackSignin ()
-	{
-		SceneManager.LoadScene(6); // Loads menu scene
-	}
-
 	public void Reset ()
 	{
 		Debug.Log("Reset Button"); // Debug reset

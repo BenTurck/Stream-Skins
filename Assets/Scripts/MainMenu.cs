@@ -10,46 +10,46 @@ public class MainMenu : MonoBehaviour
 {
 	public void Valorant ()
 	{
-		SceneManager.LoadScene(1); // Loads specified scene
+		SceneManager.LoadScene("Valorant"); // Loads specified scene
 	}
 
 	public void Overwatch ()
 	{
-		SceneManager.LoadScene(2); // Loads specified scene
+		SceneManager.LoadScene("Overwatch"); // Loads specified scene
 	}
 
 	public void SmashBros ()
 	{
-		SceneManager.LoadScene(3); // Loads specified scene
+		SceneManager.LoadScene("SmashBros"); // Loads specified scene
 	}
 
 	public void LeagueofLegends ()
 	{
-		SceneManager.LoadScene(4); // Loads specified scene
+		SceneManager.LoadScene("LeagueofLegends"); // Loads specified scene
 	}
 
 	public void Custom ()
 	{
-		SceneManager.LoadScene(5); // Loads specified scene
+		SceneManager.LoadScene("Custom"); // Loads specified scene
 	}
 
 	public void Signin ()
 	{
-		SceneManager.LoadScene(6); // Loads specified scene
+		SceneManager.LoadScene("Signin"); // Loads specified scene
 	}
 	
 	
 	public void Signup ()
 	{
-		SceneManager.LoadScene(7); // Loads specified scene
+		SceneManager.LoadScene("Signup"); // Loads specified scene
 	}
 	public void Stats()
 	{
-		SceneManager.LoadScene(8); // Loads specified scene
+		SceneManager.LoadScene("Stats"); // Loads specified scene
 	}
 	public void Assets ()
 	{
-		SceneManager.LoadScene(9); // Loads specified scene
+		SceneManager.LoadScene("Assets"); // Loads specified scene
 	}
 
 	public void Quit ()
