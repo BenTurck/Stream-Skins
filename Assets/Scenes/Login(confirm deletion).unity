@@ -1580,6 +1580,9 @@ MonoBehaviour:
   SignupUsernameField: {fileID: 0}
   LoginPasswordField: {fileID: 1577228735}
   LoginUsernameField: {fileID: 808411941}
+  dialogue:
+    name: 
+    sentences: []
 --- !u!114 &1124545696
 MonoBehaviour:
   m_ObjectHideFlags: 0
