@@ -26,7 +26,6 @@ exports.handler = (event, context, callback) => {
       return;
   }
 
-
 function errorResponse(errorMessage, awsRequestId, callback) {
 
   callback(null, {
@@ -40,5 +39,14 @@ function errorResponse(errorMessage, awsRequestId, callback) {
       'Access-Control-Allow-Origin': '*',
     },
   });
-  
 }
+
+function toUrlString(buffer) {
+
+    return buffer.toString('base64')
+        .replace(/\+/g, '-')
+        .replace(/\//g, '_')
+        .replace(/=/g, '');
+}
+
+
