@@ -1123,7 +1123,6 @@ GameObject:
   - component: {fileID: 98667932}
   - component: {fileID: 98667931}
   - component: {fileID: 98667930}
-  - component: {fileID: 98667929}
   m_Layer: 5
   m_Name: Map2 Dropdown
   m_TagString: Untagged
@@ -1153,23 +1152,6 @@ RectTransform:
   m_AnchoredPosition: {x: 39.206055, y: 0.9150162}
   m_SizeDelta: {x: 163.1384, y: 36.1708}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &98667929
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 98667927}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 17818ea6f24f689478157a6e072da3d8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ValorantHomeDDInput: {fileID: 98667930}
-  ValorantHomeSeriesScoreInput: 
-  ValorantHomeSeriesScoreInputField: {fileID: 0}
-  ValorantHomeSeriesScoreValue: 0
-  ValorantAwayDDInput: {fileID: 2031434292}
 --- !u!114 &98667930
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1489,7 +1471,6 @@ GameObject:
   - component: {fileID: 150140389}
   - component: {fileID: 150140388}
   - component: {fileID: 150140387}
-  - component: {fileID: 150140386}
   m_Layer: 5
   m_Name: Home Player3
   m_TagString: Untagged
@@ -1518,22 +1499,6 @@ RectTransform:
   m_AnchoredPosition: {x: -726, y: -77.004}
   m_SizeDelta: {x: 208.664, y: 31.9955}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &150140386
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 150140384}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 728157982cda41c49a55b41269cef602, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  clearIt: {fileID: 150140387}
-  value: {fileID: 0}
-  ddInput: {fileID: 0}
-  TextObject: {fileID: 0}
 --- !u!114 &150140387
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3425,7 +3390,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 
+  m_Text: 0
 --- !u!222 &385678310
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4300,7 +4265,6 @@ GameObject:
   - component: {fileID: 454261879}
   - component: {fileID: 454261878}
   - component: {fileID: 454261877}
-  - component: {fileID: 454261876}
   m_Layer: 5
   m_Name: Map1 Dropdown
   m_TagString: Untagged
@@ -4330,23 +4294,6 @@ RectTransform:
   m_AnchoredPosition: {x: 39.206055, y: 0.9150162}
   m_SizeDelta: {x: 163.1384, y: 36.1708}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &454261876
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 454261874}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 17818ea6f24f689478157a6e072da3d8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ValorantHomeDDInput: {fileID: 454261877}
-  ValorantHomeSeriesScoreInput: 
-  ValorantHomeSeriesScoreInputField: {fileID: 0}
-  ValorantHomeSeriesScoreValue: 0
-  ValorantAwayDDInput: {fileID: 2031434292}
 --- !u!114 &454261877
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4571,7 +4518,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 462439176}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
@@ -5511,7 +5458,7 @@ MonoBehaviour:
   m_CaretColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
   m_CustomCaretColor: 0
   m_SelectionColor: {r: 0.65882355, g: 0.80784315, b: 1, a: 0.7529412}
-  m_Text: 
+  m_Text: 0
   m_CaretBlinkRate: 0.85
   m_CaretWidth: 1
   m_ReadOnly: 0
@@ -5756,7 +5703,6 @@ GameObject:
   - component: {fileID: 625648609}
   - component: {fileID: 625648608}
   - component: {fileID: 625648607}
-  - component: {fileID: 625648610}
   m_Layer: 5
   m_Name: Home Team Dropdown
   m_TagString: Untagged
@@ -5887,23 +5833,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 625648604}
   m_CullTransparentMesh: 1
---- !u!114 &625648610
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 625648604}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 17818ea6f24f689478157a6e072da3d8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ValorantHomeDDInput: {fileID: 625648607}
-  ValorantHomeSeriesScoreInput: 
-  ValorantHomeSeriesScoreInputField: {fileID: 0}
-  ValorantHomeSeriesScoreValue: 0
-  ValorantAwayDDInput: {fileID: 2031434292}
 --- !u!1 &637798483
 GameObject:
   m_ObjectHideFlags: 0
@@ -6209,7 +6138,6 @@ GameObject:
   - component: {fileID: 658970228}
   - component: {fileID: 658970227}
   - component: {fileID: 658970226}
-  - component: {fileID: 658970225}
   m_Layer: 5
   m_Name: Home Player5
   m_TagString: Untagged
@@ -6238,22 +6166,6 @@ RectTransform:
   m_AnchoredPosition: {x: -726, y: -149.4}
   m_SizeDelta: {x: 208.664, y: 31.9955}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &658970225
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 658970223}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 728157982cda41c49a55b41269cef602, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  clearIt: {fileID: 658970226}
-  value: {fileID: 0}
-  ddInput: {fileID: 0}
-  TextObject: {fileID: 0}
 --- !u!114 &658970226
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6562,9 +6474,9 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1177585965}
         m_TargetAssemblyTypeName: FIleReadWrite, Assembly-CSharp
-        m_MethodName: ReadStringInput
+        m_MethodName: 
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6865,7 +6777,6 @@ GameObject:
   - component: {fileID: 714751134}
   - component: {fileID: 714751133}
   - component: {fileID: 714751132}
-  - component: {fileID: 714751131}
   m_Layer: 5
   m_Name: Away Player5
   m_TagString: Untagged
@@ -6894,22 +6805,6 @@ RectTransform:
   m_AnchoredPosition: {x: 733, y: -155.39798}
   m_SizeDelta: {x: 208.664, y: 31.9955}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &714751131
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 714751129}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 728157982cda41c49a55b41269cef602, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  clearIt: {fileID: 714751132}
-  value: {fileID: 0}
-  ddInput: {fileID: 0}
-  TextObject: {fileID: 0}
 --- !u!114 &714751132
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7364,7 +7259,6 @@ GameObject:
   - component: {fileID: 732401531}
   - component: {fileID: 732401530}
   - component: {fileID: 732401529}
-  - component: {fileID: 732401528}
   m_Layer: 5
   m_Name: Home Player4
   m_TagString: Untagged
@@ -7393,22 +7287,6 @@ RectTransform:
   m_AnchoredPosition: {x: -726, y: -113.397995}
   m_SizeDelta: {x: 208.664, y: 31.9955}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &732401528
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 732401526}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 728157982cda41c49a55b41269cef602, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  clearIt: {fileID: 732401529}
-  value: {fileID: 0}
-  ddInput: {fileID: 0}
-  TextObject: {fileID: 0}
 --- !u!114 &732401529
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8596,7 +8474,6 @@ GameObject:
   - component: {fileID: 822475902}
   - component: {fileID: 822475901}
   - component: {fileID: 822475900}
-  - component: {fileID: 822475899}
   m_Layer: 5
   m_Name: Home Player2
   m_TagString: Untagged
@@ -8625,22 +8502,6 @@ RectTransform:
   m_AnchoredPosition: {x: -726, y: -41.002}
   m_SizeDelta: {x: 208.664, y: 31.9955}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &822475899
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 822475897}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 728157982cda41c49a55b41269cef602, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  clearIt: {fileID: 822475900}
-  value: {fileID: 0}
-  ddInput: {fileID: 0}
-  TextObject: {fileID: 0}
 --- !u!114 &822475900
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9104,7 +8965,6 @@ GameObject:
   - component: {fileID: 842710064}
   - component: {fileID: 842710063}
   - component: {fileID: 842710062}
-  - component: {fileID: 842710061}
   m_Layer: 5
   m_Name: Caster2 InputField
   m_TagString: Untagged
@@ -9134,22 +8994,6 @@ RectTransform:
   m_AnchoredPosition: {x: 154.5, y: 110.5}
   m_SizeDelta: {x: 466.77, y: 31.9955}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &842710061
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 842710059}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 728157982cda41c49a55b41269cef602, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  clearIt: {fileID: 842710062}
-  value: {fileID: 0}
-  ddInput: {fileID: 0}
-  TextObject: {fileID: 0}
 --- !u!114 &842710062
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9207,10 +9051,10 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: FIleReadWrite, Assembly-CSharp
-        m_MethodName: ReadStringInput
-        m_Mode: 0
+      - m_Target: {fileID: 1177585966}
+        m_TargetAssemblyTypeName: ValorantWritetoFile, Assembly-CSharp
+        m_MethodName: ValorantCaster2
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -10082,7 +9926,6 @@ GameObject:
   - component: {fileID: 909167991}
   - component: {fileID: 909167990}
   - component: {fileID: 909167989}
-  - component: {fileID: 909167988}
   m_Layer: 5
   m_Name: Map5 Dropdown
   m_TagString: Untagged
@@ -10112,23 +9955,6 @@ RectTransform:
   m_AnchoredPosition: {x: 39.206055, y: 0.9150162}
   m_SizeDelta: {x: 163.1384, y: 36.1708}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &909167988
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 909167986}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 17818ea6f24f689478157a6e072da3d8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ValorantHomeDDInput: {fileID: 909167989}
-  ValorantHomeSeriesScoreInput: 
-  ValorantHomeSeriesScoreInputField: {fileID: 0}
-  ValorantHomeSeriesScoreValue: 0
-  ValorantAwayDDInput: {fileID: 2031434292}
 --- !u!114 &909167989
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10843,9 +10669,9 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: FIleReadWrite, Assembly-CSharp
-        m_MethodName: ReadStringInput
+      - m_Target: {fileID: 1177585966}
+        m_TargetAssemblyTypeName: ValorantWritetoFile, Assembly-CSharp
+        m_MethodName: ValorantHomeMap1Score
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -12595,7 +12421,7 @@ MonoBehaviour:
   m_CaretColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
   m_CustomCaretColor: 0
   m_SelectionColor: {r: 0.65882355, g: 0.80784315, b: 1, a: 0.7529412}
-  m_Text: 
+  m_Text: 0
   m_CaretBlinkRate: 0.85
   m_CaretWidth: 1
   m_ReadOnly: 0
@@ -13335,9 +13161,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ValorantHomeDDInput: {fileID: 625648607}
-  ValorantHomeSeriesScoreInput: 
+  ValorantHomeSeriesScoreInput: 0
   ValorantHomeSeriesScoreInputField: {fileID: 1121026770}
   ValorantHomeSeriesScoreValue: 0
+  ValorantMap1DDInput: {fileID: 454261877}
+  ValorantMap2DDInput: {fileID: 98667930}
+  ValorantMap3DDInput: {fileID: 1397563616}
+  ValorantMap4DDInput: {fileID: 2039683815}
+  ValorantMap5DDInput: {fileID: 909167989}
+  ValorantHomeMap1ScoreInput: 
+  ValorantAwayMap1ScoreInput: 
   ValorantAwayDDInput: {fileID: 2031434292}
 --- !u!4 &1177585967
 Transform:
@@ -14642,7 +14475,6 @@ GameObject:
   - component: {fileID: 1345353456}
   - component: {fileID: 1345353455}
   - component: {fileID: 1345353454}
-  - component: {fileID: 1345353453}
   m_Layer: 5
   m_Name: Ticker InputField
   m_TagString: Untagged
@@ -14672,22 +14504,6 @@ RectTransform:
   m_AnchoredPosition: {x: 140.16, y: 195}
   m_SizeDelta: {x: 493.21, y: 31.9955}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1345353453
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1345353451}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 728157982cda41c49a55b41269cef602, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  clearIt: {fileID: 1345353454}
-  value: {fileID: 0}
-  ddInput: {fileID: 0}
-  TextObject: {fileID: 0}
 --- !u!114 &1345353454
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14745,10 +14561,10 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: FIleReadWrite, Assembly-CSharp
-        m_MethodName: ReadStringInput
-        m_Mode: 0
+      - m_Target: {fileID: 1177585966}
+        m_TargetAssemblyTypeName: ValorantWritetoFile, Assembly-CSharp
+        m_MethodName: ValorantTicker
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -15415,7 +15231,6 @@ GameObject:
   - component: {fileID: 1397563618}
   - component: {fileID: 1397563617}
   - component: {fileID: 1397563616}
-  - component: {fileID: 1397563615}
   m_Layer: 5
   m_Name: Map3 Dropdown
   m_TagString: Untagged
@@ -15445,23 +15260,6 @@ RectTransform:
   m_AnchoredPosition: {x: 39.206055, y: 0.9150162}
   m_SizeDelta: {x: 163.1384, y: 36.1708}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1397563615
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1397563613}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 17818ea6f24f689478157a6e072da3d8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ValorantHomeDDInput: {fileID: 1397563616}
-  ValorantHomeSeriesScoreInput: 
-  ValorantHomeSeriesScoreInputField: {fileID: 0}
-  ValorantHomeSeriesScoreValue: 0
-  ValorantAwayDDInput: {fileID: 2031434292}
 --- !u!114 &1397563616
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16390,7 +16188,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 
+  m_Text: 0
 --- !u!222 &1462009803
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -16490,7 +16288,6 @@ GameObject:
   - component: {fileID: 1493378147}
   - component: {fileID: 1493378146}
   - component: {fileID: 1493378145}
-  - component: {fileID: 1493378144}
   m_Layer: 5
   m_Name: Away Player4
   m_TagString: Untagged
@@ -16519,22 +16316,6 @@ RectTransform:
   m_AnchoredPosition: {x: 733, y: -119.39598}
   m_SizeDelta: {x: 208.664, y: 31.9955}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1493378144
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1493378142}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 728157982cda41c49a55b41269cef602, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  clearIt: {fileID: 1493378145}
-  value: {fileID: 0}
-  ddInput: {fileID: 0}
-  TextObject: {fileID: 0}
 --- !u!114 &1493378145
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17175,7 +16956,6 @@ GameObject:
   - component: {fileID: 1507498824}
   - component: {fileID: 1507498823}
   - component: {fileID: 1507498822}
-  - component: {fileID: 1507498821}
   m_Layer: 5
   m_Name: Caster1 InputField
   m_TagString: Untagged
@@ -17205,22 +16985,6 @@ RectTransform:
   m_AnchoredPosition: {x: 154.5, y: 151.5}
   m_SizeDelta: {x: 466.77, y: 31.9955}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1507498821
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1507498819}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 728157982cda41c49a55b41269cef602, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  clearIt: {fileID: 1507498822}
-  value: {fileID: 0}
-  ddInput: {fileID: 0}
-  TextObject: {fileID: 0}
 --- !u!114 &1507498822
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17278,10 +17042,10 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: FIleReadWrite, Assembly-CSharp
-        m_MethodName: ReadStringInput
-        m_Mode: 0
+      - m_Target: {fileID: 1177585966}
+        m_TargetAssemblyTypeName: ValorantWritetoFile, Assembly-CSharp
+        m_MethodName: ValorantCaster1
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -18331,7 +18095,19 @@ MonoBehaviour:
   m_Group: {fileID: 939830851}
   onValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1177585966}
+        m_TargetAssemblyTypeName: ValorantWritetoFile, Assembly-CSharp
+        m_MethodName: ValorantHomeMap1
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_IsOn: 0
 --- !u!1 &1640847495
 GameObject:
@@ -20040,7 +19816,6 @@ GameObject:
   - component: {fileID: 1776706176}
   - component: {fileID: 1776706175}
   - component: {fileID: 1776706174}
-  - component: {fileID: 1776706173}
   m_Layer: 5
   m_Name: Away Player3
   m_TagString: Untagged
@@ -20069,22 +19844,6 @@ RectTransform:
   m_AnchoredPosition: {x: 733, y: -83.00198}
   m_SizeDelta: {x: 208.664, y: 31.9955}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1776706173
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1776706171}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 728157982cda41c49a55b41269cef602, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  clearIt: {fileID: 1776706174}
-  value: {fileID: 0}
-  ddInput: {fileID: 0}
-  TextObject: {fileID: 0}
 --- !u!114 &1776706174
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20244,7 +20003,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1778960073}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
@@ -20702,7 +20461,6 @@ GameObject:
   - component: {fileID: 1833068542}
   - component: {fileID: 1833068541}
   - component: {fileID: 1833068540}
-  - component: {fileID: 1833068539}
   m_Layer: 5
   m_Name: Away Team Season Record InputField
   m_TagString: Untagged
@@ -20732,22 +20490,6 @@ RectTransform:
   m_AnchoredPosition: {x: 721.85, y: 216.5}
   m_SizeDelta: {x: 76.5997, y: 56.8119}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1833068539
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1833068537}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 728157982cda41c49a55b41269cef602, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  clearIt: {fileID: 1833068540}
-  value: {fileID: 0}
-  ddInput: {fileID: 0}
-  TextObject: {fileID: 0}
 --- !u!114 &1833068540
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21836,7 +21578,6 @@ GameObject:
   - component: {fileID: 1953224917}
   - component: {fileID: 1953224916}
   - component: {fileID: 1953224915}
-  - component: {fileID: 1953224914}
   m_Layer: 5
   m_Name: Away Player2
   m_TagString: Untagged
@@ -21865,22 +21606,6 @@ RectTransform:
   m_AnchoredPosition: {x: 733, y: -47}
   m_SizeDelta: {x: 208.664, y: 31.9955}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1953224914
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1953224912}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 728157982cda41c49a55b41269cef602, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  clearIt: {fileID: 1953224915}
-  value: {fileID: 0}
-  ddInput: {fileID: 0}
-  TextObject: {fileID: 0}
 --- !u!114 &1953224915
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22731,7 +22456,6 @@ GameObject:
   - component: {fileID: 2031434294}
   - component: {fileID: 2031434293}
   - component: {fileID: 2031434292}
-  - component: {fileID: 2031434290}
   m_Layer: 5
   m_Name: Away Team Dropdown
   m_TagString: Untagged
@@ -22761,23 +22485,6 @@ RectTransform:
   m_AnchoredPosition: {x: 772.6605, y: 287}
   m_SizeDelta: {x: 374.679, y: 70.2523}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &2031434290
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2031434288}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 17818ea6f24f689478157a6e072da3d8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ValorantHomeDDInput: {fileID: 625648607}
-  ValorantHomeSeriesScoreInput: 
-  ValorantHomeSeriesScoreInputField: {fileID: 0}
-  ValorantHomeSeriesScoreValue: 0
-  ValorantAwayDDInput: {fileID: 2031434292}
 --- !u!114 &2031434292
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22891,7 +22598,6 @@ GameObject:
   - component: {fileID: 2039683817}
   - component: {fileID: 2039683816}
   - component: {fileID: 2039683815}
-  - component: {fileID: 2039683814}
   m_Layer: 5
   m_Name: Map4 Dropdown
   m_TagString: Untagged
@@ -22921,23 +22627,6 @@ RectTransform:
   m_AnchoredPosition: {x: 39.206055, y: 0.9150162}
   m_SizeDelta: {x: 163.1384, y: 36.1708}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &2039683814
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2039683812}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 17818ea6f24f689478157a6e072da3d8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ValorantHomeDDInput: {fileID: 2039683815}
-  ValorantHomeSeriesScoreInput: 
-  ValorantHomeSeriesScoreInputField: {fileID: 0}
-  ValorantHomeSeriesScoreValue: 0
-  ValorantAwayDDInput: {fileID: 2031434292}
 --- !u!114 &2039683815
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23241,7 +22930,6 @@ GameObject:
   - component: {fileID: 2069681329}
   - component: {fileID: 2069681328}
   - component: {fileID: 2069681327}
-  - component: {fileID: 2069681326}
   m_Layer: 5
   m_Name: Away Player1
   m_TagString: Untagged
@@ -23270,22 +22958,6 @@ RectTransform:
   m_AnchoredPosition: {x: 733.0001, y: -8.997986}
   m_SizeDelta: {x: 208.664, y: 31.9955}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &2069681326
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2069681324}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 728157982cda41c49a55b41269cef602, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  clearIt: {fileID: 2069681327}
-  value: {fileID: 0}
-  ddInput: {fileID: 0}
-  TextObject: {fileID: 0}
 --- !u!114 &2069681327
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23729,7 +23401,6 @@ GameObject:
   - component: {fileID: 2111581848}
   - component: {fileID: 2111581847}
   - component: {fileID: 2111581846}
-  - component: {fileID: 2111581845}
   m_Layer: 5
   m_Name: Home Player1
   m_TagString: Untagged
@@ -23758,22 +23429,6 @@ RectTransform:
   m_AnchoredPosition: {x: -725.9999, y: -3}
   m_SizeDelta: {x: 208.664, y: 31.9955}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &2111581845
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2111581843}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 728157982cda41c49a55b41269cef602, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  clearIt: {fileID: 2111581846}
-  value: {fileID: 0}
-  ddInput: {fileID: 0}
-  TextObject: {fileID: 0}
 --- !u!114 &2111581846
 MonoBehaviour:
   m_ObjectHideFlags: 0

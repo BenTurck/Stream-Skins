@@ -10,13 +10,41 @@ public class ValorantWritetoFile : MonoBehaviour
 {
 	public Dropdown ValorantHomeDDInput;
 
-	private string ValorantHomeStringInput;
+	private string ValorantHomeDDStringInput;
 
 	public string ValorantHomeSeriesScoreInput;
 
 	public InputField ValorantHomeSeriesScoreInputField;
 
 	public int ValorantHomeSeriesScoreValue = 0;
+
+	public Dropdown ValorantMap1DDInput;
+
+	private string ValorantMap1DDStringInput;
+
+	public Dropdown ValorantMap2DDInput;
+
+	private string ValorantMap2DDStringInput;
+
+	public Dropdown ValorantMap3DDInput;
+
+	private string ValorantMap3DDStringInput;
+
+	public Dropdown ValorantMap4DDInput;
+
+	private string ValorantMap4DDStringInput;
+
+	public Dropdown ValorantMap5DDInput;
+
+	private string ValorantMap5DDStringInput;
+
+	public string ValorantHomeMap1ScoreInput = "0";
+
+	public string ValorantAwayMap1ScoreInput = "0";
+
+
+
+
 
 	public Dropdown ValorantAwayDDInput;
 
@@ -47,7 +75,35 @@ public class ValorantWritetoFile : MonoBehaviour
 
 		});
 
+		ValorantMap1DDInput.onValueChanged.AddListener(delegate
+		{
+			ValorantMap1DDValue(ValorantMap1DDInput);
 
+		});
+
+		ValorantMap2DDInput.onValueChanged.AddListener(delegate
+		{
+			ValorantMap2DDValue(ValorantMap2DDInput);
+
+		});
+
+		ValorantMap3DDInput.onValueChanged.AddListener(delegate
+		{
+			ValorantMap3DDValue(ValorantMap3DDInput);
+
+		});
+
+		ValorantMap4DDInput.onValueChanged.AddListener(delegate
+		{
+			ValorantMap4DDValue(ValorantMap4DDInput);
+
+		});
+
+		ValorantMap5DDInput.onValueChanged.AddListener(delegate
+		{
+			ValorantMap5DDValue(ValorantMap5DDInput);
+
+		});
 
 	}
 
@@ -57,15 +113,319 @@ public class ValorantWritetoFile : MonoBehaviour
 
 	}
 
+	public void ValorantTicker(string s)
+	{
+		string ValorantTickerInput = s;
+
+		Debug.Log("Ticker.txt: " + ValorantTickerInput); // shows input in debug
+
+		Directory.CreateDirectory("Assets/Games/Valorant/"); // creates directory in this path
+															 // Application.streamingAssetsPath sets the directory to be in the data folder and creates folders called
+															 // streamingAssetsPath, LIVE_DATA, and Smash Bros
+
+		string path = "Assets/Games/Valorant/Ticker.txt"; // This is the directory for the text file.
+		if (!File.Exists(path)) // checks if the file exists at the path
+		{
+			File.WriteAllText(path, ValorantTickerInput); // sets the location to path and the contents to input inside if statement
+		}
+
+		File.WriteAllText(path, ValorantTickerInput);
+	}
+
+	public void ValorantCaster1(string s)
+	{
+		string ValorantCaster1Input = s;
+
+		Debug.Log("Caster1.txt: " + ValorantCaster1Input); // shows input in debug
+
+		Directory.CreateDirectory("Assets/Games/Valorant/"); // creates directory in this path
+															 // Application.streamingAssetsPath sets the directory to be in the data folder and creates folders called
+															 // streamingAssetsPath, LIVE_DATA, and Smash Bros
+
+		string path = "Assets/Games/Valorant/Caster1.txt"; // This is the directory for the text file.
+		if (!File.Exists(path)) // checks if the file exists at the path
+		{
+			File.WriteAllText(path, ValorantCaster1Input); // sets the location to path and the contents to input inside if statement
+		}
+
+		File.WriteAllText(path, ValorantCaster1Input);
+	}
+
+	public void ValorantCaster2(string s)
+	{
+		string ValorantCaster2Input = s;
+
+		Debug.Log("Caster2.txt: " + ValorantCaster2Input); // shows input in debug
+
+		Directory.CreateDirectory("Assets/Games/Valorant/"); // creates directory in this path
+															 // Application.streamingAssetsPath sets the directory to be in the data folder and creates folders called
+															 // streamingAssetsPath, LIVE_DATA, and Smash Bros
+
+		string path = "Assets/Games/Valorant/Caster2.txt"; // This is the directory for the text file.
+		if (!File.Exists(path)) // checks if the file exists at the path
+		{
+			File.WriteAllText(path, ValorantCaster2Input); // sets the location to path and the contents to input inside if statement
+		}
+
+		File.WriteAllText(path, ValorantCaster2Input);
+	}
+
+	public void ValorantMap1DDValue(Dropdown sender)
+    {
+		ValorantMap1DDStringInput = ValorantMap1DDInput.options[ValorantMap1DDInput.value].text;
+
+		string path = "Assets/Games/Valorant/Map1 Name.txt";
+
+		if (ValorantMap1DDStringInput == "SELECT MAP")
+        {
+			File.WriteAllText(path, "");
+			Debug.Log("Map1 Name.txt: ");
+		}
+
+		if (ValorantMap1DDStringInput != "SELECT MAP")
+        {
+			File.WriteAllText(path, ValorantMap1DDStringInput);
+			Debug.Log("Map1 Name.txt: " + ValorantMap1DDStringInput);
+		}
+	}
+
+	public void ValorantMap2DDValue(Dropdown sender)
+	{
+		ValorantMap2DDStringInput = ValorantMap2DDInput.options[ValorantMap2DDInput.value].text;
+
+		string path = "Assets/Games/Valorant/Map2 Name.txt";
+
+		if (ValorantMap2DDStringInput == "SELECT MAP")
+		{
+			File.WriteAllText(path, "");
+			Debug.Log("Map2 Name.txt: ");
+		}
+
+		if (ValorantMap2DDStringInput != "SELECT MAP")
+		{
+			File.WriteAllText(path, ValorantMap2DDStringInput);
+			Debug.Log("Map2 Name.txt: " + ValorantMap2DDStringInput);
+		}
+	}
+
+	public void ValorantMap3DDValue(Dropdown sender)
+	{
+		ValorantMap3DDStringInput = ValorantMap3DDInput.options[ValorantMap3DDInput.value].text;
+
+		string path = "Assets/Games/Valorant/Map3 Name.txt";
+
+		if (ValorantMap3DDStringInput == "SELECT MAP")
+		{
+			File.WriteAllText(path, "");
+			Debug.Log("Map3 Name.txt: ");
+		}
+
+		if (ValorantMap3DDStringInput != "SELECT MAP")
+		{
+			File.WriteAllText(path, ValorantMap3DDStringInput);
+			Debug.Log("Map3 Name.txt: " + ValorantMap3DDStringInput);
+		}
+	}
+
+	public void ValorantMap4DDValue(Dropdown sender)
+	{
+		ValorantMap4DDStringInput = ValorantMap4DDInput.options[ValorantMap4DDInput.value].text;
+
+		string path = "Assets/Games/Valorant/Map4 Name.txt";
+
+		if (ValorantMap4DDStringInput == "SELECT MAP")
+		{
+			File.WriteAllText(path, "");
+			Debug.Log("Map4 Name.txt: ");
+		}
+
+		if (ValorantMap4DDStringInput != "SELECT MAP")
+		{
+			File.WriteAllText(path, ValorantMap4DDStringInput);
+			Debug.Log("Map4 Name.txt: " + ValorantMap4DDStringInput);
+		}
+	}
+
+	public void ValorantMap5DDValue(Dropdown sender)
+	{
+		ValorantMap5DDStringInput = ValorantMap5DDInput.options[ValorantMap5DDInput.value].text;
+
+		string path = "Assets/Games/Valorant/Map5 Name.txt";
+
+		if (ValorantMap5DDStringInput == "SELECT MAP")
+		{
+			File.WriteAllText(path, "");
+			Debug.Log("Map5 Name.txt: ");
+		}
+
+		if (ValorantMap5DDStringInput != "SELECT MAP")
+		{
+			File.WriteAllText(path, ValorantMap5DDStringInput);
+			Debug.Log("Map5 Name.txt: " + ValorantMap5DDStringInput);
+		}
+	}
+
+	public void ValorantHomeMap1(bool tog)
+	{
+		ValorantHomeDDStringInput = ValorantHomeDDInput.options[ValorantHomeDDInput.value].text;
+		Debug.Log("Map1 Winner.txt: " + tog);
+		string text1 = "Map 1: ";
+		string text2 = " Won";
+		string bothinput = text1 + ValorantHomeDDStringInput + text2;
+		string path = "Assets/Games/Smash Bros/Map1 Winner.txt";
+		if (ValorantHomeDDStringInput == "SELECT TEAM")
+		{
+			File.WriteAllText(path, "");
+		}
+
+		else
+		{
+			if (tog == true)
+			{
+				Debug.Log(text1 + ValorantHomeDDStringInput + text2);
+				File.WriteAllText(path, bothinput);
+			}
+
+			if (tog == false)
+			{
+				Debug.Log(text1);
+				File.WriteAllText(path, "");
+			}
+		}
+	}
+
+	public void ValorantHomeMap2(bool tog)
+	{
+		ValorantHomeDDStringInput = ValorantHomeDDInput.options[ValorantHomeDDInput.value].text;
+		Debug.Log("Map2 Winner.txt: " + tog);
+		string text1 = "Map 2: ";
+		string text2 = " Won";
+		string bothinput = text1 + ValorantHomeDDStringInput + text2;
+		string path = "Assets/Games/Smash Bros/Map2 Winner.txt";
+		if (ValorantHomeDDStringInput == "SELECT TEAM")
+		{
+			File.WriteAllText(path, "");
+		}
+
+		else
+		{
+			if (tog == true)
+			{
+				Debug.Log(text1 + ValorantHomeDDStringInput + text2);
+				File.WriteAllText(path, bothinput);
+			}
+
+			if (tog == false)
+			{
+				Debug.Log(text1);
+				File.WriteAllText(path, "");
+			}
+		}
+	}
+
+	public void ValorantHomeMap3(bool tog)
+	{
+		ValorantHomeDDStringInput = ValorantHomeDDInput.options[ValorantHomeDDInput.value].text;
+		Debug.Log("Map3 Winner.txt: " + tog);
+		string text1 = "Map 3: ";
+		string text2 = " Won";
+		string bothinput = text1 + ValorantHomeDDStringInput + text2;
+		string path = "Assets/Games/Smash Bros/Map3 Winner.txt";
+		if (ValorantHomeDDStringInput == "SELECT TEAM")
+		{
+			File.WriteAllText(path, "");
+		}
+
+		else
+		{
+			if (tog == true)
+			{
+				Debug.Log(text1 + ValorantHomeDDStringInput + text2);
+				File.WriteAllText(path, bothinput);
+			}
+
+			if (tog == false)
+			{
+				Debug.Log(text1);
+				File.WriteAllText(path, "");
+			}
+		}
+	}
+
+	public void ValorantHomeMap4(bool tog)
+	{
+		ValorantHomeDDStringInput = ValorantHomeDDInput.options[ValorantHomeDDInput.value].text;
+		Debug.Log("Map4 Winner.txt: " + tog);
+		string text1 = "Map 4: ";
+		string text2 = " Won";
+		string bothinput = text1 + ValorantHomeDDStringInput + text2;
+		string path = "Assets/Games/Smash Bros/Map4 Winner.txt";
+		if (ValorantHomeDDStringInput == "SELECT TEAM")
+		{
+			File.WriteAllText(path, "");
+		}
+
+		else
+		{
+			if (tog == true)
+			{
+				Debug.Log(text1 + ValorantHomeDDStringInput + text2);
+				File.WriteAllText(path, bothinput);
+			}
+
+			if (tog == false)
+			{
+				Debug.Log(text1);
+				File.WriteAllText(path, "");
+			}
+		}
+	}
+
+	public void ValorantHomeMap5(bool tog)
+	{
+		ValorantHomeDDStringInput = ValorantHomeDDInput.options[ValorantHomeDDInput.value].text;
+		Debug.Log("Map5 Winner.txt: " + tog);
+		string text1 = "Map 5: ";
+		string text2 = " Won";
+		string bothinput = text1 + ValorantHomeDDStringInput + text2;
+		string path = "Assets/Games/Smash Bros/Map5 Winner.txt";
+		if (ValorantHomeDDStringInput == "SELECT TEAM")
+		{
+			File.WriteAllText(path, "");
+		}
+
+		else
+		{
+			if (tog == true)
+			{
+				Debug.Log(text1 + ValorantHomeDDStringInput + text2);
+				File.WriteAllText(path, bothinput);
+			}
+
+			if (tog == false)
+			{
+				Debug.Log(text1);
+				File.WriteAllText(path, "");
+			}
+		}
+	}
+
+
+
+
+
+
+
+
 	public void ValorantHomeDDValue(Dropdown sender)
 	{
-		ValorantHomeStringInput = ValorantHomeDDInput.options[ValorantHomeDDInput.value].text;
-		Debug.Log("Home Team Name.txt: " + ValorantHomeStringInput);
+		ValorantHomeDDStringInput = ValorantHomeDDInput.options[ValorantHomeDDInput.value].text;
+		Debug.Log("Home Team Name.txt: " + ValorantHomeDDStringInput);
 		//Directory.CreateDirectory("Assets/Games/Smash Bros/"); // creates a directory differently in this path
 
 		string path = "Assets/Games/Valorant/Home Team Name.txt"; // This is the directory for the text file.
 
-		if (ValorantHomeStringInput == "SELECT TEAM")
+		if (ValorantHomeDDStringInput == "SELECT TEAM")
 		{
 			string logoBlank = "Blank.png";
 			string logoHome = "Home Logo.png";
@@ -80,7 +440,7 @@ public class ValorantWritetoFile : MonoBehaviour
 			File.WriteAllText(path, ""); // sets the location to path and the contents to input
 		}
 
-		if (ValorantHomeStringInput == "SAINT ROSE")
+		if (ValorantHomeDDStringInput == "SAINT ROSE")
 		{
 			string logoSR = "SR LOGO.png";
 			string logoHome = "Home Logo.png";
@@ -93,7 +453,7 @@ public class ValorantWritetoFile : MonoBehaviour
 			System.IO.Directory.CreateDirectory(targetPath);
 			System.IO.File.Copy(sourceFile, destFile, true);
 		}
-		if (ValorantHomeStringInput == "RIT")
+		if (ValorantHomeDDStringInput == "RIT")
 
 		{
 			string logoRIT = "RIT Logo.png";
@@ -109,9 +469,9 @@ public class ValorantWritetoFile : MonoBehaviour
 
 		}
 
-		if (ValorantHomeStringInput != "SELECT TEAM")
+		if (ValorantHomeDDStringInput != "SELECT TEAM")
 		{
-			File.WriteAllText(path, ValorantHomeStringInput); // sets the location to path and the contents to input
+			File.WriteAllText(path, ValorantHomeDDStringInput); // sets the location to path and the contents to input
 		}
 	}
 
