@@ -60,7 +60,7 @@ public class ValorantReset : MonoBehaviour
 	public InputField ValorantAwayPlayer4IF;
 	public InputField ValorantAwayPlayer5IF;
 
-	public void SubmittingClear()
+	public void ValorantClear()
 	{
 		ValorantHomeDD.value = 0;
 		ValorantHomeSeasonRecordIF.text = "";

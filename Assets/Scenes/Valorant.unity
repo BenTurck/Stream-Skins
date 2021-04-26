@@ -2240,6 +2240,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1177585968}
+        m_TargetAssemblyTypeName: ValorantReset, Assembly-CSharp
+        m_MethodName: ValorantClear
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &213562372
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6536,7 +6548,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1177585966}
         m_TargetAssemblyTypeName: ValorantWritetoFile, Assembly-CSharp
-        m_MethodName: ValorantAwayMap1Score
+        m_MethodName: ValorantAwayGame1Score
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8312,7 +8324,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1177585966}
         m_TargetAssemblyTypeName: ValorantWritetoFile, Assembly-CSharp
-        m_MethodName: ValorantAwayMap4Score
+        m_MethodName: ValorantAwayGame4Score
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9115,7 +9127,7 @@ MonoBehaviour:
       - m_Target: {fileID: 1177585966}
         m_TargetAssemblyTypeName: ValorantWritetoFile, Assembly-CSharp
         m_MethodName: ValorantCaster2
-        m_Mode: 5
+        m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -10715,7 +10727,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1177585966}
         m_TargetAssemblyTypeName: ValorantWritetoFile, Assembly-CSharp
-        m_MethodName: ValorantHomeMap1Score
+        m_MethodName: ValorantHomeGame1Score
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -10935,7 +10947,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1177585968}
         m_TargetAssemblyTypeName: ValorantReset, Assembly-CSharp
-        m_MethodName: SubmittingClear
+        m_MethodName: ValorantClear
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -13012,7 +13024,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1177585966}
         m_TargetAssemblyTypeName: ValorantWritetoFile, Assembly-CSharp
-        m_MethodName: ValorantAwayMap5Score
+        m_MethodName: ValorantAwayGame5Score
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -13200,13 +13212,11 @@ MonoBehaviour:
   ValorantHomeSeriesScoreInput: 0
   ValorantHomeSeriesScoreInputField: {fileID: 1121026770}
   ValorantHomeSeriesScoreValue: 0
-  ValorantMap1DDInput: {fileID: 454261877}
-  ValorantMap2DDInput: {fileID: 98667930}
-  ValorantMap3DDInput: {fileID: 1397563616}
-  ValorantMap4DDInput: {fileID: 2039683815}
-  ValorantMap5DDInput: {fileID: 909167989}
-  ValorantHomeMap1ScoreInput: 
-  ValorantAwayMap1ScoreInput: 
+  ValorantGame1DDInput: {fileID: 454261877}
+  ValorantGame2DDInput: {fileID: 98667930}
+  ValorantGame3DDInput: {fileID: 1397563616}
+  ValorantGame4DDInput: {fileID: 2039683815}
+  ValorantGame5DDInput: {fileID: 909167989}
   ValorantAwayDDInput: {fileID: 2031434292}
   ValorantAwaySeriesScoreInput: 
   ValorantAwaySeriesScoreInputField: {fileID: 606619948}
@@ -13600,7 +13610,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1177585966}
         m_TargetAssemblyTypeName: ValorantWritetoFile, Assembly-CSharp
-        m_MethodName: ValorantAwayMap3Score
+        m_MethodName: ValorantAwayGame3Score
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -14077,7 +14087,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1177585966}
         m_TargetAssemblyTypeName: ValorantWritetoFile, Assembly-CSharp
-        m_MethodName: ValorantHomePlayer2
+        m_MethodName: ValorantHomeGame2Score
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -14673,7 +14683,7 @@ MonoBehaviour:
       - m_Target: {fileID: 1177585966}
         m_TargetAssemblyTypeName: ValorantWritetoFile, Assembly-CSharp
         m_MethodName: ValorantTicker
-        m_Mode: 5
+        m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -15077,7 +15087,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1177585966}
         m_TargetAssemblyTypeName: ValorantWritetoFile, Assembly-CSharp
-        m_MethodName: ValorantHomePlayer5
+        m_MethodName: ValorantHomeGame5Score
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -16859,7 +16869,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1177585966}
         m_TargetAssemblyTypeName: ValorantWritetoFile, Assembly-CSharp
-        m_MethodName: ValorantHomePlayer4
+        m_MethodName: ValorantHomeGame4Score
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -17124,7 +17134,7 @@ MonoBehaviour:
       - m_Target: {fileID: 1177585966}
         m_TargetAssemblyTypeName: ValorantWritetoFile, Assembly-CSharp
         m_MethodName: ValorantCaster1
-        m_Mode: 5
+        m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -20351,7 +20361,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1177585966}
         m_TargetAssemblyTypeName: ValorantWritetoFile, Assembly-CSharp
-        m_MethodName: ValorantHomePlayer3
+        m_MethodName: ValorantHomeGame3Score
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -21389,7 +21399,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1177585966}
         m_TargetAssemblyTypeName: ValorantWritetoFile, Assembly-CSharp
-        m_MethodName: ValorantAwayMap2Score
+        m_MethodName: ValorantAwayGame2Score
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
