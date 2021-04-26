@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -12,7 +11,6 @@ public class Reset1 : MonoBehaviour
 	public InputField value;
 	public Dropdown ddInput;
 	public Text TextObject;
-	public Toggle toggleIn;
 
 	public void SubmittingClear()
 	{
@@ -20,7 +18,6 @@ public class Reset1 : MonoBehaviour
 		ddInput.value = 0;
 		TextObject.text = "9";
 		value.text = "9";
-		toggleIn.isOn = false;
 
 	}
 }
