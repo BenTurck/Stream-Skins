@@ -33,6 +33,7 @@ public class Cognito : MonoBehaviour
     public static string jwt;
 
     bool loginSuccessful;
+    public bool loginScene;
     //int index; shouldn't need this but if anything breaks put it back
     public Dialogue dialogue; //This will allow you to access Dialogue class
 
@@ -51,6 +52,7 @@ public class Cognito : MonoBehaviour
 
 
         loginSuccessful = false;
+        loginScene = false; 
     }
 
 
@@ -158,7 +160,8 @@ public class Cognito : MonoBehaviour
 
             // User is logged in
             loginSuccessful = true;
-        Debug.Log("LOGINSUCCESS = " + loginSuccessful);
+            loginScene = true;
+            Debug.Log("LOGINSUCCESS = " + loginSuccessful);
         }
         catch (Exception e) //Nothing in the fields
         {
