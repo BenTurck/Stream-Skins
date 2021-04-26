@@ -47,6 +47,43 @@ function toUrlString(buffer) {
         .replace(/\+/g, '-')
         .replace(/\//g, '_')
         .replace(/=/g, '');
-}   }
+    }
+}
+
+//New Code - - - - - - - - - - - - - -  
+
+const username = event.requestContext.authorizer.claims['cognito:username'];
+const email = event.requestContext.authorizer.claims['cognito:username'];
+
+recordUser(username, email).then(() => {
+        
+        callback(null, {
+        
+            statusCode: 201,
+            body: JSON.stringify({
+            
+                User: username,
+                Email: email,
+                
+            }),
+            headers: {
+                'Access-Control-Allow-Origin': '*',
+            },
+        });
+    }).catch((err) => {
+        console.error(err);
+        errorResponse(err.message, context.awsRequestId, callback)
+    });
+};
+
+
+
+
+
+
+
+
+
+
 
 
