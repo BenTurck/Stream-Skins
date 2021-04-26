@@ -2228,8 +2228,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 438727341}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 1177585969}
+        m_TargetAssemblyTypeName: Menu, Assembly-CSharp
         m_MethodName: Back
         m_Mode: 1
         m_Arguments:
@@ -4167,7 +4167,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 438727340}
-  - component: {fileID: 438727341}
   m_Layer: 0
   m_Name: Bottom Menu
   m_TagString: Untagged
@@ -4192,18 +4191,6 @@ Transform:
   m_Father: {fileID: 1708096258}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &438727341
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 438727339}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: df7befa080564b846814929c3f6b2529, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &439166319
 GameObject:
   m_ObjectHideFlags: 0
@@ -13189,6 +13176,7 @@ GameObject:
   - component: {fileID: 1177585967}
   - component: {fileID: 1177585966}
   - component: {fileID: 1177585968}
+  - component: {fileID: 1177585969}
   m_Layer: 0
   m_Name: ValorantScripts
   m_TagString: Untagged
@@ -13293,6 +13281,18 @@ MonoBehaviour:
   ValorantAwayPlayer3IF: {fileID: 1776706174}
   ValorantAwayPlayer4IF: {fileID: 1493378145}
   ValorantAwayPlayer5IF: {fileID: 714751132}
+--- !u!114 &1177585969
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1177585965}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76326006f7c1cd548b16f6db4fc9d10f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1187087905
 GameObject:
   m_ObjectHideFlags: 0
@@ -18784,8 +18784,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 438727341}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 1177585969}
+        m_TargetAssemblyTypeName: Menu, Assembly-CSharp
         m_MethodName: Quit
         m_Mode: 1
         m_Arguments:

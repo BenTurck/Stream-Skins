@@ -6,7 +6,7 @@ using System;
 using System.Net;
 using System.IO;
 
-public class MainMenu : MonoBehaviour
+public class Menu : MonoBehaviour
 {
 	public void Valorant ()
 	{
@@ -38,7 +38,6 @@ public class MainMenu : MonoBehaviour
 		SceneManager.LoadScene("Signin"); // Loads specified scene
 	}
 	
-	
 	public void Signup ()
 	{
 		SceneManager.LoadScene("Signup"); // Loads specified scene
@@ -51,7 +50,10 @@ public class MainMenu : MonoBehaviour
 	{
 		SceneManager.LoadScene("Assets"); // Loads specified scene
 	}
-
+	public void Back()
+	{
+		SceneManager.LoadScene("Menu"); // Loads menu scene
+	}
 	public void Quit ()
 	{
 		Debug.Log("Quit"); // Shows quit message in debug

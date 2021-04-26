@@ -970,7 +970,7 @@ public class ValorantWritetoFile : MonoBehaviour
 		if (ValorantAwayDDStringInput == "SELECT TEAM")
 		{
 			string logoBlank = "Blank.png";
-			string logoHome = "Home Logo.png";
+			string logoHome = "Away Logo.png";
 			string sourcePath = "Assets/TeamLogos/";
 			string targetPath = "Assets/Games/Valorant/";
 
@@ -985,7 +985,7 @@ public class ValorantWritetoFile : MonoBehaviour
 		if (ValorantAwayDDStringInput == "SAINT ROSE")
 		{
 			string logoSR = "SR LOGO.png";
-			string logoHome = "Home Logo.png";
+			string logoHome = "Away Logo.png";
 			string sourcePath = "Assets/TeamLogos/";
 			string targetPath = "Assets/Games/Valorant/";
 
@@ -999,7 +999,7 @@ public class ValorantWritetoFile : MonoBehaviour
 
 		{
 			string logoRIT = "RIT Logo.png";
-			string logoHome = "Home Logo.png";
+			string logoHome = "Away Logo.png";
 			string sourcePath = "Assets/TeamLogos/";
 			string targetPath = "Assets/Games/Valorant/";
 
