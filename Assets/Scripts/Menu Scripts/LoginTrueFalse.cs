@@ -17,13 +17,13 @@ public class LoginTrueFalse : MonoBehaviour
 
     public void MenuStatsLogin()
     {
-        Cognito obj = new Cognito();
-        if (obj.loginScene == true)
+        Cognito login = new Cognito();
+        if (login.loginScene == true)
         {
             MenuStatsButton.SetActive(true);
         }
 
-        if (obj.loginScene == false)
+        if (login.loginScene == false)
         {
             MenuStatsButton.SetActive(false);
         }

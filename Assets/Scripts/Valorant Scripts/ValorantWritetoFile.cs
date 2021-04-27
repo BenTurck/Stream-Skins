@@ -2,6 +2,7 @@ using System;
 using UnityEngine;
 using UnityEngine.UI;
 using System.IO;
+using Amazon.DynamoDBv2;
 
 public class ValorantWritetoFile : MonoBehaviour
 {
