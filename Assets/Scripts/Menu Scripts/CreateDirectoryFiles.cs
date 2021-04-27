@@ -6,7 +6,7 @@ using UnityEngine.UI;
 using UnityEditor;
 using System.IO;
 
-public class CreateValorant
+public class CreateDirectoryFiles
 {
 
     [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]
