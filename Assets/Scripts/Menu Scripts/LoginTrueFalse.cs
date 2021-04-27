@@ -6,7 +6,7 @@ public class LoginTrueFalse : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        MenuStatsButton.SetActive(false);
+        //MenuStatsButton.SetActive(false);
     }
 
     // Update is called once per frame

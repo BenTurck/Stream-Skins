@@ -206,8 +206,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1405343921}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 695987221}
+        m_TargetAssemblyTypeName: Menu, Assembly-CSharp
         m_MethodName: LeagueofLegends
         m_Mode: 1
         m_Arguments:
@@ -339,8 +339,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1405343921}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 695987221}
+        m_TargetAssemblyTypeName: Menu, Assembly-CSharp
         m_MethodName: SmashBros
         m_Mode: 1
         m_Arguments:
@@ -472,8 +472,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1405343921}
-        m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
+      - m_Target: {fileID: 695987221}
+        m_TargetAssemblyTypeName: Menu, Assembly-CSharp
         m_MethodName: Stats
         m_Mode: 1
         m_Arguments:
@@ -740,8 +740,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1405343921}
-        m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
+      - m_Target: {fileID: 695987221}
+        m_TargetAssemblyTypeName: Menu, Assembly-CSharp
         m_MethodName: Assets
         m_Mode: 1
         m_Arguments:
@@ -1292,8 +1292,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1405343921}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 695987221}
+        m_TargetAssemblyTypeName: Menu, Assembly-CSharp
         m_MethodName: Overwatch
         m_Mode: 1
         m_Arguments:
@@ -1487,6 +1487,8 @@ GameObject:
   m_Component:
   - component: {fileID: 695987220}
   - component: {fileID: 695987219}
+  - component: {fileID: 695987221}
+  - component: {fileID: 695987222}
   m_Layer: 0
   m_Name: Menu Scripts
   m_TagString: Untagged
@@ -1521,6 +1523,36 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &695987221
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 695987218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76326006f7c1cd548b16f6db4fc9d10f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &695987222
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 695987218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49164015c3d7a054f9c4bb964bb3518a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OverwatchObject: {fileID: 612792427}
+  SmashBrosObject: {fileID: 218798331}
+  LeagueofLegendsObject: {fileID: 191432924}
+  CustomObject: {fileID: 1599309857}
+  AssetsObject: {fileID: 352276157}
+  StatsObject: {fileID: 0}
 --- !u!1 &705889519
 GameObject:
   m_ObjectHideFlags: 0
@@ -2308,7 +2340,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1405343920}
-  - component: {fileID: 1405343921}
   m_Layer: 0
   m_Name: Main Menu
   m_TagString: Untagged
@@ -2339,18 +2370,6 @@ Transform:
   m_Father: {fileID: 1314633316}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1405343921
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1405343919}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 76326006f7c1cd548b16f6db4fc9d10f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1428920966
 GameObject:
   m_ObjectHideFlags: 0
@@ -2509,8 +2528,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1405343921}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 695987221}
+        m_TargetAssemblyTypeName: Menu, Assembly-CSharp
         m_MethodName: Valorant
         m_Mode: 1
         m_Arguments:
@@ -2838,8 +2857,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1405343921}
-        m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
+      - m_Target: {fileID: 695987221}
+        m_TargetAssemblyTypeName: Menu, Assembly-CSharp
         m_MethodName: Custom
         m_Mode: 1
         m_Arguments:
@@ -2971,8 +2990,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1405343921}
-        m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
+      - m_Target: {fileID: 695987221}
+        m_TargetAssemblyTypeName: Menu, Assembly-CSharp
         m_MethodName: Signup
         m_Mode: 1
         m_Arguments:
@@ -3104,8 +3123,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1405343921}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 695987221}
+        m_TargetAssemblyTypeName: Menu, Assembly-CSharp
         m_MethodName: Quit
         m_Mode: 1
         m_Arguments:

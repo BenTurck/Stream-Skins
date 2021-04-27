@@ -3,6 +3,10 @@ using UnityEngine.SceneManagement;
 
 public class Menu : MonoBehaviour
 {
+	void Start()
+	{
+	}
+
 	public void Valorant ()
 	{
 		SceneManager.LoadScene("Valorant"); // Loads specified scene

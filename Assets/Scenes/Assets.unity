@@ -2004,8 +2004,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1377124090}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 1874299458}
+        m_TargetAssemblyTypeName: Menu, Assembly-CSharp
         m_MethodName: Quit
         m_Mode: 1
         m_Arguments:
@@ -4239,8 +4239,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1377124090}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 1874299458}
+        m_TargetAssemblyTypeName: Menu, Assembly-CSharp
         m_MethodName: Back
         m_Mode: 1
         m_Arguments:
@@ -6911,6 +6911,7 @@ GameObject:
   - component: {fileID: 1874299455}
   - component: {fileID: 1874299456}
   - component: {fileID: 1874299457}
+  - component: {fileID: 1874299458}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -7052,11 +7053,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 463dbffeb4fd84f4bbafaca0c08727ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Value: 9
-  TextObject: {fileID: 1361684302}
-  maxValue: 9
-  minValue: 0
-  input: 
+--- !u!114 &1874299458
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1874299449}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76326006f7c1cd548b16f6db4fc9d10f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OverwatchObject: {fileID: 0}
+  SmashBrosObject: {fileID: 0}
+  LeagueofLegendsObject: {fileID: 0}
+  CustomObject: {fileID: 0}
+  AssetsObject: {fileID: 0}
+  StatsObject: {fileID: 0}
 --- !u!1 &1938195525
 GameObject:
   m_ObjectHideFlags: 0
