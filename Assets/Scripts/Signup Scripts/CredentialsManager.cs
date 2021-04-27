@@ -1,5 +1,3 @@
-using System;
-using UnityEngine;
 using Amazon;
 using Amazon.CognitoIdentity;
 

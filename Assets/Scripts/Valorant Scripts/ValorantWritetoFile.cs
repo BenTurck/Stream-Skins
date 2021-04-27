@@ -1,9 +1,6 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEditor;
 using System.IO;
 
 public class ValorantWritetoFile : MonoBehaviour
@@ -54,13 +51,6 @@ public class ValorantWritetoFile : MonoBehaviour
 	//Start is called before the first frame update
 	void Start()
 	{
-		Directory.CreateDirectory("Assets/Games/Valorant/");
-		Directory.CreateDirectory("Assets/TeamLogos/");
-
-
-
-
-
 		ValorantHomeDDInput.onValueChanged.AddListener(delegate
 		{
 			ValorantHomeDDValue(ValorantHomeDDInput);
@@ -117,10 +107,6 @@ public class ValorantWritetoFile : MonoBehaviour
 
 		Debug.Log("Ticker.txt: " + ValorantTickerInput); // shows input in debug
 
-		Directory.CreateDirectory("Assets/Games/Valorant/"); // creates directory in this path
-															 // Application.streamingAssetsPath sets the directory to be in the data folder and creates folders called
-															 // streamingAssetsPath, LIVE_DATA, and Smash Bros
-
 		string path = "Assets/Games/Valorant/Ticker.txt"; // This is the directory for the text file.
 		if (!File.Exists(path)) // checks if the file exists at the path
 		{
@@ -136,10 +122,6 @@ public class ValorantWritetoFile : MonoBehaviour
 
 		Debug.Log("Caster1.txt: " + ValorantCaster1Input); // shows input in debug
 
-		Directory.CreateDirectory("Assets/Games/Valorant/"); // creates directory in this path
-															 // Application.streamingAssetsPath sets the directory to be in the data folder and creates folders called
-															 // streamingAssetsPath, LIVE_DATA, and Smash Bros
-
 		string path = "Assets/Games/Valorant/Caster1.txt"; // This is the directory for the text file.
 		if (!File.Exists(path)) // checks if the file exists at the path
 		{
@@ -154,10 +136,6 @@ public class ValorantWritetoFile : MonoBehaviour
 		string ValorantCaster2Input = s;
 
 		Debug.Log("Caster2.txt: " + ValorantCaster2Input); // shows input in debug
-
-		Directory.CreateDirectory("Assets/Games/Valorant/"); // creates directory in this path
-															 // Application.streamingAssetsPath sets the directory to be in the data folder and creates folders called
-															 // streamingAssetsPath, LIVE_DATA, and Smash Bros
 
 		string path = "Assets/Games/Valorant/Caster2.txt"; // This is the directory for the text file.
 		if (!File.Exists(path)) // checks if the file exists at the path
@@ -319,10 +297,6 @@ public class ValorantWritetoFile : MonoBehaviour
 
 		Debug.Log("Home Team Game1 Score.txt: " + ValorantHomeGame1ScoreInput); // shows input in debug
 
-		Directory.CreateDirectory("Assets/Games/Valorant/"); // creates directory in this path
-															 // Application.streamingAssetsPath sets the directory to be in the data folder and creates folders called
-															 // streamingAssetsPath, LIVE_DATA, and Smash Bros
-
 		string path = "Assets/Games/Valorant/Home Team Game1 Score.txt"; // This is the directory for the text file.
 		if (!File.Exists(path)) // checks if the file exists at the path
 		{
@@ -339,10 +313,6 @@ public class ValorantWritetoFile : MonoBehaviour
 
 		Debug.Log("Home Team Game2 Score.txt: " + ValorantHomeGame2ScoreInput); // shows input in debug
 
-		Directory.CreateDirectory("Assets/Games/Valorant/"); // creates directory in this path
-															 // Application.streamingAssetsPath sets the directory to be in the data folder and creates folders called
-															 // streamingAssetsPath, LIVE_DATA, and Smash Bros
-
 		string path = "Assets/Games/Valorant/Home Team Game2 Score.txt"; // This is the directory for the text file.
 		if (!File.Exists(path)) // checks if the file exists at the path
 		{
@@ -357,10 +327,6 @@ public class ValorantWritetoFile : MonoBehaviour
 		string ValorantHomeGame3ScoreInput = s;
 
 		Debug.Log("Home Team Game3 Score.txt: " + ValorantHomeGame3ScoreInput); // shows input in debug
-
-		Directory.CreateDirectory("Assets/Games/Valorant/"); // creates directory in this path
-															 // Application.streamingAssetsPath sets the directory to be in the data folder and creates folders called
-															 // streamingAssetsPath, LIVE_DATA, and Smash Bros
 
 		string path = "Assets/Games/Valorant/Home Team Game3 Score.txt"; // This is the directory for the text file.
 		if (!File.Exists(path)) // checks if the file exists at the path
@@ -377,10 +343,6 @@ public class ValorantWritetoFile : MonoBehaviour
 
 		Debug.Log("Home Team Game4 Score.txt: " + ValorantHomeGame4ScoreInput); // shows input in debug
 
-		Directory.CreateDirectory("Assets/Games/Valorant/"); // creates directory in this path
-															 // Application.streamingAssetsPath sets the directory to be in the data folder and creates folders called
-															 // streamingAssetsPath, LIVE_DATA, and Smash Bros
-
 		string path = "Assets/Games/Valorant/Home Team Game4 Score.txt"; // This is the directory for the text file.
 		if (!File.Exists(path)) // checks if the file exists at the path
 		{
@@ -395,10 +357,6 @@ public class ValorantWritetoFile : MonoBehaviour
 		string ValorantHomeGame5ScoreInput = s;
 
 		Debug.Log("Home Team Game5 Score.txt: " + ValorantHomeGame5ScoreInput); // shows input in debug
-
-		Directory.CreateDirectory("Assets/Games/Valorant/"); // creates directory in this path
-															 // Application.streamingAssetsPath sets the directory to be in the data folder and creates folders called
-															 // streamingAssetsPath, LIVE_DATA, and Smash Bros
 
 		string path = "Assets/Games/Valorant/Home Team Game5 Score.txt"; // This is the directory for the text file.
 		if (!File.Exists(path)) // checks if the file exists at the path
@@ -510,10 +468,6 @@ public class ValorantWritetoFile : MonoBehaviour
 
 		Debug.Log("Away Team Game1 Score.txt: " + ValorantAwayGame1ScoreInput); // shows input in debug
 
-		Directory.CreateDirectory("Assets/Games/Valorant/"); // creates directory in this path
-															 // Application.streamingAssetsPath sets the directory to be in the data folder and creates folders called
-															 // streamingAssetsPath, LIVE_DATA, and Smash Bros
-
 		string path = "Assets/Games/Valorant/Away Team Game1 Score.txt"; // This is the directory for the text file.
 		if (!File.Exists(path)) // checks if the file exists at the path
 		{
@@ -530,10 +484,6 @@ public class ValorantWritetoFile : MonoBehaviour
 
 		Debug.Log("Away Team Game2 Score.txt: " + ValorantAwayGame2ScoreInput); // shows input in debug
 
-		Directory.CreateDirectory("Assets/Games/Valorant/"); // creates directory in this path
-															 // Application.streamingAssetsPath sets the directory to be in the data folder and creates folders called
-															 // streamingAssetsPath, LIVE_DATA, and Smash Bros
-
 		string path = "Assets/Games/Valorant/Away Team Game2 Score.txt"; // This is the directory for the text file.
 		if (!File.Exists(path)) // checks if the file exists at the path
 		{
@@ -548,10 +498,6 @@ public class ValorantWritetoFile : MonoBehaviour
 		string ValorantAwayGame3ScoreInput = s;
 
 		Debug.Log("Away Team Game3 Score.txt: " + ValorantAwayGame3ScoreInput); // shows input in debug
-
-		Directory.CreateDirectory("Assets/Games/Valorant/"); // creates directory in this path
-															 // Application.streamingAssetsPath sets the directory to be in the data folder and creates folders called
-															 // streamingAssetsPath, LIVE_DATA, and Smash Bros
 
 		string path = "Assets/Games/Valorant/Away Team Game3 Score.txt"; // This is the directory for the text file.
 		if (!File.Exists(path)) // checks if the file exists at the path
@@ -568,10 +514,6 @@ public class ValorantWritetoFile : MonoBehaviour
 
 		Debug.Log("Away Team Game4 Score.txt: " + ValorantAwayGame4ScoreInput); // shows input in debug
 
-		Directory.CreateDirectory("Assets/Games/Valorant/"); // creates directory in this path
-															 // Application.streamingAssetsPath sets the directory to be in the data folder and creates folders called
-															 // streamingAssetsPath, LIVE_DATA, and Smash Bros
-
 		string path = "Assets/Games/Valorant/Away Team Game4 Score.txt"; // This is the directory for the text file.
 		if (!File.Exists(path)) // checks if the file exists at the path
 		{
@@ -586,10 +528,6 @@ public class ValorantWritetoFile : MonoBehaviour
 		string ValorantAwayGame5ScoreInput = s;
 
 		Debug.Log("Away Team Game5 Score.txt: " + ValorantAwayGame5ScoreInput); // shows input in debug
-
-		Directory.CreateDirectory("Assets/Games/Valorant/"); // creates directory in this path
-															 // Application.streamingAssetsPath sets the directory to be in the data folder and creates folders called
-															 // streamingAssetsPath, LIVE_DATA, and Smash Bros
 
 		string path = "Assets/Games/Valorant/Away Team Game5 Score.txt"; // This is the directory for the text file.
 		if (!File.Exists(path)) // checks if the file exists at the path
@@ -749,7 +687,6 @@ public class ValorantWritetoFile : MonoBehaviour
 	{
 		ValorantHomeDDStringInput = ValorantHomeDDInput.options[ValorantHomeDDInput.value].text;
 		Debug.Log("Home Team Name.txt: " + ValorantHomeDDStringInput);
-		//Directory.CreateDirectory("Assets/Games/Smash Bros/"); // creates a directory differently in this path
 
 		string path = "Assets/Games/Valorant/Home Team Name.txt"; // This is the directory for the text file.
 
@@ -760,11 +697,10 @@ public class ValorantWritetoFile : MonoBehaviour
 			string sourcePath = "Assets/TeamLogos/";
 			string targetPath = "Assets/Games/Valorant/";
 
-			string sourceFile = System.IO.Path.Combine(sourcePath, logoBlank);
-			string destFile = System.IO.Path.Combine(targetPath, logoHome);
+			string sourceFile = Path.Combine(sourcePath, logoBlank);
+			string destFile = Path.Combine(targetPath, logoHome);
 
-			System.IO.Directory.CreateDirectory(targetPath);
-			System.IO.File.Copy(sourceFile, destFile, true);
+			File.Copy(sourceFile, destFile, true);
 			File.WriteAllText(path, ""); // sets the location to path and the contents to input
 		}
 
@@ -775,11 +711,10 @@ public class ValorantWritetoFile : MonoBehaviour
 			string sourcePath = "Assets/TeamLogos/";
 			string targetPath = "Assets/Games/Valorant/";
 
-			string sourceFile = System.IO.Path.Combine(sourcePath, logoSR);
-			string destFile = System.IO.Path.Combine(targetPath, logoHome);
+			string sourceFile = Path.Combine(sourcePath, logoSR);
+			string destFile = Path.Combine(targetPath, logoHome);
 
-			System.IO.Directory.CreateDirectory(targetPath);
-			System.IO.File.Copy(sourceFile, destFile, true);
+			File.Copy(sourceFile, destFile, true);
 		}
 		if (ValorantHomeDDStringInput == "RIT")
 
@@ -789,11 +724,10 @@ public class ValorantWritetoFile : MonoBehaviour
 			string sourcePath = "Assets/TeamLogos/";
 			string targetPath = "Assets/Games/Valorant/";
 
-			string sourceFile = System.IO.Path.Combine(sourcePath, logoRIT);
-			string destFile = System.IO.Path.Combine(targetPath, logoHome);
+			string sourceFile = Path.Combine(sourcePath, logoRIT);
+			string destFile = Path.Combine(targetPath, logoHome);
 
-			System.IO.Directory.CreateDirectory(targetPath);
-			System.IO.File.Copy(sourceFile, destFile, true);
+			File.Copy(sourceFile, destFile, true);
 
 		}
 
@@ -808,10 +742,6 @@ public class ValorantWritetoFile : MonoBehaviour
 		string ValorantHomeSeasonRecordInput = s;
 
 		Debug.Log("Home Team Season Record.txt: " + ValorantHomeSeasonRecordInput); // shows input in debug
-
-		Directory.CreateDirectory("Assets/Games/Valorant/"); // creates directory in this path
-															 // Application.streamingAssetsPath sets the directory to be in the data folder and creates folders called
-															 // streamingAssetsPath, LIVE_DATA, and Smash Bros
 
 		string path = "Assets/Games/Valorant/Home Team Season Record.txt"; // This is the directory for the text file.
 		if (!File.Exists(path)) // checks if the file exists at the path
@@ -866,10 +796,6 @@ public class ValorantWritetoFile : MonoBehaviour
 
 		Debug.Log("Home Team Player1.txt: " + ValorantHomePlayer1Input); // shows input in debug
 
-		Directory.CreateDirectory("Assets/Games/Valorant/"); // creates directory in this path
-															 // Application.streamingAssetsPath sets the directory to be in the data folder and creates folders called
-															 // streamingAssetsPath, LIVE_DATA, and Smash Bros
-
 		string path = "Assets/Games/Valorant/Home Team Player1.txt"; // This is the directory for the text file.
 		if (!File.Exists(path)) // checks if the file exists at the path
 		{
@@ -884,10 +810,6 @@ public class ValorantWritetoFile : MonoBehaviour
 		string ValorantHomePlayer2Input = s;
 
 		Debug.Log("Home Team Player2.txt: " + ValorantHomePlayer2Input); // shows input in debug
-
-		Directory.CreateDirectory("Assets/Games/Valorant/"); // creates directory in this path
-															 // Application.streamingAssetsPath sets the directory to be in the data folder and creates folders called
-															 // streamingAssetsPath, LIVE_DATA, and Smash Bros
 
 		string path = "Assets/Games/Valorant/Home Team Player2.txt"; // This is the directory for the text file.
 		if (!File.Exists(path)) // checks if the file exists at the path
@@ -904,10 +826,6 @@ public class ValorantWritetoFile : MonoBehaviour
 
 		Debug.Log("Home Team Player3.txt: " + ValorantHomePlayer3Input); // shows input in debug
 
-		Directory.CreateDirectory("Assets/Games/Valorant/"); // creates directory in this path
-															 // Application.streamingAssetsPath sets the directory to be in the data folder and creates folders called
-															 // streamingAssetsPath, LIVE_DATA, and Smash Bros
-
 		string path = "Assets/Games/Valorant/Home Team Player3.txt"; // This is the directory for the text file.
 		if (!File.Exists(path)) // checks if the file exists at the path
 		{
@@ -922,10 +840,6 @@ public class ValorantWritetoFile : MonoBehaviour
 		string ValorantHomePlayer4Input = s;
 
 		Debug.Log("Home Team Player4.txt: " + ValorantHomePlayer4Input); // shows input in debug
-
-		Directory.CreateDirectory("Assets/Games/Valorant/"); // creates directory in this path
-															 // Application.streamingAssetsPath sets the directory to be in the data folder and creates folders called
-															 // streamingAssetsPath, LIVE_DATA, and Smash Bros
 
 		string path = "Assets/Games/Valorant/Home Team Player4.txt"; // This is the directory for the text file.
 		if (!File.Exists(path)) // checks if the file exists at the path
@@ -942,10 +856,6 @@ public class ValorantWritetoFile : MonoBehaviour
 
 		Debug.Log("Home Team Player5.txt: " + ValorantHomePlayer5Input); // shows input in debug
 
-		Directory.CreateDirectory("Assets/Games/Valorant/"); // creates directory in this path
-															 // Application.streamingAssetsPath sets the directory to be in the data folder and creates folders called
-															 // streamingAssetsPath, LIVE_DATA, and Smash Bros
-
 		string path = "Assets/Games/Valorant/Home Team Player5.txt"; // This is the directory for the text file.
 		if (!File.Exists(path)) // checks if the file exists at the path
 		{
@@ -959,7 +869,6 @@ public class ValorantWritetoFile : MonoBehaviour
 	{
 		ValorantAwayDDStringInput = ValorantAwayDDInput.options[ValorantAwayDDInput.value].text;
 		Debug.Log("Away Team Name.txt: " + ValorantAwayDDStringInput);
-		//Directory.CreateDirectory("Assets/Games/Smash Bros/"); // creates a directory differently in this path
 
 		string path = "Assets/Games/Valorant/Away Team Name.txt"; // This is the directory for the text file.
 
@@ -970,11 +879,10 @@ public class ValorantWritetoFile : MonoBehaviour
 			string sourcePath = "Assets/TeamLogos/";
 			string targetPath = "Assets/Games/Valorant/";
 
-			string sourceFile = System.IO.Path.Combine(sourcePath, logoBlank);
-			string destFile = System.IO.Path.Combine(targetPath, logoHome);
+			string sourceFile = Path.Combine(sourcePath, logoBlank);
+			string destFile = Path.Combine(targetPath, logoHome);
 
-			System.IO.Directory.CreateDirectory(targetPath);
-			System.IO.File.Copy(sourceFile, destFile, true);
+			File.Copy(sourceFile, destFile, true);
 			File.WriteAllText(path, ""); // sets the location to path and the contents to input
 		}
 
@@ -985,11 +893,10 @@ public class ValorantWritetoFile : MonoBehaviour
 			string sourcePath = "Assets/TeamLogos/";
 			string targetPath = "Assets/Games/Valorant/";
 
-			string sourceFile = System.IO.Path.Combine(sourcePath, logoSR);
-			string destFile = System.IO.Path.Combine(targetPath, logoHome);
+			string sourceFile = Path.Combine(sourcePath, logoSR);
+			string destFile = Path.Combine(targetPath, logoHome);
 
-			System.IO.Directory.CreateDirectory(targetPath);
-			System.IO.File.Copy(sourceFile, destFile, true);
+			File.Copy(sourceFile, destFile, true);
 		}
 		if (ValorantAwayDDStringInput == "RIT")
 
@@ -999,11 +906,10 @@ public class ValorantWritetoFile : MonoBehaviour
 			string sourcePath = "Assets/TeamLogos/";
 			string targetPath = "Assets/Games/Valorant/";
 
-			string sourceFile = System.IO.Path.Combine(sourcePath, logoRIT);
-			string destFile = System.IO.Path.Combine(targetPath, logoHome);
+			string sourceFile = Path.Combine(sourcePath, logoRIT);
+			string destFile = Path.Combine(targetPath, logoHome);
 
-			System.IO.Directory.CreateDirectory(targetPath);
-			System.IO.File.Copy(sourceFile, destFile, true);
+			File.Copy(sourceFile, destFile, true);
 
 		}
 
@@ -1018,10 +924,6 @@ public class ValorantWritetoFile : MonoBehaviour
 		string ValorantAwaySeasonRecordInput = s;
 
 		Debug.Log("Away Team Season Record.txt: " + ValorantAwaySeasonRecordInput); // shows input in debug
-
-		Directory.CreateDirectory("Assets/Games/Valorant/"); // creates directory in this path
-															 // Application.streamingAssetsPath sets the directory to be in the data folder and creates folders called
-															 // streamingAssetsPath, LIVE_DATA, and Smash Bros
 
 		string path = "Assets/Games/Valorant/Away Team Season Record.txt"; // This is the directory for the text file.
 		if (!File.Exists(path)) // checks if the file exists at the path
@@ -1076,10 +978,6 @@ public class ValorantWritetoFile : MonoBehaviour
 
 		Debug.Log("Away Team Player1.txt: " + ValorantAwayPlayer1Input); // shows input in debug
 
-		Directory.CreateDirectory("Assets/Games/Valorant/"); // creates directory in this path
-															 // Application.streamingAssetsPath sets the directory to be in the data folder and creates folders called
-															 // streamingAssetsPath, LIVE_DATA, and Smash Bros
-
 		string path = "Assets/Games/Valorant/Away Team Player1.txt"; // This is the directory for the text file.
 		if (!File.Exists(path)) // checks if the file exists at the path
 		{
@@ -1094,10 +992,6 @@ public class ValorantWritetoFile : MonoBehaviour
 		string ValorantAwayPlayer2Input = s;
 
 		Debug.Log("Away Team Player2.txt: " + ValorantAwayPlayer2Input); // shows input in debug
-
-		Directory.CreateDirectory("Assets/Games/Valorant/"); // creates directory in this path
-															 // Application.streamingAssetsPath sets the directory to be in the data folder and creates folders called
-															 // streamingAssetsPath, LIVE_DATA, and Smash Bros
 
 		string path = "Assets/Games/Valorant/Away Team Player2.txt"; // This is the directory for the text file.
 		if (!File.Exists(path)) // checks if the file exists at the path
@@ -1114,10 +1008,6 @@ public class ValorantWritetoFile : MonoBehaviour
 
 		Debug.Log("Away Team Player3.txt: " + ValorantAwayPlayer3Input); // shows input in debug
 
-		Directory.CreateDirectory("Assets/Games/Valorant/"); // creates directory in this path
-															 // Application.streamingAssetsPath sets the directory to be in the data folder and creates folders called
-															 // streamingAssetsPath, LIVE_DATA, and Smash Bros
-
 		string path = "Assets/Games/Valorant/Away Team Player3.txt"; // This is the directory for the text file.
 		if (!File.Exists(path)) // checks if the file exists at the path
 		{
@@ -1133,10 +1023,6 @@ public class ValorantWritetoFile : MonoBehaviour
 
 		Debug.Log("Away Team Player4.txt: " + ValorantAwayPlayer4Input); // shows input in debug
 
-		Directory.CreateDirectory("Assets/Games/Valorant/"); // creates directory in this path
-															 // Application.streamingAssetsPath sets the directory to be in the data folder and creates folders called
-															 // streamingAssetsPath, LIVE_DATA, and Smash Bros
-
 		string path = "Assets/Games/Valorant/Away Team Player4.txt"; // This is the directory for the text file.
 		if (!File.Exists(path)) // checks if the file exists at the path
 		{
@@ -1151,10 +1037,6 @@ public class ValorantWritetoFile : MonoBehaviour
 		string ValorantHomePlayer5Input = s;
 
 		Debug.Log("Away Team Player5.txt: " + ValorantHomePlayer5Input); // shows input in debug
-
-		Directory.CreateDirectory("Assets/Games/Valorant/"); // creates directory in this path
-															 // Application.streamingAssetsPath sets the directory to be in the data folder and creates folders called
-															 // streamingAssetsPath, LIVE_DATA, and Smash Bros
 
 		string path = "Assets/Games/Valorant/Away Team Player5.txt"; // This is the directory for the text file.
 		if (!File.Exists(path)) // checks if the file exists at the path
