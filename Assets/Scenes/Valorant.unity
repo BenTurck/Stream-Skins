@@ -5858,9 +5858,13 @@ MonoBehaviour:
       m_Image: {fileID: 0}
     - m_Text: RIT
       m_Image: {fileID: 0}
-    - m_Text: TEST 3
+    - m_Text: UALBANY
       m_Image: {fileID: 0}
-    - m_Text: TEST 4
+    - m_Text: NYIT
+      m_Image: {fileID: 0}
+    - m_Text: SPU
+      m_Image: {fileID: 0}
+    - m_Text: POLYTECHNIC
       m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
@@ -22556,9 +22560,13 @@ MonoBehaviour:
       m_Image: {fileID: 0}
     - m_Text: RIT
       m_Image: {fileID: 0}
-    - m_Text: TEST 3
+    - m_Text: UALBANY
       m_Image: {fileID: 0}
-    - m_Text: TEST 4
+    - m_Text: NYIT
+      m_Image: {fileID: 0}
+    - m_Text: SPU
+      m_Image: {fileID: 0}
+    - m_Text: POLYTECHNIC
       m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
