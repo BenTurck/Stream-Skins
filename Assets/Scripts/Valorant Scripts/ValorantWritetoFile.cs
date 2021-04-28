@@ -732,6 +732,66 @@ public class ValorantWritetoFile : MonoBehaviour
 
 		}
 
+		if (ValorantHomeDDStringInput == "UALBANY")
+
+		{
+			string logoRIT = "UA Logo.png";
+			string logoHome = "Home Logo.png";
+			string sourcePath = "Assets/TeamLogos/";
+			string targetPath = "Assets/Games/Valorant/";
+
+			string sourceFile = Path.Combine(sourcePath, logoRIT);
+			string destFile = Path.Combine(targetPath, logoHome);
+
+			File.Copy(sourceFile, destFile, true);
+
+		}
+
+		if (ValorantHomeDDStringInput == "NYIT")
+
+		{
+			string logoRIT = "NYIT Logo.png";
+			string logoHome = "Home Logo.png";
+			string sourcePath = "Assets/TeamLogos/";
+			string targetPath = "Assets/Games/Valorant/";
+
+			string sourceFile = Path.Combine(sourcePath, logoRIT);
+			string destFile = Path.Combine(targetPath, logoHome);
+
+			File.Copy(sourceFile, destFile, true);
+
+		}
+
+		if (ValorantHomeDDStringInput == "SPU")
+
+		{
+			string logoRIT = "SPU Logo.png";
+			string logoHome = "Home Logo.png";
+			string sourcePath = "Assets/TeamLogos/";
+			string targetPath = "Assets/Games/Valorant/";
+
+			string sourceFile = Path.Combine(sourcePath, logoRIT);
+			string destFile = Path.Combine(targetPath, logoHome);
+
+			File.Copy(sourceFile, destFile, true);
+
+		}
+
+		if (ValorantHomeDDStringInput == "POLYTECHNIC")
+
+		{
+			string logoRIT = "SP Logo.png";
+			string logoHome = "Home Logo.png";
+			string sourcePath = "Assets/TeamLogos/";
+			string targetPath = "Assets/Games/Valorant/";
+
+			string sourceFile = Path.Combine(sourcePath, logoRIT);
+			string destFile = Path.Combine(targetPath, logoHome);
+
+			File.Copy(sourceFile, destFile, true);
+
+		}
+
 		if (ValorantHomeDDStringInput != "SELECT TEAM")
 		{
 			File.WriteAllText(path, ValorantHomeDDStringInput); // sets the location to path and the contents to input
@@ -903,6 +963,68 @@ public class ValorantWritetoFile : MonoBehaviour
 
 		{
 			string logoRIT = "RIT Logo.png";
+			string logoHome = "Away Logo.png";
+			string sourcePath = "Assets/TeamLogos/";
+			string targetPath = "Assets/Games/Valorant/";
+
+			string sourceFile = Path.Combine(sourcePath, logoRIT);
+			string destFile = Path.Combine(targetPath, logoHome);
+
+			File.Copy(sourceFile, destFile, true);
+
+		}
+
+		if (ValorantAwayDDStringInput == "UALBANY")
+
+		{
+			string logoRIT = "UA Logo.png";
+			string logoHome = "Away Logo.png";
+			string sourcePath = "Assets/TeamLogos/";
+			string targetPath = "Assets/Games/Valorant/";
+
+			string sourceFile = Path.Combine(sourcePath, logoRIT);
+			string destFile = Path.Combine(targetPath, logoHome);
+
+			File.Copy(sourceFile, destFile, true);
+
+		}
+
+		if (ValorantAwayDDStringInput == "NYIT")
+
+		{
+			string logoRIT = "NYIT Logo.png";
+			string logoHome = "Away Logo.png";
+			string sourcePath = "Assets/TeamLogos/";
+			string targetPath = "Assets/Games/Valorant/";
+
+			string sourceFile = Path.Combine(sourcePath, logoRIT);
+			string destFile = Path.Combine(targetPath, logoHome);
+
+			File.Copy(sourceFile, destFile, true);
+
+		}
+
+
+		if (ValorantAwayDDStringInput == "SPU")
+
+		{
+			string logoRIT = "SPU Logo.png";
+			string logoHome = "Away Logo.png";
+			string sourcePath = "Assets/TeamLogos/";
+			string targetPath = "Assets/Games/Valorant/";
+
+			string sourceFile = Path.Combine(sourcePath, logoRIT);
+			string destFile = Path.Combine(targetPath, logoHome);
+
+			File.Copy(sourceFile, destFile, true);
+
+		}
+
+
+		if (ValorantAwayDDStringInput == "POLYTECHNIC")
+
+		{
+			string logoRIT = "SP Logo.png";
 			string logoHome = "Away Logo.png";
 			string sourcePath = "Assets/TeamLogos/";
 			string targetPath = "Assets/Games/Valorant/";
