@@ -159,12 +159,15 @@ public class Cognito : MonoBehaviour
 
 
             // User is logged in
+            test();
             loginSuccessful = true;
             loginScene = true;
             Debug.Log("LOGINSUCCESS = " + loginSuccessful);
         }
         catch (Exception e) //Nothing in the fields
         {
+            test();
+            
             TriggerDialogue(4);
             Debug.Log("Exception: " + e);
             return;
@@ -225,6 +228,18 @@ public class Cognito : MonoBehaviour
         //The trigger calls on the dialong script onclick 
         FindObjectOfType<DialogueManager>().StartDialogue(dialogue,mesIndex);
     }
-    //
+    
+
+    public void test()
+    {
+        if (jwt == null)
+        {
+            Debug.Log("YAH MF THAT SHIT IS NULL");
+        }
+        else
+        {
+            Debug.Log("TOKEN TOKEN TOKEN: " + jwt);
+        }
+    }
 
 }//End of class
