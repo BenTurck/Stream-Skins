@@ -3,7 +3,7 @@ using System.IO;
 
 public class CreateDirectoryFiles
 {
-
+    
     [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]
     static void Start()
     {        
@@ -40,6 +40,8 @@ public class CreateDirectoryFiles
         File.Create("Assets/Games/Valorant/Game4 Winner.txt");
         File.Create("Assets/Games/Valorant/Game5 Winner.txt");
 
+        File.Create("Assets/Games/Valorant/Home Logo.png");
+
         File.Create("Assets/Games/Valorant/Home Team Name.txt");
         File.Create("Assets/Games/Valorant/Home Team Season Record.txt");
         File.Create("Assets/Games/Valorant/Home Team Series Score.txt");
@@ -55,6 +57,8 @@ public class CreateDirectoryFiles
         File.Create("Assets/Games/Valorant/Home Team Player3 Stats.txt");
         File.Create("Assets/Games/Valorant/Home Team Player4 Stats.txt");
         File.Create("Assets/Games/Valorant/Home Team Player5 Stats.txt");
+
+        File.Create("Assets/Games/Valorant/Away Logo.png");
 
         File.Create("Assets/Games/Valorant/Away Team Name.txt");
         File.Create("Assets/Games/Valorant/Away Team Season Record.txt");
@@ -72,7 +76,7 @@ public class CreateDirectoryFiles
         File.Create("Assets/Games/Valorant/Away Team Player4 Stats.txt");
         File.Create("Assets/Games/Valorant/Away Team Player5 Stats.txt");
 
-
+        /*
 
         File.Create("Assets/Games/Overwatch/Ticker.txt");
         File.Create("Assets/Games/Overwatch/Caster1.txt");
@@ -215,6 +219,8 @@ public class CreateDirectoryFiles
         File.Create("Assets/Games/League of Legends/Away Team Player3 Stats.txt");
         File.Create("Assets/Games/League of Legends/Away Team Player4 Stats.txt");
         File.Create("Assets/Games/League of Legends/Away Team Player5 Stats.txt");
+
+        */
     }
 
     // Update is called once per frame
@@ -222,4 +228,5 @@ public class CreateDirectoryFiles
     {
         
     }
+    
 }
