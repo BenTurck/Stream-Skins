@@ -12,21 +12,15 @@ public class ValorantReset : MonoBehaviour
 	public InputField ValorantHomePlayer4IF;
 	public InputField ValorantHomePlayer5IF;
 
+	public InputField ValorantHomePlayer1StatsIF;
+	public InputField ValorantHomePlayer2StatsIF;
+	public InputField ValorantHomePlayer3StatsIF;
+	public InputField ValorantHomePlayer4StatsIF;
+	public InputField ValorantHomePlayer5StatsIF;
+
 	public InputField ValorantTickerIF;
 	public InputField ValorantCaster1IF;
 	public InputField ValorantCaster2IF;
-
-	public Toggle ValorantHomeMap1Toggle;
-	public Toggle ValorantHomeMap2Toggle;
-	public Toggle ValorantHomeMap3Toggle;
-	public Toggle ValorantHomeMap4Toggle;
-	public Toggle ValorantHomeMap5Toggle;
-
-	public InputField ValorantHomeMap1IF;
-	public InputField ValorantHomeMap2IF;
-	public InputField ValorantHomeMap3IF;
-	public InputField ValorantHomeMap4IF;
-	public InputField ValorantHomeMap5IF;
 
 	public Dropdown ValorantMap1DD;
 	public Dropdown ValorantMap2DD;
@@ -34,11 +28,17 @@ public class ValorantReset : MonoBehaviour
 	public Dropdown ValorantMap4DD;
 	public Dropdown ValorantMap5DD;
 
-	public InputField ValorantAwayMap1IF;
-	public InputField ValorantAwayMap2IF;
-	public InputField ValorantAwayMap3IF;
-	public InputField ValorantAwayMap4IF;
-	public InputField ValorantAwayMap5IF;
+	public Toggle ValorantHomeMap1Toggle;
+	public Toggle ValorantHomeMap2Toggle;
+	public Toggle ValorantHomeMap3Toggle;
+	public Toggle ValorantHomeMap4Toggle;
+	public Toggle ValorantHomeMap5Toggle;
+
+	public InputField ValorantMap1IF;
+	public InputField ValorantMap2IF;
+	public InputField ValorantMap3IF;
+	public InputField ValorantMap4IF;
+	public InputField ValorantMap5IF;
 
 	public Toggle ValorantAwayMap1Toggle;
 	public Toggle ValorantAwayMap2Toggle;
@@ -55,6 +55,12 @@ public class ValorantReset : MonoBehaviour
 	public InputField ValorantAwayPlayer4IF;
 	public InputField ValorantAwayPlayer5IF;
 
+	public InputField ValorantAwayPlayer1StatsIF;
+	public InputField ValorantAwayPlayer2StatsIF;
+	public InputField ValorantAwayPlayer3StatsIF;
+	public InputField ValorantAwayPlayer4StatsIF;
+	public InputField ValorantAwayPlayer5StatsIF;
+
 	public void ValorantClear()
 	{
 		ValorantHomeDD.value = 0;
@@ -66,21 +72,15 @@ public class ValorantReset : MonoBehaviour
 		ValorantHomePlayer4IF.text = "";
 		ValorantHomePlayer5IF.text = "";
 
+		ValorantHomePlayer1StatsIF.text = "";
+		ValorantHomePlayer2StatsIF.text = "";
+		ValorantHomePlayer3StatsIF.text = "";
+		ValorantHomePlayer4StatsIF.text = "";
+		ValorantHomePlayer5StatsIF.text = "";
+
 		ValorantTickerIF.text = "";
 		ValorantCaster1IF.text = "";
 		ValorantCaster2IF.text = "";
-
-		ValorantHomeMap1Toggle.isOn = false;
-		ValorantHomeMap2Toggle.isOn = false;
-		ValorantHomeMap3Toggle.isOn = false;
-		ValorantHomeMap4Toggle.isOn = false;
-		ValorantHomeMap5Toggle.isOn = false;
-
-		ValorantHomeMap1IF.text = "";
-		ValorantHomeMap2IF.text = "";
-		ValorantHomeMap3IF.text = "";
-		ValorantHomeMap4IF.text = "";
-		ValorantHomeMap5IF.text = "";
 
 		ValorantMap1DD.value = 0;
 		ValorantMap2DD.value = 0;
@@ -88,11 +88,17 @@ public class ValorantReset : MonoBehaviour
 		ValorantMap4DD.value = 0;
 		ValorantMap5DD.value = 0;
 
-		ValorantAwayMap1IF.text = "";
-		ValorantAwayMap2IF.text = "";
-		ValorantAwayMap3IF.text = "";
-		ValorantAwayMap4IF.text = "";
-		ValorantAwayMap5IF.text = "";
+		ValorantHomeMap1Toggle.isOn = false;
+		ValorantHomeMap2Toggle.isOn = false;
+		ValorantHomeMap3Toggle.isOn = false;
+		ValorantHomeMap4Toggle.isOn = false;
+		ValorantHomeMap5Toggle.isOn = false;
+
+		ValorantMap1IF.text = "";
+		ValorantMap2IF.text = "";
+		ValorantMap3IF.text = "";
+		ValorantMap4IF.text = "";
+		ValorantMap5IF.text = "";
 
 		ValorantAwayMap1Toggle.isOn = false;
 		ValorantAwayMap2Toggle.isOn = false;
@@ -108,5 +114,11 @@ public class ValorantReset : MonoBehaviour
 		ValorantAwayPlayer3IF.text = "";
 		ValorantAwayPlayer4IF.text = "";
 		ValorantAwayPlayer5IF.text = "";
+
+		ValorantAwayPlayer1StatsIF.text = "";
+		ValorantAwayPlayer2StatsIF.text = "";
+		ValorantAwayPlayer3StatsIF.text = "";
+		ValorantAwayPlayer4StatsIF.text = "";
+		ValorantAwayPlayer5StatsIF.text = "";
 	}
 }
