@@ -142,14 +142,13 @@ public class Cognito : MonoBehaviour
         {
             Password = passWord
         };
-        Debug.Log("TEST TEST TEST TEST");
         try //Something in the input fields
         {
 
             Debug.Log("LOGINSUCCESS = " + loginSuccessful);
 
-            TriggerDialogue(3);
-            AuthFlowResponse authResponse = await user.StartWithSrpAuthAsync(authRequest).ConfigureAwait(false);
+            //TriggerDialogue(3); .ConfigureAwait(false)
+            AuthFlowResponse authResponse = await user.StartWithSrpAuthAsync(authRequest);
 
             GetUserRequest getUserRequest = new GetUserRequest();
             getUserRequest.AccessToken = authResponse.AuthenticationResult.AccessToken;
@@ -157,17 +156,27 @@ public class Cognito : MonoBehaviour
             Debug.Log("User Access Token: " + getUserRequest.AccessToken);
             jwt = getUserRequest.AccessToken;
 
+            //Try different if statements here
+            //TEST HERE 
+
+            if (jwt == null)
+            {
+                TriggerDialogue(4);
+                Debug.Log("JWT IS NULL JWT IS NULL JWT IS NULL ");
+            }
+            else
+            {
+                TriggerDialogue(3);
+                Debug.Log("JWT = " + jwt);
+            }
 
             // User is logged in
-            test();
             loginSuccessful = true;
             loginScene = true;
             Debug.Log("LOGINSUCCESS = " + loginSuccessful);
         }
         catch (Exception e) //Nothing in the fields
         {
-            test();
-            
             TriggerDialogue(4);
             Debug.Log("Exception: " + e);
             return;
@@ -176,6 +185,8 @@ public class Cognito : MonoBehaviour
 
         if (loginSuccessful == true)
         {
+            //test();
+
             Debug.Log("LOGINSUCCESS IN IF STATEMENT = " + loginSuccessful);
             string subId = await Get_User_Id();
             CredentialsManager.userid = subId;
@@ -189,6 +200,9 @@ public class Cognito : MonoBehaviour
             //streamskins added
             //loginSuccessful = false;
         }
+        
+        //test();
+        
         
     }
 
