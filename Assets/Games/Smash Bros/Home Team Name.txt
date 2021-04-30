@@ -1,4 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 POLYTECHNIC
 >>>>>>> edf77ca5fc175764f799111af7d6fd0b14fd5de4
+=======
+RIT
+>>>>>>> parent of a3b101c (Tab included on the sign in page)
