@@ -23,9 +23,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Custom.unity
     guid: 626b95b426e9cd942a2d8fd80d3ab5fb
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/Login(confirm deletion).unity
+    guid: 546a0fe8b3ee0504fb8d236938c7c0cf
   - enabled: 1
     path: Assets/Scenes/Signup.unity
     guid: 2f053ea2c7e60ea459d8ef9dc32442ff

@@ -1,9 +1,5 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using System;
 using UnityEngine.UI;
-using System.Threading.Tasks;
 
 public class Tab : MonoBehaviour
 {
@@ -20,5 +16,3 @@ public class Tab : MonoBehaviour
         }
     }
 }
-
-
