@@ -571,7 +571,8 @@ MonoBehaviour:
 
     Password only needs lowercase and numbers
 
-    Full email address
+    Full
+    email address
 
     Must be more than 6 characters'
 --- !u!222 &204010833
@@ -1266,6 +1267,7 @@ GameObject:
   - component: {fileID: 676519559}
   - component: {fileID: 676519558}
   - component: {fileID: 676519557}
+  - component: {fileID: 676519560}
   m_Layer: 5
   m_Name: Email Field
   m_TagString: Untagged
@@ -1397,6 +1399,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 676519555}
   m_CullTransparentMesh: 1
+--- !u!114 &676519560
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 676519555}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 407434e986bdf6d4a8c4a029e2926037, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nextField: {fileID: 859213814}
 --- !u!1 &718951234
 GameObject:
   m_ObjectHideFlags: 0
@@ -1632,6 +1647,7 @@ GameObject:
   - component: {fileID: 859213816}
   - component: {fileID: 859213815}
   - component: {fileID: 859213814}
+  - component: {fileID: 859213817}
   m_Layer: 5
   m_Name: Username Field
   m_TagString: Untagged
@@ -1653,7 +1669,7 @@ RectTransform:
   - {fileID: 129259381}
   - {fileID: 170232792}
   m_Father: {fileID: 1766092092}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1763,6 +1779,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 859213812}
   m_CullTransparentMesh: 1
+--- !u!114 &859213817
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 859213812}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 407434e986bdf6d4a8c4a029e2926037, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nextField: {fileID: 1658891007}
 --- !u!1 &997768462
 GameObject:
   m_ObjectHideFlags: 0
@@ -2767,6 +2796,7 @@ GameObject:
   - component: {fileID: 1658891009}
   - component: {fileID: 1658891008}
   - component: {fileID: 1658891007}
+  - component: {fileID: 1658891010}
   m_Layer: 5
   m_Name: Password Field
   m_TagString: Untagged
@@ -2788,7 +2818,7 @@ RectTransform:
   - {fileID: 2005033873}
   - {fileID: 1162339448}
   m_Father: {fileID: 1766092092}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2898,6 +2928,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1658891005}
   m_CullTransparentMesh: 1
+--- !u!114 &1658891010
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1658891005}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 407434e986bdf6d4a8c4a029e2926037, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nextField: {fileID: 676519557}
 --- !u!1 &1712872090
 GameObject:
   m_ObjectHideFlags: 0
@@ -3130,8 +3173,8 @@ RectTransform:
   - {fileID: 1201175065}
   - {fileID: 1536663299}
   - {fileID: 676519556}
-  - {fileID: 1658891006}
   - {fileID: 859213813}
+  - {fileID: 1658891006}
   - {fileID: 610964932}
   - {fileID: 1147096381}
   - {fileID: 1163876780}
@@ -3390,7 +3433,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd4f7aa6dad14ed42a8f9c46d1d842e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clearEmail: {fileID: 676519557}
+  clearEmail: {fileID: 0}
   clearUsername: {fileID: 859213814}
   clearPassword: {fileID: 1658891007}
 --- !u!4 &1980025127
@@ -3433,7 +3476,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   LoginButton: {fileID: 1147096383}
   SignupButton: {fileID: 610964934}
-  EmailField: {fileID: 676519557}
+  EmailField: {fileID: 0}
   SignupPasswordField: {fileID: 1658891007}
   SignupUsernameField: {fileID: 859213814}
   LoginPasswordField: {fileID: 1658891007}
