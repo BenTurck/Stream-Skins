@@ -177,7 +177,7 @@ public class ValorantWritetoFile : MonoBehaviour
 
 		string destMap1File = Path.Combine(targetMap1Path, map1);
 
-		if (ValorantGame1DDStringInput == "SELECT MAP")
+		if (ValorantGame1DDStringInput == "SELECT MAP 1")
         {
 			File.Copy(sourceMap1BlankFile, destMap1File, true);
 			File.WriteAllText(path1, "");
@@ -257,7 +257,7 @@ public class ValorantWritetoFile : MonoBehaviour
 
 		string destMap2File = Path.Combine(targetMap2Path, map2);
 
-		if (ValorantGame2DDStringInput == "SELECT MAP")
+		if (ValorantGame2DDStringInput == "SELECT MAP 2")
 		{
 			File.Copy(sourceMap2BlankFile, destMap2File, true);
 			File.WriteAllText(path2, "");
@@ -337,7 +337,7 @@ public class ValorantWritetoFile : MonoBehaviour
 
 		string destMap3File = Path.Combine(targetMap3Path, map3);
 
-		if (ValorantGame3DDStringInput == "SELECT MAP")
+		if (ValorantGame3DDStringInput == "SELECT MAP 3")
 		{
 			File.Copy(sourceMap3BlankFile, destMap3File, true);
 			File.WriteAllText(path3, "");
@@ -417,7 +417,7 @@ public class ValorantWritetoFile : MonoBehaviour
 
 		string destMap4File = Path.Combine(targetMap4Path, map4);
 
-		if (ValorantGame4DDStringInput == "SELECT MAP")
+		if (ValorantGame4DDStringInput == "SELECT MAP 4")
 		{
 			File.Copy(sourceMap4BlankFile, destMap4File, true);
 			File.WriteAllText(path4, "");
@@ -497,7 +497,7 @@ public class ValorantWritetoFile : MonoBehaviour
 
 		string destMap5File = Path.Combine(targetMap5Path, map5);
 
-		if (ValorantGame5DDStringInput == "SELECT MAP")
+		if (ValorantGame5DDStringInput == "SELECT MAP 5")
 		{
 			File.Copy(sourceMap5BlankFile, destMap5File, true);
 			File.WriteAllText(path5, "");
