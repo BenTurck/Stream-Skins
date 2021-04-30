@@ -5375,7 +5375,7 @@ GameObject:
   - component: {fileID: 403015142}
   - component: {fileID: 403015141}
   m_Layer: 5
-  m_Name: Valorant Home Text
+  m_Name: Overwatch Home Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6014,7 +6014,7 @@ GameObject:
   - component: {fileID: 459696302}
   - component: {fileID: 459696301}
   m_Layer: 5
-  m_Name: Valorant Background
+  m_Name: Overwatch Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10487,7 +10487,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Enter Player5...
+  m_Text: Enter Player6...
 --- !u!222 &847211400
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -17041,7 +17041,7 @@ GameObject:
   - component: {fileID: 1282976904}
   - component: {fileID: 1282976903}
   m_Layer: 5
-  m_Name: Valorant Away Text
+  m_Name: Overwatch Away Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -24317,7 +24317,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Enter Player5...
+  m_Text: Enter Player6...
 --- !u!222 &1979975663
 CanvasRenderer:
   m_ObjectHideFlags: 0
