@@ -295,8 +295,8 @@ public class CreateDirectoryFiles
         File.Create("Assets/Games/Custom/Map 1 Played.png");
         File.Create("Assets/Games/Custom/Map 2 Played.png");
         File.Create("Assets/Games/Custom/Map 3 Played.png");
-        File.Create("Assets/Games/Custom/Map 4 Winner.png");
-        File.Create("Assets/Games/Custom/Map 5 Winner.png");
+        File.Create("Assets/Games/Custom/Map 4 Played.png");
+        File.Create("Assets/Games/Custom/Map 5 Played.png");
 
         File.Create("Assets/Games/Custom/Map 1 Name.txt");
         File.Create("Assets/Games/Custom/Map 2 Name.txt");
