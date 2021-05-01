@@ -57,7 +57,7 @@ public class LeagueofLegendsWritetoFile : MonoBehaviour
 
 		Debug.Log("Ticker.txt: " + LeagueofLegendsTickerInput); // shows input in debug
 
-		string path = "Assets/Games/LeagueofLegends/Ticker.txt"; // This is the directory for the text file.
+		string path = "Assets/GamesLeague of Legends/Ticker.txt"; // This is the directory for the text file.
 		if (!File.Exists(path)) // checks if the file exists at the path
 		{
 			File.WriteAllText(path, LeagueofLegendsTickerInput); // sets the location to path and the contents to input inside if statement
@@ -72,7 +72,7 @@ public class LeagueofLegendsWritetoFile : MonoBehaviour
 
 		Debug.Log("Caster1.txt: " + LeagueofLegendsCaster1Input); // shows input in debug
 
-		string path = "Assets/Games/LeagueofLegends/Caster1.txt"; // This is the directory for the text file.
+		string path = "Assets/GamesLeague of Legends/Caster1.txt"; // This is the directory for the text file.
 		if (!File.Exists(path)) // checks if the file exists at the path
 		{
 			File.WriteAllText(path, LeagueofLegendsCaster1Input); // sets the location to path and the contents to input inside if statement
@@ -87,7 +87,7 @@ public class LeagueofLegendsWritetoFile : MonoBehaviour
 
 		Debug.Log("Caster2.txt: " + LeagueofLegendsCaster2Input); // shows input in debug
 
-		string path = "Assets/Games/LeagueofLegends/Caster2.txt"; // This is the directory for the text file.
+		string path = "Assets/GamesLeague of Legends/Caster2.txt"; // This is the directory for the text file.
 		if (!File.Exists(path)) // checks if the file exists at the path
 		{
 			File.WriteAllText(path, LeagueofLegendsCaster2Input); // sets the location to path and the contents to input inside if statement
@@ -103,13 +103,13 @@ public class LeagueofLegendsWritetoFile : MonoBehaviour
 		string text1 = "Game 1: ";
 		string text2 = " Won";
 		string bothinput = text1 + LeagueofLegendsHomeDDStringInput + text2;
-		string path = "Assets/Games/LeagueofLegends/Game1 Winner.txt";
+		string path = "Assets/GamesLeague of Legends/Game1 Winner.txt";
 
 		string mapBlank = "Blank.png";
 		string mapPlayed = "Map Played.png";
 		string mapWinner = "Map 1 Played.png";
 		string sourceMapPath = "Assets/GameMaps/";
-		string targetMapPath = "Assets/Games/LeagueofLegends/";
+		string targetMapPath = "Assets/GamesLeague of Legends/";
 
 		string sourceMapBlankFile = Path.Combine(sourceMapPath, mapBlank);
 		string sourceMapPlayedFile = Path.Combine(sourceMapPath, mapPlayed);
@@ -119,7 +119,7 @@ public class LeagueofLegendsWritetoFile : MonoBehaviour
 		string logoHome = "Home Logo.png";
 		string logoWinner = "Map 1 Winner.png";
 		string sourceLogoPath = "Assets/TeamLogos/";
-		string targetLogoPath = "Assets/Games/LeagueofLegends/";
+		string targetLogoPath = "Assets/GamesLeague of Legends/";
 
 		string sourceLogoBlankFile = Path.Combine(sourceLogoPath, logoBlank);
 		string sourceLogoHomeFile = Path.Combine(targetLogoPath, logoHome);
@@ -162,13 +162,13 @@ public class LeagueofLegendsWritetoFile : MonoBehaviour
 		string text1 = "Game 2: ";
 		string text2 = " Won";
 		string bothinput = text1 + LeagueofLegendsHomeDDStringInput + text2;
-		string path = "Assets/Games/LeagueofLegends/Game2 Winner.txt";
+		string path = "Assets/GamesLeague of Legends/Game2 Winner.txt";
 
 		string mapBlank = "Blank.png";
 		string mapPlayed = "Map Played.png";
 		string mapWinner = "Map 2 Played.png";
 		string sourceMapPath = "Assets/GameMaps/";
-		string targetMapPath = "Assets/Games/LeagueofLegends/";
+		string targetMapPath = "Assets/GamesLeague of Legends/";
 
 		string sourceMapBlankFile = Path.Combine(sourceMapPath, mapBlank);
 		string sourceMapPlayedFile = Path.Combine(sourceMapPath, mapPlayed);
@@ -178,7 +178,7 @@ public class LeagueofLegendsWritetoFile : MonoBehaviour
 		string logoHome = "Home Logo.png";
 		string logoWinner = "Map 2 Winner.png";
 		string sourceLogoPath = "Assets/TeamLogos/";
-		string targetLogoPath = "Assets/Games/LeagueofLegends/";
+		string targetLogoPath = "Assets/GamesLeague of Legends/";
 
 		string sourceLogoBlankFile = Path.Combine(sourceLogoPath, logoBlank);
 		string sourceLogoHomeFile = Path.Combine(targetLogoPath, logoHome);
@@ -221,13 +221,13 @@ public class LeagueofLegendsWritetoFile : MonoBehaviour
 		string text1 = "Game 3: ";
 		string text2 = " Won";
 		string bothinput = text1 + LeagueofLegendsHomeDDStringInput + text2;
-		string path = "Assets/Games/LeagueofLegends/Game3 Winner.txt";
+		string path = "Assets/GamesLeague of Legends/Game3 Winner.txt";
 
 		string mapBlank = "Blank.png";
 		string mapPlayed = "Map Played.png";
 		string mapWinner = "Map 3 Played.png";
 		string sourceMapPath = "Assets/GameMaps/";
-		string targetMapPath = "Assets/Games/LeagueofLegends/";
+		string targetMapPath = "Assets/GamesLeague of Legends/";
 
 		string sourceMapBlankFile = Path.Combine(sourceMapPath, mapBlank);
 		string sourceMapPlayedFile = Path.Combine(sourceMapPath, mapPlayed);
@@ -237,7 +237,7 @@ public class LeagueofLegendsWritetoFile : MonoBehaviour
 		string logoHome = "Home Logo.png";
 		string logoWinner = "Map 3 Winner.png";
 		string sourceLogoPath = "Assets/TeamLogos/";
-		string targetLogoPath = "Assets/Games/LeagueofLegends/";
+		string targetLogoPath = "Assets/GamesLeague of Legends/";
 
 		string sourceLogoBlankFile = Path.Combine(sourceLogoPath, logoBlank);
 		string sourceLogoHomeFile = Path.Combine(targetLogoPath, logoHome);
@@ -280,13 +280,13 @@ public class LeagueofLegendsWritetoFile : MonoBehaviour
 		string text1 = "Game 4: ";
 		string text2 = " Won";
 		string bothinput = text1 + LeagueofLegendsHomeDDStringInput + text2;
-		string path = "Assets/Games/LeagueofLegends/Game4 Winner.txt";
+		string path = "Assets/GamesLeague of Legends/Game4 Winner.txt";
 
 		string mapBlank = "Blank.png";
 		string mapPlayed = "Map Played.png";
 		string mapWinner = "Map 4 Played.png";
 		string sourceMapPath = "Assets/GameMaps/";
-		string targetMapPath = "Assets/Games/LeagueofLegends/";
+		string targetMapPath = "Assets/GamesLeague of Legends/";
 
 		string sourceMapBlankFile = Path.Combine(sourceMapPath, mapBlank);
 		string sourceMapPlayedFile = Path.Combine(sourceMapPath, mapPlayed);
@@ -296,7 +296,7 @@ public class LeagueofLegendsWritetoFile : MonoBehaviour
 		string logoHome = "Home Logo.png";
 		string logoWinner = "Map 4 Winner.png";
 		string sourceLogoPath = "Assets/TeamLogos/";
-		string targetLogoPath = "Assets/Games/LeagueofLegends/";
+		string targetLogoPath = "Assets/GamesLeague of Legends/";
 
 		string sourceLogoBlankFile = Path.Combine(sourceLogoPath, logoBlank);
 		string sourceLogoHomeFile = Path.Combine(targetLogoPath, logoHome);
@@ -339,13 +339,13 @@ public class LeagueofLegendsWritetoFile : MonoBehaviour
 		string text1 = "Game 5: ";
 		string text2 = " Won";
 		string bothinput = text1 + LeagueofLegendsHomeDDStringInput + text2;
-		string path = "Assets/Games/LeagueofLegends/Game5 Winner.txt";
+		string path = "Assets/GamesLeague of Legends/Game5 Winner.txt";
 
 		string mapBlank = "Blank.png";
 		string mapPlayed = "Map Played.png";
 		string mapWinner = "Map 5 Played.png";
 		string sourceMapPath = "Assets/GameMaps/";
-		string targetMapPath = "Assets/Games/LeagueofLegends/";
+		string targetMapPath = "Assets/GamesLeague of Legends/";
 
 		string sourceMapBlankFile = Path.Combine(sourceMapPath, mapBlank);
 		string sourceMapPlayedFile = Path.Combine(sourceMapPath, mapPlayed);
@@ -355,7 +355,7 @@ public class LeagueofLegendsWritetoFile : MonoBehaviour
 		string logoHome = "Home Logo.png";
 		string logoWinner = "Map 5 Winner.png";
 		string sourceLogoPath = "Assets/TeamLogos/";
-		string targetLogoPath = "Assets/Games/LeagueofLegends/";
+		string targetLogoPath = "Assets/GamesLeague of Legends/";
 
 		string sourceLogoBlankFile = Path.Combine(sourceLogoPath, logoBlank);
 		string sourceLogoHomeFile = Path.Combine(targetLogoPath, logoHome);
@@ -398,13 +398,13 @@ public class LeagueofLegendsWritetoFile : MonoBehaviour
 		string text1 = "Game 1: ";
 		string text2 = " Won";
 		string bothinput = text1 + LeagueofLegendsAwayDDStringInput + text2;
-		string path = "Assets/Games/LeagueofLegends/Game1 Winner.txt";
+		string path = "Assets/GamesLeague of Legends/Game1 Winner.txt";
 
 		string mapBlank = "Blank.png";
 		string mapPlayed = "Map Played.png";
 		string mapWinner = "Map 1 Played.png";
 		string sourceMapPath = "Assets/GameMaps/";
-		string targetMapPath = "Assets/Games/LeagueofLegends/";
+		string targetMapPath = "Assets/GamesLeague of Legends/";
 
 		string sourceMapBlankFile = Path.Combine(sourceMapPath, mapBlank);
 		string sourceMapPlayedFile = Path.Combine(sourceMapPath, mapPlayed);
@@ -414,7 +414,7 @@ public class LeagueofLegendsWritetoFile : MonoBehaviour
 		string logoAway = "Away Logo.png";
 		string logoWinner = "Map 1 Winner.png";
 		string sourceLogoPath = "Assets/TeamLogos/";
-		string targetLogoPath = "Assets/Games/LeagueofLegends/";
+		string targetLogoPath = "Assets/GamesLeague of Legends/";
 
 		string sourceLogoBlankFile = Path.Combine(sourceLogoPath, logoBlank);
 		string sourceLogoAwayFile = Path.Combine(targetLogoPath, logoAway);
@@ -457,13 +457,13 @@ public class LeagueofLegendsWritetoFile : MonoBehaviour
 		string text1 = "Game 2: ";
 		string text2 = " Won";
 		string bothinput = text1 + LeagueofLegendsAwayDDStringInput + text2;
-		string path = "Assets/Games/LeagueofLegends/Game2 Winner.txt";
+		string path = "Assets/GamesLeague of Legends/Game2 Winner.txt";
 
 		string mapBlank = "Blank.png";
 		string mapPlayed = "Map Played.png";
 		string mapWinner = "Map 2 Played.png";
 		string sourceMapPath = "Assets/GameMaps/";
-		string targetMapPath = "Assets/Games/LeagueofLegends/";
+		string targetMapPath = "Assets/GamesLeague of Legends/";
 
 		string sourceMapBlankFile = Path.Combine(sourceMapPath, mapBlank);
 		string sourceMapPlayedFile = Path.Combine(sourceMapPath, mapPlayed);
@@ -473,7 +473,7 @@ public class LeagueofLegendsWritetoFile : MonoBehaviour
 		string logoAway = "Away Logo.png";
 		string logoWinner = "Map 2 Winner.png";
 		string sourceLogoPath = "Assets/TeamLogos/";
-		string targetLogoPath = "Assets/Games/LeagueofLegends/";
+		string targetLogoPath = "Assets/GamesLeague of Legends/";
 
 		string sourceLogoBlankFile = Path.Combine(sourceLogoPath, logoBlank);
 		string sourceLogoAwayFile = Path.Combine(targetLogoPath, logoAway);
@@ -516,13 +516,13 @@ public class LeagueofLegendsWritetoFile : MonoBehaviour
 		string text1 = "Game 3: ";
 		string text2 = " Won";
 		string bothinput = text1 + LeagueofLegendsAwayDDStringInput + text2;
-		string path = "Assets/Games/LeagueofLegends/Game3 Winner.txt";
+		string path = "Assets/GamesLeague of Legends/Game3 Winner.txt";
 
 		string mapBlank = "Blank.png";
 		string mapPlayed = "Map Played.png";
 		string mapWinner = "Map 3 Played.png";
 		string sourceMapPath = "Assets/GameMaps/";
-		string targetMapPath = "Assets/Games/LeagueofLegends/";
+		string targetMapPath = "Assets/GamesLeague of Legends/";
 
 		string sourceMapBlankFile = Path.Combine(sourceMapPath, mapBlank);
 		string sourceMapPlayedFile = Path.Combine(sourceMapPath, mapPlayed);
@@ -532,7 +532,7 @@ public class LeagueofLegendsWritetoFile : MonoBehaviour
 		string logoAway = "Away Logo.png";
 		string logoWinner = "Map 3 Winner.png";
 		string sourceLogoPath = "Assets/TeamLogos/";
-		string targetLogoPath = "Assets/Games/LeagueofLegends/";
+		string targetLogoPath = "Assets/GamesLeague of Legends/";
 
 		string sourceLogoBlankFile = Path.Combine(sourceLogoPath, logoBlank);
 		string sourceLogoAwayFile = Path.Combine(targetLogoPath, logoAway);
@@ -575,14 +575,14 @@ public class LeagueofLegendsWritetoFile : MonoBehaviour
 		string text1 = "Game 4: ";
 		string text2 = " Won";
 		string bothinput = text1 + LeagueofLegendsAwayDDStringInput + text2;
-		string path = "Assets/Games/LeagueofLegends/Game4 Winner.txt";
+		string path = "Assets/GamesLeague of Legends/Game4 Winner.txt";
 
 
 		string mapBlank = "Blank.png";
 		string mapPlayed = "Map Played.png";
 		string mapWinner = "Map 4 Played.png";
 		string sourceMapPath = "Assets/GameMaps/";
-		string targetMapPath = "Assets/Games/LeagueofLegends/";
+		string targetMapPath = "Assets/GamesLeague of Legends/";
 
 		string sourceMapBlankFile = Path.Combine(sourceMapPath, mapBlank);
 		string sourceMapPlayedFile = Path.Combine(sourceMapPath, mapPlayed);
@@ -592,7 +592,7 @@ public class LeagueofLegendsWritetoFile : MonoBehaviour
 		string logoAway = "Away Logo.png";
 		string logoWinner = "Map 4 Winner.png";
 		string sourceLogoPath = "Assets/TeamLogos/";
-		string targetLogoPath = "Assets/Games/LeagueofLegends/";
+		string targetLogoPath = "Assets/GamesLeague of Legends/";
 
 		string sourceLogoBlankFile = Path.Combine(sourceLogoPath, logoBlank);
 		string sourceLogoAwayFile = Path.Combine(targetLogoPath, logoAway);
@@ -635,13 +635,13 @@ public class LeagueofLegendsWritetoFile : MonoBehaviour
 		string text1 = "Game 5: ";
 		string text2 = " Won";
 		string bothinput = text1 + LeagueofLegendsAwayDDStringInput + text2;
-		string path = "Assets/Games/LeagueofLegends/Game5 Winner.txt";
+		string path = "Assets/GamesLeague of Legends/Game5 Winner.txt";
 
 		string mapBlank = "Blank.png";
 		string mapPlayed = "Map Played.png";
 		string mapWinner = "Map 5 Played.png";
 		string sourceMapPath = "Assets/GameMaps/";
-		string targetMapPath = "Assets/Games/LeagueofLegends/";
+		string targetMapPath = "Assets/GamesLeague of Legends/";
 
 		string sourceMapBlankFile = Path.Combine(sourceMapPath, mapBlank);
 		string sourceMapPlayedFile = Path.Combine(sourceMapPath, mapPlayed);
@@ -651,7 +651,7 @@ public class LeagueofLegendsWritetoFile : MonoBehaviour
 		string logoAway = "Away Logo.png";
 		string logoWinner = "Map 5 Winner.png";
 		string sourceLogoPath = "Assets/TeamLogos/";
-		string targetLogoPath = "Assets/Games/LeagueofLegends/";
+		string targetLogoPath = "Assets/GamesLeague of Legends/";
 
 		string sourceLogoBlankFile = Path.Combine(sourceLogoPath, logoBlank);
 		string sourceLogoAwayFile = Path.Combine(targetLogoPath, logoAway);
@@ -692,14 +692,14 @@ public class LeagueofLegendsWritetoFile : MonoBehaviour
 		LeagueofLegendsHomeDDStringInput = LeagueofLegendsHomeDDInput.options[LeagueofLegendsHomeDDInput.value].text;
 		Debug.Log("Home Team Name.txt: " + LeagueofLegendsHomeDDStringInput);
 
-		string path = "Assets/Games/LeagueofLegends/Home Team Name.txt"; // This is the directory for the text file.
+		string path = "Assets/GamesLeague of Legends/Home Team Name.txt"; // This is the directory for the text file.
 
 		if (LeagueofLegendsHomeDDStringInput == "SELECT TEAM")
 		{
 			string logoBlank = "Blank.png";
 			string logoHome = "Home Logo.png";
 			string sourcePath = "Assets/TeamLogos/";
-			string targetPath = "Assets/Games/LeagueofLegends/";
+			string targetPath = "Assets/Games/League of Legends/";
 
 			string sourceFile = Path.Combine(sourcePath, logoBlank);
 			string destFile = Path.Combine(targetPath, logoHome);
@@ -713,7 +713,7 @@ public class LeagueofLegendsWritetoFile : MonoBehaviour
 			string logoSR = "SR LOGO.png";
 			string logoHome = "Home Logo.png";
 			string sourcePath = "Assets/TeamLogos/";
-			string targetPath = "Assets/Games/LeagueofLegends/";
+			string targetPath = "Assets/Games/League of Legends/";
 
 			string sourceFile = Path.Combine(sourcePath, logoSR);
 			string destFile = Path.Combine(targetPath, logoHome);
@@ -726,7 +726,7 @@ public class LeagueofLegendsWritetoFile : MonoBehaviour
 			string logoRIT = "RIT Logo.png";
 			string logoHome = "Home Logo.png";
 			string sourcePath = "Assets/TeamLogos/";
-			string targetPath = "Assets/Games/LeagueofLegends/";
+			string targetPath = "Assets/Games/League of Legends/";
 
 			string sourceFile = Path.Combine(sourcePath, logoRIT);
 			string destFile = Path.Combine(targetPath, logoHome);
@@ -741,7 +741,7 @@ public class LeagueofLegendsWritetoFile : MonoBehaviour
 			string logoUA = "UA Logo.png";
 			string logoHome = "Home Logo.png";
 			string sourcePath = "Assets/TeamLogos/";
-			string targetPath = "Assets/Games/LeagueofLegends/";
+			string targetPath = "Assets/Games/League of Legends/";
 
 			string sourceFile = Path.Combine(sourcePath, logoUA);
 			string destFile = Path.Combine(targetPath, logoHome);
@@ -756,7 +756,7 @@ public class LeagueofLegendsWritetoFile : MonoBehaviour
 			string logoNYIT = "NYIT Logo.png";
 			string logoHome = "Home Logo.png";
 			string sourcePath = "Assets/TeamLogos/";
-			string targetPath = "Assets/Games/LeagueofLegends/";
+			string targetPath = "Assets/Games/League of Legends/";
 
 			string sourceFile = Path.Combine(sourcePath, logoNYIT);
 			string destFile = Path.Combine(targetPath, logoHome);
@@ -771,7 +771,7 @@ public class LeagueofLegendsWritetoFile : MonoBehaviour
 			string logoSPU = "SPU Logo.png";
 			string logoHome = "Home Logo.png";
 			string sourcePath = "Assets/TeamLogos/";
-			string targetPath = "Assets/Games/LeagueofLegends/";
+			string targetPath = "Assets/Games/League of Legends/";
 
 			string sourceFile = Path.Combine(sourcePath, logoSPU);
 			string destFile = Path.Combine(targetPath, logoHome);
@@ -786,7 +786,7 @@ public class LeagueofLegendsWritetoFile : MonoBehaviour
 			string logoSP = "SP Logo.png";
 			string logoHome = "Home Logo.png";
 			string sourcePath = "Assets/TeamLogos/";
-			string targetPath = "Assets/Games/LeagueofLegends/";
+			string targetPath = "Assets/Games/League of Legends/";
 
 			string sourceFile = Path.Combine(sourcePath, logoSP);
 			string destFile = Path.Combine(targetPath, logoHome);
@@ -807,7 +807,7 @@ public class LeagueofLegendsWritetoFile : MonoBehaviour
 
 		Debug.Log("Home Team Season Record.txt: " + LeagueofLegendsHomeSeasonRecordInput); // shows input in debug
 
-		string path = "Assets/Games/LeagueofLegends/Home Team Season Record.txt"; // This is the directory for the text file.
+		string path = "Assets/GamesLeague of Legends/Home Team Season Record.txt"; // This is the directory for the text file.
 		if (!File.Exists(path)) // checks if the file exists at the path
 		{
 			File.WriteAllText(path, LeagueofLegendsHomeSeasonRecordInput); // sets the location to path and the contents to input inside if statement
@@ -819,7 +819,7 @@ public class LeagueofLegendsWritetoFile : MonoBehaviour
 	public void LeagueofLegendsHomeSeriesScoreIncrement()
 	{
 		string maxValue = "3";
-		string path = "Assets/Games/LeagueofLegends/Home Team Series Score.txt";
+		string path = "Assets/GamesLeague of Legends/Home Team Series Score.txt";
 		if (LeagueofLegendsHomeSeriesScoreInputField != null && LeagueofLegendsHomeSeriesScoreInputField.text != maxValue)
 		{
 			++LeagueofLegendsHomeSeriesScoreValue;
@@ -833,7 +833,7 @@ public class LeagueofLegendsWritetoFile : MonoBehaviour
 	public void LeagueofLegendsHomeSeriesScoreDecrement()
 	{
 		string minValue = "0";
-		string path = "Assets/Games/LeagueofLegends/Home Team Series Score.txt";
+		string path = "Assets/GamesLeague of Legends/Home Team Series Score.txt";
 		if (LeagueofLegendsHomeSeriesScoreInputField != null && LeagueofLegendsHomeSeriesScoreInputField.text != minValue)
 		{
 			--LeagueofLegendsHomeSeriesScoreValue;
@@ -846,7 +846,7 @@ public class LeagueofLegendsWritetoFile : MonoBehaviour
 
 	public void LeagueofLegendsHomeSeriesScore(string s)
 	{
-		string path = "Assets/Games/LeagueofLegends/Home Team Series Score.txt";
+		string path = "Assets/GamesLeague of Legends/Home Team Series Score.txt";
 		LeagueofLegendsHomeSeriesScoreInput = s;
 		LeagueofLegendsHomeSeriesScoreInput = LeagueofLegendsHomeSeriesScoreValue.ToString();
 		LeagueofLegendsHomeSeriesScoreValue = Convert.ToInt32(LeagueofLegendsHomeSeriesScoreInputField.text);
@@ -860,7 +860,7 @@ public class LeagueofLegendsWritetoFile : MonoBehaviour
 
 		Debug.Log("Home Team Player1.txt: " + LeagueofLegendsHomePlayer1Input); // shows input in debug
 
-		string path = "Assets/Games/LeagueofLegends/Home Team Player1.txt"; // This is the directory for the text file.
+		string path = "Assets/GamesLeague of Legends/Home Team Player1.txt"; // This is the directory for the text file.
 		if (!File.Exists(path)) // checks if the file exists at the path
 		{
 			File.WriteAllText(path, LeagueofLegendsHomePlayer1Input); // sets the location to path and the contents to input inside if statement
@@ -875,7 +875,7 @@ public class LeagueofLegendsWritetoFile : MonoBehaviour
 
 		Debug.Log("Home Team Player2.txt: " + LeagueofLegendsHomePlayer2Input); // shows input in debug
 
-		string path = "Assets/Games/LeagueofLegends/Home Team Player2.txt"; // This is the directory for the text file.
+		string path = "Assets/GamesLeague of Legends/Home Team Player2.txt"; // This is the directory for the text file.
 		if (!File.Exists(path)) // checks if the file exists at the path
 		{
 			File.WriteAllText(path, LeagueofLegendsHomePlayer2Input); // sets the location to path and the contents to input inside if statement
@@ -890,7 +890,7 @@ public class LeagueofLegendsWritetoFile : MonoBehaviour
 
 		Debug.Log("Home Team Player3.txt: " + LeagueofLegendsHomePlayer3Input); // shows input in debug
 
-		string path = "Assets/Games/LeagueofLegends/Home Team Player3.txt"; // This is the directory for the text file.
+		string path = "Assets/GamesLeague of Legends/Home Team Player3.txt"; // This is the directory for the text file.
 		if (!File.Exists(path)) // checks if the file exists at the path
 		{
 			File.WriteAllText(path, LeagueofLegendsHomePlayer3Input); // sets the location to path and the contents to input inside if statement
@@ -905,7 +905,7 @@ public class LeagueofLegendsWritetoFile : MonoBehaviour
 
 		Debug.Log("Home Team Player4.txt: " + LeagueofLegendsHomePlayer4Input); // shows input in debug
 
-		string path = "Assets/Games/LeagueofLegends/Home Team Player4.txt"; // This is the directory for the text file.
+		string path = "Assets/GamesLeague of Legends/Home Team Player4.txt"; // This is the directory for the text file.
 		if (!File.Exists(path)) // checks if the file exists at the path
 		{
 			File.WriteAllText(path, LeagueofLegendsHomePlayer4Input); // sets the location to path and the contents to input inside if statement
@@ -920,7 +920,7 @@ public class LeagueofLegendsWritetoFile : MonoBehaviour
 
 		Debug.Log("Home Team Player5.txt: " + LeagueofLegendsHomePlayer5Input); // shows input in debug
 
-		string path = "Assets/Games/LeagueofLegends/Home Team Player5.txt"; // This is the directory for the text file.
+		string path = "Assets/GamesLeague of Legends/Home Team Player5.txt"; // This is the directory for the text file.
 		if (!File.Exists(path)) // checks if the file exists at the path
 		{
 			File.WriteAllText(path, LeagueofLegendsHomePlayer5Input); // sets the location to path and the contents to input inside if statement
@@ -935,7 +935,7 @@ public class LeagueofLegendsWritetoFile : MonoBehaviour
 
 		Debug.Log("Home Team Player1 Stats.txt: " + LeagueofLegendsHomePlayer1StatsInput); // shows input in debug
 
-		string path = "Assets/Games/LeagueofLegends/Home Team Player1 Stats.txt"; // This is the directory for the text file.
+		string path = "Assets/GamesLeague of Legends/Home Team Player1 Stats.txt"; // This is the directory for the text file.
 		if (!File.Exists(path)) // checks if the file exists at the path
 		{
 			File.WriteAllText(path, LeagueofLegendsHomePlayer1StatsInput); // sets the location to path and the contents to input inside if statement
@@ -950,7 +950,7 @@ public class LeagueofLegendsWritetoFile : MonoBehaviour
 
 		Debug.Log("Home Team Player2 Stats.txt: " + LeagueofLegendsHomePlayer2StatsInput); // shows input in debug
 
-		string path = "Assets/Games/LeagueofLegends/Home Team Player2 Stats.txt"; // This is the directory for the text file.
+		string path = "Assets/GamesLeague of Legends/Home Team Player2 Stats.txt"; // This is the directory for the text file.
 		if (!File.Exists(path)) // checks if the file exists at the path
 		{
 			File.WriteAllText(path, LeagueofLegendsHomePlayer2StatsInput); // sets the location to path and the contents to input inside if statement
@@ -965,7 +965,7 @@ public class LeagueofLegendsWritetoFile : MonoBehaviour
 
 		Debug.Log("Home Team Player3 Stats.txt: " + LeagueofLegendsHomePlayer3StatsInput); // shows input in debug
 
-		string path = "Assets/Games/LeagueofLegends/Home Team Player3 Stats.txt"; // This is the directory for the text file.
+		string path = "Assets/GamesLeague of Legends/Home Team Player3 Stats.txt"; // This is the directory for the text file.
 		if (!File.Exists(path)) // checks if the file exists at the path
 		{
 			File.WriteAllText(path, LeagueofLegendsHomePlayer3StatsInput); // sets the location to path and the contents to input inside if statement
@@ -980,7 +980,7 @@ public class LeagueofLegendsWritetoFile : MonoBehaviour
 
 		Debug.Log("Home Team Player4 Stats.txt: " + LeagueofLegendsHomePlayer4StatsInput); // shows input in debug
 
-		string path = "Assets/Games/LeagueofLegends/Home Team Player4 Stats.txt"; // This is the directory for the text file.
+		string path = "Assets/GamesLeague of Legends/Home Team Player4 Stats.txt"; // This is the directory for the text file.
 		if (!File.Exists(path)) // checks if the file exists at the path
 		{
 			File.WriteAllText(path, LeagueofLegendsHomePlayer4StatsInput); // sets the location to path and the contents to input inside if statement
@@ -995,7 +995,7 @@ public class LeagueofLegendsWritetoFile : MonoBehaviour
 
 		Debug.Log("Home Team Player5 Stats.txt: " + LeagueofLegendsHomePlayer5StatsInput); // shows input in debug
 
-		string path = "Assets/Games/LeagueofLegends/Home Team Player5 Stats.txt"; // This is the directory for the text file.
+		string path = "Assets/GamesLeague of Legends/Home Team Player5 Stats.txt"; // This is the directory for the text file.
 		if (!File.Exists(path)) // checks if the file exists at the path
 		{
 			File.WriteAllText(path, LeagueofLegendsHomePlayer5StatsInput); // sets the location to path and the contents to input inside if statement
@@ -1009,14 +1009,14 @@ public class LeagueofLegendsWritetoFile : MonoBehaviour
 		LeagueofLegendsAwayDDStringInput = LeagueofLegendsAwayDDInput.options[LeagueofLegendsAwayDDInput.value].text;
 		Debug.Log("Away Team Name.txt: " + LeagueofLegendsAwayDDStringInput);
 
-		string path = "Assets/Games/LeagueofLegends/Away Team Name.txt"; // This is the directory for the text file.
+		string path = "Assets/GamesLeague of Legends/Away Team Name.txt"; // This is the directory for the text file.
 
 		if (LeagueofLegendsAwayDDStringInput == "SELECT TEAM")
 		{
 			string logoBlank = "Blank.png";
 			string logoAway = "Away Logo.png";
 			string sourcePath = "Assets/TeamLogos/";
-			string targetPath = "Assets/Games/LeagueofLegends/";
+			string targetPath = "Assets/GamesLeague of Legends/";
 
 			string sourceFile = Path.Combine(sourcePath, logoBlank);
 			string destFile = Path.Combine(targetPath, logoAway);
@@ -1030,7 +1030,7 @@ public class LeagueofLegendsWritetoFile : MonoBehaviour
 			string logoSR = "SR LOGO.png";
 			string logoAway = "Away Logo.png";
 			string sourcePath = "Assets/TeamLogos/";
-			string targetPath = "Assets/Games/LeagueofLegends/";
+			string targetPath = "Assets/GamesLeague of Legends/";
 
 			string sourceFile = Path.Combine(sourcePath, logoSR);
 			string destFile = Path.Combine(targetPath, logoAway);
@@ -1043,7 +1043,7 @@ public class LeagueofLegendsWritetoFile : MonoBehaviour
 			string logoRIT = "RIT Logo.png";
 			string logoAway = "Away Logo.png";
 			string sourcePath = "Assets/TeamLogos/";
-			string targetPath = "Assets/Games/LeagueofLegends/";
+			string targetPath = "Assets/GamesLeague of Legends/";
 
 			string sourceFile = Path.Combine(sourcePath, logoRIT);
 			string destFile = Path.Combine(targetPath, logoAway);
@@ -1058,7 +1058,7 @@ public class LeagueofLegendsWritetoFile : MonoBehaviour
 			string logoUA = "UA Logo.png";
 			string logoAway = "Away Logo.png";
 			string sourcePath = "Assets/TeamLogos/";
-			string targetPath = "Assets/Games/LeagueofLegends/";
+			string targetPath = "Assets/GamesLeague of Legends/";
 
 			string sourceFile = Path.Combine(sourcePath, logoUA);
 			string destFile = Path.Combine(targetPath, logoAway);
@@ -1073,7 +1073,7 @@ public class LeagueofLegendsWritetoFile : MonoBehaviour
 			string logoNYIT = "NYIT Logo.png";
 			string logoAway = "Away Logo.png";
 			string sourcePath = "Assets/TeamLogos/";
-			string targetPath = "Assets/Games/LeagueofLegends/";
+			string targetPath = "Assets/GamesLeague of Legends/";
 
 			string sourceFile = Path.Combine(sourcePath, logoNYIT);
 			string destFile = Path.Combine(targetPath, logoAway);
@@ -1089,7 +1089,7 @@ public class LeagueofLegendsWritetoFile : MonoBehaviour
 			string logoSPU = "SPU Logo.png";
 			string logoAway = "Away Logo.png";
 			string sourcePath = "Assets/TeamLogos/";
-			string targetPath = "Assets/Games/LeagueofLegends/";
+			string targetPath = "Assets/GamesLeague of Legends/";
 
 			string sourceFile = Path.Combine(sourcePath, logoSPU);
 			string destFile = Path.Combine(targetPath, logoAway);
@@ -1105,7 +1105,7 @@ public class LeagueofLegendsWritetoFile : MonoBehaviour
 			string logoSP = "SP Logo.png";
 			string logoAway = "Away Logo.png";
 			string sourcePath = "Assets/TeamLogos/";
-			string targetPath = "Assets/Games/LeagueofLegends/";
+			string targetPath = "Assets/GamesLeague of Legends/";
 
 			string sourceFile = Path.Combine(sourcePath, logoSP);
 			string destFile = Path.Combine(targetPath, logoAway);
@@ -1126,7 +1126,7 @@ public class LeagueofLegendsWritetoFile : MonoBehaviour
 
 		Debug.Log("Away Team Season Record.txt: " + LeagueofLegendsAwaySeasonRecordInput); // shows input in debug
 
-		string path = "Assets/Games/LeagueofLegends/Away Team Season Record.txt"; // This is the directory for the text file.
+		string path = "Assets/GamesLeague of Legends/Away Team Season Record.txt"; // This is the directory for the text file.
 		if (!File.Exists(path)) // checks if the file exists at the path
 		{
 			File.WriteAllText(path, LeagueofLegendsAwaySeasonRecordInput); // sets the location to path and the contents to input inside if statement
@@ -1138,7 +1138,7 @@ public class LeagueofLegendsWritetoFile : MonoBehaviour
 	public void LeagueofLegendsAwaySeriesScoreIncrement()
 	{
 		string maxValue = "3";
-		string path = "Assets/Games/LeagueofLegends/Away Team Series Score.txt";
+		string path = "Assets/GamesLeague of Legends/Away Team Series Score.txt";
 		if (LeagueofLegendsAwaySeriesScoreInputField != null && LeagueofLegendsAwaySeriesScoreInputField.text != maxValue)
 		{
 			++LeagueofLegendsAwaySeriesScoreValue;
@@ -1152,7 +1152,7 @@ public class LeagueofLegendsWritetoFile : MonoBehaviour
 	public void LeagueofLegendsAwaySeriesScoreDecrement()
 	{
 		string minValue = "0";
-		string path = "Assets/Games/LeagueofLegends/Away Team Series Score.txt";
+		string path = "Assets/GamesLeague of Legends/Away Team Series Score.txt";
 		if (LeagueofLegendsAwaySeriesScoreInputField != null && LeagueofLegendsAwaySeriesScoreInputField.text != minValue)
 		{
 			--LeagueofLegendsAwaySeriesScoreValue;
@@ -1165,7 +1165,7 @@ public class LeagueofLegendsWritetoFile : MonoBehaviour
 
 	public void LeagueofLegendsAwaySeriesScore(string s)
 	{
-		string path = "Assets/Games/LeagueofLegends/Away Team Series Score.txt";
+		string path = "Assets/GamesLeague of Legends/Away Team Series Score.txt";
 		LeagueofLegendsAwaySeriesScoreInput = s;
 		LeagueofLegendsAwaySeriesScoreInput = LeagueofLegendsAwaySeriesScoreValue.ToString();
 		LeagueofLegendsAwaySeriesScoreValue = Convert.ToInt32(LeagueofLegendsAwaySeriesScoreInputField.text);
@@ -1179,7 +1179,7 @@ public class LeagueofLegendsWritetoFile : MonoBehaviour
 
 		Debug.Log("Away Team Player1.txt: " + LeagueofLegendsAwayPlayer1Input); // shows input in debug
 
-		string path = "Assets/Games/LeagueofLegends/Away Team Player1.txt"; // This is the directory for the text file.
+		string path = "Assets/GamesLeague of Legends/Away Team Player1.txt"; // This is the directory for the text file.
 		if (!File.Exists(path)) // checks if the file exists at the path
 		{
 			File.WriteAllText(path, LeagueofLegendsAwayPlayer1Input); // sets the location to path and the contents to input inside if statement
@@ -1194,7 +1194,7 @@ public class LeagueofLegendsWritetoFile : MonoBehaviour
 
 		Debug.Log("Away Team Player2.txt: " + LeagueofLegendsAwayPlayer2Input); // shows input in debug
 
-		string path = "Assets/Games/LeagueofLegends/Away Team Player2.txt"; // This is the directory for the text file.
+		string path = "Assets/GamesLeague of Legends/Away Team Player2.txt"; // This is the directory for the text file.
 		if (!File.Exists(path)) // checks if the file exists at the path
 		{
 			File.WriteAllText(path, LeagueofLegendsAwayPlayer2Input); // sets the location to path and the contents to input inside if statement
@@ -1209,7 +1209,7 @@ public class LeagueofLegendsWritetoFile : MonoBehaviour
 
 		Debug.Log("Away Team Player3.txt: " + LeagueofLegendsAwayPlayer3Input); // shows input in debug
 
-		string path = "Assets/Games/LeagueofLegends/Away Team Player3.txt"; // This is the directory for the text file.
+		string path = "Assets/GamesLeague of Legends/Away Team Player3.txt"; // This is the directory for the text file.
 		if (!File.Exists(path)) // checks if the file exists at the path
 		{
 			File.WriteAllText(path, LeagueofLegendsAwayPlayer3Input); // sets the location to path and the contents to input inside if statement
@@ -1224,7 +1224,7 @@ public class LeagueofLegendsWritetoFile : MonoBehaviour
 
 		Debug.Log("Away Team Player4.txt: " + LeagueofLegendsAwayPlayer4Input); // shows input in debug
 
-		string path = "Assets/Games/LeagueofLegends/Away Team Player4.txt"; // This is the directory for the text file.
+		string path = "Assets/GamesLeague of Legends/Away Team Player4.txt"; // This is the directory for the text file.
 		if (!File.Exists(path)) // checks if the file exists at the path
 		{
 			File.WriteAllText(path, LeagueofLegendsAwayPlayer4Input); // sets the location to path and the contents to input inside if statement
@@ -1239,7 +1239,7 @@ public class LeagueofLegendsWritetoFile : MonoBehaviour
 
 		Debug.Log("Away Team Player5.txt: " + LeagueofLegendsHomePlayer5Input); // shows input in debug
 
-		string path = "Assets/Games/LeagueofLegends/Away Team Player5.txt"; // This is the directory for the text file.
+		string path = "Assets/GamesLeague of Legends/Away Team Player5.txt"; // This is the directory for the text file.
 		if (!File.Exists(path)) // checks if the file exists at the path
 		{
 			File.WriteAllText(path, LeagueofLegendsHomePlayer5Input); // sets the location to path and the contents to input inside if statement
@@ -1254,7 +1254,7 @@ public class LeagueofLegendsWritetoFile : MonoBehaviour
 
 		Debug.Log("Away Team Player1 Stats.txt: " + LeagueofLegendsAwayPlayer1StatsInput); // shows input in debug
 
-		string path = "Assets/Games/LeagueofLegends/Away Team Player1 Stats.txt"; // This is the directory for the text file.
+		string path = "Assets/GamesLeague of Legends/Away Team Player1 Stats.txt"; // This is the directory for the text file.
 		if (!File.Exists(path)) // checks if the file exists at the path
 		{
 			File.WriteAllText(path, LeagueofLegendsAwayPlayer1StatsInput); // sets the location to path and the contents to input inside if statement
@@ -1269,7 +1269,7 @@ public class LeagueofLegendsWritetoFile : MonoBehaviour
 
 		Debug.Log("Away Team Player2 Stats.txt: " + LeagueofLegendsAwayPlayer2StatsInput); // shows input in debug
 
-		string path = "Assets/Games/LeagueofLegends/Away Team Player2 Stats.txt"; // This is the directory for the text file.
+		string path = "Assets/GamesLeague of Legends/Away Team Player2 Stats.txt"; // This is the directory for the text file.
 		if (!File.Exists(path)) // checks if the file exists at the path
 		{
 			File.WriteAllText(path, LeagueofLegendsAwayPlayer2StatsInput); // sets the location to path and the contents to input inside if statement
@@ -1284,7 +1284,7 @@ public class LeagueofLegendsWritetoFile : MonoBehaviour
 
 		Debug.Log("Away Team Player3 Stats.txt: " + LeagueofLegendsAwayPlayer3StatsInput); // shows input in debug
 
-		string path = "Assets/Games/LeagueofLegends/Away Team Player3 Stats.txt"; // This is the directory for the text file.
+		string path = "Assets/GamesLeague of Legends/Away Team Player3 Stats.txt"; // This is the directory for the text file.
 		if (!File.Exists(path)) // checks if the file exists at the path
 		{
 			File.WriteAllText(path, LeagueofLegendsAwayPlayer3StatsInput); // sets the location to path and the contents to input inside if statement
@@ -1299,7 +1299,7 @@ public class LeagueofLegendsWritetoFile : MonoBehaviour
 
 		Debug.Log("Away Team Player4 Stats.txt: " + LeagueofLegendsAwayPlayer4StatsInput); // shows input in debug
 
-		string path = "Assets/Games/LeagueofLegends/Away Team Player4 Stats.txt"; // This is the directory for the text file.
+		string path = "Assets/GamesLeague of Legends/Away Team Player4 Stats.txt"; // This is the directory for the text file.
 		if (!File.Exists(path)) // checks if the file exists at the path
 		{
 			File.WriteAllText(path, LeagueofLegendsAwayPlayer4StatsInput); // sets the location to path and the contents to input inside if statement
@@ -1314,7 +1314,7 @@ public class LeagueofLegendsWritetoFile : MonoBehaviour
 
 		Debug.Log("Away Team Player5 Stats.txt: " + LeagueofLegendsHomePlayer5StatsInput); // shows input in debug
 
-		string path = "Assets/Games/LeagueofLegends/Away Team Player5 Stats.txt"; // This is the directory for the text file.
+		string path = "Assets/GamesLeague of Legends/Away Team Player5 Stats.txt"; // This is the directory for the text file.
 		if (!File.Exists(path)) // checks if the file exists at the path
 		{
 			File.WriteAllText(path, LeagueofLegendsHomePlayer5StatsInput); // sets the location to path and the contents to input inside if statement

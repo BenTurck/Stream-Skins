@@ -82,7 +82,7 @@ public class SmashBrosWritetoFile : MonoBehaviour
 
 		Debug.Log("Ticker.txt: " + SmashBrosTickerInput); // shows input in debug
 
-		string path = "Assets/Games/SmashBros/Ticker.txt"; // This is the directory for the text file.
+		string path = "Assets/Games/Smash Bros/Ticker.txt"; // This is the directory for the text file.
 		if (!File.Exists(path)) // checks if the file exists at the path
 		{
 			File.WriteAllText(path, SmashBrosTickerInput); // sets the location to path and the contents to input inside if statement
@@ -97,7 +97,7 @@ public class SmashBrosWritetoFile : MonoBehaviour
 
 		Debug.Log("Caster1.txt: " + SmashBrosCaster1Input); // shows input in debug
 
-		string path = "Assets/Games/SmashBros/Caster1.txt"; // This is the directory for the text file.
+		string path = "Assets/Games/Smash Bros/Caster1.txt"; // This is the directory for the text file.
 		if (!File.Exists(path)) // checks if the file exists at the path
 		{
 			File.WriteAllText(path, SmashBrosCaster1Input); // sets the location to path and the contents to input inside if statement
@@ -112,7 +112,7 @@ public class SmashBrosWritetoFile : MonoBehaviour
 
 		Debug.Log("Caster2.txt: " + SmashBrosCaster2Input); // shows input in debug
 
-		string path = "Assets/Games/SmashBros/Caster2.txt"; // This is the directory for the text file.
+		string path = "Assets/Games/Smash Bros/Caster2.txt"; // This is the directory for the text file.
 		if (!File.Exists(path)) // checks if the file exists at the path
 		{
 			File.WriteAllText(path, SmashBrosCaster2Input); // sets the location to path and the contents to input inside if statement
@@ -128,13 +128,13 @@ public class SmashBrosWritetoFile : MonoBehaviour
 		string text1 = "Game 1: ";
 		string text2 = " Won";
 		string bothinput = text1 + SmashBrosHomeDDStringInput + text2;
-		string path = "Assets/Games/SmashBros/Game1 Winner.txt";
+		string path = "Assets/Games/Smash Bros/Game1 Winner.txt";
 
 		string mapBlank = "Blank.png";
 		string mapPlayed = "Map Played.png";
 		string mapWinner = "Map 1 Played.png";
 		string sourceMapPath = "Assets/GameMaps/";
-		string targetMapPath = "Assets/Games/SmashBros/";
+		string targetMapPath = "Assets/Games/Smash Bros/";
 
 		string sourceMapBlankFile = Path.Combine(sourceMapPath, mapBlank);
 		string sourceMapPlayedFile = Path.Combine(sourceMapPath, mapPlayed);
@@ -144,7 +144,7 @@ public class SmashBrosWritetoFile : MonoBehaviour
 		string logoHome = "Home Logo.png";
 		string logoWinner = "Map 1 Winner.png";
 		string sourceLogoPath = "Assets/TeamLogos/";
-		string targetLogoPath = "Assets/Games/SmashBros/";
+		string targetLogoPath = "Assets/Games/Smash Bros/";
 
 		string sourceLogoBlankFile = Path.Combine(sourceLogoPath, logoBlank);
 		string sourceLogoHomeFile = Path.Combine(targetLogoPath, logoHome);
@@ -187,13 +187,13 @@ public class SmashBrosWritetoFile : MonoBehaviour
 		string text1 = "Game 2: ";
 		string text2 = " Won";
 		string bothinput = text1 + SmashBrosHomeDDStringInput + text2;
-		string path = "Assets/Games/SmashBros/Game2 Winner.txt";
+		string path = "Assets/Games/Smash Bros/Game2 Winner.txt";
 
 		string mapBlank = "Blank.png";
 		string mapPlayed = "Map Played.png";
 		string mapWinner = "Map 2 Played.png";
 		string sourceMapPath = "Assets/GameMaps/";
-		string targetMapPath = "Assets/Games/SmashBros/";
+		string targetMapPath = "Assets/Games/Smash Bros/";
 
 		string sourceMapBlankFile = Path.Combine(sourceMapPath, mapBlank);
 		string sourceMapPlayedFile = Path.Combine(sourceMapPath, mapPlayed);
@@ -203,7 +203,7 @@ public class SmashBrosWritetoFile : MonoBehaviour
 		string logoHome = "Home Logo.png";
 		string logoWinner = "Map 2 Winner.png";
 		string sourceLogoPath = "Assets/TeamLogos/";
-		string targetLogoPath = "Assets/Games/SmashBros/";
+		string targetLogoPath = "Assets/Games/Smash Bros/";
 
 		string sourceLogoBlankFile = Path.Combine(sourceLogoPath, logoBlank);
 		string sourceLogoHomeFile = Path.Combine(targetLogoPath, logoHome);
@@ -246,13 +246,13 @@ public class SmashBrosWritetoFile : MonoBehaviour
 		string text1 = "Game 3: ";
 		string text2 = " Won";
 		string bothinput = text1 + SmashBrosHomeDDStringInput + text2;
-		string path = "Assets/Games/SmashBros/Game3 Winner.txt";
+		string path = "Assets/Games/Smash Bros/Game3 Winner.txt";
 
 		string mapBlank = "Blank.png";
 		string mapPlayed = "Map Played.png";
 		string mapWinner = "Map 3 Played.png";
 		string sourceMapPath = "Assets/GameMaps/";
-		string targetMapPath = "Assets/Games/SmashBros/";
+		string targetMapPath = "Assets/Games/Smash Bros/";
 
 		string sourceMapBlankFile = Path.Combine(sourceMapPath, mapBlank);
 		string sourceMapPlayedFile = Path.Combine(sourceMapPath, mapPlayed);
@@ -262,7 +262,7 @@ public class SmashBrosWritetoFile : MonoBehaviour
 		string logoHome = "Home Logo.png";
 		string logoWinner = "Map 3 Winner.png";
 		string sourceLogoPath = "Assets/TeamLogos/";
-		string targetLogoPath = "Assets/Games/SmashBros/";
+		string targetLogoPath = "Assets/Games/Smash Bros/";
 
 		string sourceLogoBlankFile = Path.Combine(sourceLogoPath, logoBlank);
 		string sourceLogoHomeFile = Path.Combine(targetLogoPath, logoHome);
@@ -304,7 +304,7 @@ public class SmashBrosWritetoFile : MonoBehaviour
 
 		Debug.Log("Game1 Score.txt: " + SmashBrosGame1ScoreInput); // shows input in debug
 
-		string path = "Assets/Games/SmashBros/Game1 Score.txt"; // This is the directory for the text file.
+		string path = "Assets/Games/Smash Bros/Game1 Score.txt"; // This is the directory for the text file.
 		if (!File.Exists(path)) // checks if the file exists at the path
 		{
 			File.WriteAllText(path, SmashBrosGame1ScoreInput); // sets the location to path and the contents to input inside if statement
@@ -320,7 +320,7 @@ public class SmashBrosWritetoFile : MonoBehaviour
 
 		Debug.Log("Game2 Score.txt: " + SmashBrosGame2ScoreInput); // shows input in debug
 
-		string path = "Assets/Games/SmashBros/Game2 Score.txt"; // This is the directory for the text file.
+		string path = "Assets/Games/Smash Bros/Game2 Score.txt"; // This is the directory for the text file.
 		if (!File.Exists(path)) // checks if the file exists at the path
 		{
 			File.WriteAllText(path, SmashBrosGame2ScoreInput); // sets the location to path and the contents to input inside if statement
@@ -335,7 +335,7 @@ public class SmashBrosWritetoFile : MonoBehaviour
 
 		Debug.Log("Game3 Score.txt: " + SmashBrosGame3ScoreInput); // shows input in debug
 
-		string path = "Assets/Games/SmashBros/Game3 Score.txt"; // This is the directory for the text file.
+		string path = "Assets/Games/Smash Bros/Game3 Score.txt"; // This is the directory for the text file.
 		if (!File.Exists(path)) // checks if the file exists at the path
 		{
 			File.WriteAllText(path, SmashBrosGame3ScoreInput); // sets the location to path and the contents to input inside if statement
@@ -350,7 +350,7 @@ public class SmashBrosWritetoFile : MonoBehaviour
 
 		Debug.Log("Game4 Score.txt: " + SmashBrosGame4ScoreInput); // shows input in debug
 
-		string path = "Assets/Games/SmashBros/Game4 Score.txt"; // This is the directory for the text file.
+		string path = "Assets/Games/Smash Bros/Game4 Score.txt"; // This is the directory for the text file.
 		if (!File.Exists(path)) // checks if the file exists at the path
 		{
 			File.WriteAllText(path, SmashBrosGame4ScoreInput); // sets the location to path and the contents to input inside if statement
@@ -365,7 +365,7 @@ public class SmashBrosWritetoFile : MonoBehaviour
 
 		Debug.Log("Game5 Score.txt: " + SmashBrosGame5ScoreInput); // shows input in debug
 
-		string path = "Assets/Games/SmashBros/Game5 Score.txt"; // This is the directory for the text file.
+		string path = "Assets/Games/Smash Bros/Game5 Score.txt"; // This is the directory for the text file.
 		if (!File.Exists(path)) // checks if the file exists at the path
 		{
 			File.WriteAllText(path, SmashBrosGame5ScoreInput); // sets the location to path and the contents to input inside if statement
@@ -381,13 +381,13 @@ public class SmashBrosWritetoFile : MonoBehaviour
 		string text1 = "Game 1: ";
 		string text2 = " Won";
 		string bothinput = text1 + SmashBrosAwayDDStringInput + text2;
-		string path = "Assets/Games/SmashBros/Game1 Winner.txt";
+		string path = "Assets/Games/Smash Bros/Game1 Winner.txt";
 
 		string mapBlank = "Blank.png";
 		string mapPlayed = "Map Played.png";
 		string mapWinner = "Map 1 Played.png";
 		string sourceMapPath = "Assets/GameMaps/";
-		string targetMapPath = "Assets/Games/SmashBros/";
+		string targetMapPath = "Assets/Games/Smash Bros/";
 
 		string sourceMapBlankFile = Path.Combine(sourceMapPath, mapBlank);
 		string sourceMapPlayedFile = Path.Combine(sourceMapPath, mapPlayed);
@@ -397,7 +397,7 @@ public class SmashBrosWritetoFile : MonoBehaviour
 		string logoAway = "Away Logo.png";
 		string logoWinner = "Map 1 Winner.png";
 		string sourceLogoPath = "Assets/TeamLogos/";
-		string targetLogoPath = "Assets/Games/SmashBros/";
+		string targetLogoPath = "Assets/Games/Smash Bros/";
 
 		string sourceLogoBlankFile = Path.Combine(sourceLogoPath, logoBlank);
 		string sourceLogoAwayFile = Path.Combine(targetLogoPath, logoAway);
@@ -440,13 +440,13 @@ public class SmashBrosWritetoFile : MonoBehaviour
 		string text1 = "Game 2: ";
 		string text2 = " Won";
 		string bothinput = text1 + SmashBrosAwayDDStringInput + text2;
-		string path = "Assets/Games/SmashBros/Game2 Winner.txt";
+		string path = "Assets/Games/Smash Bros/Game2 Winner.txt";
 
 		string mapBlank = "Blank.png";
 		string mapPlayed = "Map Played.png";
 		string mapWinner = "Map 2 Played.png";
 		string sourceMapPath = "Assets/GameMaps/";
-		string targetMapPath = "Assets/Games/SmashBros/";
+		string targetMapPath = "Assets/Games/Smash Bros/";
 
 		string sourceMapBlankFile = Path.Combine(sourceMapPath, mapBlank);
 		string sourceMapPlayedFile = Path.Combine(sourceMapPath, mapPlayed);
@@ -456,7 +456,7 @@ public class SmashBrosWritetoFile : MonoBehaviour
 		string logoAway = "Away Logo.png";
 		string logoWinner = "Map 2 Winner.png";
 		string sourceLogoPath = "Assets/TeamLogos/";
-		string targetLogoPath = "Assets/Games/SmashBros/";
+		string targetLogoPath = "Assets/Games/Smash Bros/";
 
 		string sourceLogoBlankFile = Path.Combine(sourceLogoPath, logoBlank);
 		string sourceLogoAwayFile = Path.Combine(targetLogoPath, logoAway);
@@ -499,13 +499,13 @@ public class SmashBrosWritetoFile : MonoBehaviour
 		string text1 = "Game 3: ";
 		string text2 = " Won";
 		string bothinput = text1 + SmashBrosAwayDDStringInput + text2;
-		string path = "Assets/Games/SmashBros/Game3 Winner.txt";
+		string path = "Assets/Games/Smash Bros/Game3 Winner.txt";
 
 		string mapBlank = "Blank.png";
 		string mapPlayed = "Map Played.png";
 		string mapWinner = "Map 3 Played.png";
 		string sourceMapPath = "Assets/GameMaps/";
-		string targetMapPath = "Assets/Games/SmashBros/";
+		string targetMapPath = "Assets/Games/Smash Bros/";
 
 		string sourceMapBlankFile = Path.Combine(sourceMapPath, mapBlank);
 		string sourceMapPlayedFile = Path.Combine(sourceMapPath, mapPlayed);
@@ -515,7 +515,7 @@ public class SmashBrosWritetoFile : MonoBehaviour
 		string logoAway = "Away Logo.png";
 		string logoWinner = "Map 3 Winner.png";
 		string sourceLogoPath = "Assets/TeamLogos/";
-		string targetLogoPath = "Assets/Games/SmashBros/";
+		string targetLogoPath = "Assets/Games/Smash Bros/";
 
 		string sourceLogoBlankFile = Path.Combine(sourceLogoPath, logoBlank);
 		string sourceLogoAwayFile = Path.Combine(targetLogoPath, logoAway);
@@ -558,14 +558,14 @@ public class SmashBrosWritetoFile : MonoBehaviour
 		string text1 = "Game 4: ";
 		string text2 = " Won";
 		string bothinput = text1 + SmashBrosAwayDDStringInput + text2;
-		string path = "Assets/Games/SmashBros/Game4 Winner.txt";
+		string path = "Assets/Games/Smash Bros/Game4 Winner.txt";
 
 
 		string mapBlank = "Blank.png";
 		string mapPlayed = "Map Played.png";
 		string mapWinner = "Map 4 Played.png";
 		string sourceMapPath = "Assets/GameMaps/";
-		string targetMapPath = "Assets/Games/SmashBros/";
+		string targetMapPath = "Assets/Games/Smash Bros/";
 
 		string sourceMapBlankFile = Path.Combine(sourceMapPath, mapBlank);
 		string sourceMapPlayedFile = Path.Combine(sourceMapPath, mapPlayed);
@@ -575,7 +575,7 @@ public class SmashBrosWritetoFile : MonoBehaviour
 		string logoAway = "Away Logo.png";
 		string logoWinner = "Map 4 Winner.png";
 		string sourceLogoPath = "Assets/TeamLogos/";
-		string targetLogoPath = "Assets/Games/SmashBros/";
+		string targetLogoPath = "Assets/Games/Smash Bros/";
 
 		string sourceLogoBlankFile = Path.Combine(sourceLogoPath, logoBlank);
 		string sourceLogoAwayFile = Path.Combine(targetLogoPath, logoAway);
@@ -618,13 +618,13 @@ public class SmashBrosWritetoFile : MonoBehaviour
 		string text1 = "Game 5: ";
 		string text2 = " Won";
 		string bothinput = text1 + SmashBrosAwayDDStringInput + text2;
-		string path = "Assets/Games/SmashBros/Game5 Winner.txt";
+		string path = "Assets/Games/Smash Bros/Game5 Winner.txt";
 
 		string mapBlank = "Blank.png";
 		string mapPlayed = "Map Played.png";
 		string mapWinner = "Map 5 Played.png";
 		string sourceMapPath = "Assets/GameMaps/";
-		string targetMapPath = "Assets/Games/SmashBros/";
+		string targetMapPath = "Assets/Games/Smash Bros/";
 
 		string sourceMapBlankFile = Path.Combine(sourceMapPath, mapBlank);
 		string sourceMapPlayedFile = Path.Combine(sourceMapPath, mapPlayed);
@@ -634,7 +634,7 @@ public class SmashBrosWritetoFile : MonoBehaviour
 		string logoAway = "Away Logo.png";
 		string logoWinner = "Map 5 Winner.png";
 		string sourceLogoPath = "Assets/TeamLogos/";
-		string targetLogoPath = "Assets/Games/SmashBros/";
+		string targetLogoPath = "Assets/Games/Smash Bros/";
 
 		string sourceLogoBlankFile = Path.Combine(sourceLogoPath, logoBlank);
 		string sourceLogoAwayFile = Path.Combine(targetLogoPath, logoAway);
@@ -675,14 +675,14 @@ public class SmashBrosWritetoFile : MonoBehaviour
 		SmashBrosHomeDDStringInput = SmashBrosHomeDDInput.options[SmashBrosHomeDDInput.value].text;
 		Debug.Log("Home Team Name.txt: " + SmashBrosHomeDDStringInput);
 
-		string path = "Assets/Games/SmashBros/Home Team Name.txt"; // This is the directory for the text file.
+		string path = "Assets/Games/Smash Bros/Home Team Name.txt"; // This is the directory for the text file.
 
 		if (SmashBrosHomeDDStringInput == "SELECT TEAM")
 		{
 			string logoBlank = "Blank.png";
 			string logoHome = "Home Logo.png";
 			string sourcePath = "Assets/TeamLogos/";
-			string targetPath = "Assets/Games/SmashBros/";
+			string targetPath = "Assets/Games/Smash Bros/";
 
 			string sourceFile = Path.Combine(sourcePath, logoBlank);
 			string destFile = Path.Combine(targetPath, logoHome);
@@ -696,7 +696,7 @@ public class SmashBrosWritetoFile : MonoBehaviour
 			string logoSR = "SR LOGO.png";
 			string logoHome = "Home Logo.png";
 			string sourcePath = "Assets/TeamLogos/";
-			string targetPath = "Assets/Games/SmashBros/";
+			string targetPath = "Assets/Games/Smash Bros/";
 
 			string sourceFile = Path.Combine(sourcePath, logoSR);
 			string destFile = Path.Combine(targetPath, logoHome);
@@ -709,7 +709,7 @@ public class SmashBrosWritetoFile : MonoBehaviour
 			string logoRIT = "RIT Logo.png";
 			string logoHome = "Home Logo.png";
 			string sourcePath = "Assets/TeamLogos/";
-			string targetPath = "Assets/Games/SmashBros/";
+			string targetPath = "Assets/Games/Smash Bros/";
 
 			string sourceFile = Path.Combine(sourcePath, logoRIT);
 			string destFile = Path.Combine(targetPath, logoHome);
@@ -724,7 +724,7 @@ public class SmashBrosWritetoFile : MonoBehaviour
 			string logoUA = "UA Logo.png";
 			string logoHome = "Home Logo.png";
 			string sourcePath = "Assets/TeamLogos/";
-			string targetPath = "Assets/Games/SmashBros/";
+			string targetPath = "Assets/Games/Smash Bros/";
 
 			string sourceFile = Path.Combine(sourcePath, logoUA);
 			string destFile = Path.Combine(targetPath, logoHome);
@@ -739,7 +739,7 @@ public class SmashBrosWritetoFile : MonoBehaviour
 			string logoNYIT = "NYIT Logo.png";
 			string logoHome = "Home Logo.png";
 			string sourcePath = "Assets/TeamLogos/";
-			string targetPath = "Assets/Games/SmashBros/";
+			string targetPath = "Assets/Games/Smash Bros/";
 
 			string sourceFile = Path.Combine(sourcePath, logoNYIT);
 			string destFile = Path.Combine(targetPath, logoHome);
@@ -754,7 +754,7 @@ public class SmashBrosWritetoFile : MonoBehaviour
 			string logoSPU = "SPU Logo.png";
 			string logoHome = "Home Logo.png";
 			string sourcePath = "Assets/TeamLogos/";
-			string targetPath = "Assets/Games/SmashBros/";
+			string targetPath = "Assets/Games/Smash Bros/";
 
 			string sourceFile = Path.Combine(sourcePath, logoSPU);
 			string destFile = Path.Combine(targetPath, logoHome);
@@ -769,7 +769,7 @@ public class SmashBrosWritetoFile : MonoBehaviour
 			string logoSP = "SP Logo.png";
 			string logoHome = "Home Logo.png";
 			string sourcePath = "Assets/TeamLogos/";
-			string targetPath = "Assets/Games/SmashBros/";
+			string targetPath = "Assets/Games/Smash Bros/";
 
 			string sourceFile = Path.Combine(sourcePath, logoSP);
 			string destFile = Path.Combine(targetPath, logoHome);
@@ -790,7 +790,7 @@ public class SmashBrosWritetoFile : MonoBehaviour
 
 		Debug.Log("Home Team Season Record.txt: " + SmashBrosHomeSeasonRecordInput); // shows input in debug
 
-		string path = "Assets/Games/SmashBros/Home Team Season Record.txt"; // This is the directory for the text file.
+		string path = "Assets/Games/Smash Bros/Home Team Season Record.txt"; // This is the directory for the text file.
 		if (!File.Exists(path)) // checks if the file exists at the path
 		{
 			File.WriteAllText(path, SmashBrosHomeSeasonRecordInput); // sets the location to path and the contents to input inside if statement
@@ -802,7 +802,7 @@ public class SmashBrosWritetoFile : MonoBehaviour
 	public void SmashBrosHomeSeriesScoreIncrement()
 	{
 		string maxValue = "3";
-		string path = "Assets/Games/SmashBros/Home Team Series Score.txt";
+		string path = "Assets/Games/Smash Bros/Home Team Series Score.txt";
 		if (SmashBrosHomeSeriesScoreInputField != null && SmashBrosHomeSeriesScoreInputField.text != maxValue)
 		{
 			++SmashBrosHomeSeriesScoreValue;
@@ -816,7 +816,7 @@ public class SmashBrosWritetoFile : MonoBehaviour
 	public void SmashBrosHomeSeriesScoreDecrement()
 	{
 		string minValue = "0";
-		string path = "Assets/Games/SmashBros/Home Team Series Score.txt";
+		string path = "Assets/Games/Smash Bros/Home Team Series Score.txt";
 		if (SmashBrosHomeSeriesScoreInputField != null && SmashBrosHomeSeriesScoreInputField.text != minValue)
 		{
 			--SmashBrosHomeSeriesScoreValue;
@@ -829,7 +829,7 @@ public class SmashBrosWritetoFile : MonoBehaviour
 
 	public void SmashBrosHomeSeriesScore(string s)
 	{
-		string path = "Assets/Games/SmashBros/Home Team Series Score.txt";
+		string path = "Assets/Games/Smash Bros/Home Team Series Score.txt";
 		SmashBrosHomeSeriesScoreInput = s;
 		SmashBrosHomeSeriesScoreInput = SmashBrosHomeSeriesScoreValue.ToString();
 		SmashBrosHomeSeriesScoreValue = Convert.ToInt32(SmashBrosHomeSeriesScoreInputField.text);
@@ -840,7 +840,7 @@ public class SmashBrosWritetoFile : MonoBehaviour
 	public void SmashBrosHomeStocksIncrement()
 	{
 		string maxValue = "9";
-		string path = "Assets/Games/SmashBros/Home Team Stocks.txt";
+		string path = "Assets/Games/Smash Bros/Home Team Stocks.txt";
 		if (SmashBrosHomeSeriesScoreInputField != null && SmashBrosHomeSeriesScoreInputField.text != maxValue)
 		{
 			++SmashBrosHomeSeriesScoreValue;
@@ -854,7 +854,7 @@ public class SmashBrosWritetoFile : MonoBehaviour
 	public void SmashBrosHomeStocksDecrement()
 	{
 		string minValue = "0";
-		string path = "Assets/Games/SmashBros/Home Team Stocks.txt";
+		string path = "Assets/Games/Smash Bros/Home Team Stocks.txt";
 		if (SmashBrosHomeSeriesScoreInputField != null && SmashBrosHomeSeriesScoreInputField.text != minValue)
 		{
 			--SmashBrosHomeSeriesScoreValue;
@@ -867,7 +867,7 @@ public class SmashBrosWritetoFile : MonoBehaviour
 
 	public void SmashBrosHomeStocks(string s)
 	{
-		string path = "Assets/Games/SmashBros/Home Team Stocks.txt";
+		string path = "Assets/Games/Smash Bros/Home Team Stocks.txt";
 		SmashBrosHomeSeriesScoreInput = s;
 		SmashBrosHomeSeriesScoreInput = SmashBrosHomeSeriesScoreValue.ToString();
 		SmashBrosHomeSeriesScoreValue = Convert.ToInt32(SmashBrosHomeSeriesScoreInputField.text);
@@ -877,7 +877,7 @@ public class SmashBrosWritetoFile : MonoBehaviour
 
 	public void SmashBrosHomeActivePlayer1(bool tog)
 	{
-		string path = "Assets/Games/SmashBros/Home Team Active Player.txt";
+		string path = "Assets/Games/Smash Bros/Home Team Active Player.txt";
 		if (tog == true)
 		{
 			Debug.Log("Home Team Active Player: " + SmashBrosHomePlayer1Input);
@@ -892,7 +892,7 @@ public class SmashBrosWritetoFile : MonoBehaviour
 
 	public void SmashBrosHomeActivePlayer2(bool tog)
 	{
-		string path = "Assets/Games/SmashBros/Home Team Active Player.txt";
+		string path = "Assets/Games/Smash Bros/Home Team Active Player.txt";
 		if (tog == true)
 		{
 			Debug.Log("Home Team Active Player: " + SmashBrosHomePlayer2Input);
@@ -907,7 +907,7 @@ public class SmashBrosWritetoFile : MonoBehaviour
 
 	public void SmashBrosHomeActivePlayer3(bool tog)
 	{
-		string path = "Assets/Games/SmashBros/Home Team Active Player.txt";
+		string path = "Assets/Games/Smash Bros/Home Team Active Player.txt";
 		if (tog == true)
 		{
 			Debug.Log("Home Team Active Player: " + SmashBrosHomePlayer3Input);
@@ -926,7 +926,7 @@ public class SmashBrosWritetoFile : MonoBehaviour
 
 		Debug.Log("Home Team Player1.txt: " + SmashBrosHomePlayer1Input); // shows input in debug
 
-		string path = "Assets/Games/SmashBros/Home Team Player1.txt"; // This is the directory for the text file.
+		string path = "Assets/Games/Smash Bros/Home Team Player1.txt"; // This is the directory for the text file.
 		if (!File.Exists(path)) // checks if the file exists at the path
 		{
 			File.WriteAllText(path, SmashBrosHomePlayer1Input); // sets the location to path and the contents to input inside if statement
@@ -941,7 +941,7 @@ public class SmashBrosWritetoFile : MonoBehaviour
 
 		Debug.Log("Home Team Player2.txt: " + SmashBrosHomePlayer2Input); // shows input in debug
 
-		string path = "Assets/Games/SmashBros/Home Team Player2.txt"; // This is the directory for the text file.
+		string path = "Assets/Games/Smash Bros/Home Team Player2.txt"; // This is the directory for the text file.
 		if (!File.Exists(path)) // checks if the file exists at the path
 		{
 			File.WriteAllText(path, SmashBrosHomePlayer2Input); // sets the location to path and the contents to input inside if statement
@@ -956,7 +956,7 @@ public class SmashBrosWritetoFile : MonoBehaviour
 
 		Debug.Log("Home Team Player3.txt: " + SmashBrosHomePlayer3Input); // shows input in debug
 
-		string path = "Assets/Games/SmashBros/Home Team Player3.txt"; // This is the directory for the text file.
+		string path = "Assets/Games/Smash Bros/Home Team Player3.txt"; // This is the directory for the text file.
 		if (!File.Exists(path)) // checks if the file exists at the path
 		{
 			File.WriteAllText(path, SmashBrosHomePlayer3Input); // sets the location to path and the contents to input inside if statement
@@ -971,7 +971,7 @@ public class SmashBrosWritetoFile : MonoBehaviour
 
 		Debug.Log("Home Team Player1 Stats.txt: " + SmashBrosHomePlayer1StatsInput); // shows input in debug
 
-		string path = "Assets/Games/SmashBros/Home Team Player1 Stats.txt"; // This is the directory for the text file.
+		string path = "Assets/Games/Smash Bros/Home Team Player1 Stats.txt"; // This is the directory for the text file.
 		if (!File.Exists(path)) // checks if the file exists at the path
 		{
 			File.WriteAllText(path, SmashBrosHomePlayer1StatsInput); // sets the location to path and the contents to input inside if statement
@@ -986,7 +986,7 @@ public class SmashBrosWritetoFile : MonoBehaviour
 
 		Debug.Log("Home Team Player2 Stats.txt: " + SmashBrosHomePlayer2StatsInput); // shows input in debug
 
-		string path = "Assets/Games/SmashBros/Home Team Player2 Stats.txt"; // This is the directory for the text file.
+		string path = "Assets/Games/Smash Bros/Home Team Player2 Stats.txt"; // This is the directory for the text file.
 		if (!File.Exists(path)) // checks if the file exists at the path
 		{
 			File.WriteAllText(path, SmashBrosHomePlayer2StatsInput); // sets the location to path and the contents to input inside if statement
@@ -1001,7 +1001,7 @@ public class SmashBrosWritetoFile : MonoBehaviour
 
 		Debug.Log("Home Team Player3 Stats.txt: " + SmashBrosHomePlayer3StatsInput); // shows input in debug
 
-		string path = "Assets/Games/SmashBros/Home Team Player3 Stats.txt"; // This is the directory for the text file.
+		string path = "Assets/Games/Smash Bros/Home Team Player3 Stats.txt"; // This is the directory for the text file.
 		if (!File.Exists(path)) // checks if the file exists at the path
 		{
 			File.WriteAllText(path, SmashBrosHomePlayer3StatsInput); // sets the location to path and the contents to input inside if statement
@@ -1015,14 +1015,14 @@ public class SmashBrosWritetoFile : MonoBehaviour
 		SmashBrosAwayDDStringInput = SmashBrosAwayDDInput.options[SmashBrosAwayDDInput.value].text;
 		Debug.Log("Away Team Name.txt: " + SmashBrosAwayDDStringInput);
 
-		string path = "Assets/Games/SmashBros/Away Team Name.txt"; // This is the directory for the text file.
+		string path = "Assets/Games/Smash Bros/Away Team Name.txt"; // This is the directory for the text file.
 
 		if (SmashBrosAwayDDStringInput == "SELECT TEAM")
 		{
 			string logoBlank = "Blank.png";
 			string logoAway = "Away Logo.png";
 			string sourcePath = "Assets/TeamLogos/";
-			string targetPath = "Assets/Games/SmashBros/";
+			string targetPath = "Assets/Games/Smash Bros/";
 
 			string sourceFile = Path.Combine(sourcePath, logoBlank);
 			string destFile = Path.Combine(targetPath, logoAway);
@@ -1036,7 +1036,7 @@ public class SmashBrosWritetoFile : MonoBehaviour
 			string logoSR = "SR LOGO.png";
 			string logoAway = "Away Logo.png";
 			string sourcePath = "Assets/TeamLogos/";
-			string targetPath = "Assets/Games/SmashBros/";
+			string targetPath = "Assets/Games/Smash Bros/";
 
 			string sourceFile = Path.Combine(sourcePath, logoSR);
 			string destFile = Path.Combine(targetPath, logoAway);
@@ -1049,7 +1049,7 @@ public class SmashBrosWritetoFile : MonoBehaviour
 			string logoRIT = "RIT Logo.png";
 			string logoAway = "Away Logo.png";
 			string sourcePath = "Assets/TeamLogos/";
-			string targetPath = "Assets/Games/SmashBros/";
+			string targetPath = "Assets/Games/Smash Bros/";
 
 			string sourceFile = Path.Combine(sourcePath, logoRIT);
 			string destFile = Path.Combine(targetPath, logoAway);
@@ -1064,7 +1064,7 @@ public class SmashBrosWritetoFile : MonoBehaviour
 			string logoUA = "UA Logo.png";
 			string logoAway = "Away Logo.png";
 			string sourcePath = "Assets/TeamLogos/";
-			string targetPath = "Assets/Games/SmashBros/";
+			string targetPath = "Assets/Games/Smash Bros/";
 
 			string sourceFile = Path.Combine(sourcePath, logoUA);
 			string destFile = Path.Combine(targetPath, logoAway);
@@ -1079,7 +1079,7 @@ public class SmashBrosWritetoFile : MonoBehaviour
 			string logoNYIT = "NYIT Logo.png";
 			string logoAway = "Away Logo.png";
 			string sourcePath = "Assets/TeamLogos/";
-			string targetPath = "Assets/Games/SmashBros/";
+			string targetPath = "Assets/Games/Smash Bros/";
 
 			string sourceFile = Path.Combine(sourcePath, logoNYIT);
 			string destFile = Path.Combine(targetPath, logoAway);
@@ -1095,7 +1095,7 @@ public class SmashBrosWritetoFile : MonoBehaviour
 			string logoSPU = "SPU Logo.png";
 			string logoAway = "Away Logo.png";
 			string sourcePath = "Assets/TeamLogos/";
-			string targetPath = "Assets/Games/SmashBros/";
+			string targetPath = "Assets/Games/Smash Bros/";
 
 			string sourceFile = Path.Combine(sourcePath, logoSPU);
 			string destFile = Path.Combine(targetPath, logoAway);
@@ -1111,7 +1111,7 @@ public class SmashBrosWritetoFile : MonoBehaviour
 			string logoSP = "SP Logo.png";
 			string logoAway = "Away Logo.png";
 			string sourcePath = "Assets/TeamLogos/";
-			string targetPath = "Assets/Games/SmashBros/";
+			string targetPath = "Assets/Games/Smash Bros/";
 
 			string sourceFile = Path.Combine(sourcePath, logoSP);
 			string destFile = Path.Combine(targetPath, logoAway);
@@ -1132,7 +1132,7 @@ public class SmashBrosWritetoFile : MonoBehaviour
 
 		Debug.Log("Away Team Season Record.txt: " + SmashBrosAwaySeasonRecordInput); // shows input in debug
 
-		string path = "Assets/Games/SmashBros/Away Team Season Record.txt"; // This is the directory for the text file.
+		string path = "Assets/Games/Smash Bros/Away Team Season Record.txt"; // This is the directory for the text file.
 		if (!File.Exists(path)) // checks if the file exists at the path
 		{
 			File.WriteAllText(path, SmashBrosAwaySeasonRecordInput); // sets the location to path and the contents to input inside if statement
@@ -1144,7 +1144,7 @@ public class SmashBrosWritetoFile : MonoBehaviour
 	public void SmashBrosAwaySeriesScoreIncrement()
 	{
 		string maxValue = "3";
-		string path = "Assets/Games/SmashBros/Away Team Series Score.txt";
+		string path = "Assets/Games/Smash Bros/Away Team Series Score.txt";
 		if (SmashBrosAwaySeriesScoreInputField != null && SmashBrosAwaySeriesScoreInputField.text != maxValue)
 		{
 			++SmashBrosAwaySeriesScoreValue;
@@ -1158,7 +1158,7 @@ public class SmashBrosWritetoFile : MonoBehaviour
 	public void SmashBrosAwaySeriesScoreDecrement()
 	{
 		string minValue = "0";
-		string path = "Assets/Games/SmashBros/Away Team Series Score.txt";
+		string path = "Assets/Games/Smash Bros/Away Team Series Score.txt";
 		if (SmashBrosAwaySeriesScoreInputField != null && SmashBrosAwaySeriesScoreInputField.text != minValue)
 		{
 			--SmashBrosAwaySeriesScoreValue;
@@ -1171,7 +1171,7 @@ public class SmashBrosWritetoFile : MonoBehaviour
 
 	public void SmashBrosAwaySeriesScore(string s)
 	{
-		string path = "Assets/Games/SmashBros/Away Team Series Score.txt";
+		string path = "Assets/Games/Smash Bros/Away Team Series Score.txt";
 		SmashBrosAwaySeriesScoreInput = s;
 		SmashBrosAwaySeriesScoreInput = SmashBrosAwaySeriesScoreValue.ToString();
 		SmashBrosAwaySeriesScoreValue = Convert.ToInt32(SmashBrosAwaySeriesScoreInputField.text);
@@ -1182,7 +1182,7 @@ public class SmashBrosWritetoFile : MonoBehaviour
 	public void SmashBrosAwayStocksIncrement()
 	{
 		string maxValue = "9";
-		string path = "Assets/Games/SmashBros/Away Team Stocks.txt";
+		string path = "Assets/Games/Smash Bros/Away Team Stocks.txt";
 		if (SmashBrosAwaySeriesScoreInputField != null && SmashBrosAwaySeriesScoreInputField.text != maxValue)
 		{
 			++SmashBrosAwaySeriesScoreValue;
@@ -1196,7 +1196,7 @@ public class SmashBrosWritetoFile : MonoBehaviour
 	public void SmashBrosAwayStocksDecrement()
 	{
 		string minValue = "0";
-		string path = "Assets/Games/SmashBros/Away Team Stocks.txt";
+		string path = "Assets/Games/Smash Bros/Away Team Stocks.txt";
 		if (SmashBrosAwaySeriesScoreInputField != null && SmashBrosAwaySeriesScoreInputField.text != minValue)
 		{
 			--SmashBrosAwaySeriesScoreValue;
@@ -1209,7 +1209,7 @@ public class SmashBrosWritetoFile : MonoBehaviour
 
 	public void SmashBrosAwayStocks(string s)
 	{
-		string path = "Assets/Games/SmashBros/Away Team Stocks.txt";
+		string path = "Assets/Games/Smash Bros/Away Team Stocks.txt";
 		SmashBrosAwaySeriesScoreInput = s;
 		SmashBrosAwaySeriesScoreInput = SmashBrosAwaySeriesScoreValue.ToString();
 		SmashBrosAwaySeriesScoreValue = Convert.ToInt32(SmashBrosAwaySeriesScoreInputField.text);
@@ -1219,7 +1219,7 @@ public class SmashBrosWritetoFile : MonoBehaviour
 
 	public void SmashBrosAwayActivePlayer1(bool tog)
 	{
-		string path = "Assets/Games/SmashBros/Away Team Active Player.txt";
+		string path = "Assets/Games/Smash Bros/Away Team Active Player.txt";
 		if (tog == true)
 		{
 			Debug.Log("Away Team Active Player: " + SmashBrosAwayPlayer1Input);
@@ -1234,7 +1234,7 @@ public class SmashBrosWritetoFile : MonoBehaviour
 
 	public void SmashBrosAwayActivePlayer2(bool tog)
 	{
-		string path = "Assets/Games/SmashBros/Away Team Active Player.txt";
+		string path = "Assets/Games/Smash Bros/Away Team Active Player.txt";
 		if (tog == true)
 		{
 			Debug.Log("Away Team Active Player: " + SmashBrosAwayPlayer2Input);
@@ -1249,7 +1249,7 @@ public class SmashBrosWritetoFile : MonoBehaviour
 
 	public void SmashBrosAwayActivePlayer3(bool tog)
 	{
-		string path = "Assets/Games/SmashBros/Away Team Active Player.txt";
+		string path = "Assets/Games/Smash Bros/Away Team Active Player.txt";
 		if (tog == true)
 		{
 			Debug.Log("Away Team Active Player: " + SmashBrosAwayPlayer3Input);
@@ -1268,7 +1268,7 @@ public class SmashBrosWritetoFile : MonoBehaviour
 
 		Debug.Log("Away Team Player1.txt: " + SmashBrosAwayPlayer1Input); // shows input in debug
 
-		string path = "Assets/Games/SmashBros/Away Team Player1.txt"; // This is the directory for the text file.
+		string path = "Assets/Games/Smash Bros/Away Team Player1.txt"; // This is the directory for the text file.
 		if (!File.Exists(path)) // checks if the file exists at the path
 		{
 			File.WriteAllText(path, SmashBrosAwayPlayer1Input); // sets the location to path and the contents to input inside if statement
@@ -1283,7 +1283,7 @@ public class SmashBrosWritetoFile : MonoBehaviour
 
 		Debug.Log("Away Team Player2.txt: " + SmashBrosAwayPlayer2Input); // shows input in debug
 
-		string path = "Assets/Games/SmashBros/Away Team Player2.txt"; // This is the directory for the text file.
+		string path = "Assets/Games/Smash Bros/Away Team Player2.txt"; // This is the directory for the text file.
 		if (!File.Exists(path)) // checks if the file exists at the path
 		{
 			File.WriteAllText(path, SmashBrosAwayPlayer2Input); // sets the location to path and the contents to input inside if statement
@@ -1298,7 +1298,7 @@ public class SmashBrosWritetoFile : MonoBehaviour
 
 		Debug.Log("Away Team Player3.txt: " + SmashBrosAwayPlayer3Input); // shows input in debug
 
-		string path = "Assets/Games/SmashBros/Away Team Player3.txt"; // This is the directory for the text file.
+		string path = "Assets/Games/Smash Bros/Away Team Player3.txt"; // This is the directory for the text file.
 		if (!File.Exists(path)) // checks if the file exists at the path
 		{
 			File.WriteAllText(path, SmashBrosAwayPlayer3Input); // sets the location to path and the contents to input inside if statement
@@ -1313,7 +1313,7 @@ public class SmashBrosWritetoFile : MonoBehaviour
 
 		Debug.Log("Away Team Player1 Stats.txt: " + SmashBrosAwayPlayer1StatsInput); // shows input in debug
 
-		string path = "Assets/Games/SmashBros/Away Team Player1 Stats.txt"; // This is the directory for the text file.
+		string path = "Assets/Games/Smash Bros/Away Team Player1 Stats.txt"; // This is the directory for the text file.
 		if (!File.Exists(path)) // checks if the file exists at the path
 		{
 			File.WriteAllText(path, SmashBrosAwayPlayer1StatsInput); // sets the location to path and the contents to input inside if statement
@@ -1328,7 +1328,7 @@ public class SmashBrosWritetoFile : MonoBehaviour
 
 		Debug.Log("Away Team Player2 Stats.txt: " + SmashBrosAwayPlayer2StatsInput); // shows input in debug
 
-		string path = "Assets/Games/SmashBros/Away Team Player2 Stats.txt"; // This is the directory for the text file.
+		string path = "Assets/Games/Smash Bros/Away Team Player2 Stats.txt"; // This is the directory for the text file.
 		if (!File.Exists(path)) // checks if the file exists at the path
 		{
 			File.WriteAllText(path, SmashBrosAwayPlayer2StatsInput); // sets the location to path and the contents to input inside if statement
@@ -1343,7 +1343,7 @@ public class SmashBrosWritetoFile : MonoBehaviour
 
 		Debug.Log("Away Team Player3 Stats.txt: " + SmashBrosAwayPlayer3StatsInput); // shows input in debug
 
-		string path = "Assets/Games/SmashBros/Away Team Player3 Stats.txt"; // This is the directory for the text file.
+		string path = "Assets/Games/Smash Bros/Away Team Player3 Stats.txt"; // This is the directory for the text file.
 		if (!File.Exists(path)) // checks if the file exists at the path
 		{
 			File.WriteAllText(path, SmashBrosAwayPlayer3StatsInput); // sets the location to path and the contents to input inside if statement
