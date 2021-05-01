@@ -157,7 +157,7 @@ public class OverwatchWritetoFile : MonoBehaviour
 		string map1Blank = "Blank.png";
 		string map1Busan = "Overwatch Busan.png";
 		string map1Ilios = "Overwatch Ilios.png";
-		string map1LijiangTower = "Overwatch Lijiang. Tower.png";
+		string map1LijiangTower = "Overwatch Lijiang Tower.png";
 		string map1Nepal = "Overwatch Nepal.png";
 		string map1Oasis = "Overwatch Oasis.png";
 
@@ -335,8 +335,8 @@ public class OverwatchWritetoFile : MonoBehaviour
 
 		string map4Blank = "Blank.png";
 		string map4Dorado = "Overwatch Dorado.png";
-		string map4Havana = "Overwatch Hava.png";
-		string map4Gibraltar = "Overwatch Breeze.png";
+		string map4Havana = "Overwatch Havana.png";
+		string map4Gibraltar = "Overwatch Gibraltar.png";
 
 		string map4 = "Map 4.png";
 		string sourceMap4Path = "Assets/GameMaps/";
@@ -388,7 +388,7 @@ public class OverwatchWritetoFile : MonoBehaviour
 		string map5Blank = "Blank.png";
 		string map5Busan = "Overwatch Busan.png";
 		string map5Ilios = "Overwatch Ilios.png";
-		string map5LijiangTower = "Overwatch Lijiang. Tower.png";
+		string map5LijiangTower = "Overwatch Lijiang Tower.png";
 		string map5Nepal = "Overwatch Nepal.png";
 		string map5Oasis = "Overwatch Oasis.png";
 
