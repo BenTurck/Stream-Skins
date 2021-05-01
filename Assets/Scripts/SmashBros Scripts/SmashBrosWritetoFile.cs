@@ -692,13 +692,13 @@ public class SmashBrosWritetoFile : MonoBehaviour
 	{
 		string maxValue = "9";
 		string path = "Assets/Games/Smash Bros/Home Team Stocks.txt";
-		if (SmashBrosHomeSeriesScoreInputField != null && SmashBrosHomeSeriesScoreInputField.text != maxValue)
+		if (SmashBrosHomeStocksInputField != null && SmashBrosHomeStocksInputField.text != maxValue)
 		{
-			++SmashBrosHomeSeriesScoreValue;
-			SmashBrosHomeSeriesScoreInput = SmashBrosHomeSeriesScoreValue.ToString();
-			SmashBrosHomeSeriesScoreInputField.text = SmashBrosHomeSeriesScoreValue.ToString();
-			Debug.Log("Increment - Home Team Stocks.txt: " + SmashBrosHomeSeriesScoreInputField.text);
-			File.WriteAllText(path, SmashBrosHomeSeriesScoreInputField.text);
+			++SmashBrosHomeStocksValue;
+			SmashBrosHomeStocksInput = SmashBrosHomeStocksValue.ToString();
+			SmashBrosHomeStocksInputField.text = SmashBrosHomeStocksValue.ToString();
+			Debug.Log("Increment - Home Team Stocks.txt: " + SmashBrosHomeStocksInputField.text);
+			File.WriteAllText(path, SmashBrosHomeStocksInputField.text);
 		}
 	}
 
@@ -706,24 +706,24 @@ public class SmashBrosWritetoFile : MonoBehaviour
 	{
 		string minValue = "0";
 		string path = "Assets/Games/Smash Bros/Home Team Stocks.txt";
-		if (SmashBrosHomeSeriesScoreInputField != null && SmashBrosHomeSeriesScoreInputField.text != minValue)
+		if (SmashBrosHomeStocksInputField != null && SmashBrosHomeStocksInputField.text != minValue)
 		{
-			--SmashBrosHomeSeriesScoreValue;
-			SmashBrosHomeSeriesScoreInput = SmashBrosHomeSeriesScoreValue.ToString();
-			SmashBrosHomeSeriesScoreInputField.text = SmashBrosHomeSeriesScoreValue.ToString();
-			Debug.Log("Decrement - Home Team Stocks.txt: " + SmashBrosHomeSeriesScoreInputField.text);
-			File.WriteAllText(path, SmashBrosHomeSeriesScoreInputField.text);
+			--SmashBrosHomeStocksValue;
+			SmashBrosHomeStocksInput = SmashBrosHomeStocksValue.ToString();
+			SmashBrosHomeStocksInputField.text = SmashBrosHomeStocksValue.ToString();
+			Debug.Log("Decrement - Home Team Stocks.txt: " + SmashBrosHomeStocksInputField.text);
+			File.WriteAllText(path, SmashBrosHomeStocksInputField.text);
 		}
 	}
 
 	public void SmashBrosHomeStocks(string s)
 	{
 		string path = "Assets/Games/Smash Bros/Home Team Stocks.txt";
-		SmashBrosHomeSeriesScoreInput = s;
-		SmashBrosHomeSeriesScoreInput = SmashBrosHomeSeriesScoreValue.ToString();
-		SmashBrosHomeSeriesScoreValue = Convert.ToInt32(SmashBrosHomeSeriesScoreInputField.text);
-		Debug.Log("Input - Home Team Stocks.txt: " + SmashBrosHomeSeriesScoreValue);
-		File.WriteAllText(path, SmashBrosHomeSeriesScoreInputField.text);
+		SmashBrosHomeStocksInput = s;
+		SmashBrosHomeStocksInput = SmashBrosHomeStocksValue.ToString();
+		SmashBrosHomeStocksValue = Convert.ToInt32(SmashBrosHomeStocksInputField.text);
+		Debug.Log("Input - Home Team Stocks.txt: " + SmashBrosHomeStocksValue);
+		File.WriteAllText(path, SmashBrosHomeStocksInputField.text);
 	}
 
 	public void SmashBrosHomeActivePlayer1(bool tog)
@@ -1034,13 +1034,13 @@ public class SmashBrosWritetoFile : MonoBehaviour
 	{
 		string maxValue = "9";
 		string path = "Assets/Games/Smash Bros/Away Team Stocks.txt";
-		if (SmashBrosAwaySeriesScoreInputField != null && SmashBrosAwaySeriesScoreInputField.text != maxValue)
+		if (SmashBrosAwayStocksInputField != null && SmashBrosAwayStocksInputField.text != maxValue)
 		{
-			++SmashBrosAwaySeriesScoreValue;
-			SmashBrosAwaySeriesScoreInput = SmashBrosAwaySeriesScoreValue.ToString();
-			SmashBrosAwaySeriesScoreInputField.text = SmashBrosAwaySeriesScoreValue.ToString();
-			Debug.Log("Increment - Away Team Stocks.txt: " + SmashBrosAwaySeriesScoreInputField.text);
-			File.WriteAllText(path, SmashBrosAwaySeriesScoreInputField.text);
+			++SmashBrosAwayStocksValue;
+			SmashBrosAwayStocksInput = SmashBrosAwayStocksValue.ToString();
+			SmashBrosAwayStocksInputField.text = SmashBrosAwayStocksValue.ToString();
+			Debug.Log("Increment - Away Team Stocks.txt: " + SmashBrosAwayStocksInputField.text);
+			File.WriteAllText(path, SmashBrosAwayStocksInputField.text);
 		}
 	}
 
@@ -1048,24 +1048,24 @@ public class SmashBrosWritetoFile : MonoBehaviour
 	{
 		string minValue = "0";
 		string path = "Assets/Games/Smash Bros/Away Team Stocks.txt";
-		if (SmashBrosAwaySeriesScoreInputField != null && SmashBrosAwaySeriesScoreInputField.text != minValue)
+		if (SmashBrosAwayStocksInputField != null && SmashBrosAwayStocksInputField.text != minValue)
 		{
-			--SmashBrosAwaySeriesScoreValue;
-			SmashBrosAwaySeriesScoreInput = SmashBrosAwaySeriesScoreValue.ToString();
-			SmashBrosAwaySeriesScoreInputField.text = SmashBrosAwaySeriesScoreValue.ToString();
-			Debug.Log("Decrement - Away Team Stocks.txt: " + SmashBrosAwaySeriesScoreInputField.text);
-			File.WriteAllText(path, SmashBrosAwaySeriesScoreInputField.text);
+			--SmashBrosAwayStocksValue;
+			SmashBrosAwayStocksInput = SmashBrosAwayStocksValue.ToString();
+			SmashBrosAwayStocksInputField.text = SmashBrosAwayStocksValue.ToString();
+			Debug.Log("Decrement - Away Team Stocks.txt: " + SmashBrosAwayStocksInputField.text);
+			File.WriteAllText(path, SmashBrosAwayStocksInputField.text);
 		}
 	}
 
 	public void SmashBrosAwayStocks(string s)
 	{
 		string path = "Assets/Games/Smash Bros/Away Team Stocks.txt";
-		SmashBrosAwaySeriesScoreInput = s;
-		SmashBrosAwaySeriesScoreInput = SmashBrosAwaySeriesScoreValue.ToString();
-		SmashBrosAwaySeriesScoreValue = Convert.ToInt32(SmashBrosAwaySeriesScoreInputField.text);
-		Debug.Log("Input - Away Team Stocks.txt: " + SmashBrosHomeSeriesScoreValue);
-		File.WriteAllText(path, SmashBrosAwaySeriesScoreInputField.text);
+		SmashBrosAwayStocksInput = s;
+		SmashBrosAwayStocksInput = SmashBrosAwayStocksValue.ToString();
+		SmashBrosAwayStocksValue = Convert.ToInt32(SmashBrosAwayStocksInputField.text);
+		Debug.Log("Input - Away Team Stocks.txt: " + SmashBrosHomeStocksValue);
+		File.WriteAllText(path, SmashBrosAwayStocksInputField.text);
 	}
 
 	public void SmashBrosAwayActivePlayer1(bool tog)
