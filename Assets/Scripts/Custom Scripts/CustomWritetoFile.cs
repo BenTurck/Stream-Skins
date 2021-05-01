@@ -1238,7 +1238,7 @@ public class CustomWritetoFile : MonoBehaviour
 			File.WriteAllText(path, ""); // sets the location to path and the contents to input
 		}
 
-		if (CustomHomeNameStringInput != "")
+		if (CustomAwayNameStringInput != "")
 		{
 			string logoCustom = "Custom2.png";
 			string logoAway = "Away Logo.png";
@@ -1249,7 +1249,7 @@ public class CustomWritetoFile : MonoBehaviour
 			string destFile = Path.Combine(targetPath, logoAway);
 
 			File.Copy(sourceFile, destFile, true);
-			File.WriteAllText(path, CustomHomeNameStringInput); // sets the location to path and the contents to input
+			File.WriteAllText(path, CustomAwayNameStringInput); // sets the location to path and the contents to input
 		}
 	}
 
