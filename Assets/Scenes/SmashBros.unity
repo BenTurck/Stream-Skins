@@ -7961,7 +7961,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1634991635}
         m_TargetAssemblyTypeName: Menu, Assembly-CSharp
         m_MethodName: Quit
         m_Mode: 1
@@ -11399,7 +11399,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1634991635}
         m_TargetAssemblyTypeName: Menu, Assembly-CSharp
         m_MethodName: Back
         m_Mode: 1
@@ -11411,9 +11411,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: OverwatchReset, Assembly-CSharp
-        m_MethodName: OverwatchClear
+      - m_Target: {fileID: 1634991637}
+        m_TargetAssemblyTypeName: SmashBrosReset, Assembly-CSharp
+        m_MethodName: SmashBrosClear
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -13112,9 +13112,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: OverwatchReset, Assembly-CSharp
-        m_MethodName: OverwatchClear
+      - m_Target: {fileID: 1634991637}
+        m_TargetAssemblyTypeName: SmashBrosReset, Assembly-CSharp
+        m_MethodName: SmashBrosClear
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
