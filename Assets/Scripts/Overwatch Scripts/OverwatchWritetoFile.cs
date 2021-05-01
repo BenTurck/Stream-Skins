@@ -283,7 +283,7 @@ public class OverwatchWritetoFile : MonoBehaviour
 		string map3Blank = "Blank.png";
 		string map3BlizzardWorld = "Overwatch Blizzard World.png";
 		string map3Eichenwalde = "Overwatch Eichenwalde.png";
-		string map3KingsRow = "Overwatch Breeze.png";
+		string map3KingsRow = "Overwatch King's Row.png";
 
 
 		string map3 = "Map 3.png";
