@@ -960,8 +960,8 @@ public class CustomWritetoFile : MonoBehaviour
 		string path = "Assets/Games/Custom/Home Team Active Player.txt";
 		if (tog == true)
 		{
-			Debug.Log("Home Team Active Player: " + CustomHomePlayer1Input);
-			File.WriteAllText(path, CustomHomePlayer1Input);
+			Debug.Log("Home Team Active Player: " + CustomHomePlayer2Input);
+			File.WriteAllText(path, CustomHomePlayer2Input);
 		}
 		else
 		{
@@ -1326,8 +1326,8 @@ public class CustomWritetoFile : MonoBehaviour
 		string path = "Assets/Games/Custom/Away Team Active Player.txt";
 		if (tog == true)
 		{
-			Debug.Log("Away Team Active Player: " + CustomAwayPlayer1Input);
-			File.WriteAllText(path, CustomAwayPlayer1Input);
+			Debug.Log("Away Team Active Player: " + CustomAwayPlayer2Input);
+			File.WriteAllText(path, CustomAwayPlayer2Input);
 		}
 		else
 		{

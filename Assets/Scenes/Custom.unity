@@ -18921,7 +18921,7 @@ GameObject:
   - component: {fileID: 1787761690}
   - component: {fileID: 1787761691}
   m_Layer: 0
-  m_Name: Home Active Player Toggle Group
+  m_Name: Away Active Player Toggle Group
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
