@@ -2149,6 +2149,7 @@ GameObject:
   - component: {fileID: 1147096384}
   - component: {fileID: 1147096383}
   - component: {fileID: 1147096382}
+  - component: {fileID: 1147096386}
   m_Layer: 5
   m_Name: Login Button
   m_TagString: Untagged
@@ -2245,7 +2246,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1147096384}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 11500000, guid: 249cd400cd47aad419c38035547ba04f, type: 3}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1147096384
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2284,6 +2297,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1147096380}
   m_CullTransparentMesh: 1
+--- !u!114 &1147096386
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1147096380}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 249cd400cd47aad419c38035547ba04f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MenuStatsButton: {fileID: 0}
+  test: 0
+  loginbutt: {fileID: 1147096383}
 --- !u!1 &1162339447
 GameObject:
   m_ObjectHideFlags: 0
@@ -2458,6 +2486,7 @@ MonoBehaviour:
   bodytext: {fileID: 1410157411}
   pos: {x: 0, y: 0, z: 0}
   down: 1
+  LG: 0
   DBN: 0
 --- !u!1 &1201175064
 GameObject:
@@ -3450,10 +3479,11 @@ MonoBehaviour:
   SignupUsernameField: {fileID: 859213814}
   LoginPasswordField: {fileID: 1658891007}
   LoginUsernameField: {fileID: 859213814}
-  loginScene: 0
+  loginSuccessful: 0
   dialogue:
     name: 
     sentences: []
+  ltf: {fileID: 0}
 --- !u!1 &2005033872
 GameObject:
   m_ObjectHideFlags: 0

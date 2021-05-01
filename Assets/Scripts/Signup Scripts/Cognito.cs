@@ -36,6 +36,8 @@ public class Cognito : MonoBehaviour
     //int index; shouldn't need this but if anything breaks put it back
     public Dialogue dialogue; //This will allow you to access Dialogue class
 
+    public LoginTrueFalse ltf;
+    
 
     // Create an Identity Provider
     AmazonCognitoIdentityProviderClient provider = new AmazonCognitoIdentityProviderClient
@@ -53,7 +55,14 @@ public class Cognito : MonoBehaviour
         loginSuccessful = false;
     }
 
-
+    // Update is called once per frame
+    void Update()
+    {
+        //If found uncommented, it's ok to be deleted. Go for it guy. 
+        //LoginTrueFalse obj = new LoginTrueFalse();
+        //obj.setltfb(loginSuccessful,jwt);
+        //Debug.Log("Cognito boolean --> " + loginSuccessful);
+    }
 
     //The starting AWS process of pressing login
     public void Login()
@@ -237,16 +246,6 @@ public class Cognito : MonoBehaviour
     }
     
 
-    public void test()
-    {
-        if (jwt == null)
-        {
-            Debug.Log("YAH MF THAT SHIT IS NULL");
-        }
-        else
-        {
-            Debug.Log("TOKEN TOKEN TOKEN: " + jwt);
-        }
-    }
+   
 
 }//End of class

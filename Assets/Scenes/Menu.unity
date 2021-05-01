@@ -1508,6 +1508,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MenuStatsButton: {fileID: 278822484}
+  test: 0
+  loginbutt: {fileID: 0}
 --- !u!4 &695987220
 Transform:
   m_ObjectHideFlags: 0

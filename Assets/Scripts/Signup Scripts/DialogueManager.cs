@@ -8,6 +8,7 @@ public class DialogueManager : MonoBehaviour
     public Text bodytext;
     public Vector3 pos;
     public bool down = true;
+    public bool LG;
 
     //To be used to reference status in Cognito 
     // 1 = sign up success | 2 = sign up exception | 3 = login success | 4 = login failure 
@@ -41,12 +42,15 @@ public class DialogueManager : MonoBehaviour
         {
             signupfail(); //Try to be more speicifc with these ones
         }
-        else if (mesIndex == 3)
+        else if (mesIndex == 3) //Login success 
         {
+            PlayerPrefs.SetInt("all", 3);
             loginsucc();
         }
-        else if (mesIndex == 4)
-        {   loginfail(); //Try to be more speicifc with these ones
+        else if (mesIndex == 4) //Login fail 
+        {
+            PlayerPrefs.SetInt("all", 4);
+            loginfail(); //Try to be more speicifc with these ones
         }
         else
         {
