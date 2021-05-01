@@ -15,30 +15,29 @@ public class LoginTrueFalse : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        state = PlayerPrefs.GetInt("all");
-        Debug.Log("loginTruaFa1se boolean --> " + state);
-    }
-    /*
-    public void setltfb(bool setter)
-    {
-        test = setter;
-        Debug.Log("loginTrueFalse boolean --> " + test);
-        return;
-    }*/
-
-    public void MenuStatsLogin()
-    {
-        Cognito login = new Cognito();
-        if (login.loginSuccessful == true)
+        if (PlayerPrefs.GetInt("all") == 3)
         {
+            state = PlayerPrefs.GetInt("all");
+            Debug.Log("Login True: " + state);
             MenuStatsButton.SetActive(true);
         }
 
-        if (login.loginSuccessful == false)
+        if (PlayerPrefs.GetInt("all") == 4)
         {
+            state = PlayerPrefs.GetInt("all");
+            Debug.Log("Login Fail: " + state);
             MenuStatsButton.SetActive(false);
         }
-
+        if (PlayerPrefs.GetInt("all") == 0)
+        {
+            state = PlayerPrefs.GetInt("all");
+            Debug.Log("Login False: " + state);
+            MenuStatsButton.SetActive(false);
+        }
     }
-
+    public void Signout()
+    {
+        PlayerPrefs.SetInt("all" ,0);
+        Debug.Log("Logout True: " + state);
+    }
 }

@@ -2155,6 +2155,7 @@ GameObject:
   - component: {fileID: 85644352}
   - component: {fileID: 85644351}
   - component: {fileID: 85644353}
+  - component: {fileID: 85644354}
   m_Layer: 0
   m_Name: Stats Scripts
   m_TagString: Untagged
@@ -2205,6 +2206,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76326006f7c1cd548b16f6db4fc9d10f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &85644354
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 85644350}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 249cd400cd47aad419c38035547ba04f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MenuStatsButton: {fileID: 0}
+  test: 0
+  state: 0
+  loginbutt: {fileID: 0}
 --- !u!1 &86588940
 GameObject:
   m_ObjectHideFlags: 0
@@ -34573,6 +34590,18 @@ MonoBehaviour:
       - m_Target: {fileID: 85644353}
         m_TargetAssemblyTypeName: Menu, Assembly-CSharp
         m_MethodName: Quit
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 85644354}
+        m_TargetAssemblyTypeName: LoginTrueFalse, Assembly-CSharp
+        m_MethodName: Signout
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
