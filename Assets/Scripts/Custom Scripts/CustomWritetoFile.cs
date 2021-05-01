@@ -1199,9 +1199,9 @@ public class CustomWritetoFile : MonoBehaviour
 	{
 		string CustomHomePlayer6StatsInput = s;
 
-		Debug.Log("Home Team Player56 Stats.txt: " + CustomHomePlayer6StatsInput); // shows input in debug
+		Debug.Log("Home Team Player6 Stats.txt: " + CustomHomePlayer6StatsInput); // shows input in debug
 
-		string path = "Assets/Games/Custom/Home Team Player5 Stats.txt"; // This is the directory for the text file.
+		string path = "Assets/Games/Custom/Home Team Player6 Stats.txt"; // This is the directory for the text file.
 		if (!File.Exists(path)) // checks if the file exists at the path
 		{
 			File.WriteAllText(path, CustomHomePlayer6StatsInput); // sets the location to path and the contents to input inside if statement
