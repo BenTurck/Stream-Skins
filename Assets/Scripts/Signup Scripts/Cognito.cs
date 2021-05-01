@@ -32,8 +32,7 @@ public class Cognito : MonoBehaviour
     // Token Holder
     public static string jwt;
 
-    bool loginSuccessful;
-    public bool loginScene;
+    public bool loginSuccessful;
     //int index; shouldn't need this but if anything breaks put it back
     public Dialogue dialogue; //This will allow you to access Dialogue class
 
@@ -52,7 +51,6 @@ public class Cognito : MonoBehaviour
 
 
         loginSuccessful = false;
-        loginScene = false; 
     }
 
 
@@ -172,7 +170,6 @@ public class Cognito : MonoBehaviour
 
             // User is logged in
             loginSuccessful = true;
-            loginScene = true;
             Debug.Log("LOGINSUCCESS = " + loginSuccessful);
         }
         catch (Exception e) //Nothing in the fields
@@ -185,8 +182,7 @@ public class Cognito : MonoBehaviour
 
         if (loginSuccessful == true)
         {
-            //test();
-
+          
             Debug.Log("LOGINSUCCESS IN IF STATEMENT = " + loginSuccessful);
             string subId = await Get_User_Id();
             CredentialsManager.userid = subId;
@@ -197,11 +193,8 @@ public class Cognito : MonoBehaviour
             // Print UserID
             Debug.Log("Response - User's Sub ID from Cognito: " + CredentialsManager.userid);
 
-            //streamskins added
-            //loginSuccessful = false;
         }
         
-        //test();
         
         
     }

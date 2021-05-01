@@ -22,14 +22,8 @@ public class DialogueManager : MonoBehaviour
     //What happens when the trigger is triggered (login or sign up button)
     public void StartDialogue(Dialogue dialogue,int mesIndex)
     {
-        //Ok so it calls only one or the other
-        //obj.setText or triggerdialogue
-        //Find a way to combine these two.
 
-        //Hey! test can be passed down properly, so now mix the two functions.
-
-
-        Debug.Log("START DIALOGUE WAS CALLED, mesIndex = " + mesIndex);
+        //Debug.Log("START DIALOGUE BOOLEAN VALUE = " + test);
 
         //This will control the movement of the dialogue box
         if (down) //If it's down it needs to pop up with a message 
