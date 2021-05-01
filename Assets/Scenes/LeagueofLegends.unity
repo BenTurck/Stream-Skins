@@ -301,9 +301,9 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: OverwatchWritetoFile, Assembly-CSharp
-        m_MethodName: OverwatchCaster1
+      - m_Target: {fileID: 1207036807}
+        m_TargetAssemblyTypeName: LeagueofLegendsWritetoFile, Assembly-CSharp
+        m_MethodName: LeagueofLegendsCaster1
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -470,9 +470,9 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: OverwatchWritetoFile, Assembly-CSharp
-        m_MethodName: OverwatchHomePlayer5Stats
+      - m_Target: {fileID: 1207036807}
+        m_TargetAssemblyTypeName: LeagueofLegendsWritetoFile, Assembly-CSharp
+        m_MethodName: LeagueofLegendsHomePlayer5Stats
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1251,9 +1251,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: OverwatchWritetoFile, Assembly-CSharp
-        m_MethodName: OverwatchAwaySeriesScoreIncrement
+      - m_Target: {fileID: 1207036807}
+        m_TargetAssemblyTypeName: LeagueofLegendsWritetoFile, Assembly-CSharp
+        m_MethodName: LeagueofLegendsAwaySeriesScoreIncrement
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1384,9 +1384,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: OverwatchWritetoFile, Assembly-CSharp
-        m_MethodName: OverwatchAwaySeriesScoreDecrement
+      - m_Target: {fileID: 1207036807}
+        m_TargetAssemblyTypeName: LeagueofLegendsWritetoFile, Assembly-CSharp
+        m_MethodName: LeagueofLegendsAwaySeriesScoreDecrement
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1518,9 +1518,9 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: OverwatchWritetoFile, Assembly-CSharp
-        m_MethodName: OverwatchHomeGame3Toggle
+      - m_Target: {fileID: 1207036807}
+        m_TargetAssemblyTypeName: LeagueofLegendsWritetoFile, Assembly-CSharp
+        m_MethodName: LeagueofLegendsHomeGame3Toggle
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1942,9 +1942,9 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: OverwatchWritetoFile, Assembly-CSharp
-        m_MethodName: OverwatchHomePlayer3
+      - m_Target: {fileID: 1207036807}
+        m_TargetAssemblyTypeName: LeagueofLegendsWritetoFile, Assembly-CSharp
+        m_MethodName: LeagueofLegendsHomePlayer3
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2198,9 +2198,9 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: OverwatchWritetoFile, Assembly-CSharp
-        m_MethodName: OverwatchHomePlayer5
+      - m_Target: {fileID: 1207036807}
+        m_TargetAssemblyTypeName: LeagueofLegendsWritetoFile, Assembly-CSharp
+        m_MethodName: LeagueofLegendsHomePlayer5
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3004,9 +3004,9 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: OverwatchWritetoFile, Assembly-CSharp
-        m_MethodName: OverwatchAwayPlayer4Stats
+      - m_Target: {fileID: 1207036807}
+        m_TargetAssemblyTypeName: LeagueofLegendsWritetoFile, Assembly-CSharp
+        m_MethodName: LeagueofLegendsAwayPlayer4Stats
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3574,9 +3574,9 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: OverwatchWritetoFile, Assembly-CSharp
-        m_MethodName: OverwatchAwayPlayer3
+      - m_Target: {fileID: 1207036807}
+        m_TargetAssemblyTypeName: LeagueofLegendsWritetoFile, Assembly-CSharp
+        m_MethodName: LeagueofLegendsAwayPlayer3
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4693,9 +4693,9 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: OverwatchWritetoFile, Assembly-CSharp
-        m_MethodName: OverwatchAwayPlayer2
+      - m_Target: {fileID: 1207036807}
+        m_TargetAssemblyTypeName: LeagueofLegendsWritetoFile, Assembly-CSharp
+        m_MethodName: LeagueofLegendsAwayPlayer1
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5060,9 +5060,9 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: OverwatchWritetoFile, Assembly-CSharp
-        m_MethodName: OverwatchHomePlayer1
+      - m_Target: {fileID: 1207036807}
+        m_TargetAssemblyTypeName: LeagueofLegendsWritetoFile, Assembly-CSharp
+        m_MethodName: LeagueofLegendsHomePlayer1
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5372,9 +5372,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: OverwatchWritetoFile, Assembly-CSharp
-        m_MethodName: OverwatchHomeSeriesScoreDecrement
+      - m_Target: {fileID: 1207036807}
+        m_TargetAssemblyTypeName: LeagueofLegendsWritetoFile, Assembly-CSharp
+        m_MethodName: LeagueofLegendsHomeSeriesScoreDecrement
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5713,9 +5713,9 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: OverwatchWritetoFile, Assembly-CSharp
-        m_MethodName: OverwatchHomeSeasonRecord
+      - m_Target: {fileID: 1207036807}
+        m_TargetAssemblyTypeName: LeagueofLegendsWritetoFile, Assembly-CSharp
+        m_MethodName: LeagueofLegendsHomeSeasonRecord
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6094,9 +6094,9 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: OverwatchWritetoFile, Assembly-CSharp
-        m_MethodName: OverwatchAwayPlayer2Stats
+      - m_Target: {fileID: 1207036807}
+        m_TargetAssemblyTypeName: LeagueofLegendsWritetoFile, Assembly-CSharp
+        m_MethodName: LeagueofLegendsAwayPlayer2Stats
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6328,9 +6328,9 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: OverwatchWritetoFile, Assembly-CSharp
-        m_MethodName: OverwatchHomeGame2Toggle
+      - m_Target: {fileID: 1207036807}
+        m_TargetAssemblyTypeName: LeagueofLegendsWritetoFile, Assembly-CSharp
+        m_MethodName: LeagueofLegendsHomeGame2Toggle
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6515,9 +6515,9 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: OverwatchWritetoFile, Assembly-CSharp
-        m_MethodName: OverwatchAwayGame5Toggle
+      - m_Target: {fileID: 1207036807}
+        m_TargetAssemblyTypeName: LeagueofLegendsWritetoFile, Assembly-CSharp
+        m_MethodName: LeagueofLegendsAwayGame5Toggle
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6625,9 +6625,9 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: OverwatchWritetoFile, Assembly-CSharp
-        m_MethodName: OverwatchAwaySeriesScore
+      - m_Target: {fileID: 1207036807}
+        m_TargetAssemblyTypeName: LeagueofLegendsWritetoFile, Assembly-CSharp
+        m_MethodName: LeagueofLegendsAwaySeriesScore
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6860,9 +6860,9 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: OverwatchWritetoFile, Assembly-CSharp
-        m_MethodName: OverwatchHomePlayer3Stats
+      - m_Target: {fileID: 1207036807}
+        m_TargetAssemblyTypeName: LeagueofLegendsWritetoFile, Assembly-CSharp
+        m_MethodName: LeagueofLegendsHomePlayer3Stats
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7215,9 +7215,9 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: OverwatchWritetoFile, Assembly-CSharp
-        m_MethodName: OverwatchCaster2
+      - m_Target: {fileID: 1207036807}
+        m_TargetAssemblyTypeName: LeagueofLegendsWritetoFile, Assembly-CSharp
+        m_MethodName: LeagueofLegendsCaster2
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7384,9 +7384,9 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: OverwatchWritetoFile, Assembly-CSharp
-        m_MethodName: OverwatchAwayPlayer5
+      - m_Target: {fileID: 1207036807}
+        m_TargetAssemblyTypeName: LeagueofLegendsWritetoFile, Assembly-CSharp
+        m_MethodName: LeagueofLegendsAwayPlayer5
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7589,9 +7589,9 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: OverwatchWritetoFile, Assembly-CSharp
-        m_MethodName: OverwatchAwayPlayer5Stats
+      - m_Target: {fileID: 1207036807}
+        m_TargetAssemblyTypeName: LeagueofLegendsWritetoFile, Assembly-CSharp
+        m_MethodName: LeagueofLegendsAwayPlayer5Stats
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7836,9 +7836,9 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: OverwatchWritetoFile, Assembly-CSharp
-        m_MethodName: OverwatchHomeSeriesScore
+      - m_Target: {fileID: 1207036807}
+        m_TargetAssemblyTypeName: LeagueofLegendsWritetoFile, Assembly-CSharp
+        m_MethodName: LeagueofLegendsHomeSeriesScore
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7992,9 +7992,9 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: OverwatchWritetoFile, Assembly-CSharp
-        m_MethodName: OverwatchAwaySeasonRecord
+      - m_Target: {fileID: 1207036807}
+        m_TargetAssemblyTypeName: LeagueofLegendsWritetoFile, Assembly-CSharp
+        m_MethodName: LeagueofLegendsAwaySeasonRecord
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8134,9 +8134,9 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: OverwatchWritetoFile, Assembly-CSharp
-        m_MethodName: OverwatchAwayGame2Toggle
+      - m_Target: {fileID: 1207036807}
+        m_TargetAssemblyTypeName: LeagueofLegendsWritetoFile, Assembly-CSharp
+        m_MethodName: LeagueofLegendsAwayGame2Toggle
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8524,9 +8524,9 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: OverwatchWritetoFile, Assembly-CSharp
-        m_MethodName: OverwatchAwayGame4Toggle
+      - m_Target: {fileID: 1207036807}
+        m_TargetAssemblyTypeName: LeagueofLegendsWritetoFile, Assembly-CSharp
+        m_MethodName: LeagueofLegendsAwayGame4Toggle
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -10256,9 +10256,9 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: OverwatchWritetoFile, Assembly-CSharp
-        m_MethodName: OverwatchAwayPlayer3Stats
+      - m_Target: {fileID: 1207036807}
+        m_TargetAssemblyTypeName: LeagueofLegendsWritetoFile, Assembly-CSharp
+        m_MethodName: LeagueofLegendsAwayPlayer3Stats
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -10923,9 +10923,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: OverwatchWritetoFile, Assembly-CSharp
-        m_MethodName: OverwatchHomeSeriesScoreIncrement
+      - m_Target: {fileID: 1207036807}
+        m_TargetAssemblyTypeName: LeagueofLegendsWritetoFile, Assembly-CSharp
+        m_MethodName: LeagueofLegendsHomeSeriesScoreIncrement
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -11369,9 +11369,9 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: OverwatchWritetoFile, Assembly-CSharp
-        m_MethodName: OverwatchHomeGame1Toggle
+      - m_Target: {fileID: 1207036807}
+        m_TargetAssemblyTypeName: LeagueofLegendsWritetoFile, Assembly-CSharp
+        m_MethodName: LeagueofLegendsHomeGame1Toggle
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -11703,9 +11703,9 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: OverwatchWritetoFile, Assembly-CSharp
-        m_MethodName: OverwatchAwayPlayer2
+      - m_Target: {fileID: 1207036807}
+        m_TargetAssemblyTypeName: LeagueofLegendsWritetoFile, Assembly-CSharp
+        m_MethodName: LeagueofLegendsAwayPlayer2
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -12088,9 +12088,9 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: OverwatchWritetoFile, Assembly-CSharp
-        m_MethodName: OverwatchHomeGame5Toggle
+      - m_Target: {fileID: 1207036807}
+        m_TargetAssemblyTypeName: LeagueofLegendsWritetoFile, Assembly-CSharp
+        m_MethodName: LeagueofLegendsHomeGame5Toggle
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -12199,9 +12199,9 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: OverwatchWritetoFile, Assembly-CSharp
-        m_MethodName: OverwatchHomePlayer2
+      - m_Target: {fileID: 1207036807}
+        m_TargetAssemblyTypeName: LeagueofLegendsWritetoFile, Assembly-CSharp
+        m_MethodName: LeagueofLegendsHomePlayer2
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -12676,9 +12676,9 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: OverwatchWritetoFile, Assembly-CSharp
-        m_MethodName: OverwatchHomePlayer4Stats
+      - m_Target: {fileID: 1207036807}
+        m_TargetAssemblyTypeName: LeagueofLegendsWritetoFile, Assembly-CSharp
+        m_MethodName: LeagueofLegendsHomePlayer4Stats
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -12980,9 +12980,9 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: OverwatchWritetoFile, Assembly-CSharp
-        m_MethodName: OverwatchHomePlayer2Stats
+      - m_Target: {fileID: 1207036807}
+        m_TargetAssemblyTypeName: LeagueofLegendsWritetoFile, Assembly-CSharp
+        m_MethodName: LeagueofLegendsHomePlayer2Stats
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -14251,9 +14251,9 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: OverwatchWritetoFile, Assembly-CSharp
-        m_MethodName: OverwatchHomePlayer4
+      - m_Target: {fileID: 1207036807}
+        m_TargetAssemblyTypeName: LeagueofLegendsWritetoFile, Assembly-CSharp
+        m_MethodName: LeagueofLegendsHomePlayer4
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -14790,9 +14790,9 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: OverwatchWritetoFile, Assembly-CSharp
-        m_MethodName: OverwatchTicker
+      - m_Target: {fileID: 1207036807}
+        m_TargetAssemblyTypeName: LeagueofLegendsWritetoFile, Assembly-CSharp
+        m_MethodName: LeagueofLegendsTicker
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -15159,9 +15159,9 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: OverwatchWritetoFile, Assembly-CSharp
-        m_MethodName: OverwatchAwayGame1Toggle
+      - m_Target: {fileID: 1207036807}
+        m_TargetAssemblyTypeName: LeagueofLegendsWritetoFile, Assembly-CSharp
+        m_MethodName: LeagueofLegendsAwayGame1Toggle
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -16953,9 +16953,9 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: OverwatchWritetoFile, Assembly-CSharp
-        m_MethodName: OverwatchAwayPlayer4
+      - m_Target: {fileID: 1207036807}
+        m_TargetAssemblyTypeName: LeagueofLegendsWritetoFile, Assembly-CSharp
+        m_MethodName: LeagueofLegendsAwayPlayer4
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -17201,9 +17201,9 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: OverwatchWritetoFile, Assembly-CSharp
-        m_MethodName: OverwatchHomePlayer1Stats
+      - m_Target: {fileID: 1207036807}
+        m_TargetAssemblyTypeName: LeagueofLegendsWritetoFile, Assembly-CSharp
+        m_MethodName: LeagueofLegendsHomePlayer1Stats
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -17520,9 +17520,9 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: OverwatchWritetoFile, Assembly-CSharp
-        m_MethodName: OverwatchAwayPlayer1Stats
+      - m_Target: {fileID: 1207036807}
+        m_TargetAssemblyTypeName: LeagueofLegendsWritetoFile, Assembly-CSharp
+        m_MethodName: LeagueofLegendsAwayPlayer1Stats
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -18228,9 +18228,9 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: OverwatchWritetoFile, Assembly-CSharp
-        m_MethodName: OverwatchAwayGame3Toggle
+      - m_Target: {fileID: 1207036807}
+        m_TargetAssemblyTypeName: LeagueofLegendsWritetoFile, Assembly-CSharp
+        m_MethodName: LeagueofLegendsAwayGame3Toggle
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -18371,9 +18371,9 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: OverwatchWritetoFile, Assembly-CSharp
-        m_MethodName: OverwatchHomeGame4Toggle
+      - m_Target: {fileID: 1207036807}
+        m_TargetAssemblyTypeName: LeagueofLegendsWritetoFile, Assembly-CSharp
+        m_MethodName: LeagueofLegendsHomeGame4Toggle
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

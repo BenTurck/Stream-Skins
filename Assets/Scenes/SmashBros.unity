@@ -207,9 +207,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: OverwatchWritetoFile, Assembly-CSharp
-        m_MethodName: OverwatchAwaySeriesScoreIncrement
+      - m_Target: {fileID: 1634991638}
+        m_TargetAssemblyTypeName: SmashBrosWritetoFile, Assembly-CSharp
+        m_MethodName: SmashBrosAwayStocksIncrement
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -340,9 +340,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: OverwatchWritetoFile, Assembly-CSharp
-        m_MethodName: OverwatchHomeSeriesScoreIncrement
+      - m_Target: {fileID: 1634991638}
+        m_TargetAssemblyTypeName: SmashBrosWritetoFile, Assembly-CSharp
+        m_MethodName: SmashBrosHomeStocksIncrement
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -701,9 +701,9 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: OverwatchWritetoFile, Assembly-CSharp
-        m_MethodName: OverwatchAwayPlayer2
+      - m_Target: {fileID: 1634991638}
+        m_TargetAssemblyTypeName: SmashBrosWritetoFile, Assembly-CSharp
+        m_MethodName: SmashBrosAwayPlayer2
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1094,9 +1094,9 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: OverwatchWritetoFile, Assembly-CSharp
-        m_MethodName: OverwatchAwayPlayer1Stats
+      - m_Target: {fileID: 1634991638}
+        m_TargetAssemblyTypeName: SmashBrosWritetoFile, Assembly-CSharp
+        m_MethodName: SmashBrosAwayPlayer1Stats
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1700,9 +1700,9 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: OverwatchWritetoFile, Assembly-CSharp
-        m_MethodName: OverwatchAwaySeasonRecord
+      - m_Target: {fileID: 1634991638}
+        m_TargetAssemblyTypeName: SmashBrosWritetoFile, Assembly-CSharp
+        m_MethodName: SmashBrosAwaySeasonRecord
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2011,9 +2011,9 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: OverwatchWritetoFile, Assembly-CSharp
-        m_MethodName: OverwatchGame1Score
+      - m_Target: {fileID: 1634991638}
+        m_TargetAssemblyTypeName: SmashBrosWritetoFile, Assembly-CSharp
+        m_MethodName: SmashBrosGame1Score
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2385,9 +2385,9 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: OverwatchWritetoFile, Assembly-CSharp
-        m_MethodName: OverwatchAwayPlayer3Stats
+      - m_Target: {fileID: 1634991638}
+        m_TargetAssemblyTypeName: SmashBrosWritetoFile, Assembly-CSharp
+        m_MethodName: SmashBrosAwayPlayer3Stats
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3093,9 +3093,9 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: OverwatchWritetoFile, Assembly-CSharp
-        m_MethodName: OverwatchCaster2
+      - m_Target: {fileID: 1634991638}
+        m_TargetAssemblyTypeName: SmashBrosWritetoFile, Assembly-CSharp
+        m_MethodName: SmashBrosCaster2
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5279,9 +5279,9 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: CustomWritetoFile, Assembly-CSharp
-        m_MethodName: CustomHomeActivePlayer1
+      - m_Target: {fileID: 1634991638}
+        m_TargetAssemblyTypeName: SmashBrosWritetoFile, Assembly-CSharp
+        m_MethodName: SmashBrosHomeActivePlayer1
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5465,9 +5465,9 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: OverwatchWritetoFile, Assembly-CSharp
-        m_MethodName: OverwatchGame2Score
+      - m_Target: {fileID: 1634991638}
+        m_TargetAssemblyTypeName: SmashBrosWritetoFile, Assembly-CSharp
+        m_MethodName: SmashBrosGame2Score
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5633,9 +5633,9 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: OverwatchWritetoFile, Assembly-CSharp
-        m_MethodName: OverwatchHomeSeriesScore
+      - m_Target: {fileID: 1634991638}
+        m_TargetAssemblyTypeName: SmashBrosWritetoFile, Assembly-CSharp
+        m_MethodName: SmashBrosHomeStocks
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5775,9 +5775,9 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: CustomWritetoFile, Assembly-CSharp
-        m_MethodName: CustomAwayActivePlayer2
+      - m_Target: {fileID: 1634991638}
+        m_TargetAssemblyTypeName: SmashBrosWritetoFile, Assembly-CSharp
+        m_MethodName: SmashBrosAwayActivePlayer2
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6008,9 +6008,9 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: OverwatchWritetoFile, Assembly-CSharp
-        m_MethodName: OverwatchHomeSeriesScore
+      - m_Target: {fileID: 1634991638}
+        m_TargetAssemblyTypeName: SmashBrosWritetoFile, Assembly-CSharp
+        m_MethodName: SmashBrosHomeSeriesScore
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6285,9 +6285,9 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: CustomWritetoFile, Assembly-CSharp
-        m_MethodName: CustomAwayActivePlayer1
+      - m_Target: {fileID: 1634991638}
+        m_TargetAssemblyTypeName: SmashBrosWritetoFile, Assembly-CSharp
+        m_MethodName: SmashBrosAwayActivePlayer1
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6396,9 +6396,9 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: OverwatchWritetoFile, Assembly-CSharp
-        m_MethodName: OverwatchHomePlayer2Stats
+      - m_Target: {fileID: 1634991638}
+        m_TargetAssemblyTypeName: SmashBrosWritetoFile, Assembly-CSharp
+        m_MethodName: SmashBrosHomePlayer2Stats
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7012,9 +7012,9 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: OverwatchWritetoFile, Assembly-CSharp
-        m_MethodName: OverwatchAwayPlayer3
+      - m_Target: {fileID: 1634991638}
+        m_TargetAssemblyTypeName: SmashBrosWritetoFile, Assembly-CSharp
+        m_MethodName: SmashBrosAwayPlayer3
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7227,9 +7227,9 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: OverwatchWritetoFile, Assembly-CSharp
-        m_MethodName: OverwatchHomePlayer1Stats
+      - m_Target: {fileID: 1634991638}
+        m_TargetAssemblyTypeName: SmashBrosWritetoFile, Assembly-CSharp
+        m_MethodName: SmashBrosHomePlayer1Stats
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7991,9 +7991,9 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: CustomWritetoFile, Assembly-CSharp
-        m_MethodName: CustomHomeActivePlayer3
+      - m_Target: {fileID: 1634991638}
+        m_TargetAssemblyTypeName: SmashBrosWritetoFile, Assembly-CSharp
+        m_MethodName: SmashBrosHomeActivePlayer3
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8312,9 +8312,9 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: OverwatchWritetoFile, Assembly-CSharp
-        m_MethodName: OverwatchAwayGame3Toggle
+      - m_Target: {fileID: 1634991638}
+        m_TargetAssemblyTypeName: SmashBrosWritetoFile, Assembly-CSharp
+        m_MethodName: SmashBrosAwayGame3Toggle
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8917,9 +8917,9 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: OverwatchWritetoFile, Assembly-CSharp
-        m_MethodName: OverwatchGame3Score
+      - m_Target: {fileID: 1634991638}
+        m_TargetAssemblyTypeName: SmashBrosWritetoFile, Assembly-CSharp
+        m_MethodName: SmashBrosGame3Score
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9072,9 +9072,9 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: CustomWritetoFile, Assembly-CSharp
-        m_MethodName: CustomHomeActivePlayer2
+      - m_Target: {fileID: 1634991638}
+        m_TargetAssemblyTypeName: SmashBrosWritetoFile, Assembly-CSharp
+        m_MethodName: SmashBrosHomeActivePlayer2
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9409,9 +9409,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: OverwatchWritetoFile, Assembly-CSharp
-        m_MethodName: OverwatchHomeSeriesScoreIncrement
+      - m_Target: {fileID: 1634991638}
+        m_TargetAssemblyTypeName: SmashBrosWritetoFile, Assembly-CSharp
+        m_MethodName: SmashBrosHomeSeriesScoreIncrement
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9951,9 +9951,9 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: CustomWritetoFile, Assembly-CSharp
-        m_MethodName: CustomAwayActivePlayer3
+      - m_Target: {fileID: 1634991638}
+        m_TargetAssemblyTypeName: SmashBrosWritetoFile, Assembly-CSharp
+        m_MethodName: SmashBrosAwayActivePlayer3
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -10137,9 +10137,9 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: OverwatchWritetoFile, Assembly-CSharp
-        m_MethodName: OverwatchTicker
+      - m_Target: {fileID: 1634991638}
+        m_TargetAssemblyTypeName: SmashBrosWritetoFile, Assembly-CSharp
+        m_MethodName: SmashBrosTicker
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -10370,9 +10370,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: OverwatchWritetoFile, Assembly-CSharp
-        m_MethodName: OverwatchAwaySeriesScoreDecrement
+      - m_Target: {fileID: 1634991638}
+        m_TargetAssemblyTypeName: SmashBrosWritetoFile, Assembly-CSharp
+        m_MethodName: SmashBrosAwayStocksDecrement
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -10664,9 +10664,9 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: OverwatchWritetoFile, Assembly-CSharp
-        m_MethodName: OverwatchCaster1
+      - m_Target: {fileID: 1634991638}
+        m_TargetAssemblyTypeName: SmashBrosWritetoFile, Assembly-CSharp
+        m_MethodName: SmashBrosCaster1
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -11893,9 +11893,9 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: OverwatchWritetoFile, Assembly-CSharp
-        m_MethodName: OverwatchHomePlayer3Stats
+      - m_Target: {fileID: 1634991638}
+        m_TargetAssemblyTypeName: SmashBrosWritetoFile, Assembly-CSharp
+        m_MethodName: SmashBrosHomePlayer3Stats
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -12126,9 +12126,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: OverwatchWritetoFile, Assembly-CSharp
-        m_MethodName: OverwatchHomeSeriesScoreDecrement
+      - m_Target: {fileID: 1634991638}
+        m_TargetAssemblyTypeName: SmashBrosWritetoFile, Assembly-CSharp
+        m_MethodName: SmashBrosHomeSeriesScoreDecrement
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -12473,9 +12473,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: OverwatchWritetoFile, Assembly-CSharp
-        m_MethodName: OverwatchHomeSeriesScoreDecrement
+      - m_Target: {fileID: 1634991638}
+        m_TargetAssemblyTypeName: SmashBrosWritetoFile, Assembly-CSharp
+        m_MethodName: SmashBrosHomeStocksDecrement
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -12607,9 +12607,9 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: OverwatchWritetoFile, Assembly-CSharp
-        m_MethodName: OverwatchAwayGame2Toggle
+      - m_Target: {fileID: 1634991638}
+        m_TargetAssemblyTypeName: SmashBrosWritetoFile, Assembly-CSharp
+        m_MethodName: SmashBrosAwayGame2Toggle
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -12797,9 +12797,9 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: OverwatchWritetoFile, Assembly-CSharp
-        m_MethodName: OverwatchHomePlayer1
+      - m_Target: {fileID: 1634991638}
+        m_TargetAssemblyTypeName: SmashBrosWritetoFile, Assembly-CSharp
+        m_MethodName: SmashBrosHomePlayer1
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -13179,9 +13179,9 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: OverwatchWritetoFile, Assembly-CSharp
-        m_MethodName: OverwatchAwaySeriesScore
+      - m_Target: {fileID: 1634991638}
+        m_TargetAssemblyTypeName: SmashBrosWritetoFile, Assembly-CSharp
+        m_MethodName: SmashBrosAwayStocks
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -13454,9 +13454,9 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: OverwatchWritetoFile, Assembly-CSharp
-        m_MethodName: OverwatchHomeGame1Toggle
+      - m_Target: {fileID: 1634991638}
+        m_TargetAssemblyTypeName: SmashBrosWritetoFile, Assembly-CSharp
+        m_MethodName: SmashBrosHomeGame1Toggle
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -13809,9 +13809,9 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: OverwatchWritetoFile, Assembly-CSharp
-        m_MethodName: OverwatchHomeSeasonRecord
+      - m_Target: {fileID: 1634991638}
+        m_TargetAssemblyTypeName: SmashBrosWritetoFile, Assembly-CSharp
+        m_MethodName: SmashBrosHomeSeasonRecord
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -14353,9 +14353,9 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: OverwatchWritetoFile, Assembly-CSharp
-        m_MethodName: OverwatchHomePlayer2
+      - m_Target: {fileID: 1634991638}
+        m_TargetAssemblyTypeName: SmashBrosWritetoFile, Assembly-CSharp
+        m_MethodName: SmashBrosHomePlayer2
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -15364,9 +15364,9 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: OverwatchWritetoFile, Assembly-CSharp
-        m_MethodName: OverwatchAwayPlayer2Stats
+      - m_Target: {fileID: 1634991638}
+        m_TargetAssemblyTypeName: SmashBrosWritetoFile, Assembly-CSharp
+        m_MethodName: SmashBrosAwayPlayer2Stats
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -15906,9 +15906,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: OverwatchWritetoFile, Assembly-CSharp
-        m_MethodName: OverwatchAwaySeriesScoreDecrement
+      - m_Target: {fileID: 1634991638}
+        m_TargetAssemblyTypeName: SmashBrosWritetoFile, Assembly-CSharp
+        m_MethodName: SmashBrosAwaySeriesScoreDecrement
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -16174,9 +16174,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: OverwatchWritetoFile, Assembly-CSharp
-        m_MethodName: OverwatchAwaySeriesScoreIncrement
+      - m_Target: {fileID: 1634991638}
+        m_TargetAssemblyTypeName: SmashBrosWritetoFile, Assembly-CSharp
+        m_MethodName: SmashBrosAwaySeriesScoreIncrement
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -16322,9 +16322,9 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: OverwatchWritetoFile, Assembly-CSharp
-        m_MethodName: OverwatchHomePlayer3
+      - m_Target: {fileID: 1634991638}
+        m_TargetAssemblyTypeName: SmashBrosWritetoFile, Assembly-CSharp
+        m_MethodName: SmashBrosHomePlayer3
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -16556,9 +16556,9 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: OverwatchWritetoFile, Assembly-CSharp
-        m_MethodName: OverwatchHomeGame2Toggle
+      - m_Target: {fileID: 1634991638}
+        m_TargetAssemblyTypeName: SmashBrosWritetoFile, Assembly-CSharp
+        m_MethodName: SmashBrosHomeGame2Toggle
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -16838,9 +16838,9 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: OverwatchWritetoFile, Assembly-CSharp
-        m_MethodName: OverwatchAwaySeriesScore
+      - m_Target: {fileID: 1634991638}
+        m_TargetAssemblyTypeName: SmashBrosWritetoFile, Assembly-CSharp
+        m_MethodName: SmashBrosAwaySeriesScore
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -17337,9 +17337,9 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: OverwatchWritetoFile, Assembly-CSharp
-        m_MethodName: OverwatchAwayGame1Toggle
+      - m_Target: {fileID: 1634991638}
+        m_TargetAssemblyTypeName: SmashBrosWritetoFile, Assembly-CSharp
+        m_MethodName: SmashBrosAwayGame1Toggle
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -17918,9 +17918,9 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: OverwatchWritetoFile, Assembly-CSharp
-        m_MethodName: OverwatchAwayPlayer2
+      - m_Target: {fileID: 1634991638}
+        m_TargetAssemblyTypeName: SmashBrosWritetoFile, Assembly-CSharp
+        m_MethodName: SmashBrosAwayPlayer1
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -18152,9 +18152,9 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: OverwatchWritetoFile, Assembly-CSharp
-        m_MethodName: OverwatchHomeGame3Toggle
+      - m_Target: {fileID: 1634991638}
+        m_TargetAssemblyTypeName: SmashBrosWritetoFile, Assembly-CSharp
+        m_MethodName: SmashBrosHomeGame3Toggle
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
