@@ -615,6 +615,7 @@ GameObject:
   - component: {fileID: 46300373}
   - component: {fileID: 46300372}
   - component: {fileID: 46300371}
+  - component: {fileID: 46300374}
   m_Layer: 5
   m_Name: Away Player2 InputField
   m_TagString: Untagged
@@ -758,6 +759,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 46300369}
   m_CullTransparentMesh: 1
+--- !u!114 &46300374
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 46300369}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 407434e986bdf6d4a8c4a029e2926037, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nextField: {fileID: 842718369}
 --- !u!1 &68893805
 GameObject:
   m_ObjectHideFlags: 0
@@ -994,6 +1008,7 @@ GameObject:
   - component: {fileID: 107865856}
   - component: {fileID: 107865855}
   - component: {fileID: 107865854}
+  - component: {fileID: 107865857}
   m_Layer: 5
   m_Name: Away Player1 Stats
   m_TagString: Untagged
@@ -1137,6 +1152,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 107865852}
   m_CullTransparentMesh: 1
+--- !u!114 &107865857
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 107865852}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 407434e986bdf6d4a8c4a029e2926037, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nextField: {fileID: 1750772013}
 --- !u!1 &162764038
 GameObject:
   m_ObjectHideFlags: 0
@@ -1897,6 +1925,7 @@ GameObject:
   - component: {fileID: 204327980}
   - component: {fileID: 204327979}
   - component: {fileID: 204327978}
+  - component: {fileID: 204327981}
   m_Layer: 5
   m_Name: Map1 Score InputField
   m_TagString: Untagged
@@ -2040,6 +2069,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 204327976}
   m_CullTransparentMesh: 1
+--- !u!114 &204327981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 204327976}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 407434e986bdf6d4a8c4a029e2926037, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nextField: {fileID: 682779488}
 --- !u!1 &206454000
 GameObject:
   m_ObjectHideFlags: 0
@@ -2257,6 +2299,7 @@ GameObject:
   - component: {fileID: 238226967}
   - component: {fileID: 238226966}
   - component: {fileID: 238226965}
+  - component: {fileID: 238226968}
   m_Layer: 5
   m_Name: Away Player3 Stats
   m_TagString: Untagged
@@ -2400,6 +2443,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 238226963}
   m_CullTransparentMesh: 1
+--- !u!114 &238226968
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 238226963}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 407434e986bdf6d4a8c4a029e2926037, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nextField: {fileID: 107865854}
 --- !u!1 &263049535
 GameObject:
   m_ObjectHideFlags: 0
@@ -2951,6 +3007,7 @@ GameObject:
   - component: {fileID: 360691881}
   - component: {fileID: 360691880}
   - component: {fileID: 360691879}
+  - component: {fileID: 360691882}
   m_Layer: 5
   m_Name: Caster2 InputField
   m_TagString: Untagged
@@ -3094,6 +3151,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 360691877}
   m_CullTransparentMesh: 1
+--- !u!114 &360691882
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 360691877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 407434e986bdf6d4a8c4a029e2926037, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nextField: {fileID: 1184051715}
 --- !u!1 &367909852
 GameObject:
   m_ObjectHideFlags: 0
@@ -5309,6 +5379,7 @@ GameObject:
   - component: {fileID: 682779490}
   - component: {fileID: 682779489}
   - component: {fileID: 682779488}
+  - component: {fileID: 682779491}
   m_Layer: 5
   m_Name: Map2 Score InputField
   m_TagString: Untagged
@@ -5452,6 +5523,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 682779486}
   m_CullTransparentMesh: 1
+--- !u!114 &682779491
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 682779486}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 407434e986bdf6d4a8c4a029e2926037, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nextField: {fileID: 1036354274}
 --- !u!1 &717445768
 GameObject:
   m_ObjectHideFlags: 0
@@ -6226,6 +6310,7 @@ GameObject:
   - component: {fileID: 808514195}
   - component: {fileID: 808514194}
   - component: {fileID: 808514193}
+  - component: {fileID: 808514196}
   m_Layer: 5
   m_Name: Home Player2 Stats
   m_TagString: Untagged
@@ -6369,6 +6454,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 808514191}
   m_CullTransparentMesh: 1
+--- !u!114 &808514196
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 808514191}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 407434e986bdf6d4a8c4a029e2926037, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nextField: {fileID: 1442141077}
 --- !u!1 &809064306
 GameObject:
   m_ObjectHideFlags: 0
@@ -6828,6 +6926,7 @@ GameObject:
   - component: {fileID: 842718371}
   - component: {fileID: 842718370}
   - component: {fileID: 842718369}
+  - component: {fileID: 842718372}
   m_Layer: 5
   m_Name: Away Player3 InputField
   m_TagString: Untagged
@@ -6971,6 +7070,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 842718367}
   m_CullTransparentMesh: 1
+--- !u!114 &842718372
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 842718367}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 407434e986bdf6d4a8c4a029e2926037, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nextField: {fileID: 2082465976}
 --- !u!1 &852278761
 GameObject:
   m_ObjectHideFlags: 0
@@ -7029,6 +7141,7 @@ GameObject:
   - component: {fileID: 852446738}
   - component: {fileID: 852446737}
   - component: {fileID: 852446736}
+  - component: {fileID: 852446739}
   m_Layer: 5
   m_Name: Home Player1 Stats
   m_TagString: Untagged
@@ -7172,6 +7285,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 852446734}
   m_CullTransparentMesh: 1
+--- !u!114 &852446739
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 852446734}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 407434e986bdf6d4a8c4a029e2926037, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nextField: {fileID: 808514193}
 --- !u!1 &852967759
 GameObject:
   m_ObjectHideFlags: 0
@@ -8693,6 +8819,7 @@ GameObject:
   - component: {fileID: 1036354276}
   - component: {fileID: 1036354275}
   - component: {fileID: 1036354274}
+  - component: {fileID: 1036354277}
   m_Layer: 5
   m_Name: Map3 Score InputField
   m_TagString: Untagged
@@ -8836,6 +8963,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1036354272}
   m_CullTransparentMesh: 1
+--- !u!114 &1036354277
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1036354272}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 407434e986bdf6d4a8c4a029e2926037, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nextField: {fileID: 204327978}
 --- !u!1 &1042360894
 GameObject:
   m_ObjectHideFlags: 0
@@ -9899,6 +10039,7 @@ GameObject:
   - component: {fileID: 1184051717}
   - component: {fileID: 1184051716}
   - component: {fileID: 1184051715}
+  - component: {fileID: 1184051718}
   m_Layer: 5
   m_Name: Ticker InputField
   m_TagString: Untagged
@@ -10042,6 +10183,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1184051713}
   m_CullTransparentMesh: 1
+--- !u!114 &1184051718
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1184051713}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 407434e986bdf6d4a8c4a029e2926037, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nextField: {fileID: 1246272785}
 --- !u!1 &1205255616
 GameObject:
   m_ObjectHideFlags: 0
@@ -10412,6 +10566,7 @@ GameObject:
   - component: {fileID: 1246272787}
   - component: {fileID: 1246272786}
   - component: {fileID: 1246272785}
+  - component: {fileID: 1246272788}
   m_Layer: 5
   m_Name: Caster1 InputField
   m_TagString: Untagged
@@ -10555,6 +10710,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1246272783}
   m_CullTransparentMesh: 1
+--- !u!114 &1246272788
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1246272783}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 407434e986bdf6d4a8c4a029e2926037, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nextField: {fileID: 360691879}
 --- !u!1 &1257498301
 GameObject:
   m_ObjectHideFlags: 0
@@ -11627,6 +11795,7 @@ GameObject:
   - component: {fileID: 1442141079}
   - component: {fileID: 1442141078}
   - component: {fileID: 1442141077}
+  - component: {fileID: 1442141080}
   m_Layer: 5
   m_Name: Home Player3 Stats
   m_TagString: Untagged
@@ -11770,6 +11939,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1442141075}
   m_CullTransparentMesh: 1
+--- !u!114 &1442141080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1442141075}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 407434e986bdf6d4a8c4a029e2926037, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nextField: {fileID: 852446736}
 --- !u!1 &1450592488
 GameObject:
   m_ObjectHideFlags: 0
@@ -12517,6 +12699,7 @@ GameObject:
   - component: {fileID: 1500887760}
   - component: {fileID: 1500887759}
   - component: {fileID: 1500887758}
+  - component: {fileID: 1500887761}
   m_Layer: 5
   m_Name: Home Player1 InputField
   m_TagString: Untagged
@@ -12660,6 +12843,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1500887756}
   m_CullTransparentMesh: 1
+--- !u!114 &1500887761
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1500887756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 407434e986bdf6d4a8c4a029e2926037, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nextField: {fileID: 1650782002}
 --- !u!1 &1506926514
 GameObject:
   m_ObjectHideFlags: 0
@@ -14042,6 +14238,7 @@ GameObject:
   - component: {fileID: 1650782004}
   - component: {fileID: 1650782003}
   - component: {fileID: 1650782002}
+  - component: {fileID: 1650782005}
   m_Layer: 5
   m_Name: Home Player2 InputField
   m_TagString: Untagged
@@ -14185,6 +14382,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1650782000}
   m_CullTransparentMesh: 1
+--- !u!114 &1650782005
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1650782000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 407434e986bdf6d4a8c4a029e2926037, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nextField: {fileID: 1871289748}
 --- !u!1 &1674817461
 GameObject:
   m_ObjectHideFlags: 0
@@ -15039,6 +15249,7 @@ GameObject:
   - component: {fileID: 1750772015}
   - component: {fileID: 1750772014}
   - component: {fileID: 1750772013}
+  - component: {fileID: 1750772016}
   m_Layer: 5
   m_Name: Away Player2 Stats
   m_TagString: Untagged
@@ -15182,6 +15393,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1750772011}
   m_CullTransparentMesh: 1
+--- !u!114 &1750772016
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1750772011}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 407434e986bdf6d4a8c4a029e2926037, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nextField: {fileID: 238226965}
 --- !u!1 &1756459063
 GameObject:
   m_ObjectHideFlags: 0
@@ -15983,6 +16207,7 @@ GameObject:
   - component: {fileID: 1871289750}
   - component: {fileID: 1871289749}
   - component: {fileID: 1871289748}
+  - component: {fileID: 1871289751}
   m_Layer: 5
   m_Name: Home Player3 InputField
   m_TagString: Untagged
@@ -16126,6 +16351,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1871289746}
   m_CullTransparentMesh: 1
+--- !u!114 &1871289751
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1871289746}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 407434e986bdf6d4a8c4a029e2926037, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nextField: {fileID: 1500887758}
 --- !u!1 &1917659108
 GameObject:
   m_ObjectHideFlags: 0
@@ -17565,6 +17803,7 @@ GameObject:
   - component: {fileID: 2082465978}
   - component: {fileID: 2082465977}
   - component: {fileID: 2082465976}
+  - component: {fileID: 2082465979}
   m_Layer: 5
   m_Name: Away Player1 InputField
   m_TagString: Untagged
@@ -17708,6 +17947,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2082465974}
   m_CullTransparentMesh: 1
+--- !u!114 &2082465979
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2082465974}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 407434e986bdf6d4a8c4a029e2926037, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nextField: {fileID: 46300371}
 --- !u!1 &2084738426
 GameObject:
   m_ObjectHideFlags: 0

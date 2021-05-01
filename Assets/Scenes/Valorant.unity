@@ -174,14 +174,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 11071771}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 728157982cda41c49a55b41269cef602, type: 3}
+  m_Script: {fileID: 11500000, guid: 407434e986bdf6d4a8c4a029e2926037, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clearIt: {fileID: 11071774}
-  value: {fileID: 0}
-  ddInput: {fileID: 0}
-  TextObject: {fileID: 0}
-  toggleIn: {fileID: 0}
+  nextField: {fileID: 1014079551}
 --- !u!114 &11071774
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -853,14 +849,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 69358691}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 728157982cda41c49a55b41269cef602, type: 3}
+  m_Script: {fileID: 11500000, guid: 407434e986bdf6d4a8c4a029e2926037, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clearIt: {fileID: 69358694}
-  value: {fileID: 0}
-  ddInput: {fileID: 0}
-  TextObject: {fileID: 0}
-  toggleIn: {fileID: 0}
+  nextField: {fileID: 1475317952}
 --- !u!114 &69358694
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1410,6 +1402,7 @@ GameObject:
   - component: {fileID: 150140389}
   - component: {fileID: 150140388}
   - component: {fileID: 150140387}
+  - component: {fileID: 150140386}
   m_Layer: 5
   m_Name: Home Player3 InputField
   m_TagString: Untagged
@@ -1438,6 +1431,19 @@ RectTransform:
   m_AnchoredPosition: {x: -364.6544, y: -82.429016}
   m_SizeDelta: {x: 183, y: 31}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &150140386
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 150140384}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 407434e986bdf6d4a8c4a029e2926037, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nextField: {fileID: 732401529}
 --- !u!114 &150140387
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5135,14 +5141,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 532946473}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 728157982cda41c49a55b41269cef602, type: 3}
+  m_Script: {fileID: 11500000, guid: 407434e986bdf6d4a8c4a029e2926037, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clearIt: {fileID: 532946476}
-  value: {fileID: 0}
-  ddInput: {fileID: 0}
-  TextObject: {fileID: 0}
-  toggleIn: {fileID: 0}
+  nextField: {fileID: 1234810932}
 --- !u!114 &532946476
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7481,6 +7483,7 @@ GameObject:
   - component: {fileID: 658970228}
   - component: {fileID: 658970227}
   - component: {fileID: 658970226}
+  - component: {fileID: 658970225}
   m_Layer: 5
   m_Name: Home Player5 InputField
   m_TagString: Untagged
@@ -7509,6 +7512,19 @@ RectTransform:
   m_AnchoredPosition: {x: -364.6544, y: -155.42902}
   m_SizeDelta: {x: 183, y: 31}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &658970225
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 658970223}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 407434e986bdf6d4a8c4a029e2926037, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nextField: {fileID: 2111581846}
 --- !u!114 &658970226
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7832,14 +7848,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 687679306}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 728157982cda41c49a55b41269cef602, type: 3}
+  m_Script: {fileID: 11500000, guid: 407434e986bdf6d4a8c4a029e2926037, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clearIt: {fileID: 687679309}
-  value: {fileID: 0}
-  ddInput: {fileID: 0}
-  TextObject: {fileID: 0}
-  toggleIn: {fileID: 0}
+  nextField: {fileID: 1182597890}
 --- !u!114 &687679309
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8200,6 +8212,7 @@ GameObject:
   - component: {fileID: 714751134}
   - component: {fileID: 714751133}
   - component: {fileID: 714751132}
+  - component: {fileID: 714751131}
   m_Layer: 5
   m_Name: Away Player5 InputField
   m_TagString: Untagged
@@ -8228,6 +8241,19 @@ RectTransform:
   m_AnchoredPosition: {x: 368, y: -155.7268}
   m_SizeDelta: {x: 183, y: 31}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &714751131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 714751129}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 407434e986bdf6d4a8c4a029e2926037, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nextField: {fileID: 2069681327}
 --- !u!114 &714751132
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8721,6 +8747,7 @@ GameObject:
   - component: {fileID: 732401531}
   - component: {fileID: 732401530}
   - component: {fileID: 732401529}
+  - component: {fileID: 732401528}
   m_Layer: 5
   m_Name: Home Player4 InputField
   m_TagString: Untagged
@@ -8749,6 +8776,19 @@ RectTransform:
   m_AnchoredPosition: {x: -364.6544, y: -119.429016}
   m_SizeDelta: {x: 183, y: 31}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &732401528
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 732401526}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 407434e986bdf6d4a8c4a029e2926037, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nextField: {fileID: 658970226}
 --- !u!114 &732401529
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9998,6 +10038,7 @@ GameObject:
   - component: {fileID: 822475902}
   - component: {fileID: 822475901}
   - component: {fileID: 822475900}
+  - component: {fileID: 822475899}
   m_Layer: 5
   m_Name: Home Player2 InputField
   m_TagString: Untagged
@@ -10026,6 +10067,19 @@ RectTransform:
   m_AnchoredPosition: {x: -364.6544, y: -46.429016}
   m_SizeDelta: {x: 183, y: 31}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &822475899
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 822475897}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 407434e986bdf6d4a8c4a029e2926037, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nextField: {fileID: 150140387}
 --- !u!114 &822475900
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10279,6 +10333,7 @@ GameObject:
   - component: {fileID: 842710064}
   - component: {fileID: 842710063}
   - component: {fileID: 842710062}
+  - component: {fileID: 842710061}
   m_Layer: 5
   m_Name: Caster2 InputField
   m_TagString: Untagged
@@ -10307,6 +10362,19 @@ RectTransform:
   m_AnchoredPosition: {x: 3.0809, y: 50}
   m_SizeDelta: {x: 283.8383, y: 31}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &842710061
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 842710059}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 407434e986bdf6d4a8c4a029e2926037, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nextField: {fileID: 1345353454}
 --- !u!114 &842710062
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11033,14 +11101,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 880977223}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 728157982cda41c49a55b41269cef602, type: 3}
+  m_Script: {fileID: 11500000, guid: 407434e986bdf6d4a8c4a029e2926037, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clearIt: {fileID: 880977226}
-  value: {fileID: 0}
-  ddInput: {fileID: 0}
-  TextObject: {fileID: 0}
-  toggleIn: {fileID: 0}
+  nextField: {fileID: 1456649249}
 --- !u!114 &880977226
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12284,14 +12348,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1014079548}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 728157982cda41c49a55b41269cef602, type: 3}
+  m_Script: {fileID: 11500000, guid: 407434e986bdf6d4a8c4a029e2926037, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clearIt: {fileID: 1014079551}
-  value: {fileID: 0}
-  ddInput: {fileID: 0}
-  TextObject: {fileID: 0}
-  toggleIn: {fileID: 0}
+  nextField: {fileID: 1088404026}
 --- !u!114 &1014079551
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13015,14 +13075,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1088404023}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 728157982cda41c49a55b41269cef602, type: 3}
+  m_Script: {fileID: 11500000, guid: 407434e986bdf6d4a8c4a029e2926037, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clearIt: {fileID: 1088404026}
-  value: {fileID: 0}
-  ddInput: {fileID: 0}
-  TextObject: {fileID: 0}
-  toggleIn: {fileID: 0}
+  nextField: {fileID: 532946476}
 --- !u!114 &1088404026
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13188,14 +13244,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1088771955}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 728157982cda41c49a55b41269cef602, type: 3}
+  m_Script: {fileID: 11500000, guid: 407434e986bdf6d4a8c4a029e2926037, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clearIt: {fileID: 1088771958}
-  value: {fileID: 0}
-  ddInput: {fileID: 0}
-  TextObject: {fileID: 0}
-  toggleIn: {fileID: 0}
+  nextField: {fileID: 2044537049}
 --- !u!114 &1088771958
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14424,14 +14476,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1182597887}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 728157982cda41c49a55b41269cef602, type: 3}
+  m_Script: {fileID: 11500000, guid: 407434e986bdf6d4a8c4a029e2926037, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clearIt: {fileID: 1182597890}
-  value: {fileID: 0}
-  ddInput: {fileID: 0}
-  TextObject: {fileID: 0}
-  toggleIn: {fileID: 0}
+  nextField: {fileID: 1836813092}
 --- !u!114 &1182597890
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14672,14 +14720,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1234810929}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 728157982cda41c49a55b41269cef602, type: 3}
+  m_Script: {fileID: 11500000, guid: 407434e986bdf6d4a8c4a029e2926037, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clearIt: {fileID: 1234810932}
-  value: {fileID: 0}
-  ddInput: {fileID: 0}
-  TextObject: {fileID: 0}
-  toggleIn: {fileID: 0}
+  nextField: {fileID: 11071774}
 --- !u!114 &1234810932
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15609,6 +15653,7 @@ GameObject:
   - component: {fileID: 1345353456}
   - component: {fileID: 1345353455}
   - component: {fileID: 1345353454}
+  - component: {fileID: 1345353453}
   m_Layer: 5
   m_Name: Ticker InputField
   m_TagString: Untagged
@@ -15637,6 +15682,19 @@ RectTransform:
   m_AnchoredPosition: {x: 3, y: 134}
   m_SizeDelta: {x: 284, y: 31}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1345353453
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1345353451}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 407434e986bdf6d4a8c4a029e2926037, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nextField: {fileID: 1507498822}
 --- !u!114 &1345353454
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16059,14 +16117,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1393915186}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 728157982cda41c49a55b41269cef602, type: 3}
+  m_Script: {fileID: 11500000, guid: 407434e986bdf6d4a8c4a029e2926037, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clearIt: {fileID: 1393915189}
-  value: {fileID: 0}
-  ddInput: {fileID: 0}
-  TextObject: {fileID: 0}
-  toggleIn: {fileID: 0}
+  nextField: {fileID: 69358694}
 --- !u!114 &1393915189
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16950,14 +17004,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1456649246}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 728157982cda41c49a55b41269cef602, type: 3}
+  m_Script: {fileID: 11500000, guid: 407434e986bdf6d4a8c4a029e2926037, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clearIt: {fileID: 1456649249}
-  value: {fileID: 0}
-  ddInput: {fileID: 0}
-  TextObject: {fileID: 0}
-  toggleIn: {fileID: 0}
+  nextField: {fileID: 687679309}
 --- !u!114 &1456649249
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17281,14 +17331,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1475317949}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 728157982cda41c49a55b41269cef602, type: 3}
+  m_Script: {fileID: 11500000, guid: 407434e986bdf6d4a8c4a029e2926037, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clearIt: {fileID: 1475317952}
-  value: {fileID: 0}
-  ddInput: {fileID: 0}
-  TextObject: {fileID: 0}
-  toggleIn: {fileID: 0}
+  nextField: {fileID: 1088771958}
 --- !u!114 &1475317952
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17495,6 +17541,7 @@ GameObject:
   - component: {fileID: 1493378147}
   - component: {fileID: 1493378146}
   - component: {fileID: 1493378145}
+  - component: {fileID: 1493378144}
   m_Layer: 5
   m_Name: Away Player4 InputField
   m_TagString: Untagged
@@ -17523,6 +17570,19 @@ RectTransform:
   m_AnchoredPosition: {x: 368, y: -119.72481}
   m_SizeDelta: {x: 183, y: 31}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1493378144
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1493378142}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 407434e986bdf6d4a8c4a029e2926037, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nextField: {fileID: 714751132}
 --- !u!114 &1493378145
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17804,6 +17864,7 @@ GameObject:
   - component: {fileID: 1507498824}
   - component: {fileID: 1507498823}
   - component: {fileID: 1507498822}
+  - component: {fileID: 1507498821}
   m_Layer: 5
   m_Name: Caster1 InputField
   m_TagString: Untagged
@@ -17832,6 +17893,19 @@ RectTransform:
   m_AnchoredPosition: {x: 3.0809, y: 91}
   m_SizeDelta: {x: 283.8383, y: 31}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1507498821
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1507498819}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 407434e986bdf6d4a8c4a029e2926037, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nextField: {fileID: 842710062}
 --- !u!114 &1507498822
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20438,6 +20512,7 @@ GameObject:
   - component: {fileID: 1776706176}
   - component: {fileID: 1776706175}
   - component: {fileID: 1776706174}
+  - component: {fileID: 1776706173}
   m_Layer: 5
   m_Name: Away Player3 InputField
   m_TagString: Untagged
@@ -20466,6 +20541,19 @@ RectTransform:
   m_AnchoredPosition: {x: 368, y: -83.33081}
   m_SizeDelta: {x: 183, y: 31}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1776706173
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1776706171}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 407434e986bdf6d4a8c4a029e2926037, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nextField: {fileID: 1493378145}
 --- !u!114 &1776706174
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20941,14 +21029,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1836813089}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 728157982cda41c49a55b41269cef602, type: 3}
+  m_Script: {fileID: 11500000, guid: 407434e986bdf6d4a8c4a029e2926037, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clearIt: {fileID: 1836813092}
-  value: {fileID: 0}
-  ddInput: {fileID: 0}
-  TextObject: {fileID: 0}
-  toggleIn: {fileID: 0}
+  nextField: {fileID: 880977226}
 --- !u!114 &1836813092
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22118,6 +22202,7 @@ GameObject:
   - component: {fileID: 1953224917}
   - component: {fileID: 1953224916}
   - component: {fileID: 1953224915}
+  - component: {fileID: 1953224914}
   m_Layer: 5
   m_Name: Away Player2 InputField
   m_TagString: Untagged
@@ -22146,6 +22231,19 @@ RectTransform:
   m_AnchoredPosition: {x: 368, y: -47.32881}
   m_SizeDelta: {x: 183, y: 31}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1953224914
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1953224912}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 407434e986bdf6d4a8c4a029e2926037, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nextField: {fileID: 1776706174}
 --- !u!114 &1953224915
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23459,14 +23557,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 2044537046}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 728157982cda41c49a55b41269cef602, type: 3}
+  m_Script: {fileID: 11500000, guid: 407434e986bdf6d4a8c4a029e2926037, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clearIt: {fileID: 2044537049}
-  value: {fileID: 0}
-  ddInput: {fileID: 0}
-  TextObject: {fileID: 0}
-  toggleIn: {fileID: 0}
+  nextField: {fileID: 1393915189}
 --- !u!114 &2044537049
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23784,6 +23878,7 @@ GameObject:
   - component: {fileID: 2069681329}
   - component: {fileID: 2069681328}
   - component: {fileID: 2069681327}
+  - component: {fileID: 2069681326}
   m_Layer: 5
   m_Name: Away Player1 InputField
   m_TagString: Untagged
@@ -23812,6 +23907,19 @@ RectTransform:
   m_AnchoredPosition: {x: 368.00012, y: -9.326813}
   m_SizeDelta: {x: 183, y: 31}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2069681326
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2069681324}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 407434e986bdf6d4a8c4a029e2926037, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nextField: {fileID: 1953224915}
 --- !u!114 &2069681327
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24119,6 +24227,7 @@ GameObject:
   - component: {fileID: 2111581848}
   - component: {fileID: 2111581847}
   - component: {fileID: 2111581846}
+  - component: {fileID: 2111581845}
   m_Layer: 5
   m_Name: Home Player1 InputField
   m_TagString: Untagged
@@ -24147,6 +24256,19 @@ RectTransform:
   m_AnchoredPosition: {x: -364.6544, y: -8.429016}
   m_SizeDelta: {x: 183, y: 31}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2111581845
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2111581843}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 407434e986bdf6d4a8c4a029e2926037, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nextField: {fileID: 822475900}
 --- !u!114 &2111581846
 MonoBehaviour:
   m_ObjectHideFlags: 0
