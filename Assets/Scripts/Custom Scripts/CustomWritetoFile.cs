@@ -873,7 +873,7 @@ public class CustomWritetoFile : MonoBehaviour
 
 		if (CustomHomeNameStringInput != "")
 		{
-			string logoCustom = "Custom1.png";
+			string logoCustom = "Custom1 Logo.png";
 			string logoHome = "Home Logo.png";
 			string sourcePath = "Assets/TeamLogos/";
 			string targetPath = "Assets/Games/Custom/";
@@ -1240,7 +1240,7 @@ public class CustomWritetoFile : MonoBehaviour
 
 		if (CustomAwayNameStringInput != "")
 		{
-			string logoCustom = "Custom2.png";
+			string logoCustom = "Custom2 Logo.png";
 			string logoAway = "Away Logo.png";
 			string sourcePath = "Assets/TeamLogos/";
 			string targetPath = "Assets/Games/Custom/";
