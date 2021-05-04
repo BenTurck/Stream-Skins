@@ -328,23 +328,21 @@ public class CreateDirectoryFiles
         File.Create("Assets/Games/Custom/Home Team Season Record.txt");
         File.Create("Assets/Games/Custom/Home Team Series Score.txt");
 
-        File.Create("Assets/Games/Custom/Away Team Active Player1.txt");
-        File.Create("Assets/Games/Custom/Away Team Active Player2.txt");
-        File.Create("Assets/Games/Custom/Away Team Active Player3.txt");
-        File.Create("Assets/Games/Custom/Away Team Active Player4.txt");
-        File.Create("Assets/Games/Custom/Away Team Active Player5.txt");
+        File.Create("Assets/Games/Custom/Home Team Active Player.txt");
 
         File.Create("Assets/Games/Custom/Home Team Player1.txt");
         File.Create("Assets/Games/Custom/Home Team Player2.txt");
         File.Create("Assets/Games/Custom/Home Team Player3.txt");
         File.Create("Assets/Games/Custom/Home Team Player4.txt");
         File.Create("Assets/Games/Custom/Home Team Player5.txt");
+        File.Create("Assets/Games/Custom/Home Team Player6.txt");
 
         File.Create("Assets/Games/Custom/Home Team Player1 Stats.txt");
         File.Create("Assets/Games/Custom/Home Team Player2 Stats.txt");
         File.Create("Assets/Games/Custom/Home Team Player3 Stats.txt");
         File.Create("Assets/Games/Custom/Home Team Player4 Stats.txt");
         File.Create("Assets/Games/Custom/Home Team Player5 Stats.txt");
+        File.Create("Assets/Games/Custom/Home Team Player6 Stats.txt");
 
         File.Create("Assets/Games/Custom/Away Logo.png");
 
@@ -352,17 +350,21 @@ public class CreateDirectoryFiles
         File.Create("Assets/Games/Custom/Away Team Season Record.txt");
         File.Create("Assets/Games/Custom/Away Team Series Score.txt");
 
+        File.Create("Assets/Games/Custom/Away Team Active Player.txt");
+
         File.Create("Assets/Games/Custom/Away Team Player1.txt");
         File.Create("Assets/Games/Custom/Away Team Player2.txt");
         File.Create("Assets/Games/Custom/Away Team Player3.txt");
         File.Create("Assets/Games/Custom/Away Team Player4.txt");
         File.Create("Assets/Games/Custom/Away Team Player5.txt");
+        File.Create("Assets/Games/Custom/Away Team Player6.txt");
 
         File.Create("Assets/Games/Custom/Away Team Player1 Stats.txt");
         File.Create("Assets/Games/Custom/Away Team Player2 Stats.txt");
         File.Create("Assets/Games/Custom/Away Team Player3 Stats.txt");
         File.Create("Assets/Games/Custom/Away Team Player4 Stats.txt");
         File.Create("Assets/Games/Custom/Away Team Player5 Stats.txt");
+        File.Create("Assets/Games/Custom/Away Team Player6 Stats.txt");
 
     }
 

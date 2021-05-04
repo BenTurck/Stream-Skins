@@ -1,0 +1,4 @@
+    The frontend of the software is using many write to file functions using the namespace System.IO. 
+    There is a writetofile and reset script for each game to make sure there are no errors. 
+    Every method is started with the name of the game or menu to easily place objects in the right spot in unity.
+    It can get very cluttered if there are objects that are not labeled correctly. 

@@ -873,7 +873,7 @@ public class CustomWritetoFile : MonoBehaviour
 
 		if (CustomHomeNameStringInput != "")
 		{
-			string logoCustom = "Custom.png";
+			string logoCustom = "Custom1 Logo.png";
 			string logoHome = "Home Logo.png";
 			string sourcePath = "Assets/TeamLogos/";
 			string targetPath = "Assets/Games/Custom/";
@@ -1199,9 +1199,9 @@ public class CustomWritetoFile : MonoBehaviour
 	{
 		string CustomHomePlayer6StatsInput = s;
 
-		Debug.Log("Home Team Player56 Stats.txt: " + CustomHomePlayer6StatsInput); // shows input in debug
+		Debug.Log("Home Team Player6 Stats.txt: " + CustomHomePlayer6StatsInput); // shows input in debug
 
-		string path = "Assets/Games/Custom/Home Team Player5 Stats.txt"; // This is the directory for the text file.
+		string path = "Assets/Games/Custom/Home Team Player6 Stats.txt"; // This is the directory for the text file.
 		if (!File.Exists(path)) // checks if the file exists at the path
 		{
 			File.WriteAllText(path, CustomHomePlayer6StatsInput); // sets the location to path and the contents to input inside if statement
@@ -1238,9 +1238,9 @@ public class CustomWritetoFile : MonoBehaviour
 			File.WriteAllText(path, ""); // sets the location to path and the contents to input
 		}
 
-		if (CustomHomeNameStringInput != "")
+		if (CustomAwayNameStringInput != "")
 		{
-			string logoCustom = "Custom.png";
+			string logoCustom = "Custom2 Logo.png";
 			string logoAway = "Away Logo.png";
 			string sourcePath = "Assets/TeamLogos/";
 			string targetPath = "Assets/Games/Custom/";
@@ -1249,7 +1249,7 @@ public class CustomWritetoFile : MonoBehaviour
 			string destFile = Path.Combine(targetPath, logoAway);
 
 			File.Copy(sourceFile, destFile, true);
-			File.WriteAllText(path, CustomHomeNameStringInput); // sets the location to path and the contents to input
+			File.WriteAllText(path, CustomAwayNameStringInput); // sets the location to path and the contents to input
 		}
 	}
 

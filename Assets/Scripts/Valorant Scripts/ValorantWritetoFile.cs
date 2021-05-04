@@ -154,7 +154,7 @@ public class ValorantWritetoFile : MonoBehaviour
 		string path1 = "Assets/Games/Valorant/Map1 Name.txt";
 
 
-		string map1Blank = "Blank.png";
+		string map1Blank = "Blank.png"; // creates string with map name
 		string map1Ascent = "Valorant Ascent.png";
 		string map1Bind = "Valorant Bind.png";
 		string map1Breeze = "Valorant Breeze.png";
@@ -163,12 +163,12 @@ public class ValorantWritetoFile : MonoBehaviour
 		string map1Split = "Valorant Split.png";
 
 
-		string map1 = "Map 1.png";
-		string sourceMap1Path = "Assets/GameMaps/";
-		string targetMap1Path = "Assets/Games/Valorant/";
+		string map1 = "Map 1.png"; // creates string with map file to be replaced
+		string sourceMap1Path = "Assets/GameMaps/"; // directory of map files
+		string targetMap1Path = "Assets/Games/Valorant/"; // directory of map file to be replaced
 
-		string sourceMap1BlankFile = Path.Combine(sourceMap1Path, map1Blank);
-		string sourceMap1AscentFile = Path.Combine(sourceMap1Path, map1Ascent);
+		string sourceMap1BlankFile = Path.Combine(sourceMap1Path, map1Blank); // combines them
+		string sourceMap1AscentFile = Path.Combine(sourceMap1Path, map1Ascent); 
 		string sourceMap1BindFile = Path.Combine(sourceMap1Path, map1Bind);
 		string sourceMap1BreezeFile = Path.Combine(sourceMap1Path, map1Breeze);
 		string sourceMap1HavenFile = Path.Combine(sourceMap1Path, map1Haven);
@@ -179,8 +179,8 @@ public class ValorantWritetoFile : MonoBehaviour
 
 		if (ValorantGame1DDStringInput == "SELECT MAP 1")
         {
-			File.Copy(sourceMap1BlankFile, destMap1File, true);
-			File.WriteAllText(path1, "");
+			File.Copy(sourceMap1BlankFile, destMap1File, true); // copies image from one directory to another
+			File.WriteAllText(path1, ""); // writes map name to file
 			Debug.Log("Map1 Name.txt: ");
 		}
 
@@ -549,7 +549,7 @@ public class ValorantWritetoFile : MonoBehaviour
 
 	public void ValorantHomeGame1Toggle(bool tog)
 	{
-		ValorantHomeDDStringInput = ValorantHomeDDInput.options[ValorantHomeDDInput.value].text;
+		ValorantHomeDDStringInput = ValorantHomeDDInput.options[ValorantHomeDDInput.value].text; // sets the string to the name of the map
 		Debug.Log("Game1 Winner.txt: " + tog);
 		string text1 = "Game 1: ";
 		string text2 = " Won";
@@ -562,18 +562,18 @@ public class ValorantWritetoFile : MonoBehaviour
 		string sourceMapPath = "Assets/GameMaps/";
 		string targetMapPath = "Assets/Games/Valorant/";
 
-		string sourceMapBlankFile = Path.Combine(sourceMapPath, mapBlank);
-		string sourceMapPlayedFile = Path.Combine(sourceMapPath, mapPlayed);
+		string sourceMapBlankFile = Path.Combine(sourceMapPath, mapBlank); 
+		string sourceMapPlayedFile = Path.Combine(sourceMapPath, mapPlayed); // sets map to played
 		string destMapFile = Path.Combine(targetMapPath, mapWinner);
 
-		string logoBlank = "Blank.png";
+		string logoBlank = "Blank.png"; 
 		string logoHome = "Home Logo.png";
 		string logoWinner = "Map 1 Winner.png";
 		string sourceLogoPath = "Assets/TeamLogos/";
 		string targetLogoPath = "Assets/Games/Valorant/";
 
 		string sourceLogoBlankFile = Path.Combine(sourceLogoPath, logoBlank);
-		string sourceLogoHomeFile = Path.Combine(targetLogoPath, logoHome);
+		string sourceLogoHomeFile = Path.Combine(targetLogoPath, logoHome); // sets logo to home winner
 		string destLogoFile = Path.Combine(targetLogoPath, logoWinner);
 
 
