@@ -248,6 +248,8 @@ public class CreateDirectoryFiles
         File.Create("Assets/Games/League of Legends/Map 2 Played.png");
         File.Create("Assets/Games/League of Legends/Map 3 Played.png");
 
+        File.Create("Assets/Games/League of Legends/Home Logo.png");
+
         File.Create("Assets/Games/League of Legends/Home Team Name.txt");
         File.Create("Assets/Games/League of Legends/Home Team Season Record.txt");
         File.Create("Assets/Games/League of Legends/Home Team Series Score.txt");
@@ -263,6 +265,8 @@ public class CreateDirectoryFiles
         File.Create("Assets/Games/League of Legends/Home Team Player3 Stats.txt");
         File.Create("Assets/Games/League of Legends/Home Team Player4 Stats.txt");
         File.Create("Assets/Games/League of Legends/Home Team Player5 Stats.txt");
+
+        File.Create("Assets/Games/League of Legends/Away Logo.png");
 
         File.Create("Assets/Games/League of Legends/Away Team Name.txt");
         File.Create("Assets/Games/League of Legends/Away Team Season Record.txt");
@@ -365,6 +369,9 @@ public class CreateDirectoryFiles
         File.Create("Assets/Games/Custom/Away Team Player4 Stats.txt");
         File.Create("Assets/Games/Custom/Away Team Player5 Stats.txt");
         File.Create("Assets/Games/Custom/Away Team Player6 Stats.txt");
+
+        PlayerPrefs.SetInt("all", 0);
+        Debug.Log("Logout True: ");
 
     }
 

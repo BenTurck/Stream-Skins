@@ -859,7 +859,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1980025130}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: LoginTrueFalse, Assembly-CSharp
         m_MethodName: Signout
         m_Mode: 1
@@ -2401,9 +2401,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MenuStatsButton: {fileID: 0}
+  MenuSignoutButton: {fileID: 0}
+  MenuSigninButton: {fileID: 0}
+  LoginDD: {fileID: 0}
   state: 0
-  loginbutt: {fileID: 1147096383}
-  test: 0
+  username: {fileID: 0}
+  LoginDDText: {fileID: 0}
+  LoginDDInput: {fileID: 0}
 --- !u!1 &1162339447
 GameObject:
   m_ObjectHideFlags: 0
@@ -3505,7 +3509,7 @@ GameObject:
   - component: {fileID: 1980025126}
   - component: {fileID: 1980025129}
   - component: {fileID: 1980025128}
-  - component: {fileID: 1980025130}
+  - component: {fileID: 1980025131}
   m_Layer: 0
   m_Name: Signup Scripts
   m_TagString: Untagged
@@ -3574,12 +3578,11 @@ MonoBehaviour:
   LoginPasswordField: {fileID: 1658891007}
   LoginUsernameField: {fileID: 859213814}
   username: {fileID: 349610211}
-  loginSuccessful: 0
   dialogue:
     name: 
     sentences: []
-  ltf: {fileID: 0}
---- !u!114 &1980025130
+  loginSuccessful: 0
+--- !u!114 &1980025131
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3588,13 +3591,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1980025125}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 249cd400cd47aad419c38035547ba04f, type: 3}
+  m_Script: {fileID: 11500000, guid: b73d42986f2bde84f850c88cba597fd4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MenuStatsButton: {fileID: 0}
   state: 0
-  loginbutt: {fileID: 0}
-  test: 0
 --- !u!1 &2005033872
 GameObject:
   m_ObjectHideFlags: 0
