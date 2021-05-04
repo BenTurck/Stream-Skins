@@ -5,7 +5,8 @@ public class LoginTrueFalse : MonoBehaviour
     public GameObject MenuStatsButton; 
     public int state = 0;
     public Button loginbutt;
-    public int test=0; 
+    public int test=0;
+    public Text username;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,8 +15,12 @@ public class LoginTrueFalse : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (PlayerPrefs.GetInt("all") == 3)
+        
+
+        if (PlayerPrefs.GetInt("all") == 3) //success
         {
+            username.text = "Username: " + PlayerPrefs.GetString("username");
+
             state = PlayerPrefs.GetInt("all");
             Debug.Log("Login True: " + state);
             MenuStatsButton.SetActive(true);
@@ -26,13 +31,21 @@ public class LoginTrueFalse : MonoBehaviour
             state = PlayerPrefs.GetInt("all");
             Debug.Log("Login Fail: " + state);
             MenuStatsButton.SetActive(false);
+
+            username.text = "Username:";
+
         }
         if (PlayerPrefs.GetInt("all") == 0)
         {
             state = PlayerPrefs.GetInt("all");
             Debug.Log("Login False: " + state);
             MenuStatsButton.SetActive(false);
+
+            username.text = "Username:";
         }
+
+
+
     }
     public void Signout()
     {

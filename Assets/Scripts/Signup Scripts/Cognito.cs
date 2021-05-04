@@ -29,14 +29,16 @@ public class Cognito : MonoBehaviour
     public InputField SignupUsernameField;
     public InputField LoginPasswordField;
     public InputField LoginUsernameField;
+    public Text username;
+    public Dialogue dialogue; //This will allow you to access Dialogue class
+    //public LoginTrueFalse ltf;
+    
     // Token Holder
     public static string jwt;
 
+    //Check and other globals
     public bool loginSuccessful;
-    //int index; shouldn't need this but if anything breaks put it back
-    public Dialogue dialogue; //This will allow you to access Dialogue class
 
-    public LoginTrueFalse ltf;
     
 
     // Create an Identity Provider
@@ -58,10 +60,21 @@ public class Cognito : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //If found uncommented, it's ok to be deleted. Go for it guy. 
-        //LoginTrueFalse obj = new LoginTrueFalse();
-        //obj.setltfb(loginSuccessful,jwt);
-        //Debug.Log("Cognito boolean --> " + loginSuccessful);
+        
+
+        //Keeps the players username up if successfully logged in.
+        if (PlayerPrefs.GetInt("all") == 4) //Login failure
+        {
+            username.text = "Username:";
+        }
+
+        if(PlayerPrefs.GetInt("all") == 3) //Login success 
+        {
+            //This is so we can pass on the name to other scenes. 
+            
+            username.text = "Username: " + PlayerPrefs.GetString("username");
+        }
+
     }
 
     //The starting AWS process of pressing login
@@ -69,11 +82,10 @@ public class Cognito : MonoBehaviour
     {
         _ = Login_User();
 
-        Debug.Log("You have entered the login function");
 
         // Load Panels
-        MenuManager.Instance.Close_Login_Panel();
-        MenuManager.Instance.Load_Recommendations_Panel();
+   //MenuManager.Instance.Close_Login_Panel();
+   //MenuManager.Instance.Load_Recommendations_Panel();
     }
 
     //The starting AWS process of pressing Signup
@@ -126,7 +138,7 @@ public class Cognito : MonoBehaviour
             TriggerDialogue(1);
 
             // Send signup Event 
-            Events.Call_Signup();
+  //Events.Call_Signup();
         }
         catch (Exception e) //Failure
         {
@@ -141,6 +153,7 @@ public class Cognito : MonoBehaviour
     {
         string userName = LoginUsernameField.text;
         string passWord = LoginPasswordField.text;
+        PlayerPrefs.SetString("username", userName);
 
         CognitoUserPool userPool = new CognitoUserPool(CredentialsManager.userPoolId, CredentialsManager.appClientId, provider);
         CognitoUser user = new CognitoUser(userName, CredentialsManager.appClientId, userPool, provider);
@@ -197,7 +210,7 @@ public class Cognito : MonoBehaviour
             CredentialsManager.userid = subId;
 
             // Send Login Event
-            Events.Call_Login();
+   //Events.Call_Login();
 
             // Print UserID
             Debug.Log("Response - User's Sub ID from Cognito: " + CredentialsManager.userid);

@@ -13,7 +13,6 @@ public class DialogueManager : MonoBehaviour
     //To be used to reference status in Cognito 
     // 1 = sign up success | 2 = sign up exception | 3 = login success | 4 = login failure 
     
-    
     //DELETE IF NOT USED
     public int DBN = 0; //used to set Dialogue Box Number
     string passedE;
@@ -101,11 +100,9 @@ public class DialogueManager : MonoBehaviour
     public void signupfail()
     {
 
-        Debug.Log("we hit the sign up fail function");
         //If SIGN UP has FAILED
-        //Please note, there may be different reasons for sign up failure.
         headertext.text = "Sign up failed";
-        bodytext.text = "TEMPORARY GENERIC FAILURE MESSAGE";//e.ToString(); //This may branch out into different messages. 
+        bodytext.text = "With a sign up failure \nyou may want to check the requirements below";//e.ToString(); //This may branch out into different messages. 
         return;
     }
 
@@ -113,7 +110,7 @@ public class DialogueManager : MonoBehaviour
     {
         //If LOGIN has SUCCEEDED
         headertext.text = "Login succeeded!";
-        bodytext.text = "You've successfully logged in.\nYou may now access statistics editor."; //This may branch out into different messages. 
+        bodytext.text = "You've successfully logged in.\nYou may now access the statistics editor."; //This may branch out into different messages. 
         return;
     }
 
@@ -121,7 +118,7 @@ public class DialogueManager : MonoBehaviour
     {
         //If LOGIN has FAILED 
         headertext.text = "Login failed";
-        bodytext.text = "Please check to make sure your password is right and try again.";
+        bodytext.text = "Please check to make sure your information is right and try again.";
         return;
     }
 
@@ -148,60 +145,3 @@ public class DialogueManager : MonoBehaviour
     
 
 }// End of class
-
-
-
-
-
-
-
-/*  An alternative to creating a more intuitive changeing dialogue box.
- *  Use if you need to do more than just manipulate a single string in this script
-  
-    //A Queue of type string 
-    //This was apart of the guide so it's nice but
-    //a queue of strings isn't even necessary.
-    private Queue<string> sentences;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        sentences = new Queue<string>();
-    }
-
-    public void StartDialogue (Dialogue dialogue)
-    {
-        Debug.Log("Starting conversation with " + dialogue.name);
-
-        //This would change depending on the message sent.
-        headertext.text = "Change, depends on message";
-        
-        sentences.Clear();
-
-        foreach (string sentence in dialogue.sentences)
-        {
-            sentences.Enqueue(sentence);
-        }
-
-        DisplayNextSentence();
-    
-    }
-
-    public void DisplayNextSentence()
-    {
-        if (sentences.Count==0)
-        {
-            EndDialogue();
-            return;
-        }
-
-        string sentence = sentences.Dequeue();
-        bodytext.text = sentence;
-    }
-
-    void EndDialogue()
-    {
-        Debug.Log("End of conversation");
-
-    }
-*/
