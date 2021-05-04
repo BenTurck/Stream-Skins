@@ -8,7 +8,7 @@ public class DialogueManager : MonoBehaviour
     public Text bodytext;
     public Vector3 pos;
     public bool down = true;
-    public bool LG;
+    public Text username;
 
     //To be used to reference status in Cognito 
     // 1 = sign up success | 2 = sign up exception | 3 = login success | 4 = login failure 

@@ -2,16 +2,15 @@ using UnityEngine;
 using UnityEngine.UI;
 public class LoginTrueFalse : MonoBehaviour
 {
-    public GameObject MenuStatsButton;
-    public bool test; //possible deletion 
+    public GameObject MenuStatsButton; 
     public int state = 0;
     public Button loginbutt;
+    public int test=0; 
     // Start is called before the first frame update
     void Start()
     {
-        //MenuStatsButton.SetActive(false);
+        
     }
-
     // Update is called once per frame
     void Update()
     {
