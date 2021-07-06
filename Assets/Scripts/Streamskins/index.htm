@@ -1,0 +1,291 @@
+﻿<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* Add a background color when the inputs get focus */
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+.w3-row-padding img {margin-bottom: 12px}
+.bgimg {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('NewB.jpg');
+  min-height: 100%;
+}
+.auto-style1 {
+	margin-left: 0px;
+}
+</style>
+<body alink="#FFFFFF" bgcolor="#808080" text="#000000" vlink="#FFFFFF">
+
+      
+<!-- Sidebar with image -->
+
+<!-- Hidden Sidebar (reveals when clicked on menu icon)-->
+<nav class="w3-sidebar w3-black w3-animate-right w3-xxlarge" style="display:none;padding-top:150px;right:0;z-index:2" id="mySidebar">
+  <a href="javascript:void(0)" onclick="closeNav()" class="w3-button w3-black w3-xxxlarge w3-display-topright" style="padding:0 12px;">
+    <i class="fa fa-remove"></i>
+  </a>
+  <div class="w3-bar-block w3-center">
+    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Home</a>
+    <a href="#portfolio" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Portfolio</a>
+    <a href="#about" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">About</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Contact</a>
+  </div>
+</nav>
+
+<!-- Page Content -->
+
+  <!-- Menu icon to open sidebar -->
+  
+  <!-- Header -->
+  <header class="w3-container w3-center" style="padding:128px 16px" id="home">
+	  <h1 class="w3-jumbo">Streamskins</h1>
+	  <p>Customize to your liking </p>
+	  <img src="NewB.jpg" class= auto-style1 height="1333" width="1628">&nbsp;</header>
+  
+
+  <!-- Portfolio Section -->
+  <p>&nbsp;
+  <button onclick="document.location='in.htm'" style="width:auto; background-color: #F0EAD2; color: #000000;">Login
+  </button></p>
+<p>&nbsp;</p>
+<div class="w3-padding-32 w3-content" id="portfolio">
+	<h2 class="w3-text-black">The Process</h2>
+	<hr class="w3-opacity">
+
+    <!-- Grid for photos -->
+    <div class="w3-row-padding" style="margin:0 -16px">
+		<div class="w3-half">
+			<img src="log.png" style="width:100%">
+			<img src="over.png" style="width:100%">
+			<img src="row.png" style="width:100%"> </div>
+		<div class="w3-half">
+			<img src="soon.png" style="width:100%">
+			<img src="next.png" style="width:100%">
+			<img src="OW.png" style="width:100%">
+			<img src="5.png" style="width:100%"> </div>
+    <!-- End photo grid -->
+    </div>
+  <!-- End Portfolio Section -->
+  </div>
+
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-black w3-padding-32" id="about">
+	  <h2>About Overlays</h2>
+	  <p>Some text about. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing
+      elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      </p>
+	  <br>
+
+    <!-- Testimonials -->
+      <h3 class="w3-padding-24">Group Members</h3>
+    &nbsp;<p><span class="w3-large w3-text-black w3-margin-right">Empress Brown</span></p>
+	  <p></p>
+	  <br>&nbsp;<p><span class="w3-large w3-text-black w3-margin-right">Christian Lindsey</span></p>
+	  <p></p>
+	  <br>
+	  <p><span class="w3-large w3-text-black w3-margin-right">Samuel Winter</span>
+	  </p>
+	  <p></p>
+	  <br>
+	  <p><span class="w3-large w3-text-black w3-margin-right">Ben Turck</span></p>
+	  <br>
+    
+    <!-- Grid for pricing tables -->
+      <h3 class="w3-padding-16">Price</h3>
+	  <div class="w3-row-padding" style="margin:0 -16px">
+		  <div class="w3-half w3-margin-bottom">
+			  <ul class="w3-ul w3-center w3-card w3-hover-shadow">
+				  <li class="w3-padding-16">
+				  <h2>Free</h2>
+				  </li>
+			  </ul>
+		  </div>
+	  </div>
+    
+  <!-- End About Section -->
+	  <button onclick="document.location='sign.htm'"  style="width:auto; color: #000000; background-color: #FFFFE8;">Sign Up
+	  </button></div>
+
+  <!-- Contact Section -->
+  <div class="w3-padding-32 w3-content w3-text-black" id="contact" style="margin-bottom:64px">
+	  <h2>Contact Us</h2>
+	  <hr class="w3-opacity">
+	  <div class="w3-section">
+		  <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i>Albany, US</p>
+		  <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i>Phone: +00 151515</p>
+		  <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"></i>Email: mail@mail.com</p>
+	  </div>
+    
+    <!-- Image of location/map -->
+      <img src="end.png" class="w3-image w3-greyscale" style="width:100%;margin:32px 0">
+	  <p>Have questions, concerns, or need help? Get in touch. Send us a message:</p>
+	  <form action="/action_page.php" target="_blank">
+		  <p>
+		  <input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+		  <p>
+		  <input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Email" required name="Email"></p>
+		  <p>
+		  <input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Subject" required name="Subject"></p>
+		  <p>
+		  <input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message" required name="Message"></p>
+		  <p>
+		  <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+		  <i class="fa fa-paper-plane"></i>SEND</button></p>
+	  </form>
+  <!-- End Contact Section -->
+  </div>
+  
+  <!-- Footer -->
+  
+<!-- END PAGE CONTENT -->
+
+<script>
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+// Open and close sidebar
+</script>
+
+</body>
+</html>

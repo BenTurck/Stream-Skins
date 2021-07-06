@@ -7,7 +7,6 @@ public class MenuLoginTrueFalse : MonoBehaviour
     public GameObject MenuSigninButton;
     public GameObject LoginDD;
     public int state = 0;
-    public Text username;
     public Text LoginDDText;
     public Dropdown LoginDDInput;
     private string LoginDDStringInput;
@@ -25,9 +24,6 @@ public class MenuLoginTrueFalse : MonoBehaviour
     {
         if (PlayerPrefs.GetInt("all") == 3) //success
         {
-            username.text = "Username: " + PlayerPrefs.GetString("username");
-
-
             LoginDDText.text = PlayerPrefs.GetString("username");
 
             state = PlayerPrefs.GetInt("all");
@@ -47,7 +43,6 @@ public class MenuLoginTrueFalse : MonoBehaviour
             MenuSigninButton.SetActive(true);
             MenuSignoutButton.SetActive(false);
 
-            username.text = "Username:";
             LoginDDText.text = PlayerPrefs.GetString("");
 
         }
@@ -60,7 +55,6 @@ public class MenuLoginTrueFalse : MonoBehaviour
             MenuSigninButton.SetActive(true);
             MenuSignoutButton.SetActive(false);
 
-            username.text = "Username:";
             LoginDDText.text = PlayerPrefs.GetString("");
 
         }
