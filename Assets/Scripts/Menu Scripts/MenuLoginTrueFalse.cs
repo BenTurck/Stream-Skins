@@ -23,8 +23,6 @@ public class MenuLoginTrueFalse : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-
         if (PlayerPrefs.GetInt("all") == 3) //success
         {
             username.text = "Username: " + PlayerPrefs.GetString("username");

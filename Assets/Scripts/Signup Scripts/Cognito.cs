@@ -167,7 +167,6 @@ public class Cognito : MonoBehaviour
 
             Debug.Log("LOGINSUCCESS = " + loginSuccessful);
 
-            //TriggerDialogue(3); .ConfigureAwait(false)
             AuthFlowResponse authResponse = await user.StartWithSrpAuthAsync(authRequest);
 
             GetUserRequest getUserRequest = new GetUserRequest();
@@ -176,18 +175,13 @@ public class Cognito : MonoBehaviour
             Debug.Log("User Access Token: " + getUserRequest.AccessToken);
             jwt = getUserRequest.AccessToken;
 
-            //Try different if statements here
-            //TEST HERE 
-
             if (jwt == null)
             {
                 TriggerDialogue(4);
-                Debug.Log("JWT IS NULL JWT IS NULL JWT IS NULL ");
             }
             else
             {
                 TriggerDialogue(3);
-                Debug.Log("JWT = " + jwt);
             }
 
             // User is logged in
